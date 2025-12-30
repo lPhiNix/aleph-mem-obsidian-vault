@@ -11,10 +11,14 @@
             "id": "1f1b613916fcb544",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
+              "type": "split-diff-view",
+              "state": {
+                "aFile": ".obsidian/workspace.json",
+                "bFile": ".obsidian/workspace.json",
+                "aRef": ""
+              },
+              "icon": "diff",
+              "title": "Diff: workspace.json"
             }
           }
         ]
@@ -195,8 +199,8 @@
             "state": {
               "type": "journal-calendar",
               "state": {},
-              "icon": "calendar-days",
-              "title": "Calendar"
+              "icon": "lucide-ghost",
+              "title": "journal-calendar"
             }
           },
           {
@@ -207,6 +211,16 @@
               "state": {},
               "icon": "git-pull-request",
               "title": "Source Control"
+            }
+          },
+          {
+            "id": "233de5d6036b99f7",
+            "type": "leaf",
+            "state": {
+              "type": "journal-calendar",
+              "state": {},
+              "icon": "calendar-days",
+              "title": "Calendar"
             }
           }
         ],
@@ -251,7 +265,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a0914f54e3d5bb05",
+  "active": "1f1b613916fcb544",
   "lastOpenFiles": [
     "02 - Ψ - Memorium/daily/2025/12-December/2025-12-30-Tuesday.md",
     "02 - Ψ - Memorium/daily/2025/12-December",
