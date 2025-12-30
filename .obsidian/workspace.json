@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "d884c9619a90aff3",
+        "id": "e01f2bf5bf64dee1",
         "type": "tabs",
         "children": [
           {
-            "id": "7e140313eac4a6a3",
+            "id": "3295ecfac7404e14",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -181,12 +181,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "02 - Ψ - Memorium/daily/2025/12-December/2025-12-30-Tuesday.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of 2025-12-30-Tuesday"
             }
           },
           {
@@ -220,7 +221,7 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 4
       },
       {
         "id": "2cb30cdd678dfa50",
@@ -261,49 +262,54 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "7e140313eac4a6a3",
+  "active": "19cc3510409525e8",
   "lastOpenFiles": [
-    "Meta/templates/parents/memorium/Yearly.md",
-    "Meta/templates/parents/memorium/Weekly.md",
-    "Meta/templates/parents/memorium/Quarterly.md",
-    "Meta/templates/parents/memorium/Monthly.md",
-    "Meta/templates/parents/memorium/Daily.md",
-    "Meta/components/Weekly AI Alias.md",
-    "Meta/components/Daily AI Alias.md",
-    "Meta/images/Secret.mp4",
-    "Meta/images/Secret Ambience.mp3",
-    "Meta/images/Secret ambience 2.mp3",
-    "Meta/images/QAIdeaBanner.gif",
-    "Meta/images/Image Credits.md",
-    "Meta/images/How I felt.mp4",
-    "Meta/Parents",
     "02 - Ψ - Memorium/daily/2025/12-December/2025-12-30-Tuesday.md",
-    "02 - Ψ - Memorium/daily/2025/12-December",
-    "02 - Ψ - Memorium/daily/2025",
-    "AM.md",
-    "00 - Φ - Inthima/Nota.md",
-    "00 - Φ - Inthima/Untitled.md",
-    "01 - Θ - Cognitio/Untitled.md",
-    "02 - Ψ - Memorium/yearly/2025.md",
-    "02 - Ψ - Memorium/weekly/2026/2026-W01.md",
-    "02 - Ψ - Memorium/weekly/2026",
-    "Meta/templates/parents/memorium/t_yearly.md",
-    "Meta/templates/parents/memorium/t_weekly.md",
-    "Meta/templates/parents/memorium/t_quarterly.md",
-    "Meta/templates/parents/memorium/t_monthly.md",
+    "02 - Ψ - Memorium/daily/2025/12-December/2025-12-31-Wednesday.md",
+    "02 - Ψ - Memorium/daily/2025/01-January/2025-01-02-Thursday.md",
+    "02 - Ψ - Memorium/daily/2025/01-January/2025-01-01-Wednesday.md",
+    "02 - Ψ - Memorium/daily/2024/12-December/2024-12-30-Monday.md",
+    "Meta/components/Monthly Logs Retriever.md",
+    "Meta/components/Quarterly MetaBind WheelOfLifeChartTypePicker.md",
+    "Meta/components/Quarterly Logs Retriever.md",
+    "Meta/components/templater/Monthly Banner Config.md",
+    "Meta/components/templater/Quarterly Image Retriever.md",
+    "Meta/components/trash/Quarterly AI Alias.md",
+    "Meta/components/templater/New Highlight.md",
+    "Meta/components/dataview/Monthly WheelOfLifeCategoryChart.md",
+    "Meta/components/dataview/Monthly WheelOfLife.md",
+    "Meta/components/dataview/Monthly Weeklist.md",
+    "Meta/components/dataview/Monthly Rating Chart.md",
+    "Meta/components/tracker/Monthly Rating Average.md",
+    "Meta/components/tracker",
+    "Meta/components/metabind/editor/Monthly MetaBindSummary.md",
+    "Meta/components/metabind/button/Monthly MetaBindNavBar.md",
+    "Meta/components/metabind/text/Monthly MetaBindAlias.md",
+    "Meta/components/trash/Monthly MetaBindAiButton.md",
+    "Meta/components/metabind/Monthly MetaBind WheelOfLifeChartTypePicker.md",
+    "Meta/components/DisableEasterEgg.md",
+    "Meta/components/Debug Toggle.md",
+    "Meta/components/dataview/Monthly Image Retriever.md",
+    "Meta/components/trash/Monthly AI Alias.md",
+    "Meta/components/trash",
+    "02 - Ψ - Memorium/daily/2025/01-January",
+    "02 - Ψ - Memorium/weekly/2024",
+    "02 - Ψ - Memorium/daily/2024/12-December",
+    "02 - Ψ - Memorium/daily/2024",
+    "Meta/scripts/operations/yearlyOps.js",
+    "Meta/scripts/operations/monthlyOps.js",
+    "Meta/scripts/operations/weeklyOps.js",
+    "Meta/scripts/operations/quarterlyOps.js",
+    "Meta/images/QAIdeaBanner.gif",
     "Meta/images/Yearly Notes/YearlyBanner.jpg",
-    "Meta/images/Yearly Notes",
     "Meta/images/Weekly Notes/WeeklyBanner4.gif",
     "Meta/images/Weekly Notes/WeeklyBanner3.gif",
     "Meta/images/Weekly Notes/WeeklyBanner2.gif",
     "Meta/images/Weekly Notes/WeeklyBanner1.gif",
-    "Meta/images/Weekly Notes",
     "Meta/images/Quarterly Notes/QuarterlyBanner4.png",
     "Meta/images/Quarterly Notes/QuarterlyBanner3.png",
     "Meta/images/Quarterly Notes/QuarterlyBanner2.png",
     "Meta/images/Quarterly Notes/QuarterlyBanner1.png",
-    "Meta/templates/parents/memorium/t_daily.md",
-    "02 - Ψ - Memorium/daily/2025/12-December/2025-12-31-Wednesday.md",
     "90 - Ω - Harkaive/Bookshelf/Books/Sin título.canvas"
   ]
 }
