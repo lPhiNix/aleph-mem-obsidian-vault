@@ -2,23 +2,23 @@
   "recentFiles": [
     {
       "basename": "Yearly",
-      "path": "Meta/Parents/Yearly.md"
-    },
-    {
-      "basename": "Quarterly",
-      "path": "Meta/Parents/Quarterly.md"
+      "path": "Meta/templates/parents/memorium/Yearly.md"
     },
     {
       "basename": "Weekly",
-      "path": "Meta/Parents/Weekly.md"
+      "path": "Meta/templates/parents/memorium/Weekly.md"
+    },
+    {
+      "basename": "Quarterly",
+      "path": "Meta/templates/parents/memorium/Quarterly.md"
     },
     {
       "basename": "Monthly",
-      "path": "Meta/Parents/Monthly.md"
+      "path": "Meta/templates/parents/memorium/Monthly.md"
     },
     {
       "basename": "Daily",
-      "path": "Meta/Parents/Daily.md"
+      "path": "Meta/templates/parents/memorium/Daily.md"
     },
     {
       "basename": "AM",

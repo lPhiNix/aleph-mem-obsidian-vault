@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "8d7cf679cbd6db72",
+        "id": "d884c9619a90aff3",
         "type": "tabs",
         "children": [
           {
-            "id": "a47ba22ebaefcd68",
+            "id": "7e140313eac4a6a3",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Meta/Parents/Yearly.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Yearly"
+              "title": "New tab"
             }
           }
         ]
@@ -265,13 +261,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a47ba22ebaefcd68",
+  "active": "7e140313eac4a6a3",
   "lastOpenFiles": [
-    "Meta/Parents/Quarterly.md",
-    "Meta/Parents/Yearly.md",
-    "Meta/Parents/Weekly.md",
-    "Meta/Parents/Monthly.md",
-    "Meta/Parents/Daily.md",
+    "Meta/templates/parents/memorium/Yearly.md",
+    "Meta/templates/parents/memorium/Weekly.md",
+    "Meta/templates/parents/memorium/Quarterly.md",
+    "Meta/templates/parents/memorium/Monthly.md",
+    "Meta/templates/parents/memorium/Daily.md",
     "Meta/components/Weekly AI Alias.md",
     "Meta/components/Daily AI Alias.md",
     "Meta/images/Secret.mp4",
@@ -295,11 +291,6 @@
     "Meta/templates/parents/memorium/t_weekly.md",
     "Meta/templates/parents/memorium/t_quarterly.md",
     "Meta/templates/parents/memorium/t_monthly.md",
-    "Meta/templates/parents/memorium/Yearly.md",
-    "Meta/templates/parents/memorium/Weekly.md",
-    "Meta/templates/parents/memorium/Quarterly.md",
-    "Meta/templates/parents/memorium/Monthly.md",
-    "Meta/templates/parents/memorium/Daily.md",
     "Meta/images/Yearly Notes/YearlyBanner.jpg",
     "Meta/images/Yearly Notes",
     "Meta/images/Weekly Notes/WeeklyBanner4.gif",
