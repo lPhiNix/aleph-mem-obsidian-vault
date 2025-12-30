@@ -1,0 +1,132 @@
+/* ===============================
+   Time Garden – Variables
+=============================== */
+
+:root {
+  --c-intima:    #ff8fa3;
+  --c-cognitio:  #ffb36b;
+  --c-memorium:  #ffe066;
+  --c-noetheris: #8ce99a;
+  --c-devs:      #63e6be;
+  --c-viventia:  #74c0fc;
+  --c-kaelithra: #b197fc;
+  --c-ordus:     #da77f2;
+  --c-aethernum: #ced4da;
+  --c-harkaive:  #868e96;
+}
+
+/* ===============================
+   Contextual headings – Time Garden
+=============================== */
+
+/* Φ — Inthima */
+.inthima :is(h1, h2, h3, h4, h5, h6),
+.inthima .cm-header-1,
+.inthima .cm-header-2,
+.inthima .cm-header-3,
+.inthima .cm-header-4,
+.inthima .cm-header-5,
+.inthima .cm-header-6 {
+  color: var(--c-intima) !important;
+}
+
+/* Θ — Cognitio */
+.cognitio :is(h1, h2, h3, h4, h5, h6),
+.cognitio .cm-header-1,
+.cognitio .cm-header-2,
+.cognitio .cm-header-3,
+.cognitio .cm-header-4,
+.cognitio .cm-header-5,
+.cognitio .cm-header-6 {
+  color: var(--c-cognitio) !important;
+}
+
+/* Ψ — Memorium */
+.memorium :is(h1, h2, h3, h4, h5, h6),
+.memorium .cm-header-1,
+.memorium .cm-header-2,
+.memorium .cm-header-3,
+.memorium .cm-header-4,
+.memorium .cm-header-5,
+.memorium .cm-header-6 {
+  color: var(--c-memorium) !important;
+}
+
+/* Σ — Noetheris */
+.noetheris :is(h1, h2, h3, h4, h5, h6),
+.noetheris .cm-header-1,
+.noetheris .cm-header-2,
+.noetheris .cm-header-3,
+.noetheris .cm-header-4,
+.noetheris .cm-header-5,
+.noetheris .cm-header-6 {
+  color: var(--c-noetheris) !important;
+}
+
+/* Λ — Devs */
+.devs :is(h1, h2, h3, h4, h5, h6),
+.devs .cm-header-1,
+.devs .cm-header-2,
+.devs .cm-header-3,
+.devs .cm-header-4,
+.devs .cm-header-5,
+.devs .cm-header-6 {
+  color: var(--c-devs) !important;
+}
+
+/* Ζ — Viventia */
+.viventia :is(h1, h2, h3, h4, h5, h6),
+.viventia .cm-header-1,
+.viventia .cm-header-2,
+.viventia .cm-header-3,
+.viventia .cm-header-4,
+.viventia .cm-header-5,
+.viventia .cm-header-6 {
+  color: var(--c-viventia) !important;
+}
+
+/* Ξ — Kaelithra */
+.kaelithra :is(h1, h2, h3, h4, h5, h6),
+.kaelithra .cm-header-1,
+.kaelithra .cm-header-2,
+.kaelithra .cm-header-3,
+.kaelithra .cm-header-4,
+.kaelithra .cm-header-5,
+.kaelithra .cm-header-6 {
+  color: var(--c-kaelithra) !important;
+}
+
+/* Π — Ordus */
+.ordus :is(h1, h2, h3, h4, h5, h6),
+.ordus .cm-header-1,
+.ordus .cm-header-2,
+.ordus .cm-header-3,
+.ordus .cm-header-4,
+.ordus .cm-header-5,
+.ordus .cm-header-6 {
+  color: var(--c-ordus) !important;
+}
+
+/* Δ — Aethernum */
+.aethernum :is(h1, h2, h3, h4, h5, h6),
+.aethernum .cm-header-1,
+.aethernum .cm-header-2,
+.aethernum .cm-header-3,
+.aethernum .cm-header-4,
+.aethernum .cm-header-5,
+.aethernum .cm-header-6 {
+  color: var(--c-aethernum) !important;
+}
+
+/* Ω — Harkaive */
+.harkaive :is(h1, h2, h3, h4, h5, h6),
+.harkaive .cm-header-1,
+.harkaive .cm-header-2,
+.harkaive .cm-header-3,
+.harkaive .cm-header-4,
+.harkaive .cm-header-5,
+.harkaive .cm-header-6 {
+  color: var(--c-harkaive) !important;
+}
+
+

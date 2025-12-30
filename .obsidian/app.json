@@ -1,0 +1,10 @@
+{
+  "promptDelete": false,
+  "strictLineBreaks": false,
+  "showLineNumber": false,
+  "showUnsupportedFiles": true,
+  "alwaysUpdateLinks": true,
+  "readableLineLength": true,
+  "showInlineTitle": true,
+  "foldHeading": false
+}

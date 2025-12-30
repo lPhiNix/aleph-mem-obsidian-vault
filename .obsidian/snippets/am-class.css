@@ -1,0 +1,49 @@
+:root {
+  --h-yellow: #f2c31c; /* amarillo pastel suave */
+  --h-green:  #fff1a8; /* verde-amarillo claro */
+  --h-blue:   #63e6be; /* azul pastel */
+  --h-purple: #a5d8ff; /* violeta pastel */
+  --h-red:    #dfbffd; /* magenta pastel */
+  --h-rose:   #ff9fb3; /* rosa pastel */
+}
+
+/* ===============================
+     Headings – AM Pastels
+     SOLO notas con .am
+=============================== */
+
+/* H1 (contenido, NO título de la nota) */
+.am :is(h1),
+.am .cm-header-1 {
+  color: var(--h-yellow);
+}
+
+/* H2 */
+.am :is(h2),
+.am .cm-header-2 {
+  color: var(--h-green);
+}
+
+/* H3 */
+.am :is(h3),
+.am .cm-header-3 {
+  color: var(--h-blue);
+}
+
+/* H4 */
+.am :is(h4),
+.am .cm-header-4 {
+  color: var(--h-purple);
+}
+
+/* H5 */
+.am :is(h5),
+.am .cm-header-5 {
+  color: var(--h-red);
+}
+
+/* H6 */
+.am :is(h6),
+.am .cm-header-6 {
+  color: var(--h-rose);
+}

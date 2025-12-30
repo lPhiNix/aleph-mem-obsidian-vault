@@ -1,0 +1,293 @@
+{
+  "main": {
+    "id": "1cbb36e3d88afb9e",
+    "type": "split",
+    "children": [
+      {
+        "id": "23eabd1a673dd55b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1f1b613916fcb544",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "6233c2afb6bf8d87",
+    "type": "split",
+    "children": [
+      {
+        "id": "e60163b5fe7c52c5",
+        "type": "tabs",
+        "dimension": 66.50366748166259,
+        "children": [
+          {
+            "id": "19cc3510409525e8",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "19520986d1054cc9",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "20a5952596c2c35b",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Marcadores"
+            }
+          },
+          {
+            "id": "206ac363771e4ff8",
+            "type": "leaf",
+            "state": {
+              "type": "recent-files",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "recent-files"
+            }
+          }
+        ]
+      },
+      {
+        "id": "3af6b5eb85c11db7",
+        "type": "tabs",
+        "dimension": 33.496332518337404,
+        "children": [
+          {
+            "id": "002bbd6506382b68",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 343.50418853759766
+  },
+  "right": {
+    "id": "af6b85572d039985",
+    "type": "split",
+    "children": [
+      {
+        "id": "2f052bc40223a647",
+        "type": "tabs",
+        "dimension": 63.92111368909513,
+        "children": [
+          {
+            "id": "faccf225e8077fd2",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "AM.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Enlaces entrantes de AM"
+            }
+          },
+          {
+            "id": "6d60f93d126e3e8c",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "AM.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Enlaces salientes de AM"
+            }
+          },
+          {
+            "id": "34ceabad095ada73",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Etiquetas"
+            }
+          },
+          {
+            "id": "29ed5da632300d1f",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "Todas las propiedades"
+            }
+          },
+          {
+            "id": "d6456c1de6e095e9",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "02 - Ψ - Memorium/daily/2025/12-December/2025-12-30-Tuesday.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of 2025-12-30-Tuesday"
+            }
+          },
+          {
+            "id": "16e50f7d6d7f3957",
+            "type": "leaf",
+            "state": {
+              "type": "journal-calendar",
+              "state": {},
+              "icon": "calendar-days",
+              "title": "Calendar"
+            }
+          }
+        ],
+        "currentTab": 4
+      },
+      {
+        "id": "2cb30cdd678dfa50",
+        "type": "tabs",
+        "dimension": 36.07888631090487,
+        "children": [
+          {
+            "id": "61dcc7d1287db8e9",
+            "type": "leaf",
+            "state": {
+              "type": "journal-calendar",
+              "state": {},
+              "icon": "calendar-days",
+              "title": "Calendar"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 376.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "command-palette:Open command palette": false,
+      "graph:Open graph view": false,
+      "switcher:Open quick switcher": false,
+      "canvas:Create new canvas": false,
+      "bases:Create new base": false,
+      "templates:Insert template": false,
+      "random-note:Open random note": false,
+      "obsidian-kanban:Create new board": false,
+      "iconic:Open rulebook": false,
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "templater-obsidian:Templater": false,
+      "pexels-banner:🚩 Pixel Banner Menu": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false
+    }
+  },
+  "active": "19cc3510409525e8",
+  "lastOpenFiles": [
+    "02 - Ψ - Memorium/daily/2025/12-December/2025-12-30-Tuesday.md",
+    "02 - Ψ - Memorium/daily/2025/12-December",
+    "02 - Ψ - Memorium/daily/2025",
+    "AM.md",
+    "00 - Φ - Inthima/Nota.md",
+    "00 - Φ - Inthima/Untitled.md",
+    "01 - Θ - Cognitio/Untitled.md",
+    "02 - Ψ - Memorium/yearly/2025.md",
+    "02 - Ψ - Memorium/weekly/2026/2026-W01.md",
+    "02 - Ψ - Memorium/weekly/2026",
+    "Meta/templates/parents/memorium/t_yearly.md",
+    "Meta/templates/parents/memorium/t_weekly.md",
+    "Meta/templates/parents/memorium/t_quarterly.md",
+    "Meta/templates/parents/memorium/t_monthly.md",
+    "Meta/templates/parents/memorium/Yearly.md",
+    "Meta/templates/parents/memorium/Weekly.md",
+    "Meta/templates/parents/memorium/Quarterly.md",
+    "Meta/templates/parents/memorium/Monthly.md",
+    "Meta/templates/parents/memorium/Daily.md",
+    "Meta/images/Yearly Notes/YearlyBanner.jpg",
+    "Meta/images/Yearly Notes",
+    "Meta/images/Weekly Notes/WeeklyBanner4.gif",
+    "Meta/images/Weekly Notes/WeeklyBanner3.gif",
+    "Meta/images/Weekly Notes/WeeklyBanner2.gif",
+    "Meta/images/Weekly Notes/WeeklyBanner1.gif",
+    "Meta/images/Weekly Notes",
+    "Meta/images/Quarterly Notes/QuarterlyBanner4.png",
+    "Meta/images/Quarterly Notes/QuarterlyBanner3.png",
+    "Meta/images/Quarterly Notes/QuarterlyBanner2.png",
+    "Meta/images/Quarterly Notes/QuarterlyBanner1.png",
+    "Meta/images/Quarterly Notes",
+    "Meta/images/Monthly Notes/MonthlyBanner1.gif",
+    "Meta/images/Monthly Notes",
+    "Meta/images/Daily Notes",
+    "Meta/templates/parents/memorium/t_daily.md",
+    "02 - Ψ - Memorium/daily/2025/12-December/2025-12-31-Wednesday.md",
+    "Meta/components/Daily MetaBindAlias.md",
+    "Meta/components/Daily MetaBindNavBar.md",
+    "Meta/components/New Idea.md",
+    "Meta/components/New Highlight.md",
+    "Meta/components/Monthly WheelOfLifeCategoryChart.md",
+    "Meta/components/Monthly WheelOfLife.md",
+    "Meta/components/Monthly Weeklist.md",
+    "Meta/templates/templater",
+    "undefined01 Daily",
+    "90 - Ω - Harkaive/Bookshelf/Books/Sin título.canvas"
+  ]
+}

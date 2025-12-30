@@ -1,0 +1,31 @@
+{
+  "cssTheme": "Vauxhall",
+  "accentColor": "#c9cc00",
+  "enabledCssSnippets": [
+    "kanban",
+    "time-garden-colored-sidebar",
+    "am-colored-headers",
+    "am-colored-sidebar",
+    "am-class",
+    "am-kanban",
+    "am-white-inline-title",
+    "modules",
+    "time-garden-hide-inline-title",
+    "note-backgrounds-classes",
+    "time-garden-monthly-note-themes",
+    "time-garden-quarterly-note-themes",
+    "time-garden-weekly-note-themes",
+    "time-garden-yearly-note-themes",
+    "time-garden-daily-note-themes",
+    "time-garden-misc-styles",
+    "time-garden-hide-source-frontmatter",
+    "time-garden-tweaks",
+    "time-garden-hide-visible-frontmatter"
+  ],
+  "interfaceFontFamily": "",
+  "textFontFamily": "",
+  "nativeMenus": false,
+  "theme": "obsidian",
+  "showViewHeader": true,
+  "showRibbon": true
+}
