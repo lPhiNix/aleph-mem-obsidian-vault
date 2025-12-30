@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "23eabd1a673dd55b",
+        "id": "8d7cf679cbd6db72",
         "type": "tabs",
         "children": [
           {
-            "id": "1f1b613916fcb544",
+            "id": "a47ba22ebaefcd68",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
+              "type": "markdown",
               "state": {
-                "aFile": ".obsidian/workspace.json",
-                "bFile": ".obsidian/workspace.json",
-                "aRef": ""
+                "file": "Meta/Parents/Yearly.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "diff",
-              "title": "Diff: workspace.json"
+              "icon": "lucide-file",
+              "title": "Yearly"
             }
           }
         ]
@@ -265,8 +265,22 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "1f1b613916fcb544",
+  "active": "a47ba22ebaefcd68",
   "lastOpenFiles": [
+    "Meta/Parents/Quarterly.md",
+    "Meta/Parents/Yearly.md",
+    "Meta/Parents/Weekly.md",
+    "Meta/Parents/Monthly.md",
+    "Meta/Parents/Daily.md",
+    "Meta/components/Weekly AI Alias.md",
+    "Meta/components/Daily AI Alias.md",
+    "Meta/images/Secret.mp4",
+    "Meta/images/Secret Ambience.mp3",
+    "Meta/images/Secret ambience 2.mp3",
+    "Meta/images/QAIdeaBanner.gif",
+    "Meta/images/Image Credits.md",
+    "Meta/images/How I felt.mp4",
+    "Meta/Parents",
     "02 - Ψ - Memorium/daily/2025/12-December/2025-12-30-Tuesday.md",
     "02 - Ψ - Memorium/daily/2025/12-December",
     "02 - Ψ - Memorium/daily/2025",
@@ -297,21 +311,8 @@
     "Meta/images/Quarterly Notes/QuarterlyBanner3.png",
     "Meta/images/Quarterly Notes/QuarterlyBanner2.png",
     "Meta/images/Quarterly Notes/QuarterlyBanner1.png",
-    "Meta/images/Quarterly Notes",
-    "Meta/images/Monthly Notes/MonthlyBanner1.gif",
-    "Meta/images/Monthly Notes",
-    "Meta/images/Daily Notes",
     "Meta/templates/parents/memorium/t_daily.md",
     "02 - Ψ - Memorium/daily/2025/12-December/2025-12-31-Wednesday.md",
-    "Meta/components/Daily MetaBindAlias.md",
-    "Meta/components/Daily MetaBindNavBar.md",
-    "Meta/components/New Idea.md",
-    "Meta/components/New Highlight.md",
-    "Meta/components/Monthly WheelOfLifeCategoryChart.md",
-    "Meta/components/Monthly WheelOfLife.md",
-    "Meta/components/Monthly Weeklist.md",
-    "Meta/templates/templater",
-    "undefined01 Daily",
     "90 - Ω - Harkaive/Bookshelf/Books/Sin título.canvas"
   ]
 }

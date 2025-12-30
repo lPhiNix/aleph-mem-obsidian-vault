@@ -1,6 +1,26 @@
 {
   "recentFiles": [
     {
+      "basename": "Yearly",
+      "path": "Meta/Parents/Yearly.md"
+    },
+    {
+      "basename": "Quarterly",
+      "path": "Meta/Parents/Quarterly.md"
+    },
+    {
+      "basename": "Weekly",
+      "path": "Meta/Parents/Weekly.md"
+    },
+    {
+      "basename": "Monthly",
+      "path": "Meta/Parents/Monthly.md"
+    },
+    {
+      "basename": "Daily",
+      "path": "Meta/Parents/Daily.md"
+    },
+    {
       "basename": "AM",
       "path": "AM.md"
     },
