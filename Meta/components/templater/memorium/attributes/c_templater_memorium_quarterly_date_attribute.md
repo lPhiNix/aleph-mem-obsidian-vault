@@ -1,0 +1,1 @@
+memorium-date: <% moment(tp.file.title, 'YYYY-[Q]Q').startOf('quarter').format("YYYY-MM-DD") %>

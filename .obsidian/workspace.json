@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "c3978d17cf6965a2",
+        "id": "314c6ff82e966a2d",
         "type": "tabs",
         "children": [
           {
-            "id": "cb7d40f4616ab604",
+            "id": "bf651cc706845a04",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "02 - Ψ - Memorium/daily/2025/12-December/2025-12-31-Wednesday.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "2025-12-31-Wednesday"
             }
           }
         ]
@@ -162,7 +166,7 @@
                 "searchQuery": ""
               },
               "icon": "lucide-archive",
-              "title": "Todas las propiedades"
+              "title": "All properties"
             }
           },
           {
@@ -171,13 +175,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "02 - Ψ - Memorium/weekly/2025/2025-W51.md",
+                "file": "02 - Ψ - Memorium/daily/2025/12-December/2025-12-31-Wednesday.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2025-W51"
+              "title": "Outline of 2025-12-31-Wednesday"
             }
           },
           {
@@ -250,44 +254,44 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "19cc3510409525e8",
+  "active": "bf651cc706845a04",
   "lastOpenFiles": [
-    "02 - Ψ - Memorium/monthly/2025/2025-12-December.md",
-    "02 - Ψ - Memorium/daily/2026/01-January/2026-01-01-Thursday.md",
-    "02 - Ψ - Memorium/daily/2025/12-December/2025-12-30-Tuesday.md",
-    "02 - Ψ - Memorium/weekly/2025/2025-W51.md",
-    "02 - Ψ - Memorium/weekly/2025/2025-W52.md",
-    "02 - Ψ - Memorium/weekly/2026/2026-W01.md",
-    "02 - Ψ - Memorium/weekly/2025",
-    "02 - Ψ - Memorium/weekly/2026/2026-W02.md",
-    "02 - Ψ - Memorium/weekly/2026/2026-W03.md",
     "02 - Ψ - Memorium/daily/2025/12-December/2025-12-31-Wednesday.md",
-    "02 - Ψ - Memorium/weekly/2026",
-    "02 - Ψ - Memorium/daily/2026/01-January",
-    "02 - Ψ - Memorium/daily/2026",
-    "Meta/templates/memorium/t_weekly.md",
     "02 - Ψ - Memorium/daily/2025/12-December",
     "02 - Ψ - Memorium/daily/2025",
-    "Meta/benchmarks/_native.md",
-    "02 - Ψ - Memorium/MEMORIUM.md",
-    "02 - Ψ - Memorium/weekly/2026/2026-W1.md",
-    "02 - Ψ - Memorium/weekly/2026/2026-W3.md",
-    "02 - Ψ - Memorium/weekly/2026/2026-W2.md",
-    "02 - Ψ - Memorium/weekly/2026/2026-W08.md",
-    "02 - Ψ - Memorium/weekly/2026/2026-W6.md",
-    "02 - Ψ - Memorium/weekly/2026/2026-W5.md",
-    "02 - Ψ - Memorium/weekly/2026/2026-W4.md",
-    "Meta/templates/memorium/t_daily.md",
-    "Meta/components/metabind/buttons/c_metabind_memorium_weekly_nav_buttons.md",
-    "Meta/components/metabind/buttons/c_metabind_memorium_daily_nav_buttons.md",
-    "Meta/components/templater/attributes/c_templater_memorium_daily_date.md",
-    "Meta/components/templater/attributes/c_templater_memorium_weekly_summary.md",
-    "Meta/components/templater/attributes/c_templater_memorium_weekly_date.md",
-    "Meta/components/templater/c_templater_memorium_daily_journals_frontmatter.md",
-    "02 - Ψ - Memorium/weekly/2023",
-    "02 - Ψ - Memorium/weekly/2024",
+    "02 - Ψ - Memorium/weekly/2026/2026-W53.md",
+    "02 - Ψ - Memorium/weekly/2027/2027-W01.md",
+    "02 - Ψ - Memorium/weekly/2027",
+    "02 - Ψ - Memorium/weekly/2026/2026-W52.md",
+    "02 - Ψ - Memorium/weekly/2026/2026-W51.md",
+    "02 - Ψ - Memorium/weekly/2026/2026-W50.md",
+    "02 - Ψ - Memorium/weekly/2026/2026-W49.md",
+    "02 - Ψ - Memorium/weekly/2026/2026-W48.md",
+    "02 - Ψ - Memorium/weekly/2026/2026-W47.md",
+    "02 - Ψ - Memorium/weekly/2026/2026-W46.md",
+    "02 - Ψ - Memorium/weekly/2026/2026-W45.md",
+    "02 - Ψ - Memorium/weekly/2026/2026-W44.md",
+    "02 - Ψ - Memorium/weekly/2026/2026-W43.md",
+    "02 - Ψ - Memorium/weekly/2026/2026-W42.md",
+    "02 - Ψ - Memorium/weekly/2026/2026-W41.md",
+    "02 - Ψ - Memorium/weekly/2026/2026-W40.md",
+    "02 - Ψ - Memorium/weekly/2026/2026-W39.md",
+    "02 - Ψ - Memorium/weekly/2026/2026-W38.md",
+    "02 - Ψ - Memorium/weekly/2026/2026-W37.md",
+    "02 - Ψ - Memorium/weekly/2026/2026-W36.md",
+    "02 - Ψ - Memorium/weekly/2026/2026-W35.md",
+    "02 - Ψ - Memorium/weekly/2026/2026-W34.md",
+    "02 - Ψ - Memorium/weekly/2026/2026-W33.md",
+    "02 - Ψ - Memorium/weekly/2026/2026-W32.md",
+    "02 - Ψ - Memorium/weekly/2026/2026-W31.md",
+    "02 - Ψ - Memorium/weekly/2026/2026-W30.md",
+    "02 - Ψ - Memorium/weekly/2025",
+    "02 - Ψ - Memorium/weekly/2026",
+    "02 - Ψ - Memorium/quarterly/2025",
     "02 - Ψ - Memorium/monthly/2025",
-    "Meta/components/templater/attributes",
+    "02 - Ψ - Memorium/quarterly/2026",
+    "02 - Ψ - Memorium/quarterly/2024",
+    "02 - Ψ - Memorium/quarterly",
     "Meta/images/QAIdeaBanner.gif",
     "Meta/images/Yearly Notes/YearlyBanner.jpg",
     "Meta/images/Weekly Notes/WeeklyBanner4.gif",
