@@ -29,7 +29,7 @@
   "appIcons": {},
   "tabIcons": {},
   "fileIcons": {
-    "90 - Ω - Harkaive/Arcade": {
+    "09 - Ω - Harkaive/Arcade": {
       "icon": "lucide-gamepad-2",
       "unsynced": [
         "75be797415a75924",
@@ -37,10 +37,10 @@
         "5df515316b81a85e"
       ]
     },
-    "90 - Ω - Harkaive/Arcade/Arcade.md": {
+    "09 - Ω - Harkaive/Arcade/Arcade.md": {
       "icon": "lucide-gamepad-2"
     },
-    "90 - Ω - Harkaive/Arcade/Videogames": {
+    "09 - Ω - Harkaive/Arcade/Videogames": {
       "icon": "lucide-disc-3",
       "unsynced": [
         "75be797415a75924",
@@ -48,7 +48,7 @@
         "5df515316b81a85e"
       ]
     },
-    "90 - Ω - Harkaive/Bookshelf": {
+    "09 - Ω - Harkaive/Bookshelf": {
       "icon": "lucide-library-big",
       "unsynced": [
         "75be797415a75924",
@@ -56,7 +56,7 @@
         "5df515316b81a85e"
       ]
     },
-    "90 - Ω - Harkaive/Bookshelf/Books": {
+    "09 - Ω - Harkaive/Bookshelf/Books": {
       "icon": "lucide-book-copy",
       "unsynced": [
         "75be797415a75924",
@@ -64,10 +64,10 @@
         "5df515316b81a85e"
       ]
     },
-    "90 - Ω - Harkaive/Bookshelf/Bookshelf.md": {
+    "09 - Ω - Harkaive/Bookshelf/Bookshelf.md": {
       "icon": "lucide-library-big"
     },
-    "90 - Ω - Harkaive/Cinema": {
+    "09 - Ω - Harkaive/Cinema": {
       "icon": "lucide-clapperboard",
       "unsynced": [
         "75be797415a75924",
@@ -75,10 +75,10 @@
         "5df515316b81a85e"
       ]
     },
-    "90 - Ω - Harkaive/Cinema/Cinema.md": {
+    "09 - Ω - Harkaive/Cinema/Cinema.md": {
       "icon": "lucide-clapperboard"
     },
-    "90 - Ω - Harkaive/Cinema/Movies": {
+    "09 - Ω - Harkaive/Cinema/Movies": {
       "icon": "lucide-film",
       "unsynced": [
         "75be797415a75924",
@@ -86,7 +86,7 @@
         "5df515316b81a85e"
       ]
     },
-    "90 - Ω - Harkaive/Television": {
+    "09 - Ω - Harkaive/Television": {
       "icon": "lucide-tv",
       "unsynced": [
         "75be797415a75924",
@@ -94,7 +94,7 @@
         "5df515316b81a85e"
       ]
     },
-    "90 - Ω - Harkaive/Television/Series": {
+    "09 - Ω - Harkaive/Television/Series": {
       "icon": "lucide-tv-minimal-play",
       "unsynced": [
         "75be797415a75924",
@@ -102,7 +102,7 @@
         "5df515316b81a85e"
       ]
     },
-    "90 - Ω - Harkaive/Television/Television.md": {
+    "09 - Ω - Harkaive/Television/Television.md": {
       "icon": "lucide-tv"
     },
     "AM.md": {

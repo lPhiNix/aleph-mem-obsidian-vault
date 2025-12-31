@@ -2,7 +2,7 @@
 cssclasses:
   - am
 ---
-# Obsidian Native Markdown Test
+# Obsidian Native Markdown Benchmark
 ---
 
 ## 📚 Tabla de contenidos
