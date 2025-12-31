@@ -1,6 +1,6 @@
 {
   "cssTheme": "Vauxhall",
-  "accentColor": "#c9cc00",
+  "accentColor": "#cccc00",
   "enabledCssSnippets": [
     "kanban",
     "time-garden-colored-sidebar",

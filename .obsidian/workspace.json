@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "81b4a62e9f2c869f",
+        "id": "5de3655e0f750e76",
         "type": "tabs",
         "children": [
           {
-            "id": "c824d0b7c5c51f89",
+            "id": "b5f4db6a1545ea8a",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
-              "state": {
-                "aFile": "06 - Ξ - Kaelithra/KAELITHRA.md",
-                "bFile": "06 - Ξ - Kaelithra/KAELITHRA.md",
-                "aRef": ""
-              },
-              "icon": "diff",
-              "title": "Diff: KAELITHRA"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ]
@@ -42,7 +38,7 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": true
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -214,7 +210,7 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 4
       },
       {
         "id": "2cb30cdd678dfa50",
@@ -253,22 +249,23 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a0914f54e3d5bb05",
+  "active": "b5f4db6a1545ea8a",
   "lastOpenFiles": [
+    "AM.md",
+    "Meta/templates/memorium/t_daily.md",
+    "02 - Ψ - Memorium/daily/2025/12-December/2025-12-31-Wednesday.md",
+    "Meta/templates/memorium/t_monthly.md",
+    "Meta/templates/memorium/t_quarterly.md",
+    "Meta/templates/memorium/t_weekly.md",
+    "Meta/templates/memorium/t_yearly.md",
     "06 - Ξ - Kaelithra/KAELITHRA.md",
     "Meta/components/metabind/progressbar/c_metabind_memorium_day_rating_slider.md",
     "02 - Ψ - Memorium/daily/2025/12-December/2025-12-22-Monday.md",
     "02 - Ψ - Memorium/daily/2025/12-December/2025-12-23-Tuesday.md",
-    "02 - Ψ - Memorium/daily/2025/12-December/2025-12-31-Wednesday.md",
     "Meta/benchmarks/_metabind.md",
     "Meta/templates/ordus/t_task.md",
-    "Meta/templates/memorium/t_yearly.md",
-    "Meta/templates/memorium/t_daily.md",
     "00 - Φ - Inthima/INTHIMA.md",
     "02 - Ψ - Memorium/daily/2025/12-December",
-    "Meta/templates/memorium/t_monthly.md",
-    "Meta/templates/memorium/t_quarterly.md",
-    "Meta/templates/memorium/t_weekly.md",
     "02 - Ψ - Memorium/daily/2025/12-December/2025-12-29-Monday.md",
     "02 - Ψ - Memorium/daily/2025/12-December/2025-12-30-Tuesday.md",
     "Meta/benchmarks/_native.md",
@@ -281,7 +278,6 @@
     "Meta/components/metabind/text/c_metabind_memorium_quarterly_alias_text.md",
     "Meta/components/metabind/text/c_metabind_memorium_monthly_alias_text.md",
     "Meta/components/metabind/text/c_metabind_memorium_daily_alias_text.md",
-    "02 - Ψ - Memorium/weekly/2026/2026-W01.md",
     "02 - Ψ - Memorium/weekly/2026",
     "02 - Ψ - Memorium/daily/2025",
     "02 - Ψ - Memorium/quarterly/2025",
