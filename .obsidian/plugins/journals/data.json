@@ -19,7 +19,7 @@
       "dateFormat": "YYYY-MM-DD-dddd",
       "folder": "02 - Ψ - Memorium/daily/{{date:YYYY}}/{{date:MM-MMMM}}",
       "templates": [
-        "Meta/templates/parents/memorium/t_daily.md"
+        "Meta/templates/memorium/t_daily.md"
       ],
       "start": "",
       "end": {
@@ -183,7 +183,7 @@
       "dateFormat": "YYYY-MM-MMMM",
       "folder": "02 - Ψ - Memorium/monthly/{{date:YYYY}}",
       "templates": [
-        "Meta/templates/parents/memorium/t_monthly.md"
+        "Meta/templates/memorium/t_monthly.md"
       ],
       "start": "",
       "end": {
@@ -299,7 +299,7 @@
       "dateFormat": "YYYY-[Q]Q",
       "folder": "02 - Ψ - Memorium/quarterly/{{date:YYYY}}",
       "templates": [
-        "Meta/templates/parents/memorium/t_quarterly.md"
+        "Meta/templates/memorium/t_quarterly.md"
       ],
       "start": "",
       "end": {
@@ -415,7 +415,7 @@
       "dateFormat": "YYYY-[W]ww",
       "folder": "02 - Ψ - Memorium/weekly/{{date:YYYY}}",
       "templates": [
-        "Meta/templates/parents/memorium/t_weekly.md"
+        "Meta/templates/memorium/t_weekly.md"
       ],
       "start": "",
       "end": {
@@ -547,7 +547,7 @@
       "dateFormat": "YYYY",
       "folder": "02 - Ψ - Memorium/yearly",
       "templates": [
-        "Meta/templates/parents/memorium/t_yearly.md"
+        "Meta/templates/memorium/t_yearly.md"
       ],
       "start": "",
       "end": {

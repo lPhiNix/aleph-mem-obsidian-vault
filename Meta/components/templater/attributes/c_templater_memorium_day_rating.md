@@ -1,0 +1,1 @@
+memorium-day-rating: 1

@@ -1,0 +1,1 @@
+memorium-date: <% moment(tp.file.title, 'YYYY-MM-DD-dddd').format("YYYY-MM-DD") %>

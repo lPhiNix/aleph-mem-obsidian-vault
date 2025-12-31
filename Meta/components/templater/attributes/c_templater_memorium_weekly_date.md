@@ -1,0 +1,1 @@
+memorium-date: <% moment(tp.file.title, 'YYYY-[W]ww').startOf('week').format("YYYY-MM-DD") %>

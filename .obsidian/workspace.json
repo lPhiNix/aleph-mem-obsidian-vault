@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "e01f2bf5bf64dee1",
+        "id": "c3978d17cf6965a2",
         "type": "tabs",
         "children": [
           {
-            "id": "3295ecfac7404e14",
+            "id": "cb7d40f4616ab604",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -29,7 +29,7 @@
       {
         "id": "e60163b5fe7c52c5",
         "type": "tabs",
-        "dimension": 66.50366748166259,
+        "dimension": 69.85195154777928,
         "children": [
           {
             "id": "19cc3510409525e8",
@@ -70,23 +70,13 @@
               "icon": "lucide-bookmark",
               "title": "Marcadores"
             }
-          },
-          {
-            "id": "206ac363771e4ff8",
-            "type": "leaf",
-            "state": {
-              "type": "recent-files",
-              "state": {},
-              "icon": "lucide-ghost",
-              "title": "recent-files"
-            }
           }
         ]
       },
       {
         "id": "3af6b5eb85c11db7",
         "type": "tabs",
-        "dimension": 33.496332518337404,
+        "dimension": 30.148048452220728,
         "children": [
           {
             "id": "002bbd6506382b68",
@@ -111,7 +101,7 @@
       {
         "id": "2f052bc40223a647",
         "type": "tabs",
-        "dimension": 63.92111368909513,
+        "dimension": 59.796437659033074,
         "children": [
           {
             "id": "faccf225e8077fd2",
@@ -181,13 +171,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "02 - Ψ - Memorium/daily/2025/12-December/2025-12-30-Tuesday.md",
+                "file": "02 - Ψ - Memorium/weekly/2025/2025-W51.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2025-12-30-Tuesday"
+              "title": "Outline of 2025-W51"
             }
           },
           {
@@ -226,7 +216,7 @@
       {
         "id": "2cb30cdd678dfa50",
         "type": "tabs",
-        "dimension": 36.07888631090487,
+        "dimension": 40.20356234096692,
         "children": [
           {
             "id": "61dcc7d1287db8e9",
@@ -255,51 +245,49 @@
       "random-note:Open random note": false,
       "obsidian-kanban:Create new board": false,
       "iconic:Open rulebook": false,
-      "obsidian-excalidraw-plugin:New drawing": false,
       "templater-obsidian:Templater": false,
       "pexels-banner:🚩 Pixel Banner Menu": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false,
       "obsidian-git:Open Git source control": false
     }
   },
   "active": "19cc3510409525e8",
   "lastOpenFiles": [
+    "02 - Ψ - Memorium/monthly/2025/2025-12-December.md",
+    "02 - Ψ - Memorium/daily/2026/01-January/2026-01-01-Thursday.md",
     "02 - Ψ - Memorium/daily/2025/12-December/2025-12-30-Tuesday.md",
+    "02 - Ψ - Memorium/weekly/2025/2025-W51.md",
+    "02 - Ψ - Memorium/weekly/2025/2025-W52.md",
+    "02 - Ψ - Memorium/weekly/2026/2026-W01.md",
+    "02 - Ψ - Memorium/weekly/2025",
+    "02 - Ψ - Memorium/weekly/2026/2026-W02.md",
+    "02 - Ψ - Memorium/weekly/2026/2026-W03.md",
     "02 - Ψ - Memorium/daily/2025/12-December/2025-12-31-Wednesday.md",
-    "02 - Ψ - Memorium/daily/2025/01-January/2025-01-02-Thursday.md",
-    "02 - Ψ - Memorium/daily/2025/01-January/2025-01-01-Wednesday.md",
-    "02 - Ψ - Memorium/daily/2024/12-December/2024-12-30-Monday.md",
-    "Meta/components/Monthly Logs Retriever.md",
-    "Meta/components/Quarterly MetaBind WheelOfLifeChartTypePicker.md",
-    "Meta/components/Quarterly Logs Retriever.md",
-    "Meta/components/templater/Monthly Banner Config.md",
-    "Meta/components/templater/Quarterly Image Retriever.md",
-    "Meta/components/trash/Quarterly AI Alias.md",
-    "Meta/components/templater/New Highlight.md",
-    "Meta/components/dataview/Monthly WheelOfLifeCategoryChart.md",
-    "Meta/components/dataview/Monthly WheelOfLife.md",
-    "Meta/components/dataview/Monthly Weeklist.md",
-    "Meta/components/dataview/Monthly Rating Chart.md",
-    "Meta/components/tracker/Monthly Rating Average.md",
-    "Meta/components/tracker",
-    "Meta/components/metabind/editor/Monthly MetaBindSummary.md",
-    "Meta/components/metabind/button/Monthly MetaBindNavBar.md",
-    "Meta/components/metabind/text/Monthly MetaBindAlias.md",
-    "Meta/components/trash/Monthly MetaBindAiButton.md",
-    "Meta/components/metabind/Monthly MetaBind WheelOfLifeChartTypePicker.md",
-    "Meta/components/DisableEasterEgg.md",
-    "Meta/components/Debug Toggle.md",
-    "Meta/components/dataview/Monthly Image Retriever.md",
-    "Meta/components/trash/Monthly AI Alias.md",
-    "Meta/components/trash",
-    "02 - Ψ - Memorium/daily/2025/01-January",
+    "02 - Ψ - Memorium/weekly/2026",
+    "02 - Ψ - Memorium/daily/2026/01-January",
+    "02 - Ψ - Memorium/daily/2026",
+    "Meta/templates/memorium/t_weekly.md",
+    "02 - Ψ - Memorium/daily/2025/12-December",
+    "02 - Ψ - Memorium/daily/2025",
+    "Meta/benchmarks/_native.md",
+    "02 - Ψ - Memorium/MEMORIUM.md",
+    "02 - Ψ - Memorium/weekly/2026/2026-W1.md",
+    "02 - Ψ - Memorium/weekly/2026/2026-W3.md",
+    "02 - Ψ - Memorium/weekly/2026/2026-W2.md",
+    "02 - Ψ - Memorium/weekly/2026/2026-W08.md",
+    "02 - Ψ - Memorium/weekly/2026/2026-W6.md",
+    "02 - Ψ - Memorium/weekly/2026/2026-W5.md",
+    "02 - Ψ - Memorium/weekly/2026/2026-W4.md",
+    "Meta/templates/memorium/t_daily.md",
+    "Meta/components/metabind/buttons/c_metabind_memorium_weekly_nav_buttons.md",
+    "Meta/components/metabind/buttons/c_metabind_memorium_daily_nav_buttons.md",
+    "Meta/components/templater/attributes/c_templater_memorium_daily_date.md",
+    "Meta/components/templater/attributes/c_templater_memorium_weekly_summary.md",
+    "Meta/components/templater/attributes/c_templater_memorium_weekly_date.md",
+    "Meta/components/templater/c_templater_memorium_daily_journals_frontmatter.md",
+    "02 - Ψ - Memorium/weekly/2023",
     "02 - Ψ - Memorium/weekly/2024",
-    "02 - Ψ - Memorium/daily/2024/12-December",
-    "02 - Ψ - Memorium/daily/2024",
-    "Meta/scripts/operations/yearlyOps.js",
-    "Meta/scripts/operations/monthlyOps.js",
-    "Meta/scripts/operations/weeklyOps.js",
-    "Meta/scripts/operations/quarterlyOps.js",
+    "02 - Ψ - Memorium/monthly/2025",
+    "Meta/components/templater/attributes",
     "Meta/images/QAIdeaBanner.gif",
     "Meta/images/Yearly Notes/YearlyBanner.jpg",
     "Meta/images/Weekly Notes/WeeklyBanner4.gif",

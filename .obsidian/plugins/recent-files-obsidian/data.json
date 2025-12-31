@@ -1,12 +1,32 @@
 {
   "recentFiles": [
     {
-      "basename": "2025-12-29-Monday",
-      "path": "02 - Ψ - Memorium/daily/2025/12-December/2025-12-29-Monday.md"
+      "basename": "c_templater_id",
+      "path": "Meta/templates/templater/c_templater_id.md"
+    },
+    {
+      "basename": "c_templater_dynamic_title",
+      "path": "Meta/templates/templater/c_templater_dynamic_title.md"
+    },
+    {
+      "basename": "c_templater_created_date",
+      "path": "Meta/templates/templater/c_templater_created_date.md"
+    },
+    {
+      "basename": "c_templater_banner_config",
+      "path": "Meta/templates/templater/c_templater_banner_config.md"
+    },
+    {
+      "basename": "Quarterly MetaBindNavBar",
+      "path": "Meta/components/metabind/button/Quarterly MetaBindNavBar.md"
     },
     {
       "basename": "MEMORIUM",
       "path": "02 - Ψ - Memorium/MEMORIUM.md"
+    },
+    {
+      "basename": "Daily MetaBindPinButtons",
+      "path": "Meta/components/metabind/button/Daily MetaBindPinButtons.md"
     }
   ],
   "omittedPaths": [],

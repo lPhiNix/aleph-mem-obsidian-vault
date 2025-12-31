@@ -11,6 +11,7 @@ banner-repeat: true
 banner-height: 300
 banner-fade: -75
 banner-radius: 25
+aliases:
 ---
 # Nota
 Hola
