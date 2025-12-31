@@ -18,3 +18,6 @@ cssclasses:
 ## Index
 
 - [[Bookshelf]]
+- [[Arcade]]
+- [[Television]]
+- [[Cinema]]
