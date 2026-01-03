@@ -1,49 +1,78 @@
-:root {
-  --h-yellow: #f2c31c; /* amarillo pastel suave */
-  --h-green:  #fff1a8; /* verde-amarillo claro */
-  --h-blue:   #63e6be; /* azul pastel */
-  --h-purple: #a5d8ff; /* violeta pastel */
-  --h-red:    #dfbffd; /* magenta pastel */
-  --h-rose:   #ff9fb3; /* rosa pastel */
+.inline-title {
+  color: #ffffff !important;
 }
 
-/* ===============================
-     Headings – AM Pastels
-     SOLO notas con .am
-=============================== */
+:root {
+  --h-2:   #fff1a8; 
+  --h-3:   #63e6be; 
+  --h-4:   #a5d8ff; 
+  --h-5:   #dfbffd; 
+  --h-6:   #ff9fb3; 
 
-/* H1 (contenido, NO título de la nota) */
+  --bold:  #81b9da;   
+  --crsv:  #00e49c;
+  --b-crsv:#eddb7d;
+}
+
 .am :is(h1),
 .am .cm-header-1 {
-  color: var(--h-yellow);
+  color: var(--interactive-accent);
 }
 
-/* H2 */
 .am :is(h2),
 .am .cm-header-2 {
-  color: var(--h-green);
+  color: var(--h-2);
 }
 
-/* H3 */
 .am :is(h3),
 .am .cm-header-3 {
-  color: var(--h-blue);
+  color: var(--h-3);
 }
 
-/* H4 */
 .am :is(h4),
 .am .cm-header-4 {
-  color: var(--h-purple);
+  color: var(--h-4);
 }
 
-/* H5 */
 .am :is(h5),
 .am .cm-header-5 {
-  color: var(--h-red);
+  color: var(--h-5);
 }
 
-/* H6 */
 .am :is(h6),
 .am .cm-header-6 {
-  color: var(--h-rose);
+  color: var(--h-6);
+}
+
+/****************************/
+
+.am :is(strong),
+.am .cm-strong {
+  color: var(--bold);
+  font-weight: 750;
+}
+
+.am :is(em),
+.am .cm-em {
+  color: var(--crsv); 
+}
+
+.am :is(strong em),
+.am :is(em strong),
+.am .cm-strong .cm-em {
+  color: var(--b-crsv);
+}
+
+.am :is(del),
+.am .cm-strikethrough {
+  color: #636871; /* gris */
+}
+
+.am :is(code),
+.am .cm-inline-code {
+  color: #e3b258;
+  background-color: rgba(229, 192, 123, 0.20);
+  border-radius: 4px;
+  padding: 2px 4px;
+  font-size: 0.95em;
 }

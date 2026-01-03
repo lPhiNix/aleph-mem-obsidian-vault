@@ -1,0 +1,64 @@
+.inline-title {
+  color: #ffffff;
+}
+
+/* Negrita */
+strong,
+.cm-strong {
+  color: #9ec8e0; /* rojo suave */
+}
+
+/* Cursiva */
+em,
+.cm-em {
+  color: #5fddb5; /* azul */
+}
+
+/* Negrita + cursiva */
+strong em,
+em strong,
+.cm-strong.cm-em {
+  color: var(--interactive-accent); /* púrpura */
+}
+
+/* Tachado */
+del,
+.cm-strikethrough {
+  color: #636871; /* gris */
+}
+
+/* ===================== */
+/* RESALTADO ==texto== */
+/* ===================== */
+
+/* Vista lectura */
+mark {
+  background-color: var(--interactive-accent) !important;
+}
+
+/* Live Preview */
+.cm-highlight,
+.cm-formatting-highlight {
+  background-color: var(--interactive-accent) !important;
+}
+
+
+/* ===================== */
+/* CÓDIGO EN LÍNEA */
+/* ===================== */
+
+/* Vista lectura */
+code {
+  color: var(--interactive-accent) !important;
+  background-color: rgba(152, 195, 121, 0.18) !important;
+  border-radius: 4px;
+  padding: 2px 4px;
+  font-size: 0.95em;
+}
+
+/* Live Preview */
+.cm-inline-code {
+  color: var(--interactive-accent) !important;
+  background-color: rgba(152, 195, 121, 0.18) !important;
+  border-radius: 4px;
+}

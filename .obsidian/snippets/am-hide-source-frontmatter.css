@@ -1,0 +1,4 @@
+/* Ocultar todo el frontmatter en vista previa */
+.markdown-preview-view .yaml-meta {
+    display: none;
+}
