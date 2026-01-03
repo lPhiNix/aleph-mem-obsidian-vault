@@ -1,1 +1,1 @@
-memorium-day-rating: 1
+memorium-day-rating: 3

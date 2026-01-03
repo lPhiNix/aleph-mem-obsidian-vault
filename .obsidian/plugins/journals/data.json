@@ -640,7 +640,8 @@
   "shelves": {},
   "calendar": {
     "dow": 1,
-    "doy": 7
+    "doy": 7,
+    "global": false
   },
   "calendarView": {
     "display": "month",

@@ -16,7 +16,3 @@ cssclasses:
 ###### Volver a [[AM]]
 ---
 ## Index
-```dataview
-LIST
-FROM "00 - Φ - Inthima"
-```

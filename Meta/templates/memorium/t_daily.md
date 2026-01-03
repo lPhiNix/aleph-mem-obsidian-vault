@@ -1,14 +1,16 @@
 <%"---"%>
 
-version: "1.0.0"
 <%*
-tR += await tp.file.include("[[c_templater_native_frontmatter]]") 
+tR += await tp.file.include("[[c_templater_native_frontmatter]]");
 %>
 <%*
-tR += await tp.file.include("[[c_templater_memorium_daily_frontmatter]]") 
+tR = await tp.user.update(tR, "9.9.9")
 %>
 <%*
-tR += await tp.file.include("[[c_templater_memorium_daily_journals_frontmatter]]") 
+tR += await tp.file.include("[[c_templater_memorium_daily_frontmatter]]");
+%>
+<%*
+tR += await tp.file.include("[[c_templater_memorium_daily_journals_frontmatter]]");
 %>
 
 <%"---"%>
@@ -16,11 +18,11 @@ tR += await tp.file.include("[[c_templater_memorium_daily_journals_frontmatter]]
 [[<% // create hidden link to weekly note for graph view
 moment(tp.file.title, 'YYYY-MM-DD-dddd').format('YYYY-[W]WW') %>|]]
 <%*
-tR += await tp.file.include("[[c_metabind_memorium_daily_nav_buttons]]") 
+tR += await tp.file.include("[[c_metabind_memorium_daily_nav_buttons]]");
 %>
 
 <%*
-tR += await tp.file.include("[[c_metabind_memorium_daily_alias_text]]") 
+tR += await tp.file.include("[[c_metabind_memorium_daily_alias_text]]");
 %>
 ---
 - <% tp.file.cursor(0) %>

@@ -1,15 +1,15 @@
 {
   "cssTheme": "Vauxhall",
-  "accentColor": "#cccc00",
+  "accentColor": "#c7c700",
   "enabledCssSnippets": [
     "kanban",
     "time-garden-colored-sidebar",
     "am-colored-headers",
     "am-colored-sidebar",
     "am-class",
+    "modules",
     "am-kanban",
-    "am-white-inline-title",
-    "modules"
+    "am-hide-source-frontmatter"
   ],
   "interfaceFontFamily": "",
   "textFontFamily": "",

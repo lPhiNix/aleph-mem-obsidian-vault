@@ -5,7 +5,7 @@ cssclasses:
 # Obsidian Native Markdown Benchmark
 ---
 
-## 📚 Tabla de contenidos
+## Tabla de contenidos
 
 - [[#Encabezados]]
 - [[#Texto y formato]]
@@ -43,9 +43,9 @@ cssclasses:
 
 Texto normal.
 
-**Negrita**  
-_Cursiva_  
-_**Negrita + cursiva**_  
+**Negrita**
+_Cursiva_
+_**Negrita + cursiva**_
 ~~Tachado~~  
 ==Resaltado== (si el tema lo soporta)
 
@@ -164,11 +164,11 @@ console.log(theme);
     
 -  Tarea completada
     
-- [>] Tarea en progreso (tema-dependiente)
+- [x] Tarea en progreso (tema-dependiente)
     
-- [!] Tarea importante
+- [x] Tarea importante
     
-- [?] Tarea dudosa
+- [x] Tarea dudosa
     
 
 ---
