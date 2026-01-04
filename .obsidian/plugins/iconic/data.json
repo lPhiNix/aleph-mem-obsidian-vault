@@ -1,9 +1,9 @@
 {
-  "biggerIcons": "mobile",
-  "clickableIcons": "desktop",
-  "showAllFileIcons": false,
-  "showAllFolderIcons": false,
-  "minimalFolderIcons": true,
+  "biggerIcons": "on",
+  "clickableIcons": "off",
+  "showAllFileIcons": true,
+  "showAllFolderIcons": true,
+  "minimalFolderIcons": false,
   "showMarkdownTabIcons": true,
   "showTitleIcons": true,
   "showTagPillIcons": true,
@@ -11,10 +11,10 @@
   "showSuggestionIcons": true,
   "showQuickSwitcherIcons": true,
   "showMoveFileIcons": true,
-  "showItemName": "desktop",
-  "biggerSearchResults": "mobile",
+  "showItemName": "on",
+  "biggerSearchResults": "on",
   "maxSearchResults": 50,
-  "colorPicker1": "list",
+  "colorPicker1": "rgb",
   "colorPicker2": "rgb",
   "uncolorHover": false,
   "uncolorDrag": false,
@@ -24,22 +24,366 @@
   "dialogState": {
     "iconMode": true,
     "emojiMode": false,
-    "rulePage": "file"
+    "rulePage": "folder"
   },
   "appIcons": {},
   "tabIcons": {},
-  "fileIcons": {},
-  "bookmarkIcons": {},
-  "tagIcons": {},
-  "propertyIcons": {
-    "id": {
-      "icon": "lucide-hash"
+  "fileIcons": {
+    "09 - Ω - Harkaive/Arcade": {
+      "icon": "lucide-gamepad-2",
+      "unsynced": [
+        "75be797415a75924",
+        "8832625ac30b94c3",
+        "5df515316b81a85e"
+      ]
     },
-    "version": {
+    "09 - Ω - Harkaive/Arcade/Arcade.md": {
+      "icon": "lucide-gamepad-2"
+    },
+    "09 - Ω - Harkaive/Arcade/Videogames": {
+      "icon": "lucide-disc-3",
+      "unsynced": [
+        "75be797415a75924",
+        "8832625ac30b94c3",
+        "5df515316b81a85e"
+      ]
+    },
+    "09 - Ω - Harkaive/Bookshelf": {
+      "icon": "lucide-library-big",
+      "unsynced": [
+        "75be797415a75924",
+        "8832625ac30b94c3",
+        "5df515316b81a85e"
+      ]
+    },
+    "09 - Ω - Harkaive/Bookshelf/Books": {
+      "icon": "lucide-book-copy",
+      "unsynced": [
+        "75be797415a75924",
+        "8832625ac30b94c3",
+        "5df515316b81a85e"
+      ]
+    },
+    "09 - Ω - Harkaive/Bookshelf/Bookshelf.md": {
+      "icon": "lucide-library-big"
+    },
+    "09 - Ω - Harkaive/Cinema": {
+      "icon": "lucide-clapperboard",
+      "unsynced": [
+        "75be797415a75924",
+        "8832625ac30b94c3",
+        "5df515316b81a85e"
+      ]
+    },
+    "09 - Ω - Harkaive/Cinema/Cinema.md": {
+      "icon": "lucide-clapperboard"
+    },
+    "09 - Ω - Harkaive/Cinema/Movies": {
+      "icon": "lucide-film",
+      "unsynced": [
+        "75be797415a75924",
+        "8832625ac30b94c3",
+        "5df515316b81a85e"
+      ]
+    },
+    "09 - Ω - Harkaive/Television": {
+      "icon": "lucide-tv",
+      "unsynced": [
+        "75be797415a75924",
+        "8832625ac30b94c3",
+        "5df515316b81a85e"
+      ]
+    },
+    "09 - Ω - Harkaive/Television/Series": {
+      "icon": "lucide-tv-minimal-play",
+      "unsynced": [
+        "75be797415a75924",
+        "8832625ac30b94c3",
+        "5df515316b81a85e"
+      ]
+    },
+    "09 - Ω - Harkaive/Television/Television.md": {
+      "icon": "lucide-tv"
+    },
+    "AM.md": {
       "icon": "lucide-codesandbox"
+    },
+    "Data": {
+      "icon": "lucide-database",
+      "unsynced": [
+        "75be797415a75924",
+        "8832625ac30b94c3",
+        "5df515316b81a85e"
+      ]
+    },
+    "Meta": {
+      "icon": "lucide-book-marked",
+      "unsynced": [
+        "75be797415a75924",
+        "8832625ac30b94c3",
+        "5df515316b81a85e"
+      ]
     }
   },
+  "bookmarkIcons": {},
+  "tagIcons": {},
+  "propertyIcons": {},
   "ribbonIcons": {},
-  "fileRules": [],
-  "folderRules": []
+  "fileRules": [
+    {
+      "id": "HhZnf",
+      "name": "Modules",
+      "match": "any",
+      "conditions": [
+        {
+          "source": "name",
+          "operator": "is",
+          "value": "Inthima"
+        },
+        {
+          "source": "name",
+          "operator": "is",
+          "value": "Cognitio"
+        },
+        {
+          "source": "name",
+          "operator": "is",
+          "value": "Memorium"
+        },
+        {
+          "source": "name",
+          "operator": "is",
+          "value": "Noetheris"
+        },
+        {
+          "source": "name",
+          "operator": "is",
+          "value": "Devs"
+        },
+        {
+          "source": "name",
+          "operator": "is",
+          "value": "Viventia"
+        },
+        {
+          "source": "name",
+          "operator": "is",
+          "value": "Kaelithra"
+        },
+        {
+          "source": "name",
+          "operator": "is",
+          "value": "Ordus"
+        },
+        {
+          "source": "name",
+          "operator": "is",
+          "value": "Aethernum"
+        },
+        {
+          "source": "name",
+          "operator": "is",
+          "value": "Harkaive"
+        }
+      ],
+      "enabled": true,
+      "icon": "lucide-sparkles"
+    },
+    {
+      "id": "4NqcO",
+      "name": "Base",
+      "match": "all",
+      "conditions": [
+        {
+          "source": "filename",
+          "operator": "endsWith",
+          "value": ".base"
+        }
+      ],
+      "enabled": true,
+      "icon": "lucide-layout-list"
+    },
+    {
+      "id": "eeleM",
+      "name": "Benchmarks",
+      "match": "all",
+      "conditions": [
+        {
+          "source": "path",
+          "operator": "startsWith",
+          "value": "Meta/benchmarks"
+        }
+      ],
+      "enabled": true,
+      "icon": "lucide-file-check"
+    },
+    {
+      "id": "UqeZY",
+      "name": "Components",
+      "match": "any",
+      "conditions": [
+        {
+          "source": "path",
+          "operator": "startsWith",
+          "value": "Templates/components"
+        },
+        {
+          "source": "name",
+          "operator": "startsWith",
+          "value": "c_"
+        },
+        {
+          "source": "name",
+          "operator": "startsWith",
+          "value": "m_"
+        }
+      ],
+      "enabled": true,
+      "icon": "lucide-file-box"
+    },
+    {
+      "id": "kym5J",
+      "name": "Scripts",
+      "match": "any",
+      "conditions": [
+        {
+          "source": "filename",
+          "operator": "endsWith",
+          "value": ".js"
+        },
+        {
+          "source": "filename",
+          "operator": "endsWith",
+          "value": ".java"
+        },
+        {
+          "source": "filename",
+          "operator": "endsWith",
+          "value": ".py"
+        },
+        {
+          "source": "filename",
+          "operator": "endsWith",
+          "value": ".cpp"
+        },
+        {
+          "source": "filename",
+          "operator": "endsWith",
+          "value": ".ts"
+        }
+      ],
+      "enabled": true,
+      "icon": "lucide-file-code-2"
+    },
+    {
+      "id": "OEu0E",
+      "name": "Templates",
+      "match": "any",
+      "conditions": [
+        {
+          "source": "path",
+          "operator": "startsWith",
+          "value": "Templates/parents"
+        },
+        {
+          "source": "path",
+          "operator": "startsWith",
+          "value": "Templates"
+        },
+        {
+          "source": "name",
+          "operator": "startsWith",
+          "value": "t_"
+        }
+      ],
+      "enabled": true,
+      "icon": "lucide-file-pen"
+    },
+    {
+      "id": "q8CjE",
+      "name": "Kanban",
+      "match": "all",
+      "conditions": [
+        {
+          "source": "property:kanban-plugin",
+          "operator": "is",
+          "value": "board"
+        }
+      ],
+      "enabled": true,
+      "icon": "lucide-trello"
+    },
+    {
+      "id": "HhBd7",
+      "name": "Games",
+      "match": "all",
+      "conditions": [
+        {
+          "source": "path",
+          "operator": "contains",
+          "value": "/Videogames/"
+        }
+      ],
+      "enabled": true,
+      "icon": "lucide-disc-3"
+    },
+    {
+      "id": "AvkRm",
+      "name": "Books",
+      "match": "all",
+      "conditions": [
+        {
+          "source": "path",
+          "operator": "contains",
+          "value": "/Books/"
+        }
+      ],
+      "enabled": true,
+      "icon": "lucide-book"
+    },
+    {
+      "id": "xLWTX",
+      "name": "Movies",
+      "match": "all",
+      "conditions": [
+        {
+          "source": "path",
+          "operator": "contains",
+          "value": "/Movies/"
+        }
+      ],
+      "enabled": true,
+      "icon": "lucide-film"
+    },
+    {
+      "id": "fFOAd",
+      "name": "Series",
+      "match": "all",
+      "conditions": [
+        {
+          "source": "path",
+          "operator": "contains",
+          "value": "/Series/"
+        }
+      ],
+      "enabled": true,
+      "icon": "lucide-tv-minimal-play"
+    }
+  ],
+  "folderRules": [
+    {
+      "id": "orljo",
+      "name": "Modules",
+      "match": "all",
+      "conditions": [
+        {
+          "source": "name",
+          "operator": "matches",
+          "value": "^\\d{2}\\s-\\s.+\\s-\\s.+$"
+        }
+      ],
+      "enabled": true,
+      "icon": "lucide-orbit"
+    }
+  ]
 }

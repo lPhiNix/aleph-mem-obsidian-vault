@@ -4,17 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "d956a038b115b831",
+        "id": "66cf91345497f8eb",
         "type": "tabs",
         "children": [
           {
-            "id": "e5be9ca131e20c9b",
+            "id": "1413247eac1ee785",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "02 - Ψ - Memorium/MEMORIUM.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "MEMORIUM"
             }
           }
         ]
@@ -101,7 +106,7 @@
       {
         "id": "2f052bc40223a647",
         "type": "tabs",
-        "dimension": 60.30534351145038,
+        "dimension": 60.94147582697202,
         "children": [
           {
             "id": "faccf225e8077fd2",
@@ -157,13 +162,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "02 - Ψ - Memorium/daily/2026/01-January/2026-01-03-Saturday.md",
+                "file": "02 - Ψ - Memorium/MEMORIUM.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2026-01-03-Saturday"
+              "title": "Outline of MEMORIUM"
             }
           },
           {
@@ -196,7 +201,7 @@
       {
         "id": "2cb30cdd678dfa50",
         "type": "tabs",
-        "dimension": 39.69465648854962,
+        "dimension": 39.05852417302799,
         "children": [
           {
             "id": "61dcc7d1287db8e9",
@@ -232,10 +237,11 @@
   },
   "active": "19cc3510409525e8",
   "lastOpenFiles": [
+    "AM.md",
+    "02 - Ψ - Memorium/daily/2026/01-January/2026-01-03-Saturday.md",
     "02 - Ψ - Memorium/daily/2026/01-January/2026-01-04-Sunday.md",
     "00 - Φ - Inthima/Nota.md",
     "00 - Φ - Inthima/INTHIMA.md",
-    "02 - Ψ - Memorium/daily/2026/01-January/2026-01-03-Saturday.md",
     "Meta/components/templater/c_templater_native_frontmatter.md",
     "02 - Ψ - Memorium/daily/2026/01-January",
     "02 - Ψ - Memorium/daily/2026",
@@ -259,7 +265,6 @@
     "Meta/components/templater/memorium/attributes/c_templater_memorium_quarterly_summary_attribute.md",
     "Meta/components/templater/memorium/attributes/c_templater_memorium_quarterly_date_attribute.md",
     "Meta/components/templater/memorium/attributes/c_templater_memorium_monthly_summary_attribute.md",
-    "Meta/components/templater/memorium/attributes/c_templater_memorium_monthly_date_attribute.md",
     "Meta/scripts/attributes.js",
     "Meta/scripts/test.js",
     "Meta/scripts/lib.js",
