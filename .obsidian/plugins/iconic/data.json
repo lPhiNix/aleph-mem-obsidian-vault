@@ -24,7 +24,7 @@
   "dialogState": {
     "iconMode": true,
     "emojiMode": false,
-    "rulePage": "folder"
+    "rulePage": "file"
   },
   "appIcons": {},
   "tabIcons": {},
@@ -128,6 +128,9 @@
   "bookmarkIcons": {},
   "tagIcons": {},
   "propertyIcons": {
+    "creation": {
+      "icon": "lucide-clock-arrow-up"
+    },
     "id": {
       "icon": "lucide-hash"
     }
