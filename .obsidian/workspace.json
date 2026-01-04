@@ -4,22 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "016ec49bea4ee5c4",
+        "id": "d956a038b115b831",
         "type": "tabs",
         "children": [
           {
-            "id": "b4963e47df6f5cbc",
+            "id": "e5be9ca131e20c9b",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Meta/components/templater/c_templater_native_frontmatter.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "c_templater_native_frontmatter"
+              "title": "New tab"
             }
           }
         ]
@@ -162,13 +157,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Meta/components/templater/c_templater_native_frontmatter.md",
+                "file": "02 - Ψ - Memorium/daily/2026/01-January/2026-01-03-Saturday.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of c_templater_native_frontmatter"
+              "title": "Outline of 2026-01-03-Saturday"
             }
           },
           {
@@ -235,43 +230,44 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d6456c1de6e095e9",
+  "active": "19cc3510409525e8",
   "lastOpenFiles": [
-    "Meta/components/templater/attributes/c_templater_version_attribute.md",
-    "02 - Ψ - Memorium/daily/2026/01-January/2026-01-02-Friday.md",
+    "02 - Ψ - Memorium/daily/2026/01-January/2026-01-04-Sunday.md",
+    "00 - Φ - Inthima/Nota.md",
+    "00 - Φ - Inthima/INTHIMA.md",
+    "02 - Ψ - Memorium/daily/2026/01-January/2026-01-03-Saturday.md",
+    "Meta/components/templater/c_templater_native_frontmatter.md",
     "02 - Ψ - Memorium/daily/2026/01-January",
     "02 - Ψ - Memorium/daily/2026",
     "Meta/templates/memorium/t_daily.md",
-    "Meta/components/templater/c_templater_native_frontmatter.md",
-    "Meta/components/templater/attributes/c_templater_id_attribute.md",
-    "Meta/components/templater/attributes/c_templater_creation_attribute.md",
-    "Meta/components/templater/memorium/c_templater_memorium_daily_frontmatter.md",
-    "Meta/components/templater/memorium/c_templater_memorium_daily_journals_frontmatter.md",
-    "Meta/components/templater/memorium/c_templater_memorium_yearly_journals_frontmatter.md",
-    "Meta/components/templater/memorium/c_templater_memorium_yearly_frontmatter.md",
+    "Meta/templates/memorium/t_monthly.md",
+    "Meta/templates/memorium/t_quarterly.md",
+    "Meta/templates/memorium/t_weekly.md",
+    "Meta/templates/memorium/t_yearly.md",
     "Meta/components/templater/memorium/c_templater_memorium_weekly_frontmatter.md",
+    "Meta/components/templater/memorium/c_templater_memorium_weekly_journals_frontmatter.md",
+    "Meta/components/templater/memorium/c_templater_memorium_quarterly_journals_frontmatter.md",
     "Meta/components/templater/memorium/c_templater_memorium_quarterly_frontmatter.md",
     "Meta/components/templater/memorium/c_templater_memorium_monthly_journals_frontmatter.md",
     "Meta/components/templater/memorium/c_templater_memorium_monthly_frontmatter.md",
-    "Meta/components/templater/memorium/c_templater_memorium_quarterly_journals_frontmatter.md",
-    "Meta/components/metabind/buttons/c_metabind_memorium_quarterly_nav_buttons.md",
-    "Meta/components/metabind/buttons/c_metabind_memorium_monthly_nav_buttons.md",
-    "Meta/components/metabind/text/c_metabind_memorium_quarterly_alias_text.md",
-    "Meta/components/metabind/text/c_metabind_memorium_monthly_alias_text.md",
-    "Meta/templates/memorium/t_monthly.md",
-    "Meta/templates/memorium/t_quarterly.md",
-    "Meta/templates/t_native.md",
-    "02 - Ψ - Memorium/MEMORIUM.md",
-    "00 - Φ - Inthima/INTHIMA.md",
-    "02 - Ψ - Memorium/daily/2026/01-January/2026-01-04-Sunday.md",
-    "Meta/scripts/update.js",
-    "Meta/scripts/placeholder 1.js",
-    "Meta/scripts/attribute.js",
-    "02 - Ψ - Memorium/daily/2025/12-December",
-    "02 - Ψ - Memorium/weekly/2025",
-    "02 - Ψ - Memorium/monthly/2025",
-    "02 - Ψ - Memorium/quarterly/2025",
-    "02 - Ψ - Memorium/daily/2025",
+    "Meta/components/templater/memorium/c_templater_memorium_daily_journals_frontmatter.md",
+    "Meta/components/templater/memorium/c_templater_memorium_daily_frontmatter.md",
+    "Meta/components/templater/attributes/c_templater_id_attribute.md",
+    "Meta/components/templater/attributes/c_templater_creation_attribute.md",
+    "Meta/components/templater/attributes/c_templater_version_attribute.md",
+    "Meta/components/templater/memorium/attributes/c_templater_memorium_weekly_summary_attribute.md",
+    "Meta/components/templater/memorium/attributes/c_templater_memorium_quarterly_summary_attribute.md",
+    "Meta/components/templater/memorium/attributes/c_templater_memorium_quarterly_date_attribute.md",
+    "Meta/components/templater/memorium/attributes/c_templater_memorium_monthly_summary_attribute.md",
+    "Meta/components/templater/memorium/attributes/c_templater_memorium_monthly_date_attribute.md",
+    "Meta/scripts/attributes.js",
+    "Meta/scripts/test.js",
+    "Meta/scripts/lib.js",
+    "Meta/scripts/addOrUpdateAttribute.js",
+    "Meta/scripts/deleteAttribute.js",
+    "Meta/scripts/addWeakAttribute.js",
+    "Meta/scripts/updateAttribute.js",
+    "Meta/scripts/addAttribute.js",
     "Meta/images/QAIdeaBanner.gif",
     "Meta/images/Yearly Notes/YearlyBanner.jpg",
     "Meta/images/Weekly Notes/WeeklyBanner4.gif",

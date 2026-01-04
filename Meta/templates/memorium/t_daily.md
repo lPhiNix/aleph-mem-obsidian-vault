@@ -1,10 +1,8 @@
 <%"---"%>
 
+<%"Version: 1.0.0"%>
 <%*
 tR += await tp.file.include("[[c_templater_native_frontmatter]]");
-%>
-<%*
-tR = await tp.user.update(tR, "9.9.9")
 %>
 <%*
 tR += await tp.file.include("[[c_templater_memorium_daily_frontmatter]]");
