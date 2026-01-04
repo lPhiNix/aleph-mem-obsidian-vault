@@ -162,13 +162,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00 - Φ - Inthima/Nota.md",
+                "file": "Untitled.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Nota"
+              "title": "Outline of Untitled"
             }
           },
           {
@@ -235,9 +235,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "1413247eac1ee785",
+  "active": "19cc3510409525e8",
   "lastOpenFiles": [
     "02 - Ψ - Memorium/daily/2026/01-January/2026-01-04-Sunday.md",
+    "Untitled.md",
     "00 - Φ - Inthima/Nota.md",
     "02 - Ψ - Memorium/daily/2026/01-January",
     "02 - Ψ - Memorium/daily/2026",

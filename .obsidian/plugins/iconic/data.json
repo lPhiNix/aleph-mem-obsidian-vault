@@ -133,6 +133,12 @@
     },
     "id": {
       "icon": "lucide-hash"
+    },
+    "undefined": {
+      "icon": "lucide-codesandbox"
+    },
+    "version": {
+      "icon": "lucide-component"
     }
   },
   "ribbonIcons": {},
