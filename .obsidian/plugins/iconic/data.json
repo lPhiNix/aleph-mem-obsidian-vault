@@ -127,7 +127,11 @@
   },
   "bookmarkIcons": {},
   "tagIcons": {},
-  "propertyIcons": {},
+  "propertyIcons": {
+    "id": {
+      "icon": "lucide-hash"
+    }
+  },
   "ribbonIcons": {},
   "fileRules": [
     {

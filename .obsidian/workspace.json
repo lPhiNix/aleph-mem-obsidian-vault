@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02 - Ψ - Memorium/MEMORIUM.md",
+                "file": "00 - Φ - Inthima/Nota.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "MEMORIUM"
+              "title": "Nota"
             }
           }
         ]
@@ -162,13 +162,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "02 - Ψ - Memorium/MEMORIUM.md",
+                "file": "00 - Φ - Inthima/Nota.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of MEMORIUM"
+              "title": "Outline of Nota"
             }
           },
           {
@@ -235,16 +235,17 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "19cc3510409525e8",
+  "active": "1413247eac1ee785",
   "lastOpenFiles": [
-    "AM.md",
-    "02 - Ψ - Memorium/daily/2026/01-January/2026-01-03-Saturday.md",
     "02 - Ψ - Memorium/daily/2026/01-January/2026-01-04-Sunday.md",
     "00 - Φ - Inthima/Nota.md",
-    "00 - Φ - Inthima/INTHIMA.md",
-    "Meta/components/templater/c_templater_native_frontmatter.md",
     "02 - Ψ - Memorium/daily/2026/01-January",
     "02 - Ψ - Memorium/daily/2026",
+    "AM.md",
+    "02 - Ψ - Memorium/MEMORIUM.md",
+    "02 - Ψ - Memorium/daily/2026/01-January/2026-01-03-Saturday.md",
+    "00 - Φ - Inthima/INTHIMA.md",
+    "Meta/components/templater/c_templater_native_frontmatter.md",
     "Meta/templates/memorium/t_daily.md",
     "Meta/templates/memorium/t_monthly.md",
     "Meta/templates/memorium/t_quarterly.md",
@@ -263,8 +264,6 @@
     "Meta/components/templater/attributes/c_templater_version_attribute.md",
     "Meta/components/templater/memorium/attributes/c_templater_memorium_weekly_summary_attribute.md",
     "Meta/components/templater/memorium/attributes/c_templater_memorium_quarterly_summary_attribute.md",
-    "Meta/components/templater/memorium/attributes/c_templater_memorium_quarterly_date_attribute.md",
-    "Meta/components/templater/memorium/attributes/c_templater_memorium_monthly_summary_attribute.md",
     "Meta/scripts/attributes.js",
     "Meta/scripts/test.js",
     "Meta/scripts/lib.js",
