@@ -8,7 +8,14 @@
     "am-root-style",
     "am-colored-sidebar",
     "am-class",
-    "am-hide-source-frontmatter"
+    "am-hide-source-frontmatter",
+    "hide-inline-title-class",
+    "am-kanban",
+    "hide-source-frontmatter-class",
+    "hide-all-frontmatter-class",
+    "time-garden-misc-styles",
+    "metabind-text-custom-class",
+    "colored-sidebar"
   ],
   "interfaceFontFamily": "",
   "textFontFamily": "",

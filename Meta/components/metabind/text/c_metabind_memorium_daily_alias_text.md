@@ -1,3 +1,3 @@
 ```meta-bind
-INPUT[text(placeholder('Name your Day!')):memorium-alias]
+INPUT[text(placeholder('Name your Day!'), class('custom-input')):memorium-alias]
 ```

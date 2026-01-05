@@ -1,6 +1,7 @@
 ---
 
 kanban-plugin: board
+cssclasses:
 
 ---
 

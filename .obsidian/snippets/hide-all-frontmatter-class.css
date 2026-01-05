@@ -1,0 +1,6 @@
+.hide-all-frontmatter .metadata-container {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+}

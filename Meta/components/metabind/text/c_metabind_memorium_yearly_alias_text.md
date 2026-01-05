@@ -1,3 +1,3 @@
 ```meta-bind
-INPUT[text(placeholder('Name this Year!')):memorium-alias]
+INPUT[text(placeholder('Name this Year!'), class('custom-input')):memorium-alias]
 ```

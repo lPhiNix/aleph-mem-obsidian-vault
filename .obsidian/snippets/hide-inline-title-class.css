@@ -1,0 +1,6 @@
+.hide-inline-title div.inline-title {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+}

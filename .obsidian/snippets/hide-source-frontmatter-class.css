@@ -1,0 +1,27 @@
+.hide-source-frontmatter .metadata-properties-heading {
+    display: none;
+}
+
+.hide-source-frontmatter .metadata-add-button {
+    display: none;
+}
+
+.hide-source-frontmatter .metadata-property {
+    display: none;
+}
+
+.hide-source-frontmatter .metadata-property[data-property-key^="-"],
+.hide-source-frontmatter .metadata-property[data-property-key="tags"] {
+    display: flex;
+}
+
+.hide-source-frontmatter .metadata-property[data-property-key^="-"],
+.hide-source-frontmatter .metadata-property[data-property-key="tags"] {
+    padding-left: 1.5ch; /* margen interno del contenedor */
+}
+
+.hide-source-frontmatter .metadata-property[data-property-key^="-"]
+.metadata-property-key-input {
+    text-indent: -0.7ch;   /* oculta "am-" */
+    padding-left: 0.9ch;   /* compensa para que el texto real quede alineado */
+}

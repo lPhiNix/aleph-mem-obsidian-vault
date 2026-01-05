@@ -15,7 +15,7 @@ let tags = [];
 tR += (await tp.file.include("[[c_templater_tags_attribute]]")) + tags.map(t => "\n- "+t).join("");
 %>
 <%*
-let classes = [];
+let classes = ["hide-inline-title"];
 tR += await tp.file.include("[[c_templater_cssclasses_attribute]]") + classes.map(t => "\n- "+t).join("");
 %>
 
