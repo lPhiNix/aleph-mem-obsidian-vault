@@ -76,8 +76,7 @@
 }
 
 /* Style for year number in italics */
-.yearly .cm-em,
-.yearly .markdown-rendered h1 em {
+.yearly :is(h1, .HyperMD-header.HyperMD-header-1) {
   background: linear-gradient(135deg, #2b5876, #4e4376);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

@@ -349,7 +349,23 @@
   --dark: #0028f0;
 }
 
-.HyperMD-header.HyperMD-header-1 {
+.weekly :is(h1, .HyperMD-header.HyperMD-header-1) {
   color: var(--primary);
+  font-style: italic;
   font-size: 50px;
+  padding: 0 !important;
+}
+
+.weekly :is(h2, .HyperMD-header.HyperMD-header-2) {
+  color: var(--highlight);
+  font-size: 30px;
+  font-style: italic;
+  padding: 0 !important;
+}
+
+.weekly :is(h3, .HyperMD-header.HyperMD-header-3) {
+  color: var(--primary);
+
+  font-size: 32px;
+  padding-top: 0;
 }

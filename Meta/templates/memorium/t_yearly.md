@@ -11,12 +11,12 @@ tR += await tp.file.include("[[c_templater_id_attribute]]");
 tR += await tp.file.include("[[c_templater_creation_attribute]]");
 %>
 <%*
-let tags = []
-tR += await tp.file.include("[[c_templater_tags_attribute]]") + tags;
+let tags = ["NOTE"]
+tR += (await tp.file.include("[[c_templater_tags_attribute]]")) + tags.map(t => "\n- "+t).join("");
 %>
 <%*
-let classes = [am]
-tR += await tp.file.include("[[c_templater_tags_attribute]]") + classes;
+let classes = ["hide-source-frontmatter", "hide-inline-title", "yearly"]
+tR += await tp.file.include("[[c_templater_cssclasses_attribute]]") + classes.map(t => "\n- "+t).join("");
 %>
 
 <%*

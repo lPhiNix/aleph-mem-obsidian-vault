@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "0b2ab95b4b5a44ee",
+        "id": "bbcc12663e2a6032",
         "type": "tabs",
         "children": [
           {
-            "id": "c817682ccacd196d",
+            "id": "1b7a38935bc4e32b",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -29,7 +29,7 @@
       {
         "id": "e60163b5fe7c52c5",
         "type": "tabs",
-        "dimension": 69.85195154777928,
+        "dimension": 69.89247311827957,
         "children": [
           {
             "id": "19cc3510409525e8",
@@ -74,12 +74,12 @@
         ]
       },
       {
-        "id": "3af6b5eb85c11db7",
+        "id": "61a3fffe74ec46c7",
         "type": "tabs",
-        "dimension": 30.148048452220728,
+        "dimension": 30.107526881720432,
         "children": [
           {
-            "id": "002bbd6506382b68",
+            "id": "1f630a4862db28bb",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -157,23 +157,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "02 - Ψ - Memorium/daily/2026/01-January/2026-01-05-Monday.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2026-01-05-Monday"
-            }
-          },
-          {
-            "id": "a0914f54e3d5bb05",
-            "type": "leaf",
-            "state": {
-              "type": "git-view",
-              "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
+              "title": "Outline"
             }
           },
           {
@@ -189,9 +178,19 @@
               "icon": "lucide-archive",
               "title": "All properties"
             }
+          },
+          {
+            "id": "a0914f54e3d5bb05",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 3
       },
       {
         "id": "2cb30cdd678dfa50",
@@ -230,45 +229,45 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c817682ccacd196d",
+  "active": "1b7a38935bc4e32b",
   "lastOpenFiles": [
-    "07 - Π - Ordus/Board.md",
-    "02 - Ψ - Memorium/daily/2026/01-January/2026-01-08-Thursday.md",
-    "02 - Ψ - Memorium/daily/2026/01-January/2026-01-07-Wednesday.md",
-    "02 - Ψ - Memorium/daily/2026/01-January/2026-01-06-Tuesday.md",
+    "00 - Φ - Inthima/INTHIMA.md",
+    "AM.md",
+    "02 - Ψ - Memorium/yearly/2026.md",
+    "02 - Ψ - Memorium/quarterly/2026/2026-Q1.md",
+    "02 - Ψ - Memorium/monthly/2026/2026-01-January.md",
+    "02 - Ψ - Memorium/quarterly/2026",
+    "02 - Ψ - Memorium/weekly/2026/2026-W02.md",
+    "02 - Ψ - Memorium/monthly/2026",
     "02 - Ψ - Memorium/daily/2026/01-January/2026-01-05-Monday.md",
+    "02 - Ψ - Memorium/weekly/2026",
     "02 - Ψ - Memorium/daily/2026/01-January",
     "02 - Ψ - Memorium/daily/2026",
-    "Meta/components/templater/native/c_templater_tags_attribute.md",
-    "Meta/components/metabind/text/c_metabind_memorium_yearly_alias_text.md",
-    "Meta/components/metabind/text/c_metabind_memorium_weekly_alias_text.md",
-    "Meta/components/metabind/text/c_metabind_memorium_quarterly_alias_text.md",
-    "Meta/components/metabind/text/c_metabind_memorium_monthly_alias_text.md",
-    "Meta/components/metabind/text/c_metabind_memorium_daily_alias_text.md",
-    "Meta/templates/memorium/t_daily.md",
-    "Meta/components/templater/native/c_templater_cssclasses_attribute.md",
-    "00 - Φ - Inthima/Nota.md",
-    "Meta/components/templater/native/c_templater_id_attribute.md",
-    "Meta/components/templater/native/c_templater_version_attribute.md",
-    "02 - Ψ - Memorium/daily/2026/01-January/2026-01-10-Saturday.md",
-    "02 - Ψ - Memorium/daily/2026/01-January/2026-01-11-Sunday.md",
-    "02 - Ψ - Memorium/daily/2026/01-January/2026-01-12-Monday.md",
-    "Meta/templates/memorium/t_monthly.md",
-    "02 - Ψ - Memorium/daily/2026/01-January/2026-01-09-Friday.md",
-    "Meta/components/templater/native/c_templater_creation_attribute.md",
     "Meta/templates/memorium/t_yearly.md",
     "Meta/templates/memorium/t_weekly.md",
+    "Meta/templates/memorium/t_daily.md",
+    "Meta/templates/memorium/t_monthly.md",
     "Meta/templates/memorium/t_quarterly.md",
-    "Meta/components/templater/c_templater_native_frontmatter.md",
-    "02 - Ψ - Memorium/weekly/2026",
+    "02 - Ψ - Memorium/daily/2026/01-January/2026-01-06-Tuesday.md",
+    "Meta/templates/t_native.md",
+    "Meta/components/metabind/buttons/c_metabind_memorium_yearly_nav_buttons.md",
+    "Meta/components/metabind/buttons/Untitled.md",
+    "Meta/components/metabind/buttons/c_metabind_memorium_weekly_nav_buttons.md",
+    "Meta/components/metabind/buttons/c_metabind_memorium_quarterly_nav_buttons.md",
+    "Meta/components/metabind/buttons/c_metabind_memorium_monthly_nav_buttons.md",
+    "Meta/components/metabind/buttons/c_metabind_memorium_daily_nav_buttons.md",
+    "Meta/components/metabind/progressbar/c_metabind_memorium_day_rating_slider.md",
+    "02 - Ψ - Memorium/daily/2026/01-January/2026-01-09-Friday.md",
+    "02 - Ψ - Memorium/daily/2026/01-January/2026-01-10-Saturday.md",
+    "02 - Ψ - Memorium/daily/2026/01-January/2026-01-07-Wednesday.md",
+    "02 - Ψ - Memorium/daily/2026/01-January/2026-01-08-Thursday.md",
+    "Meta/components/metabind/editor/c_metabind_memorium_daily_summary_editor.md",
+    "Meta/components/metabind/editor",
+    "02 - Ψ - Memorium/daily/2025/12-December",
+    "02 - Ψ - Memorium/daily/2025",
     "Data/pdf/La-ultima-pregunta.pdf",
     "Data/pdf",
     "Data/media/img/star.png",
-    "Data/media/video",
-    "Data/media/img",
-    "Data/media",
-    "Data/bb_cho_z_43_jp_sub_en.mp4",
-    "Data",
     "Meta/images/QAIdeaBanner.gif",
     "Meta/images/Yearly Notes/YearlyBanner.jpg",
     "Meta/images/Weekly Notes/WeeklyBanner4.gif",

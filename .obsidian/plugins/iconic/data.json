@@ -111,46 +111,6 @@
         "8832625ac30b94c3",
         "5df515316b81a85e"
       ]
-    },
-    "Meta/benchmarks": {
-      "icon": "lucide-book-check",
-      "unsynced": [
-        "75be797415a75924",
-        "8832625ac30b94c3",
-        "5df515316b81a85e"
-      ]
-    },
-    "Meta/components": {
-      "icon": "lucide-boxes",
-      "unsynced": [
-        "75be797415a75924",
-        "8832625ac30b94c3",
-        "5df515316b81a85e"
-      ]
-    },
-    "Meta/images": {
-      "icon": "lucide-book-image",
-      "unsynced": [
-        "75be797415a75924",
-        "8832625ac30b94c3",
-        "5df515316b81a85e"
-      ]
-    },
-    "Meta/scripts": {
-      "icon": "lucide-folder-code",
-      "unsynced": [
-        "75be797415a75924",
-        "8832625ac30b94c3",
-        "5df515316b81a85e"
-      ]
-    },
-    "Meta/templates": {
-      "icon": "lucide-book-template",
-      "unsynced": [
-        "75be797415a75924",
-        "8832625ac30b94c3",
-        "5df515316b81a85e"
-      ]
     }
   },
   "bookmarkIcons": {},
@@ -160,6 +120,9 @@
     },
     "NODE": {
       "icon": "lucide-sparkles"
+    },
+    "NOTE": {
+      "icon": "lucide-sticky-note"
     }
   },
   "propertyIcons": {
