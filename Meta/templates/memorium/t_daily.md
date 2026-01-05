@@ -1,9 +1,24 @@
 <%"---"%>
 
-<%"Version: 1.0.0"%>
 <%*
-tR += await tp.file.include("[[c_templater_native_frontmatter]]");
+let version = "1.0.0"
+tR += await tp.file.include("[[c_templater_version_attribute]]") + version;
 %>
+<%*
+tR += await tp.file.include("[[c_templater_id_attribute]]");
+%>
+<%*
+tR += await tp.file.include("[[c_templater_creation_attribute]]");
+%>
+<%*
+let tags = [];
+tR += (await tp.file.include("[[c_templater_tags_attribute]]")) + tags.map(t => "\n- "+t).join("");
+%>
+<%*
+let classes = [];
+tR += await tp.file.include("[[c_templater_cssclasses_attribute]]") + classes.map(t => "\n- "+t).join("");
+%>
+
 <%*
 tR += await tp.file.include("[[c_templater_memorium_daily_frontmatter]]");
 %>

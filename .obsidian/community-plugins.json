@@ -1,7 +1,6 @@
 [
   "obsidian-kanban",
   "obsidian-style-settings",
-  "iconic",
   "file-explorer-note-count",
   "url-into-selection",
   "templater-obsidian",
@@ -13,5 +12,6 @@
   "obsidian-git",
   "obsidian-tracker",
   "settings-search",
-  "metaedit"
+  "metaedit",
+  "iconic"
 ]

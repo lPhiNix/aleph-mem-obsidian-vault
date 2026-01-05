@@ -12,6 +12,7 @@
   --bold:  #81b9da;   
   --crsv:  #00e49c;
   --b-crsv:#eddb7d;
+  --del: 
 }
 
 .am :is(h1),
@@ -65,7 +66,7 @@
 
 .am :is(del),
 .am .cm-strikethrough {
-  color: #636871; /* gris */
+  color: #636871;
 }
 
 .am :is(code),

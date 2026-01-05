@@ -5,10 +5,9 @@
     "kanban",
     "time-garden-colored-sidebar",
     "am-colored-headers",
+    "am-root-style",
     "am-colored-sidebar",
     "am-class",
-    "modules",
-    "am-kanban",
     "am-hide-source-frontmatter"
   ],
   "interfaceFontFamily": "",

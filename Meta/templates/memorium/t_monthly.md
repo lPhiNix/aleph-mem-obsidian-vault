@@ -1,8 +1,8 @@
 <%"---"%>
 
-<%"Version: 1.0.0"%>
 <%*
-tR += await tp.file.include("[[c_templater_native_frontmatter]]");
+let version = "1.0.0"
+tR += await tp.file.include("[[c_templater_version_attribute]]") + version;
 %>
 <%*
 tR += await tp.file.include("[[c_templater_memorium_monthly_frontmatter]]");

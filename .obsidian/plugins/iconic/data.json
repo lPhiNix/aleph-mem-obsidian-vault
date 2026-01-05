@@ -24,12 +24,12 @@
   "dialogState": {
     "iconMode": true,
     "emojiMode": false,
-    "rulePage": "folder"
+    "rulePage": "file"
   },
   "appIcons": {},
   "tabIcons": {},
   "fileIcons": {
-    "09 - Ω - Harkaive/Arcade": {
+    "90 - Ω - Harkaive/Arcade": {
       "icon": "lucide-gamepad-2",
       "unsynced": [
         "75be797415a75924",
@@ -37,10 +37,7 @@
         "5df515316b81a85e"
       ]
     },
-    "09 - Ω - Harkaive/Arcade/Arcade.md": {
-      "icon": "lucide-gamepad-2"
-    },
-    "09 - Ω - Harkaive/Arcade/Videogames": {
+    "90 - Ω - Harkaive/Arcade/Videogames": {
       "icon": "lucide-disc-3",
       "unsynced": [
         "75be797415a75924",
@@ -48,7 +45,7 @@
         "5df515316b81a85e"
       ]
     },
-    "09 - Ω - Harkaive/Bookshelf": {
+    "90 - Ω - Harkaive/Bookshelf": {
       "icon": "lucide-library-big",
       "unsynced": [
         "75be797415a75924",
@@ -56,7 +53,7 @@
         "5df515316b81a85e"
       ]
     },
-    "09 - Ω - Harkaive/Bookshelf/Books": {
+    "90 - Ω - Harkaive/Bookshelf/Books": {
       "icon": "lucide-book-copy",
       "unsynced": [
         "75be797415a75924",
@@ -64,10 +61,7 @@
         "5df515316b81a85e"
       ]
     },
-    "09 - Ω - Harkaive/Bookshelf/Bookshelf.md": {
-      "icon": "lucide-library-big"
-    },
-    "09 - Ω - Harkaive/Cinema": {
+    "90 - Ω - Harkaive/Cinema": {
       "icon": "lucide-clapperboard",
       "unsynced": [
         "75be797415a75924",
@@ -75,10 +69,7 @@
         "5df515316b81a85e"
       ]
     },
-    "09 - Ω - Harkaive/Cinema/Cinema.md": {
-      "icon": "lucide-clapperboard"
-    },
-    "09 - Ω - Harkaive/Cinema/Movies": {
+    "90 - Ω - Harkaive/Cinema/Movies": {
       "icon": "lucide-film",
       "unsynced": [
         "75be797415a75924",
@@ -86,7 +77,7 @@
         "5df515316b81a85e"
       ]
     },
-    "09 - Ω - Harkaive/Television": {
+    "90 - Ω - Harkaive/Television": {
       "icon": "lucide-tv",
       "unsynced": [
         "75be797415a75924",
@@ -94,16 +85,13 @@
         "5df515316b81a85e"
       ]
     },
-    "09 - Ω - Harkaive/Television/Series": {
+    "90 - Ω - Harkaive/Television/Series": {
       "icon": "lucide-tv-minimal-play",
       "unsynced": [
         "75be797415a75924",
         "8832625ac30b94c3",
         "5df515316b81a85e"
       ]
-    },
-    "09 - Ω - Harkaive/Television/Television.md": {
-      "icon": "lucide-tv"
     },
     "AM.md": {
       "icon": "lucide-codesandbox"
@@ -123,21 +111,68 @@
         "8832625ac30b94c3",
         "5df515316b81a85e"
       ]
+    },
+    "Meta/benchmarks": {
+      "icon": "lucide-book-check",
+      "unsynced": [
+        "75be797415a75924",
+        "8832625ac30b94c3",
+        "5df515316b81a85e"
+      ]
+    },
+    "Meta/components": {
+      "icon": "lucide-boxes",
+      "unsynced": [
+        "75be797415a75924",
+        "8832625ac30b94c3",
+        "5df515316b81a85e"
+      ]
+    },
+    "Meta/images": {
+      "icon": "lucide-book-image",
+      "unsynced": [
+        "75be797415a75924",
+        "8832625ac30b94c3",
+        "5df515316b81a85e"
+      ]
+    },
+    "Meta/scripts": {
+      "icon": "lucide-folder-code",
+      "unsynced": [
+        "75be797415a75924",
+        "8832625ac30b94c3",
+        "5df515316b81a85e"
+      ]
+    },
+    "Meta/templates": {
+      "icon": "lucide-book-template",
+      "unsynced": [
+        "75be797415a75924",
+        "8832625ac30b94c3",
+        "5df515316b81a85e"
+      ]
     }
   },
   "bookmarkIcons": {},
-  "tagIcons": {},
-  "propertyIcons": {
-    "creation": {
-      "icon": "lucide-clock-arrow-up"
-    },
-    "id": {
-      "icon": "lucide-hash"
-    },
-    "undefined": {
+  "tagIcons": {
+    "AM": {
       "icon": "lucide-codesandbox"
     },
-    "version": {
+    "NODE": {
+      "icon": "lucide-sparkles"
+    }
+  },
+  "propertyIcons": {
+    "-creation": {
+      "icon": "lucide-clock-arrow-up"
+    },
+    "-id": {
+      "icon": "lucide-hash"
+    },
+    "-version": {
+      "icon": "lucide-component"
+    },
+    ".version": {
       "icon": "lucide-component"
     }
   },

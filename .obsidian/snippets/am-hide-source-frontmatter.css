@@ -1,4 +1,37 @@
-/* Ocultar todo el frontmatter en vista previa */
-.markdown-preview-view .yaml-meta {
+/* ============================
+   AM – Frontmatter limpio
+   ============================ */
+
+/* Ocultar heading "Properties" */
+.am .metadata-properties-heading {
     display: none;
+}
+
+/* Ocultar botón Add property */
+.am .metadata-add-button {
+    display: none;
+}
+
+/* Ocultar TODAS las propiedades */
+.am .metadata-property {
+    display: none;
+}
+
+/* Mostrar SOLO las que empiezan por "-" */
+.am .metadata-property[data-property-key^="-"],
+.am .metadata-property[data-property-key="tags"] {
+    display: flex;
+}
+
+/* Alinear todas las propiedades visibles al mismo nivel */
+.am .metadata-property[data-property-key^="-"],
+.am .metadata-property[data-property-key="tags"] {
+    padding-left: 1.5ch; /* margen interno del contenedor */
+}
+
+/* Ocultar visualmente el prefijo "-" */
+.am .metadata-property[data-property-key^="-"]
+.metadata-property-key-input {
+    text-indent: -0.7ch;   /* oculta "am-" */
+    padding-left: 0.9ch;   /* compensa para que el texto real quede alineado */
 }

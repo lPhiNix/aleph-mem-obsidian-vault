@@ -1,41 +1,35 @@
-/* hides the visible frontmatter within all time garden notes */
+/* Oculta propiedades de frontmatter que NO empiezan por mayúscula */
+/* Solo en notas con cssclass: am */
 
-/* DAILY NOTES */
-.timegarden-daily .metadata-container {
+.am .metadata-container .metadata-property:not(
+    :is(
+        [data-property-key^="A"],
+        [data-property-key^="B"],
+        [data-property-key^="C"],
+        [data-property-key^="D"],
+        [data-property-key^="E"],
+        [data-property-key^="F"],
+        [data-property-key^="G"],
+        [data-property-key^="H"],
+        [data-property-key^="I"],
+        [data-property-key^="J"],
+        [data-property-key^="K"],
+        [data-property-key^="L"],
+        [data-property-key^="M"],
+        [data-property-key^="N"],
+        [data-property-key^="O"],
+        [data-property-key^="P"],
+        [data-property-key^="Q"],
+        [data-property-key^="R"],
+        [data-property-key^="S"],
+        [data-property-key^="T"],
+        [data-property-key^="U"],
+        [data-property-key^="V"],
+        [data-property-key^="W"],
+        [data-property-key^="X"],
+        [data-property-key^="Y"],
+        [data-property-key^="Z"]
+    )
+) {
     display: none;
-    visibility: hidden;
-    opacity: 0;
-    position: absolute;
-}
-
-/* WEEKLY NOTES */
-.timegarden-weekly .metadata-container {
-    display: none;
-    visibility: hidden;
-    opacity: 0;
-    position: absolute;
-}
-
-/* MONTHLY NOTES */
-.timegarden-monthly .metadata-container {
-    display: none;
-    visibility: hidden;
-    opacity: 0;
-    position: absolute;
-}
-
-/* QUARTERLY NOTES */
-.timegarden-quarterly .metadata-container {
-    display: none;
-    visibility: hidden;
-    opacity: 0;
-    position: absolute;
-}
-
-/* YEARLY NOTES */
-.timegarden-yearly .metadata-container {
-    display: none;
-    visibility: hidden;
-    opacity: 0;
-    position: absolute;
 }
