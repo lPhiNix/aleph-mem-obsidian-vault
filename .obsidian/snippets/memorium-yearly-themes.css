@@ -41,14 +41,16 @@
 }
 
 /* Gradient header styling */
-.yearly .cm-s-obsidian .cm-header-1, 
-.yearly .markdown-rendered h1 {
+.yearly :is(
+  .HyperMD-header.HyperMD-header-1,
+  .markdown-rendered h1
+) {
   background: linear-gradient(135deg, #74ebd5, #ACB6E5);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;
   background-clip: text;
-  width: fit-content;
+
   font-size: 64px;
   text-align: center;
   margin: 10px auto;
@@ -56,7 +58,7 @@
 }
 
 /* Style for star symbol */
-.yearly .markdown-rendered h1:has(em) {
+.yearly .markdown-rendered h1:first-child {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -73,17 +75,6 @@
   background-clip: text;
   font-size: 60px;
   margin-right: 15px;
-}
-
-/* Style for year number in italics */
-.yearly :is(h1, .HyperMD-header.HyperMD-header-1) {
-  background: linear-gradient(135deg, #2b5876, #4e4376);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: transparent;
-  background-clip: text;
-  font-style: normal;
-  font-weight: 900;
 }
 
 /* Regular header styling */

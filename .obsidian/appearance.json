@@ -1,6 +1,6 @@
 {
   "cssTheme": "Vauxhall",
-  "accentColor": "#c7c700",
+  "accentColor": "#a3a300",
   "enabledCssSnippets": [
     "kanban",
     "time-garden-colored-sidebar",
@@ -21,7 +21,8 @@
     "memorium-weekly-themes",
     "memorium-monthly-themes",
     "memorium-quarterly-themes",
-    "memorium-yearly-themes"
+    "memorium-yearly-themes",
+    "hide-source-frontmatter-class"
   ],
   "interfaceFontFamily": "",
   "textFontFamily": "",

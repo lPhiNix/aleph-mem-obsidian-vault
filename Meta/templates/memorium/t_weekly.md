@@ -15,7 +15,10 @@ let tags = ["NOTE"];
 tR += (await tp.file.include("[[c_templater_tags_attribute]]")) + tags.map(t => "\n- "+t).join("");
 %>
 <%*
-let classes = ["hide-source-frontmatter", "hide-inline-title", "weekly"];
+let classes = [
+	"hide-source-frontmatter", "hide-inline-title", "weekly",
+	"week-" + moment(tp.file.title, "YYYY-[W]WW").format("W")
+];
 tR += await tp.file.include("[[c_templater_cssclasses_attribute]]") + classes.map(t => "\n- "+t).join("");
 %>
 

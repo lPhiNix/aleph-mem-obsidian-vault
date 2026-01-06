@@ -95,8 +95,6 @@
 .daily :is(h4, .HyperMD-header.HyperMD-header-4) {
   background-color: var(--primary);
   color: var(--dark);
-  /* border-color: var(--primary); */
-  /* font-family: "JetBrainsMono Nerd Font Mono", "JetBrains Mono", monospace; */
   font-weight: 900;
   margin-bottom: 0;
   padding-top: 0;
@@ -104,9 +102,7 @@
   width: fit-content;
   padding-left: 6px;
   padding-right: 6px;
-  /* border: solid; */
   border-radius: 8px;
-  /* border-width: 2px; */
   word-wrap: normal;
 }
 .daily p {
@@ -128,23 +124,4 @@
   display: block !important;
   margin-left: auto !important;
   margin-right: auto !important;
-}
-
-:is(.sunday, .Sunday,
-.monday, .Monday,
-.tuesday, .Tuesday,
-.wednesday, .Wednesday,
-.thursday, .Thursday,
-.friday, .Friday,
-.saturday, .Saturday
-  )
-  svg {
-  color: color-mix(in srgb, var(--highlight) 60%, transparent);
-}
-
-/* Target the custom class */
-.custom-progress-bar {
-  color: white;
-  background-color: rgb(from var(--primary) r g b / 0.2);
-  border-radius: 5px;
 }
