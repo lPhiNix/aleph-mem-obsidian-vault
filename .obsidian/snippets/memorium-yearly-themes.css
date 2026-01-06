@@ -176,3 +176,7 @@
   color: var(--highlight);
   opacity: 0.8;
 }
+
+.yearly .metadata-property-icon {
+  color: var(--highlight);
+}

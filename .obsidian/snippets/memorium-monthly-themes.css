@@ -211,3 +211,7 @@
     color: var(--highlight);
     opacity: 0.8;
   }
+
+  .monthly .metadata-property-icon {
+    color: var(--highlight);
+  }

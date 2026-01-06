@@ -18,18 +18,46 @@
    Base styling
 --------------------------------------------------------------------------- */
 
-/* Root folders */
+/* Root folders (fallback color) */
 .nav-folder-title {
   font-size: medium;
   font-weight: 600;
   margin: 1px 0;
   padding: 4px 6px 4px 8px;
+
+  color: var(--nav-item-color); /* default color if no symbol */
 }
 
 /* Subfolders (all levels below root) */
 .nav-folder-children .nav-folder-title {
   font-size: 0.9em;
   font-weight: 500;
+}
+
+/* Files (fallback color) */
+.nav-file-title {
+  color: var(--nav-item-color);
+}
+
+/* -------------------------------------------------------
+   ICONS inherit text color (folders + files)
+------------------------------------------------------- */
+
+/* Folder icons */
+.nav-folder-title .iconic-sidekick,
+.nav-folder-title .tree-item-icon {
+  color: inherit;
+}
+
+/* File icons */
+.nav-file-title .tree-item-icon {
+  color: inherit;
+}
+
+/* SVG obey currentColor */
+.nav-folder-title svg,
+.nav-file-title svg {
+  stroke: currentColor;
 }
 
 /* =============================== Φ - Intima =============================== */
@@ -44,12 +72,6 @@
   color: var(--c-intima);
 }
 
-.nav-folder:has(.nav-folder-title[data-path*="Φ"])
-  > .nav-folder-title
-  .right-triangle {
-  stroke: var(--c-intima) !important;
-}
-
 /* =============================== Θ - Cognitio =============================== */
 
 .nav-folder:has(.nav-folder-title[data-path*="Θ"]) > .nav-folder-title {
@@ -60,12 +82,6 @@
   > .nav-folder-children
   .nav-folder-title {
   color: var(--c-cognitio);
-}
-
-.nav-folder:has(.nav-folder-title[data-path*="Θ"])
-  > .nav-folder-title
-  .right-triangle {
-  stroke: var(--c-cognitio) !important;
 }
 
 /* =============================== Ψ - Memorium =============================== */
@@ -80,12 +96,6 @@
   color: var(--c-memorium);
 }
 
-.nav-folder:has(.nav-folder-title[data-path*="Ψ"])
-  > .nav-folder-title
-  .right-triangle {
-  stroke: var(--c-memorium) !important;
-}
-
 /* =============================== Σ - Noetheris =============================== */
 
 .nav-folder:has(.nav-folder-title[data-path*="Σ"]) > .nav-folder-title {
@@ -96,12 +106,6 @@
   > .nav-folder-children
   .nav-folder-title {
   color: var(--c-noetheris);
-}
-
-.nav-folder:has(.nav-folder-title[data-path*="Σ"])
-  > .nav-folder-title
-  .right-triangle {
-  stroke: var(--c-noetheris) !important;
 }
 
 /* =============================== Λ - Devs =============================== */
@@ -116,12 +120,6 @@
   color: var(--c-devs);
 }
 
-.nav-folder:has(.nav-folder-title[data-path*="Λ"])
-  > .nav-folder-title
-  .right-triangle {
-  stroke: var(--c-devs) !important;
-}
-
 /* =============================== Ζ - Viventia =============================== */
 
 .nav-folder:has(.nav-folder-title[data-path*="Ζ"]) > .nav-folder-title {
@@ -132,12 +130,6 @@
   > .nav-folder-children
   .nav-folder-title {
   color: var(--c-viventia);
-}
-
-.nav-folder:has(.nav-folder-title[data-path*="Ζ"])
-  > .nav-folder-title
-  .right-triangle {
-  stroke: var(--c-viventia) !important;
 }
 
 /* =============================== Ξ - Kaelithra =============================== */
@@ -152,12 +144,6 @@
   color: var(--c-kaelithra);
 }
 
-.nav-folder:has(.nav-folder-title[data-path*="Ξ"])
-  > .nav-folder-title
-  .right-triangle {
-  stroke: var(--c-kaelithra) !important;
-}
-
 /* =============================== Π - Ordus =============================== */
 
 .nav-folder:has(.nav-folder-title[data-path*="Π"]) > .nav-folder-title {
@@ -168,12 +154,6 @@
   > .nav-folder-children
   .nav-folder-title {
   color: var(--c-ordus);
-}
-
-.nav-folder:has(.nav-folder-title[data-path*="Π"])
-  > .nav-folder-title
-  .right-triangle {
-  stroke: var(--c-ordus) !important;
 }
 
 /* =============================== Δ - Aethernum =============================== */
@@ -188,12 +168,6 @@
   color: var(--c-aethernum);
 }
 
-.nav-folder:has(.nav-folder-title[data-path*="Δ"])
-  > .nav-folder-title
-  .right-triangle {
-  stroke: var(--c-aethernum) !important;
-}
-
 /* =============================== Ω - Harkaive =============================== */
 
 .nav-folder:has(.nav-folder-title[data-path*="Ω"]) > .nav-folder-title {
@@ -204,12 +178,6 @@
   > .nav-folder-children
   .nav-folder-title {
   color: var(--c-harkaive);
-}
-
-.nav-folder:has(.nav-folder-title[data-path*="Ω"])
-  > .nav-folder-title
-  .right-triangle {
-  stroke: var(--c-harkaive) !important;
 }
 
 /* =============================== AM (Dashboard) =============================== */

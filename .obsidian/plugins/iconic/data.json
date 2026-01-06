@@ -3,7 +3,7 @@
   "clickableIcons": "off",
   "showAllFileIcons": true,
   "showAllFolderIcons": true,
-  "minimalFolderIcons": false,
+  "minimalFolderIcons": true,
   "showMarkdownTabIcons": true,
   "showTitleIcons": true,
   "showTagPillIcons": true,

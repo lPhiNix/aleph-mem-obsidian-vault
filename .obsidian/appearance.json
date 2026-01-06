@@ -15,14 +15,14 @@
     "metabind-text-custom-class",
     "colored-sidebar",
     "daily",
-    "hide-inline-title-class",
     "daily-themes",
     "memorium-daily-themes",
     "memorium-weekly-themes",
     "memorium-monthly-themes",
     "memorium-quarterly-themes",
     "memorium-yearly-themes",
-    "hide-source-frontmatter-class"
+    "hide-source-frontmatter-class",
+    "hide-inline-title-class"
   ],
   "interfaceFontFamily": "",
   "textFontFamily": "",

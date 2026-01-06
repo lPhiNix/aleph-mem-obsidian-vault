@@ -125,3 +125,7 @@
   margin-left: auto !important;
   margin-right: auto !important;
 }
+
+.daily .metadata-property-icon {
+  color: var(--highlight);
+}
