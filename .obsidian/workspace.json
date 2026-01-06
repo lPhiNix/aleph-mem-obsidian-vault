@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "d16bf0e4f669560b",
+        "id": "650dc9e6db5e1252",
         "type": "tabs",
         "children": [
           {
-            "id": "f5f38172eafe8f48",
+            "id": "11e5dd91b11ad18b",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -195,7 +195,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f5f38172eafe8f48",
+  "active": "11e5dd91b11ad18b",
   "lastOpenFiles": [
     "AM.md",
     "02 - Ψ - Memorium/daily/2026/01-January/2026-01-06-Tuesday.md",
