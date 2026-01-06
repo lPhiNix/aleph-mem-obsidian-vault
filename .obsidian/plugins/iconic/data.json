@@ -126,16 +126,13 @@
     }
   },
   "propertyIcons": {
-    "-creation": {
+    "creation": {
       "icon": "lucide-clock-arrow-up"
     },
-    "-id": {
+    "id": {
       "icon": "lucide-hash"
     },
-    "-version": {
-      "icon": "lucide-component"
-    },
-    ".version": {
+    "version": {
       "icon": "lucide-component"
     }
   },

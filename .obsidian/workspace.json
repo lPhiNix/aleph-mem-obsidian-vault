@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Meta/components/metabind/buttons/c_metabind_memorium_daily_nav_buttons.md",
+                "file": "02 - Ψ - Memorium/daily/2026/01-January/2026-01-11-Sunday.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "c_metabind_memorium_daily_nav_buttons"
+              "title": "2026-01-11-Sunday"
             }
           }
         ]
@@ -147,13 +147,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "02 - Ψ - Memorium/weekly/2027/2027-W01.md",
+                "file": "02 - Ψ - Memorium/daily/2026/01-January/2026-01-11-Sunday.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2027-W01"
+              "title": "Outline of 2026-01-11-Sunday"
             }
           },
           {
@@ -196,7 +196,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       },
       {
         "id": "2cb30cdd678dfa50",
@@ -235,10 +235,31 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "19cc3510409525e8",
+  "active": "77c503cc0fac602b",
   "lastOpenFiles": [
-    "02 - Ψ - Memorium/weekly/2027/2027-W02.md",
+    "02 - Ψ - Memorium/daily/2026/01-January/2026-01-10-Saturday.md",
+    "02 - Ψ - Memorium/daily/2026/01-January/2026-01-11-Sunday.md",
+    "02 - Ψ - Memorium/daily/2026/01-January/2026-01-09-Friday.md",
+    "02 - Ψ - Memorium/daily/2026/01-January/2026-01-08-Thursday.md",
+    "02 - Ψ - Memorium/daily/2026/01-January/2026-01-07-Wednesday.md",
+    "02 - Ψ - Memorium/daily/2026/01-January/2026-01-06-Tuesday.md",
+    "Meta/components/templater/native/c_templater_version_attribute.md",
+    "02 - Ψ - Memorium/daily/2026/01-January",
+    "02 - Ψ - Memorium/daily/2026",
+    "Meta/components/templater/native/c_templater_tags_attribute.md",
+    "Meta/components/templater/native/c_templater_id_attribute.md",
+    "Meta/components/templater/native/c_templater_cssclasses_attribute.md",
+    "Meta/components/templater/native/c_templater_creation_attribute.md",
+    "Meta/templates/memorium/t_daily.md",
+    "02 - Ψ - Memorium/daily/2026/01-January/2026-01-04-Sunday.md",
+    "02 - Ψ - Memorium/daily/2026/01-January/2026-01-05-Monday.md",
+    "02 - Ψ - Memorium/weekly/2026/2026-W02.md",
+    "02 - Ψ - Memorium/weekly/2026",
+    "00 - Φ - Inthima/INTHIMA.md",
+    "00 - Φ - Inthima/Nota.md",
+    "02 - Ψ - Memorium/MEMORIUM.md",
     "02 - Ψ - Memorium/weekly/2027/2027-W01.md",
+    "02 - Ψ - Memorium/weekly/2027/2027-W02.md",
     "02 - Ψ - Memorium/weekly/2026/2026-W53.md",
     "02 - Ψ - Memorium/weekly/2027",
     "02 - Ψ - Memorium/weekly/2026/2026-W52.md",
@@ -246,27 +267,6 @@
     "02 - Ψ - Memorium/weekly/2026/2026-W50.md",
     "02 - Ψ - Memorium/weekly/2026/2026-W49.md",
     "02 - Ψ - Memorium/weekly/2026/2026-W48.md",
-    "02 - Ψ - Memorium/weekly/2026/2026-W47.md",
-    "02 - Ψ - Memorium/weekly/2026/2026-W46.md",
-    "02 - Ψ - Memorium/weekly/2026/2026-W45.md",
-    "02 - Ψ - Memorium/weekly/2026/2026-W44.md",
-    "02 - Ψ - Memorium/weekly/2026/2026-W43.md",
-    "02 - Ψ - Memorium/weekly/2026/2026-W42.md",
-    "02 - Ψ - Memorium/weekly/2026/2026-W41.md",
-    "02 - Ψ - Memorium/weekly/2026/2026-W40.md",
-    "02 - Ψ - Memorium/weekly/2026/2026-W39.md",
-    "02 - Ψ - Memorium/weekly/2026/2026-W38.md",
-    "02 - Ψ - Memorium/weekly/2026/2026-W37.md",
-    "02 - Ψ - Memorium/weekly/2026/2026-W36.md",
-    "02 - Ψ - Memorium/weekly/2026/2026-W35.md",
-    "02 - Ψ - Memorium/weekly/2026/2026-W34.md",
-    "02 - Ψ - Memorium/weekly/2026/2026-W33.md",
-    "02 - Ψ - Memorium/weekly/2026/2026-W32.md",
-    "02 - Ψ - Memorium/weekly/2026/2026-W31.md",
-    "02 - Ψ - Memorium/weekly/2026/2026-W30.md",
-    "02 - Ψ - Memorium/weekly/2026",
-    "02 - Ψ - Memorium/daily/2026/01-January",
-    "02 - Ψ - Memorium/daily/2026",
     "02 - Ψ - Memorium/quarterly/2026",
     "02 - Ψ - Memorium/monthly/2026",
     "Meta/components/metabind/editor",

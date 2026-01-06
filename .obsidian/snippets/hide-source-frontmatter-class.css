@@ -10,18 +10,9 @@
     display: none;
 }
 
-.hide-source-frontmatter .metadata-property[data-property-key^="-"],
+.hide-source-frontmatter .metadata-property[data-property-key="version"],
+.hide-source-frontmatter .metadata-property[data-property-key="id"],
+.hide-source-frontmatter .metadata-property[data-property-key="creation"],
 .hide-source-frontmatter .metadata-property[data-property-key="tags"] {
     display: flex;
-}
-
-.hide-source-frontmatter .metadata-property[data-property-key^="-"],
-.hide-source-frontmatter .metadata-property[data-property-key="tags"] {
-    padding-left: 1.5ch;
-}
-
-.hide-source-frontmatter .metadata-property[data-property-key^="-"]
-.metadata-property-key-input {
-    text-indent: -0.7ch;  
-    padding-left: 0.9ch;  
 }
