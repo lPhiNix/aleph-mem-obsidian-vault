@@ -11,15 +11,10 @@
             "id": "82a6573b72bf9699",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "02 - Ψ - Memorium/daily/2026/01-January/2026-01-11-Sunday.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "2026-01-11-Sunday"
+              "title": "New tab"
             }
           }
         ]
@@ -235,7 +230,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "77c503cc0fac602b",
+  "active": "19cc3510409525e8",
   "lastOpenFiles": [
     "02 - Ψ - Memorium/daily/2026/01-January/2026-01-10-Saturday.md",
     "02 - Ψ - Memorium/daily/2026/01-January/2026-01-11-Sunday.md",
