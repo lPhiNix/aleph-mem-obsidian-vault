@@ -164,3 +164,7 @@
   color: var(--highlight);
   opacity: 0.8;
 }
+
+.quarterly .metadata-property-icon {
+  color: var(--highlight);
+}

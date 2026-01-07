@@ -28,6 +28,9 @@ tR += await tp.file.include("[[c_templater_memorium_weekly_frontmatter]]");
 <%*
 tR += await tp.file.include("[[c_templater_memorium_weekly_journals_frontmatter]]");
 %>
+<%*
+tR += await tp.file.include("[[c_templater_memorium_weekly_banner_config]]");
+%>
 
 <%"---"%>
 # ✦ <% tp.file.title %>
