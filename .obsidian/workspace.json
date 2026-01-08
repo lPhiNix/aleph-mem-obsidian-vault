@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00 - Φ - Inthima/Nota.md",
+                "file": "Meta/benchmarks/native.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Nota"
+              "title": "native"
             }
           }
         ]
@@ -114,13 +114,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00 - Φ - Inthima/Nota.md",
+                "file": "Meta/benchmarks/native.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Nota"
+              "title": "Outline of native"
             }
           },
           {
@@ -170,7 +170,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "00 - Φ - Inthima/Nota.md",
+                "file": "Meta/benchmarks/native.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -180,7 +180,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Nota"
+              "title": "Backlinks for native"
             }
           },
           {
@@ -237,6 +237,7 @@
   },
   "active": "a60d1a333395f5f1",
   "lastOpenFiles": [
+    "00 - Φ - Inthima/Nota.md",
     "00 - Φ - Inthima/INTHIMA.md",
     "02 - Ψ - Memorium/MEMORIUM.md",
     "Meta/templates/memorium/t_daily.md",
@@ -270,7 +271,6 @@
     "02 - Ψ - Memorium/weekly/2026/2026-W02.md",
     "02 - Ψ - Memorium/monthly/2026",
     "02 - Ψ - Memorium/monthly",
-    "Meta/templates/memorium/t_yearly.md",
     "02 - Ψ - Memorium/yearly",
     "02 - Ψ - Memorium/quarterly",
     "Data/media/img/star.png",
