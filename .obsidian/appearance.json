@@ -29,7 +29,8 @@
     "am-memorium-weekly-themes",
     "am-memorium-yearly-themes",
     "am-metabind-text-custom-class",
-    "am-module-themes"
+    "am-module-themes",
+    "am-graphview-image"
   ],
   "interfaceFontFamily": "",
   "textFontFamily": "",
