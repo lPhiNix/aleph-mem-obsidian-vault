@@ -22,7 +22,14 @@
     "memorium-quarterly-themes",
     "memorium-yearly-themes",
     "hide-source-frontmatter-class",
-    "hide-inline-title-class"
+    "hide-inline-title-class",
+    "am-memorium-daily-themes",
+    "am-memorium-monthly-themes",
+    "am-memorium-quarterly-themes",
+    "am-memorium-weekly-themes",
+    "am-memorium-yearly-themes",
+    "am-metabind-text-custom-class",
+    "am-module-themes"
   ],
   "interfaceFontFamily": "",
   "textFontFamily": "",
