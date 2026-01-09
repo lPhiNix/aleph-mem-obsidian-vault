@@ -30,7 +30,8 @@
     "am-memorium-yearly-themes",
     "am-metabind-text-custom-class",
     "am-module-themes",
-    "am-graphview-image"
+    "am-graphview-image",
+    "am-memorium_callouts"
   ],
   "interfaceFontFamily": "",
   "textFontFamily": "",

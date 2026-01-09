@@ -38,3 +38,10 @@ tR += await tp.file.include("[[c_metabind_memorium_yearly_nav_buttons]]");
 <%*
 tR += await tp.file.include("[[c_metabind_memorium_yearly_alias_text]]");
 %>
+
+---
+### ✧ Summary
+
+<%*
+tR += await tp.file.include("[[c_metabind_memorium_yearly_summary_editor]]");
+%>
