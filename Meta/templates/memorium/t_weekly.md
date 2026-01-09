@@ -50,3 +50,8 @@ tR += await tp.file.include("[[c_metabind_memorium_weekly_alias_text]]");
 <%*
 tR += await tp.file.include("[[c_metabind_memorium_weekly_summary_editor]]");
 %>
+
+### ✧ Ratings
+<%*
+tR += await tp.file.include("[[c_tracker_memorium_day_rating_average]]");
+%>
