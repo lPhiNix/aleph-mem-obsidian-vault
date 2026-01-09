@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "845b1c997b76eee5",
+        "id": "ef06e799f1327ef4",
         "type": "tabs",
         "children": [
           {
-            "id": "45f66ed8427df946",
+            "id": "c9f1d79ca29e79da",
             "type": "leaf",
             "state": {
-              "type": "graph",
+              "type": "empty",
               "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ]
@@ -29,7 +29,7 @@
       {
         "id": "e60163b5fe7c52c5",
         "type": "tabs",
-        "dimension": 69.85195154777928,
+        "dimension": 69.75806451612904,
         "children": [
           {
             "id": "19cc3510409525e8",
@@ -74,12 +74,12 @@
         ]
       },
       {
-        "id": "61a3fffe74ec46c7",
+        "id": "2c35098b1498ee08",
         "type": "tabs",
-        "dimension": 30.148048452220728,
+        "dimension": 30.241935483870968,
         "children": [
           {
-            "id": "1f630a4862db28bb",
+            "id": "45f66ed8427df946",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -228,7 +228,7 @@
       "pexels-banner:🚩 Pixel Banner Menu": false
     }
   },
-  "active": "45f66ed8427df946",
+  "active": "c9f1d79ca29e79da",
   "lastOpenFiles": [
     "Data/placeholder.png",
     "Meta/benchmarks/native.md",
