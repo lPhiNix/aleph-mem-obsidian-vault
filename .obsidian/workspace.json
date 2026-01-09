@@ -4,22 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "9b6303f0e42b83b9",
+        "id": "ef06e799f1327ef4",
         "type": "tabs",
         "children": [
           {
-            "id": "a60d1a333395f5f1",
+            "id": "c9f1d79ca29e79da",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "00 - Φ - Inthima/Nota.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Nota"
+              "title": "New tab"
             }
           }
         ]
@@ -34,7 +29,7 @@
       {
         "id": "e60163b5fe7c52c5",
         "type": "tabs",
-        "dimension": 69.89247311827957,
+        "dimension": 69.75806451612904,
         "children": [
           {
             "id": "19cc3510409525e8",
@@ -79,12 +74,12 @@
         ]
       },
       {
-        "id": "61a3fffe74ec46c7",
+        "id": "2c35098b1498ee08",
         "type": "tabs",
-        "dimension": 30.107526881720432,
+        "dimension": 30.241935483870968,
         "children": [
           {
-            "id": "1f630a4862db28bb",
+            "id": "45f66ed8427df946",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -114,13 +109,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00 - Φ - Inthima/Nota.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Nota"
+              "title": "Outline"
             }
           },
           {
@@ -170,7 +164,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "00 - Φ - Inthima/Nota.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -180,7 +173,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Nota"
+              "title": "Backlinks"
             }
           },
           {
@@ -235,8 +228,19 @@
       "pexels-banner:🚩 Pixel Banner Menu": false
     }
   },
-  "active": "a60d1a333395f5f1",
+  "active": "c9f1d79ca29e79da",
   "lastOpenFiles": [
+    "Data/placeholder.png",
+    "Meta/benchmarks/native.md",
+    "Meta/images/util/graphview-image.jpg",
+    "Meta/images/util/graph.jpg",
+    "Meta/images/util/milky-way-5295160.jpg",
+    "Meta/images/util/DashboardBanner.gif",
+    "Meta/images/util",
+    "Meta/images/Nueva carpeta",
+    "Data/media/video/bb_cho_z_43_jp_sub_en.mp4",
+    "Data/media/bb_cho_z_43_jp_sub_en.mp4",
+    "00 - Φ - Inthima/Nota.md",
     "00 - Φ - Inthima/INTHIMA.md",
     "02 - Ψ - Memorium/MEMORIUM.md",
     "Meta/templates/memorium/t_daily.md",
@@ -266,23 +270,12 @@
     "02 - Ψ - Memorium/monthly/2026/2026-04-April.md",
     "02 - Ψ - Memorium/monthly/2026/2026-03-March.md",
     "02 - Ψ - Memorium/monthly/2026/2026-02-February.md",
-    "02 - Ψ - Memorium/monthly/2026/2026-01-January.md",
-    "02 - Ψ - Memorium/weekly/2026/2026-W02.md",
-    "02 - Ψ - Memorium/monthly/2026",
-    "02 - Ψ - Memorium/monthly",
-    "Meta/templates/memorium/t_yearly.md",
-    "02 - Ψ - Memorium/yearly",
-    "02 - Ψ - Memorium/quarterly",
     "Data/media/img/star.png",
     "Meta/images/QAIdeaBanner.gif",
     "Meta/images/memorium/yearly/YearlyBanner.jpg",
     "Meta/images/memorium/weekly/WeeklyBanner4.gif",
     "Meta/images/memorium/weekly/WeeklyBanner3.gif",
     "Meta/images/memorium/weekly/WeeklyBanner2.gif",
-    "Meta/images/memorium/weekly/WeeklyBanner1.gif",
-    "Meta/images/memorium/quarterly/QuarterlyBanner4.png",
-    "Meta/images/memorium/quarterly/QuarterlyBanner3.png",
-    "Meta/images/memorium/quarterly/QuarterlyBanner2.png",
     "90 - Ω - Harkaive/Bookshelf/Books/Sin título.canvas"
   ]
 }
