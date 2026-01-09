@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "ef06e799f1327ef4",
+        "id": "6435f46492eb5b62",
         "type": "tabs",
         "children": [
           {
-            "id": "c9f1d79ca29e79da",
+            "id": "064b059e20e4120e",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -76,7 +76,7 @@
       {
         "id": "2c35098b1498ee08",
         "type": "tabs",
-        "dimension": 30.241935483870968,
+        "dimension": 30.241935483870964,
         "children": [
           {
             "id": "45f66ed8427df946",
@@ -109,12 +109,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "02 - Ψ - Memorium/yearly/2026.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of 2026"
             }
           },
           {
@@ -123,10 +124,10 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "02 - Ψ - Memorium/daily/2026/01-January/2026-01-06-Tuesday.md"
+                "file": "02 - Ψ - Memorium/yearly/2026.md"
               },
               "icon": "lucide-info",
-              "title": "File properties for 2026-01-06-Tuesday"
+              "title": "File properties for 2026"
             }
           },
           {
@@ -190,7 +191,8 @@
               "title": "Outgoing links from 2026-01-06-Tuesday"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "2cb30cdd678dfa50",
@@ -228,54 +230,53 @@
       "pexels-banner:🚩 Pixel Banner Menu": false
     }
   },
-  "active": "c9f1d79ca29e79da",
+  "active": "19cc3510409525e8",
   "lastOpenFiles": [
+    "02 - Ψ - Memorium/quarterly/2026/2026-Q1.md",
+    "02 - Ψ - Memorium/yearly/2026.md",
+    "02 - Ψ - Memorium/yearly",
+    "02 - Ψ - Memorium/monthly/2026/2026-01-January.md",
+    "02 - Ψ - Memorium/quarterly/2026",
+    "02 - Ψ - Memorium/quarterly",
+    "02 - Ψ - Memorium/weekly/2026/2026-W02.md",
+    "02 - Ψ - Memorium/monthly/2026",
+    "02 - Ψ - Memorium/monthly",
+    "02 - Ψ - Memorium/daily/2026/01-January/2026-01-09-Friday.md",
+    "02 - Ψ - Memorium/weekly/2026",
+    "02 - Ψ - Memorium/weekly",
+    "Meta/templates/memorium/t_yearly.md",
+    "02 - Ψ - Memorium/daily/2026/01-January",
+    "02 - Ψ - Memorium/daily/2026",
+    "02 - Ψ - Memorium/daily",
+    "Meta/templates/memorium/t_monthly.md",
+    "Meta/templates/memorium/t_quarterly.md",
+    "Meta/templates/memorium/t_weekly.md",
+    "Meta/templates/memorium/t_daily.md",
     "Data/placeholder.png",
     "Meta/benchmarks/native.md",
     "Meta/images/util/graphview-image.jpg",
     "Meta/images/util/graph.jpg",
     "Meta/images/util/milky-way-5295160.jpg",
     "Meta/images/util/DashboardBanner.gif",
-    "Meta/images/util",
-    "Meta/images/Nueva carpeta",
-    "Data/media/video/bb_cho_z_43_jp_sub_en.mp4",
-    "Data/media/bb_cho_z_43_jp_sub_en.mp4",
     "00 - Φ - Inthima/Nota.md",
     "00 - Φ - Inthima/INTHIMA.md",
     "02 - Ψ - Memorium/MEMORIUM.md",
-    "Meta/templates/memorium/t_daily.md",
     "02 - Ψ - Memorium/daily/2026/01-January/2026-01-06-Tuesday.md",
     "02 - Ψ - Memorium/daily/2026/01-January/2026-01-07-Wednesday.md",
-    "02 - Ψ - Memorium/daily/2026/01-January",
-    "02 - Ψ - Memorium/daily/2026",
-    "02 - Ψ - Memorium/daily",
     "02 - Ψ - Memorium/weekly/2026/2026-W01.md",
-    "02 - Ψ - Memorium/weekly/2026",
-    "02 - Ψ - Memorium/yearly/2026.md",
     "02 - Ψ - Memorium/quarterly/2026/2026-Q4.md",
     "02 - Ψ - Memorium/quarterly/2026/2026-Q3.md",
     "02 - Ψ - Memorium/quarterly/2026/2026-Q2.md",
-    "02 - Ψ - Memorium/quarterly/2026/2026-Q1.md",
     "02 - Ψ - Memorium/monthly/2026/2026-12-December.md",
-    "02 - Ψ - Memorium/quarterly/2026",
     "02 - Ψ - Memorium/monthly/2027/2027-01-January.md",
-    "02 - Ψ - Memorium/monthly/2027",
     "02 - Ψ - Memorium/monthly/2026/2026-11-November.md",
     "02 - Ψ - Memorium/monthly/2026/2026-10-October.md",
     "02 - Ψ - Memorium/monthly/2026/2026-09-September.md",
-    "02 - Ψ - Memorium/monthly/2026/2026-08-August.md",
-    "02 - Ψ - Memorium/monthly/2026/2026-07-July.md",
-    "02 - Ψ - Memorium/monthly/2026/2026-06-June.md",
-    "02 - Ψ - Memorium/monthly/2026/2026-05-May.md",
-    "02 - Ψ - Memorium/monthly/2026/2026-04-April.md",
-    "02 - Ψ - Memorium/monthly/2026/2026-03-March.md",
-    "02 - Ψ - Memorium/monthly/2026/2026-02-February.md",
     "Data/media/img/star.png",
     "Meta/images/QAIdeaBanner.gif",
     "Meta/images/memorium/yearly/YearlyBanner.jpg",
     "Meta/images/memorium/weekly/WeeklyBanner4.gif",
     "Meta/images/memorium/weekly/WeeklyBanner3.gif",
-    "Meta/images/memorium/weekly/WeeklyBanner2.gif",
     "90 - Ω - Harkaive/Bookshelf/Books/Sin título.canvas"
   ]
 }
