@@ -11,15 +11,10 @@
             "id": "2c8a04a5967cc5db",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Meta/components/dataview/c_dataview_memorium_daily_year_note_throwback.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "c_dataview_memorium_daily_year_note_throwback"
+              "title": "New tab"
             }
           }
         ]
@@ -114,13 +109,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Meta/components/dataview/c_dataview_memorium_daily_year_note_throwback.md",
+                "file": "02 - Ψ - Memorium/weekly/2026/2026-W03.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of c_dataview_memorium_daily_year_note_throwback"
+              "title": "Outline of 2026-W03"
             }
           },
           {
@@ -234,22 +229,22 @@
       "pexels-banner:🚩 Pixel Banner Menu": false
     }
   },
-  "active": "2c8a04a5967cc5db",
+  "active": "19cc3510409525e8",
   "lastOpenFiles": [
-    "Meta/components/dataview/c_dataview_memorium_day_rating_average.md",
-    "Meta/templates/memorium/t_weekly.md",
-    "Meta/components/dataview/c_dataview_memorium_weekly_day_rating_chart_graph.md",
-    "02 - Ψ - Memorium/weekly/2026/2026-W03.md",
-    "02 - Ψ - Memorium/daily/2026/01-January/2026-01-15-Thursday.md",
-    "02 - Ψ - Memorium/daily/2026/01-January/2026-01-14-Wednesday.md",
     "02 - Ψ - Memorium/daily/2026/01-January/2026-01-12-Monday.md",
-    "02 - Ψ - Memorium/daily/2026/01-January/2026-01-13-Tuesday.md",
+    "02 - Ψ - Memorium/weekly/2026/2026-W03.md",
     "02 - Ψ - Memorium/daily/2026/01-January",
     "02 - Ψ - Memorium/daily/2026",
     "02 - Ψ - Memorium/daily",
+    "Meta/components/dataview/c_dataview_memorium_weekly_day_rating_chart_graph.md",
     "02 - Ψ - Memorium/weekly/2026",
     "02 - Ψ - Memorium/weekly",
+    "Meta/components/dataview/c_dataview_memorium_day_rating_average.md",
     "Meta/components/dataview/c_dataview_memorium_daily_year_note_throwback.md",
+    "Meta/templates/memorium/t_weekly.md",
+    "02 - Ψ - Memorium/daily/2026/01-January/2026-01-15-Thursday.md",
+    "02 - Ψ - Memorium/daily/2026/01-January/2026-01-14-Wednesday.md",
+    "02 - Ψ - Memorium/daily/2026/01-January/2026-01-13-Tuesday.md",
     "02 - Ψ - Memorium/daily/2026/01-January/2026-01-16-Friday.md",
     "Meta/components/tracker/c_tracker_memorium_day_rating_average.md",
     "Meta/images/memorium/daily/FridayBanner.gif",
