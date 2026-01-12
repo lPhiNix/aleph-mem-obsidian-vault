@@ -1,10 +1,11 @@
 ```tracker
 searchType: frontmatter
 searchTarget: memorium-day-rating
-dateFormat: YYYY-MM-DD-dddd
-datasetName: memorium-day-rating
-startDate: <%moment(tp.file.title, 'YYYY-[W]ww').add(1, 'days').format("YYYY-MM-DD-dddd") %>
-endDate: <% moment(tp.file.title, 'YYYY-[W]ww').add(1, 'weeks').format("YYYY-MM-DD-dddd") %>
+datasetName: Day Rating
+dateFormat: YYYY-MM-DD
+folder: "02 - Ψ - Memorium/daily"
+startDate: <% moment(tp.file.title, 'YYYY-[W]WW').startOf('isoWeek').format('YYYY-MM-DD') %>
+endDate:   <% moment(tp.file.title, 'YYYY-[W]WW').endOf('isoWeek').format('YYYY-MM-DD') %>
 summary:
-    template: "Average Rating: {{average()}}" 
+  template: "{{count() == 0 ? 'No data this week' : 'Avg: ' + average().toFixed(2)}}"
 ```
