@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "15594a5a93374ab9",
+        "id": "9b0148e7f01a74ba",
         "type": "tabs",
         "children": [
           {
-            "id": "bf77206918569f40",
+            "id": "161b11b6f6441279",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -38,7 +38,7 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": true
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -109,13 +109,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "02 - Ψ - Memorium/daily/2026/01-January/2026-01-12-Monday.md",
+                "file": "Meta/images/memorium/daily/FridayBanner.gif",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2026-01-12-Monday"
+              "title": "Outline of FridayBanner"
             }
           },
           {
@@ -231,6 +231,7 @@
   },
   "active": "19cc3510409525e8",
   "lastOpenFiles": [
+    "Untitled.md",
     "02 - Ψ - Memorium/weekly/2026/2026-W02.md",
     "02 - Ψ - Memorium/weekly/2026/2026-W03.md",
     "02 - Ψ - Memorium/daily/2026/01-January/2026-01-13-Tuesday.md",
