@@ -11,5 +11,9 @@
   "cmdr",
   "settings-search",
   "metaedit",
-  "iconic"
+  "iconic",
+  "table-editor-obsidian",
+  "obsidian-excalidraw-plugin",
+  "recent-files-obsidian",
+  "tag-wrangler"
 ]
