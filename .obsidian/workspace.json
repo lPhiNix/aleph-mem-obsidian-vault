@@ -109,13 +109,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "02 - Ψ - Memorium/weekly/2026/2026-W03.md",
+                "file": "02 - Ψ - Memorium/daily/2026/01-January/2026-01-13-Tuesday.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2026-W03"
+              "title": "Outline of 2026-01-13-Tuesday"
             }
           },
           {
@@ -231,20 +231,21 @@
   },
   "active": "19cc3510409525e8",
   "lastOpenFiles": [
-    "02 - Ψ - Memorium/daily/2026/01-January/2026-01-12-Monday.md",
     "02 - Ψ - Memorium/weekly/2026/2026-W03.md",
+    "02 - Ψ - Memorium/daily/2026/01-January/2026-01-12-Monday.md",
+    "02 - Ψ - Memorium/daily/2026/01-January/2026-01-05-Monday.md",
+    "02 - Ψ - Memorium/daily/2026/01-January/2026-01-13-Tuesday.md",
+    "02 - Ψ - Memorium/weekly/2026",
+    "02 - Ψ - Memorium/weekly",
     "02 - Ψ - Memorium/daily/2026/01-January",
     "02 - Ψ - Memorium/daily/2026",
     "02 - Ψ - Memorium/daily",
     "Meta/components/dataview/c_dataview_memorium_weekly_day_rating_chart_graph.md",
-    "02 - Ψ - Memorium/weekly/2026",
-    "02 - Ψ - Memorium/weekly",
     "Meta/components/dataview/c_dataview_memorium_day_rating_average.md",
     "Meta/components/dataview/c_dataview_memorium_daily_year_note_throwback.md",
     "Meta/templates/memorium/t_weekly.md",
     "02 - Ψ - Memorium/daily/2026/01-January/2026-01-15-Thursday.md",
     "02 - Ψ - Memorium/daily/2026/01-January/2026-01-14-Wednesday.md",
-    "02 - Ψ - Memorium/daily/2026/01-January/2026-01-13-Tuesday.md",
     "02 - Ψ - Memorium/daily/2026/01-January/2026-01-16-Friday.md",
     "Meta/components/tracker/c_tracker_memorium_day_rating_average.md",
     "Meta/images/memorium/daily/FridayBanner.gif",
