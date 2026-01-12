@@ -52,6 +52,9 @@ function hexToRgba(hex, alpha = 0.5) {
   const b = parseInt(hex.substring(4,6),16);
   return `rgba(${r},${g},${b},${alpha})`;
 }
+function getCssVar(name) {
+  return getComputedStyle(document.body).getPropertyValue(name).trim();
+}
 
 /**********************
  * RENDER
@@ -86,6 +89,8 @@ function renderChart() {
       links[idx]   = p.file.path;
       aliases[idx] = p["memorium-alias"];
     });
+
+  const INTERACTIVE_ACCENT = getCssVar("--interactive-accent") || "#8b5cf6";
 
   /**********************
    * MEDIA SEMANAL
@@ -162,7 +167,21 @@ function renderChart() {
                 enabled: true,
                 position: "end"
               }
-            }
+            },
+            weeklyAvg: weeklyAvg != null ? {
+              type: "line",
+              yMin: weeklyAvg,
+              yMax: weeklyAvg,
+              borderColor: INTERACTIVE_ACCENT,
+              borderWidth: 2,
+              borderDash: [6,6],
+              label: {
+                content: `Avg: ${weeklyAvg.toFixed(2)}`,
+                enabled: true,
+                position: "end",
+                color: INTERACTIVE_ACCENT
+              }
+            } : null
           }
         }
       },
