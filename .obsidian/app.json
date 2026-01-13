@@ -6,5 +6,6 @@
   "alwaysUpdateLinks": true,
   "readableLineLength": true,
   "showInlineTitle": true,
-  "foldHeading": false
+  "foldHeading": false,
+  "defaultViewMode": "preview"
 }

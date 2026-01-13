@@ -15,23 +15,27 @@
   "enable_folder_templates": true,
   "folder_templates": [
     {
-      "folder": "02 - Ψ - Memorium/daily",
+      "folder": "Test",
+      "template": "Meta/templates/test/t_test.md"
+    },
+    {
+      "folder": "02 - Ψ - Memorium/journal/daily",
       "template": "Meta/templates/memorium/t_daily.md"
     },
     {
-      "folder": "02 - Ψ - Memorium/weekly",
+      "folder": "02 - Ψ - Memorium/journal/weekly",
       "template": "Meta/templates/memorium/t_weekly.md"
     },
     {
-      "folder": "02 - Ψ - Memorium/monthly",
+      "folder": "02 - Ψ - Memorium/journal/monthly",
       "template": "Meta/templates/memorium/t_monthly.md"
     },
     {
-      "folder": "02 - Ψ - Memorium/quarterly",
+      "folder": "02 - Ψ - Memorium/journal/quarterly",
       "template": "Meta/templates/memorium/t_quarterly.md"
     },
     {
-      "folder": "02 - Ψ - Memorium/yearly",
+      "folder": "02 - Ψ - Memorium/journal/yearly",
       "template": "Meta/templates/memorium/t_yearly.md"
     }
   ],

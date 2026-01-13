@@ -1,0 +1,43 @@
+{
+  "ROOT": "",
+  "INTHIMA": {
+    "ROOT": "00 - Φ - Inthima"
+  },
+  "COGNITIO": {
+    "ROOT": "01 - Θ - Cognitio"
+  },
+  "MEMORIUM": {
+    "ROOT": "02 - Ψ - Memorium",
+    "JOURNAL": {
+      "ROOT": "journal",
+      "JOURNALS": {
+        "DAILY": "daily",
+        "WEEKLY": "weekly",
+        "MONTHLY": "monthly",
+        "QUARTERLY": "quarterly",
+        "YEARLY": "yearly"
+      }
+    }
+  },
+  "NOETHERIS": {
+    "ROOT": "03 - Σ - Noetheris"
+  },
+  "DEVS": {
+    "ROOT": "04 - Λ - Devs"
+  },
+  "VIVENTIA": {
+    "ROOT": "05 - Z - Viventia"
+  },
+  "KAELITHRA": {
+    "ROOT": "06 - Ξ - Kaelithra"
+  },
+  "ORDUS": {
+    "ROOT": "07 - Π - Ordus"
+  },
+  "AETHERNUM": {
+    "ROOT": "08 - Δ - Aethernum"
+  },
+  "HARKAIVE": {
+    "ROOT": "09 - Ω - Harkaive"
+  }
+}
