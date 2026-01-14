@@ -61,10 +61,6 @@ function getCssVar(name) {
  **********************/
 function renderChart() {
 
-  if (window._memoriumChart) {
-    window._memoriumChart.destroy();
-  }
-
   const weekMoment = moment(dv.current().file.name, "YYYY-[W]WW");
   const startOfWeek = weekMoment.clone().startOf("isoWeek");
   const endOfWeek   = weekMoment.clone().endOf("isoWeek");
