@@ -1,6 +1,22 @@
 {
   "recentFiles": [
     {
+      "basename": "c_dataview_memorium_weekly_day_list",
+      "path": "Meta/components/dataview/c_dataview_memorium_weekly_day_list.md"
+    },
+    {
+      "basename": "c_dataview_memorium_weekly_day_rating_chart_graph",
+      "path": "Meta/components/dataview/c_dataview_memorium_weekly_day_rating_chart_graph.md"
+    },
+    {
+      "basename": "c_dataview_memorium_daily_year_note_throwback",
+      "path": "Meta/components/dataview/c_dataview_memorium_daily_year_note_throwback.md"
+    },
+    {
+      "basename": "t_weekly",
+      "path": "Meta/templates/memorium/t_weekly.md"
+    },
+    {
       "basename": "t_daily",
       "path": "Meta/templates/memorium/t_daily.md"
     },
@@ -9,24 +25,12 @@
       "path": "Meta/components/metabind/progressbar/c_metabind_memorium_day_rating_slider.md"
     },
     {
-      "basename": "t_weekly",
-      "path": "Meta/templates/memorium/t_weekly.md"
-    },
-    {
-      "basename": "c_dataview_memorium_weekly_day_rating_chart_graph",
-      "path": "Meta/components/dataview/c_dataview_memorium_weekly_day_rating_chart_graph.md"
-    },
-    {
       "basename": "t_yearly",
       "path": "Meta/templates/memorium/t_yearly.md"
     },
     {
       "basename": "c_metabind_memorium_daily_nav_buttons",
       "path": "Meta/components/metabind/buttons/c_metabind_memorium_daily_nav_buttons.md"
-    },
-    {
-      "basename": "c_dataview_memorium_daily_year_note_throwback",
-      "path": "Meta/components/dataview/c_dataview_memorium_daily_year_note_throwback.md"
     },
     {
       "basename": "MEMORIUM",
