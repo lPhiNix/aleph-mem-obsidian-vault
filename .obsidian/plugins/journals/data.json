@@ -17,7 +17,7 @@
       "confirmCreation": false,
       "nameTemplate": "{{date}}",
       "dateFormat": "YYYY-MM-DD-dddd",
-      "folder": "02 - Ψ - Memorium/daily/{{date:YYYY}}/{{date:MM-MMMM}}",
+      "folder": "02 - Ψ - Memorium/journal/daily/{{date:YYYY}}/{{date:MM-MMMM}}",
       "templates": [
         "Meta/templates/memorium/t_daily.md"
       ],
@@ -181,7 +181,7 @@
       "confirmCreation": false,
       "nameTemplate": "{{date}}",
       "dateFormat": "YYYY-MM-MMMM",
-      "folder": "02 - Ψ - Memorium/monthly/{{date:YYYY}}",
+      "folder": "02 - Ψ - Memorium/journal/monthly/{{date:YYYY}}",
       "templates": [
         "Meta/templates/memorium/t_monthly.md"
       ],
@@ -297,7 +297,7 @@
       "confirmCreation": false,
       "nameTemplate": "{{date}}",
       "dateFormat": "YYYY-[Q]Q",
-      "folder": "02 - Ψ - Memorium/quarterly/{{date:YYYY}}",
+      "folder": "02 - Ψ - Memorium/journal/quarterly/{{date:YYYY}}",
       "templates": [
         "Meta/templates/memorium/t_quarterly.md"
       ],
@@ -413,7 +413,7 @@
       "confirmCreation": false,
       "nameTemplate": "{{date}}",
       "dateFormat": "YYYY-[W]ww",
-      "folder": "02 - Ψ - Memorium/weekly/{{date:YYYY}}",
+      "folder": "02 - Ψ - Memorium/journal/weekly/{{date:YYYY}}",
       "templates": [
         "Meta/templates/memorium/t_weekly.md"
       ],
@@ -545,7 +545,7 @@
       "confirmCreation": false,
       "nameTemplate": "{{date}}",
       "dateFormat": "YYYY",
-      "folder": "02 - Ψ - Memorium/yearly",
+      "folder": "02 - Ψ - Memorium/journal/yearly",
       "templates": [
         "Meta/templates/memorium/t_yearly.md"
       ],

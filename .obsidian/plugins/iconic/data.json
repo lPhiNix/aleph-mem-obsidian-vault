@@ -376,6 +376,20 @@
       ],
       "enabled": true,
       "icon": "lucide-tv-minimal-play"
+    },
+    {
+      "id": "lrfXm",
+      "name": "Config",
+      "match": "all",
+      "conditions": [
+        {
+          "source": "path",
+          "operator": "startsWith",
+          "value": "Meta/config"
+        }
+      ],
+      "enabled": true,
+      "icon": "lucide-file-json-2"
     }
   ],
   "folderRules": [

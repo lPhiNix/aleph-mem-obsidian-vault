@@ -78,7 +78,8 @@ function renderChart() {
     labels.push(startOfWeek.clone().add(i, "days").format("ddd, D MMM"));
   }
 
-  dv.pages('"02 - Ψ - Memorium/daily"')
+  const path = '"<%* tR += tp.user.router.memorium().daily; %>"'
+  dv.pages(path)
     .filter(p => p["memorium-day-rating"] != null && p["memorium-date"])
     .forEach(p => {
       const d = moment(p["memorium-date"].toISODate(), "YYYY-MM-DD");

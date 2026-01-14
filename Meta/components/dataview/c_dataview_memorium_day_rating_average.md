@@ -25,7 +25,8 @@ const week = moment(dv.current().file.name, "YYYY-[W]WW");
 const start = week.clone().startOf("isoWeek");
 const end   = week.clone().endOf("isoWeek");
 
-const pages = dv.pages('"02 - Ψ - Memorium/daily"')
+const path = '"<%* tR += tp.user.router.memorium().daily %>"'
+const pages = dv.pages(path)
   .where(p => p["memorium-day-rating"] != null && p["memorium-date"])
   .where(p => {
     const d = moment(p["memorium-date"].toISODate(), "YYYY-MM-DD");

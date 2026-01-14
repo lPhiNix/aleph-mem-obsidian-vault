@@ -1,32 +1,64 @@
 {
   "recentFiles": [
     {
-      "basename": "c_templater_id",
-      "path": "Meta/templates/templater/c_templater_id.md"
+      "basename": "c_metabind_memorium_daily_nav_buttons",
+      "path": "Meta/components/metabind/buttons/c_metabind_memorium_daily_nav_buttons.md"
     },
     {
-      "basename": "c_templater_dynamic_title",
-      "path": "Meta/templates/templater/c_templater_dynamic_title.md"
+      "basename": "c_dataview_memorium_day_rating_average",
+      "path": "Meta/components/dataview/c_dataview_memorium_day_rating_average.md"
     },
     {
-      "basename": "c_templater_created_date",
-      "path": "Meta/templates/templater/c_templater_created_date.md"
+      "basename": "c_dataview_memorium_daily_year_note_throwback",
+      "path": "Meta/components/dataview/c_dataview_memorium_daily_year_note_throwback.md"
     },
     {
-      "basename": "c_templater_banner_config",
-      "path": "Meta/templates/templater/c_templater_banner_config.md"
-    },
-    {
-      "basename": "Quarterly MetaBindNavBar",
-      "path": "Meta/components/metabind/button/Quarterly MetaBindNavBar.md"
+      "basename": "c_dataview_memorium_weekly_day_rating_chart_graph",
+      "path": "Meta/components/dataview/c_dataview_memorium_weekly_day_rating_chart_graph.md"
     },
     {
       "basename": "MEMORIUM",
       "path": "02 - Ψ - Memorium/MEMORIUM.md"
     },
     {
-      "basename": "Daily MetaBindPinButtons",
-      "path": "Meta/components/metabind/button/Daily MetaBindPinButtons.md"
+      "basename": "t_daily",
+      "path": "Meta/templates/memorium/t_daily.md"
+    },
+    {
+      "basename": "HARKAIVE",
+      "path": "09 - Ω - Harkaive/HARKAIVE.md"
+    },
+    {
+      "basename": "AETHERNUM",
+      "path": "08 - Δ - Aethernum/AETHERNUM.md"
+    },
+    {
+      "basename": "ORDUS",
+      "path": "07 - Π - Ordus/ORDUS.md"
+    },
+    {
+      "basename": "KAELITHRA",
+      "path": "06 - Ξ - Kaelithra/KAELITHRA.md"
+    },
+    {
+      "basename": "VIVENTIA",
+      "path": "05 - Ζ - Viventia/VIVENTIA.md"
+    },
+    {
+      "basename": "DEVS",
+      "path": "04 - Λ - Devs/DEVS.md"
+    },
+    {
+      "basename": "NOETHERIS",
+      "path": "03 - Σ - Noetheris/NOETHERIS.md"
+    },
+    {
+      "basename": "COGNITIO",
+      "path": "01 - Θ - Cognitio/COGNITIO.md"
+    },
+    {
+      "basename": "t_test",
+      "path": "Meta/templates/test/t_test.md"
     }
   ],
   "omittedPaths": [],
