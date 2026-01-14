@@ -1,5 +1,6 @@
 ```dataviewjs
 
+
 /**********************
  * CONFIGURACIÓN
  **********************/
@@ -37,7 +38,7 @@ async function ensureLibraries() {
   if (!Chart.registry.plugins.get("annotation")) {
     await loadScript("https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation");
   }
-  renderChart();
+  render();
 }
 
 ensureLibraries();
@@ -47,36 +48,45 @@ ensureLibraries();
  **********************/
 function hexToRgba(hex, alpha = 0.5) {
   hex = hex.replace("#", "");
-  const r = parseInt(hex.substring(0,2),16);
-  const g = parseInt(hex.substring(2,4),16);
-  const b = parseInt(hex.substring(4,6),16);
+  const r = parseInt(hex.slice(0,2),16);
+  const g = parseInt(hex.slice(2,4),16);
+  const b = parseInt(hex.slice(4,6),16);
   return `rgba(${r},${g},${b},${alpha})`;
-}
-function getCssVar(name) {
-  return getComputedStyle(document.body).getPropertyValue(name).trim();
 }
 
 /**********************
- * RENDER
+ * RENDER PRINCIPAL
  **********************/
-function renderChart() {
+function render() {
 
+  /**********************
+   * RANGO SEMANAL
+   **********************/
   const weekMoment = moment(dv.current().file.name, "YYYY-[W]WW");
   const startOfWeek = weekMoment.clone().startOf("isoWeek");
   const endOfWeek   = weekMoment.clone().endOf("isoWeek");
 
+  /**********************
+   * ESTRUCTURAS
+   **********************/
   const labels  = [];
   const ratings = Array(7).fill(null);
   const links   = Array(7).fill(null);
   const aliases = Array(7).fill(null);
 
   for (let i = 0; i < 7; i++) {
-    labels.push(startOfWeek.clone().add(i, "days").format("ddd, D MMM"));
+    labels.push(
+      startOfWeek.clone().add(i, "days").format("ddd, D MMM")
+    );
   }
 
-  const path = '"<%* tR += tp.user.router.memorium().daily; %>"'
+  /**********************
+   * CARGA DE DATOS
+   **********************/
+  const path = '"<%* tR += tp.user.router.memorium().daily; %>"';
+
   dv.pages(path)
-    .filter(p => p["memorium-day-rating"] != null && p["memorium-date"])
+    .where(p => p["memorium-day-rating"] != null && p["memorium-date"])
     .forEach(p => {
       const d = moment(p["memorium-date"].toISODate(), "YYYY-MM-DD");
       if (!d.isBetween(startOfWeek, endOfWeek, "day", "[]")) return;
@@ -87,8 +97,6 @@ function renderChart() {
       aliases[idx] = p["memorium-alias"];
     });
 
-  const INTERACTIVE_ACCENT = getCssVar("--interactive-accent") || "#8b5cf6";
-
   /**********************
    * MEDIA SEMANAL
    **********************/
@@ -97,14 +105,39 @@ function renderChart() {
     ? validRatings.reduce((a,b) => a + b, 0) / validRatings.length
     : null;
 
+  /**********************
+   * TEXTO MEDIA
+   **********************/
+  let avgColor = null;
+
+  if (weeklyAvg != null) {
+    const roundedAvg = Math.round(weeklyAvg);
+    avgColor = RATING_COLORS[roundedAvg] ?? EMPTY_COLOR;
+
+    dv.paragraph(
+      `**Average Rating:** <span style="color:${avgColor}; font-weight:bold;">${weeklyAvg.toFixed(2)}</span> (${validRatings.length} days)`
+    );
+  } else {
+    dv.paragraph("_No ratings logged this week_");
+  }
+
+  /**********************
+   * COLORES
+   **********************/
   const barColors = ratings.map(r =>
     r == null ? EMPTY_COLOR : (RATING_COLORS[r] ?? EMPTY_COLOR)
   );
 
   const pointColors = barColors.map(c => hexToRgba(c, 0.5));
 
+  /**********************
+   * CANVAS
+   **********************/
   const canvas = dv.el("canvas", "", { attr: { height: 220 } });
 
+  /**********************
+   * CHART
+   **********************/
   window._memoriumChart = new Chart(canvas, {
     data: {
       labels,
@@ -135,7 +168,23 @@ function renderChart() {
     options: {
       responsive: true,
       plugins: {
-        legend: { display: true },
+        legend: {
+          display: true,
+          labels: {
+            generateLabels(chart) {
+              const labels = Chart.defaults.plugins.legend.labels.generateLabels(chart);
+
+              labels.forEach(l => {
+                if (l.text === "Day Rating" && avgColor) {
+                  l.fillStyle = avgColor;
+                  l.strokeStyle = avgColor;
+                }
+              });
+
+              return labels;
+            }
+          }
+        },
         tooltip: {
           callbacks: {
             label: ctx => {
@@ -165,24 +214,26 @@ function renderChart() {
                 position: "end"
               }
             },
-            weeklyAvg: weeklyAvg != null ? {
-              type: "line",
-              yMin: weeklyAvg,
-              yMax: weeklyAvg,
-              borderColor: INTERACTIVE_ACCENT,
-              borderWidth: 2,
-              borderDash: [6,6],
-              label: {
-                content: `Avg: ${weeklyAvg.toFixed(2)}`,
-                enabled: true,
-                position: "end",
-                color: INTERACTIVE_ACCENT
+            ...(weeklyAvg != null && {
+              weeklyAvg: {
+                type: "line",
+                yMin: weeklyAvg,
+                yMax: weeklyAvg,
+                borderColor: avgColor,
+                borderWidth: 2,
+                borderDash: [6,6],
+                label: {
+                  content: `Avg: ${weeklyAvg.toFixed(2)}`,
+                  enabled: true,
+                  position: "end",
+                  color: avgColor
+                }
               }
-            } : null
+            })
           }
         }
       },
-      onClick: (evt, elements) => {
+      onClick: (_, elements) => {
         if (!elements.length) return;
         const idx = elements[0].index;
         if (links[idx]) {
@@ -193,18 +244,7 @@ function renderChart() {
         y: {
           min: 0,
           max: 10,
-          ticks: { stepSize: 1 },
-          grid: {
-            color: "rgba(56,56,56,0.5)",
-            borderDash: [3,3]
-          }
-        },
-        x: {
-          ticks: {
-            autoSkip: false,
-            maxRotation: 45,
-            minRotation: 45
-          }
+          ticks: { stepSize: 1 }
         }
       }
     }

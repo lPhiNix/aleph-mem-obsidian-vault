@@ -5,9 +5,7 @@
   "url-into-selection",
   "templater-obsidian",
   "pexels-banner",
-  "dataview",
   "journals",
-  "obsidian-meta-bind-plugin",
   "cmdr",
   "settings-search",
   "metaedit",
@@ -15,5 +13,8 @@
   "table-editor-obsidian",
   "obsidian-excalidraw-plugin",
   "recent-files-obsidian",
-  "tag-wrangler"
+  "tag-wrangler",
+  "dataview",
+  "obsidian-git",
+  "obsidian-meta-bind-plugin"
 ]
