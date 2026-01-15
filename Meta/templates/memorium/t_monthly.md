@@ -48,3 +48,6 @@ tR += await tp.file.include("[[c_metabind_memorium_monthly_alias_text]]");
 <%*
 tR += await tp.file.include("[[c_metabind_memorium_monthly_summary_editor]]");
 %>
+
+### ✧ Ratings
+---

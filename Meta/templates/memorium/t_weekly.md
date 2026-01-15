@@ -34,7 +34,7 @@ tR += await tp.file.include("[[c_templater_memorium_weekly_banner_config]]");
 
 <%"---"%>
 # ✦ <% tp.file.title %>
-[[<% // create hidden link to weekly note for graph view
+[[<% 
 fileDate = moment(tp.file.title, 'YYYY-[W]WW').format('YYYY-[W]WW') %>|]] 
 <%*
 tR += await tp.file.include("[[c_metabind_memorium_weekly_nav_buttons]]");
@@ -54,5 +54,11 @@ tR += await tp.file.include("[[c_metabind_memorium_weekly_summary_editor]]");
 ### ✧ Ratings
 ---
 <%*
-tR += await tp.file.include("[[c_dataview_memorium_weekly_day_rating_chart_graph]]");
+tR += await tp.file.include("[[c_dataview_memorium_weekly_day_rating_graph]]");
+%>
+
+### ✧ General Overview
+---
+<%*
+tR += await tp.file.include("[[c_dataview_memorium_weekly_day_list]]");
 %>
