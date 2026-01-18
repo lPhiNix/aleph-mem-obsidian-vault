@@ -34,8 +34,6 @@ tR += await tp.file.include("[[c_templater_memorium_weekly_banner_config]]");
 
 <%"---"%>
 # ✦ <% tp.file.title %>
-[[<% 
-fileDate = moment(tp.file.title, 'YYYY-[W]WW').format('YYYY-[W]WW') %>|]] 
 <%*
 tR += await tp.file.include("[[c_metabind_memorium_weekly_nav_buttons]]");
 %>

@@ -83,7 +83,7 @@ function colorForValue(val, alpha = 1) {
  * DATOS SEMANALES
  **********************/
 function getWeekRange(fileName) {
-  const weekMoment = moment(fileName, "YYYY-[W]WW");
+  const weekMoment = moment(fileName, "GGGG-[W]WW");
   return [
     weekMoment.clone().startOf("isoWeek"),
     weekMoment.clone().endOf("isoWeek")
