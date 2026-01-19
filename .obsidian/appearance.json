@@ -32,8 +32,7 @@
     "am-module-themes",
     "am-graphview-image",
     "am-memorium_callouts",
-    "am-journal-calendar-outside-days",
-    "am-hide-journal-calendar-buttons"
+    "am-journal-calendar-outside-days"
   ],
   "interfaceFontFamily": "",
   "textFontFamily": "",

@@ -8,13 +8,13 @@
         "type": "tabs",
         "children": [
           {
-            "id": "f923065b99113521",
+            "id": "93cdd53f4ac938d0",
             "type": "leaf",
             "state": {
-              "type": "empty",
+              "type": "graph",
               "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ]
@@ -38,7 +38,7 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": true
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -119,13 +119,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "02 - Ψ - Memorium/journal/daily/2026/01-January/2026-01-13-Tuesday.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2026-01-13-Tuesday"
+              "title": "Outline"
             }
           },
           {
@@ -133,11 +132,9 @@
             "type": "leaf",
             "state": {
               "type": "file-properties",
-              "state": {
-                "file": "02 - Ψ - Memorium/journal/daily/2026/01-January/2026-01-13-Tuesday.md"
-              },
+              "state": {},
               "icon": "lucide-info",
-              "title": "File properties for 2026-01-13-Tuesday"
+              "title": "File properties"
             }
           },
           {
@@ -243,42 +240,42 @@
   },
   "active": "19cc3510409525e8",
   "lastOpenFiles": [
+    "02 - Ψ - Memorium/journal/monthly/2026/2026-01-January.md",
+    "02 - Ψ - Memorium/journal/monthly/2026",
+    "02 - Ψ - Memorium/journal/monthly",
+    "02 - Ψ - Memorium/journal/monthly/2026/2026-02-February.md",
+    "02 - Ψ - Memorium/journal/daily/2026/02-February/2026-02-01-Sunday.md",
+    "02 - Ψ - Memorium/journal/weekly/2026/2026-W05.md",
+    "02 - Ψ - Memorium/journal/daily/2026/02-February",
+    "02 - Ψ - Memorium/journal/daily/2026/01-January/2026-01-27-Tuesday.md",
+    "02 - Ψ - Memorium/journal/weekly/2026/2026-W04.md",
+    "02 - Ψ - Memorium/journal/daily/2026/01-January/2026-01-20-Tuesday.md",
+    "02 - Ψ - Memorium/journal/weekly/2026/2026-W03.md",
+    "02 - Ψ - Memorium/journal/daily/2026/01-January/2026-01-14-Wednesday.md",
+    "02 - Ψ - Memorium/journal/weekly/2026/2026-W02.md",
+    "02 - Ψ - Memorium/journal/daily/2026/01-January/2026-01-07-Wednesday.md",
+    "02 - Ψ - Memorium/journal/weekly/2026/2026-W01.md",
+    "02 - Ψ - Memorium/journal/daily/2026/01-January/2026-01-02-Friday.md",
+    "02 - Ψ - Memorium/journal/daily/2026/01-January/2026-01-31-Saturday.md",
+    "02 - Ψ - Memorium/journal/daily/2026/01-January/2026-01-30-Friday.md",
+    "02 - Ψ - Memorium/journal/daily/2026/01-January/2026-01-29-Thursday.md",
+    "02 - Ψ - Memorium/journal/daily/2026/01-January/2026-01-28-Wednesday.md",
+    "02 - Ψ - Memorium/journal/daily/2026/01-January/2026-01-26-Monday.md",
+    "02 - Ψ - Memorium/journal/daily/2026/01-January/2026-01-25-Sunday.md",
+    "02 - Ψ - Memorium/journal/daily/2026/01-January/2026-01-24-Saturday.md",
+    "02 - Ψ - Memorium/journal/daily/2026/01-January/2026-01-23-Friday.md",
+    "02 - Ψ - Memorium/journal/daily/2026/01-January/2026-01-22-Thursday.md",
+    "02 - Ψ - Memorium/journal/daily/2026/01-January/2026-01-21-Wednesday.md",
+    "02 - Ψ - Memorium/journal/daily/2026/01-January/2026-01-19-Monday.md",
+    "02 - Ψ - Memorium/journal/daily/2026/01-January/2026-01-12-Monday.md",
     "02 - Ψ - Memorium/journal/daily/2026/01-January/2026-01-13-Tuesday.md",
+    "02 - Ψ - Memorium/journal/daily/2025/12-December",
+    "02 - Ψ - Memorium/journal/daily/2025",
+    "02 - Ψ - Memorium/journal/weekly/2026",
+    "02 - Ψ - Memorium/journal/weekly",
     "02 - Ψ - Memorium/journal/daily/2026/01-January",
     "02 - Ψ - Memorium/journal/daily/2026",
     "02 - Ψ - Memorium/journal/daily",
-    "02 - Ψ - Memorium/journal",
-    "02 - Ψ - Memorium/journal/yearly/2026.md",
-    "02 - Ψ - Memorium/journal/daily/2026/01-January/2026-01-18-Sunday.md",
-    "02 - Ψ - Memorium/journal/yearly",
-    "02 - Ψ - Memorium/journal/weekly/2027/2027-W07.md",
-    "02 - Ψ - Memorium/journal/daily/2027/02-February/2027-02-19-Friday.md",
-    "02 - Ψ - Memorium/journal/weekly/2027/2027-W08.md",
-    "02 - Ψ - Memorium/journal/daily/2027/02-February",
-    "02 - Ψ - Memorium/journal/weekly/2027/2027-W06.md",
-    "02 - Ψ - Memorium/journal/weekly/2026/2027-W05.md",
-    "02 - Ψ - Memorium/journal/weekly/2027/2027-W05.md",
-    "02 - Ψ - Memorium/journal/weekly/2027/2027-W04.md",
-    "02 - Ψ - Memorium/journal/weekly/2027/2027-W03.md",
-    "02 - Ψ - Memorium/journal/weekly/2027/2027-W02.md",
-    "02 - Ψ - Memorium/journal/weekly/2026/2027-W01.md",
-    "02 - Ψ - Memorium/journal/weekly/2026/2026-W53.md",
-    "02 - Ψ - Memorium/journal/weekly/2025/2026-W52.md",
-    "02 - Ψ - Memorium/journal/daily/2027/01-January/2027-01-01-Friday.md",
-    "02 - Ψ - Memorium/journal/daily/2027/01-January",
-    "02 - Ψ - Memorium/journal/daily/2027",
-    "02 - Ψ - Memorium/journal/daily/2026/12-December/2026-12-31-Thursday.md",
-    "02 - Ψ - Memorium/journal/weekly/2026/2026-W02.md",
-    "02 - Ψ - Memorium/journal/daily/2026/12-December",
-    "02 - Ψ - Memorium/journal/weekly/2025/2026-W01.md",
-    "02 - Ψ - Memorium/journal/weekly/2027/2027-W52.md",
-    "02 - Ψ - Memorium/journal/weekly/2027/2028-W01.md",
-    "02 - Ψ - Memorium/journal/weekly/2027/2027-W01.md",
-    "02 - Ψ - Memorium/journal/weekly/2027",
-    "02 - Ψ - Memorium/journal/weekly/2025/2025-W52.md",
-    "02 - Ψ - Memorium/journal/weekly/2025/2025-W51.md",
-    "02 - Ψ - Memorium/journal/weekly/2025/2025-W50.md",
-    "02 - Ψ - Memorium/journal/weekly/2025/2025-W49.md",
     "Meta/images/memorium/daily/FridayBanner.gif",
     "Data/placeholder.png",
     "Meta/images/util/graphview-image.jpg",

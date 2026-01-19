@@ -412,7 +412,7 @@
       },
       "confirmCreation": false,
       "nameTemplate": "{{date}}",
-      "dateFormat": "GGGG-[W]ww",
+      "dateFormat": "GGGG-[W]WW",
       "folder": "02 - Ψ - Memorium/journal/weekly/{{date:GGGG}}",
       "templates": [
         "Meta/templates/memorium/t_weekly.md"
@@ -646,7 +646,7 @@
   "calendarView": {
     "display": "month",
     "leaf": "right",
-    "weeks": "none",
+    "weeks": "left",
     "todayMode": "create",
     "pickMode": "create",
     "todayStyle": {

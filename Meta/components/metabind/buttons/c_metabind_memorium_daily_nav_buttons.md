@@ -18,7 +18,7 @@ label: This Week
 hidden: true
 actions:
   - type: open
-    link: "[[<%* tR += tp.user.router.memorium().weekly %>/<% moment(tp.file.title, 'YYYY-MM-DD-dddd').format('GGGG/GGGG-[W]WW') %>]]"
+    link: "[[<%* tR += tp.user.router.memorium().weekly %>/<% moment(tp.file.title, 'YYYY-MM-DD-dddd').isoWeekday(4).format('GGGG/GGGG-[W]WW') %>]]"
     newTab: false
 ```
 ```meta-bind-button
