@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "b10968425704d5e2",
+        "id": "eb7e17a8d499b023",
         "type": "tabs",
         "children": [
           {
-            "id": "93cdd53f4ac938d0",
+            "id": "7768cf5eed5e1342",
             "type": "leaf",
             "state": {
-              "type": "graph",
+              "type": "empty",
               "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ]
@@ -238,7 +238,7 @@
       "obsidian-excalidraw-plugin:New drawing": true
     }
   },
-  "active": "19cc3510409525e8",
+  "active": "7768cf5eed5e1342",
   "lastOpenFiles": [
     "02 - Ψ - Memorium/journal/monthly/2026/2026-01-January.md",
     "02 - Ψ - Memorium/journal/monthly/2026",

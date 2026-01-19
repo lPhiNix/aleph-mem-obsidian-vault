@@ -646,7 +646,7 @@
   "calendarView": {
     "display": "month",
     "leaf": "right",
-    "weeks": "left",
+    "weeks": "none",
     "todayMode": "create",
     "pickMode": "create",
     "todayStyle": {
