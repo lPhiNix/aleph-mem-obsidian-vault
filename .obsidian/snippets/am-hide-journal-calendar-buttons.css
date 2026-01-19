@@ -1,0 +1,17 @@
+.month-header > button:nth-child(2) {
+  display: none;
+}
+
+.calendar-grid .week-number {
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.calendar-view-separator {
+  display: none;
+}
+
+.calendar-grid button[data-outside="true"] span {
+  display: none;
+  visibility: hidden;
+}

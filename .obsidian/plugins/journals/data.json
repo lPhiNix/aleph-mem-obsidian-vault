@@ -412,8 +412,8 @@
       },
       "confirmCreation": false,
       "nameTemplate": "{{date}}",
-      "dateFormat": "YYYY-[W]ww",
-      "folder": "02 - Ψ - Memorium/journal/weekly/{{date:YYYY}}",
+      "dateFormat": "GGGG-[W]WW",
+      "folder": "02 - Ψ - Memorium/journal/weekly/{{date:GGGG}}",
       "templates": [
         "Meta/templates/memorium/t_weekly.md"
       ],
@@ -646,23 +646,23 @@
   "calendarView": {
     "display": "month",
     "leaf": "right",
-    "weeks": "left",
+    "weeks": "none",
     "todayMode": "create",
     "pickMode": "create",
     "todayStyle": {
       "color": {
-        "type": "custom",
-        "color": "#4ee951"
+        "type": "theme",
+        "name": "interactive-accent"
       },
       "background": {
         "type": "theme",
-        "name": "background-primary-alt"
+        "name": "background-modifier-active-hover"
       }
     },
     "activeStyle": {
       "color": {
         "type": "theme",
-        "name": "text-normal"
+        "name": "background-primary"
       },
       "background": {
         "type": "theme",

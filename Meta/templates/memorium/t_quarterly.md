@@ -34,6 +34,11 @@ tR += await tp.file.include("[[c_templater_memorium_quarterly_banner_config]]");
 
 <%"---"%>
 # *✦ <% moment(tp.file.title, 'YYYY-[Q]Q').format('YYYY [Q]Q') %>*
+[[<%*
+let quarterDate = moment(tp.file.title, 'YYYY-[Q]Q');
+let yearlyNote = quarterDate.format('YYYY');
+tR += yearlyNote;
+%>|]]
 <%*
 tR += await tp.file.include("[[c_metabind_memorium_quarterly_nav_buttons]]");
 %>

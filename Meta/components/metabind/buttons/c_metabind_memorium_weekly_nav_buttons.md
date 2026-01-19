@@ -18,7 +18,7 @@ label: This Month
 hidden: true
 actions:
   - type: open
-    link: "[[<%* tR += tp.user.router.memorium().monthly %>/<% moment(tp.file.title, 'GGGG-[W]WW').startOf('isoWeek').format('YYYY/YYYY-MM-MMMM') %>]]"
+    link: "[[<%* tR += tp.user.router.memorium().monthly %>/<% moment(tp.file.title, 'GGGG-[W]WW').isoWeekday(4).format('YYYY/YYYY-MM-MMMM') %>]]"
     newTab: false
 ```
 ```meta-bind-button

@@ -1,20 +1,24 @@
 {
   "recentFiles": [
     {
-      "basename": "c_dataview_memorium_weekly_day_rating_graph",
-      "path": "Meta/components/dataview/c_dataview_memorium_weekly_day_rating_graph.md"
+      "basename": "c_templater_memorium_weekly_journals_frontmatter",
+      "path": "Meta/components/templater/memorium/c_templater_memorium_weekly_journals_frontmatter.md"
     },
     {
-      "basename": "c_metabind_memorium_weekly_nav_buttons",
-      "path": "Meta/components/metabind/buttons/c_metabind_memorium_weekly_nav_buttons.md"
+      "basename": "c_templater_memorium_quarterly_journals_frontmatter",
+      "path": "Meta/components/templater/memorium/c_templater_memorium_quarterly_journals_frontmatter.md"
     },
     {
-      "basename": "c_metabind_memorium_monthly_nav_buttons",
-      "path": "Meta/components/metabind/buttons/c_metabind_memorium_monthly_nav_buttons.md"
+      "basename": "c_templater_memorium_weekly_banner_config",
+      "path": "Meta/components/templater/memorium/c_templater_memorium_weekly_banner_config.md"
     },
     {
-      "basename": "t_yearly",
-      "path": "Meta/templates/memorium/t_yearly.md"
+      "basename": "c_templater_memorium_weekly_frontmatter",
+      "path": "Meta/components/templater/memorium/c_templater_memorium_weekly_frontmatter.md"
+    },
+    {
+      "basename": "t_daily",
+      "path": "Meta/templates/memorium/t_daily.md"
     },
     {
       "basename": "t_weekly",
@@ -25,80 +29,12 @@
       "path": "Meta/templates/memorium/t_monthly.md"
     },
     {
-      "basename": "t_quarterly",
-      "path": "Meta/templates/memorium/t_quarterly.md"
-    },
-    {
-      "basename": "t_native",
-      "path": "Meta/templates/t_native.md"
-    },
-    {
-      "basename": "c_dataview_memorium_monthly_week_list",
-      "path": "Meta/components/dataview/c_dataview_memorium_monthly_week_list.md"
-    },
-    {
-      "basename": "c_dataview_memorium_monthly_day_rating_graph",
-      "path": "Meta/components/dataview/c_dataview_memorium_monthly_day_rating_graph.md"
+      "basename": "c_dataview_memorium_weekly_day_rating_graph",
+      "path": "Meta/components/dataview/c_dataview_memorium_weekly_day_rating_graph.md"
     },
     {
       "basename": "c_dataview_memorium_weekly_day_list",
       "path": "Meta/components/dataview/c_dataview_memorium_weekly_day_list.md"
-    },
-    {
-      "basename": "c_dataview_memorium_daily_year_note_throwback",
-      "path": "Meta/components/dataview/c_dataview_memorium_daily_year_note_throwback.md"
-    },
-    {
-      "basename": "t_daily",
-      "path": "Meta/templates/memorium/t_daily.md"
-    },
-    {
-      "basename": "c_metabind_memorium_day_rating_slider",
-      "path": "Meta/components/metabind/progressbar/c_metabind_memorium_day_rating_slider.md"
-    },
-    {
-      "basename": "c_metabind_memorium_daily_nav_buttons",
-      "path": "Meta/components/metabind/buttons/c_metabind_memorium_daily_nav_buttons.md"
-    },
-    {
-      "basename": "MEMORIUM",
-      "path": "02 - Ψ - Memorium/MEMORIUM.md"
-    },
-    {
-      "basename": "HARKAIVE",
-      "path": "09 - Ω - Harkaive/HARKAIVE.md"
-    },
-    {
-      "basename": "AETHERNUM",
-      "path": "08 - Δ - Aethernum/AETHERNUM.md"
-    },
-    {
-      "basename": "ORDUS",
-      "path": "07 - Π - Ordus/ORDUS.md"
-    },
-    {
-      "basename": "KAELITHRA",
-      "path": "06 - Ξ - Kaelithra/KAELITHRA.md"
-    },
-    {
-      "basename": "VIVENTIA",
-      "path": "05 - Ζ - Viventia/VIVENTIA.md"
-    },
-    {
-      "basename": "DEVS",
-      "path": "04 - Λ - Devs/DEVS.md"
-    },
-    {
-      "basename": "NOETHERIS",
-      "path": "03 - Σ - Noetheris/NOETHERIS.md"
-    },
-    {
-      "basename": "COGNITIO",
-      "path": "01 - Θ - Cognitio/COGNITIO.md"
-    },
-    {
-      "basename": "t_test",
-      "path": "Meta/templates/test/t_test.md"
     }
   ],
   "omittedPaths": [],
