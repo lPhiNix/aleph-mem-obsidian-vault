@@ -15,6 +15,9 @@ let tags = ["NOTE"];
 tR += (await tp.file.include("[[c_templater_tags_attribute]]")) + tags.map(t => "\n- "+t).join("");
 %>
 <%*
+tR += await tp.file.include("[[c_templater_native_favorite_attribute]]");
+%>
+<%*
 let classes = [
 	"hide-source-frontmatter", "hide-inline-title", "weekly",
 	"week-" + moment(tp.file.title, "YYYY-[W]WW").format("W")
