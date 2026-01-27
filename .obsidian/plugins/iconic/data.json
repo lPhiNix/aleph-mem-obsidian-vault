@@ -129,6 +129,9 @@
     "creation": {
       "icon": "lucide-clock-arrow-up"
     },
+    "favorite": {
+      "icon": "lucide-star"
+    },
     "id": {
       "icon": "lucide-hash"
     },
