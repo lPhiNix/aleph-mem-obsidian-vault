@@ -5,6 +5,7 @@
     "tags": "tags",
     "id": "number",
     "version": "text",
-    "creation": "datetime"
+    "creation": "datetime",
+    "favorite": "checkbox"
   }
 }
