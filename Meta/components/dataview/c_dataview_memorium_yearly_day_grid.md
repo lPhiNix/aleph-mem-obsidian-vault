@@ -3,7 +3,7 @@
  * CONFIGURACIÓN
  **********************/
 const YEAR = Number(dv.current().file.name); // Nota anual: YYYY
-const DAILY_PATH = '"02 - Ψ - Memorium/daily"';
+const DAILY_PATH = "02 - Ψ - Memorium/daily";
 const PARAM = "memorium-day-rating";
 
 /**********************
