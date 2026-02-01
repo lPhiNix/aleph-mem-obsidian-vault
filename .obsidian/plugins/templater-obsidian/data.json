@@ -11,7 +11,7 @@
   "auto_jump_to_cursor": true,
   "enable_system_commands": true,
   "shell_path": "",
-  "user_scripts_folder": "Meta/scripts",
+  "user_scripts_folder": "",
   "enable_folder_templates": true,
   "folder_templates": [
     {
@@ -19,23 +19,23 @@
       "template": "Meta/templates/test/t_test.md"
     },
     {
-      "folder": "02 - Ψ - Memorium/journal/daily",
+      "folder": "02 - Ψ - Memorium/daily",
       "template": "Meta/templates/memorium/t_daily.md"
     },
     {
-      "folder": "02 - Ψ - Memorium/journal/weekly",
+      "folder": "02 - Ψ - Memorium/weekly",
       "template": "Meta/templates/memorium/t_weekly.md"
     },
     {
-      "folder": "02 - Ψ - Memorium/journal/monthly",
+      "folder": "02 - Ψ - Memorium/monthly",
       "template": "Meta/templates/memorium/t_monthly.md"
     },
     {
-      "folder": "02 - Ψ - Memorium/journal/quarterly",
+      "folder": "02 - Ψ - Memorium/quarterly",
       "template": "Meta/templates/memorium/t_quarterly.md"
     },
     {
-      "folder": "02 - Ψ - Memorium/journal/yearly",
+      "folder": "02 - Ψ - Memorium/yearly",
       "template": "Meta/templates/memorium/t_yearly.md"
     }
   ],

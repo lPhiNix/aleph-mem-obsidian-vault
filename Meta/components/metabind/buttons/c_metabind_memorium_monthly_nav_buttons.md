@@ -7,7 +7,7 @@ label: ← Previous Month
 hidden: true
 actions:
   - type: open
-    link: "[[<%* tR += tp.user.router.memorium().monthly %>/<% fileDate = moment(tp.file.title, 'YYYY-MM-MMMM').subtract(1, 'month').format('YYYY/YYYY-MM-MMMM') %>]]"
+    link: "[[02 - Ψ - Memorium/monthly/<% fileDate = moment(tp.file.title, 'YYYY-MM-MMMM').subtract(1, 'month').format('YYYY/YYYY-MM-MMMM') %>]]"
     newTab: false
 ```
 ```meta-bind-button
@@ -18,7 +18,7 @@ label: This Quarter
 hidden: true
 actions:
     - type: open  
-      link: "[[<%* tR += tp.user.router.memorium().quarterly %>/<% fileDate = moment(tp.file.title, 'YYYY-MM-MMMM').format('YYYY/YYYY-[Q]Q') %>]]"
+      link: "[[02 - Ψ - Memorium/quarterly/<% fileDate = moment(tp.file.title, 'YYYY-MM-MMMM').format('YYYY/YYYY-[Q]Q') %>]]"
       newTab: false
 ```
 ```meta-bind-button
@@ -29,6 +29,6 @@ label: Next Month →
 hidden: true
 actions:
     - type: open
-      link: "[[<%* tR += tp.user.router.memorium().monthly %>/<% fileDate = moment(tp.file.title, 'YYYY-MM-MMMM').add(1, 'month').format('YYYY/YYYY-MM-MMMM') %>]]"
+      link: "[[02 - Ψ - Memorium/monthly/<% fileDate = moment(tp.file.title, 'YYYY-MM-MMMM').add(1, 'month').format('YYYY/YYYY-MM-MMMM') %>]]"
       newTab: false
 ```

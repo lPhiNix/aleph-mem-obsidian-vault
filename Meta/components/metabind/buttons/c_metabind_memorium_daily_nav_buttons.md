@@ -7,7 +7,7 @@ label: ← Yesterday
 hidden: true
 actions:
   - type: open
-    link: "[[<%* tR += tp.user.router.memorium().daily %>/<% fileDate = moment(tp.file.title, 'YYYY-MM-DD-dddd').subtract(1, 'd').format('YYYY/MM-MMMM/YYYY-MM-DD-dddd') %>]]"
+    link: "[[02 - Ψ - Memorium/daily/<% fileDate = moment(tp.file.title, 'YYYY-MM-DD-dddd').subtract(1, 'd').format('YYYY/MM-MMMM/YYYY-MM-DD-dddd') %>]]"
     newTab: false
 ```
 ```meta-bind-button
@@ -18,7 +18,7 @@ label: This Week
 hidden: true
 actions:
   - type: open
-    link: "[[<%* tR += tp.user.router.memorium().weekly %>/<% moment(tp.file.title, 'YYYY-MM-DD-dddd').isoWeekday(4).format('GGGG/GGGG-[W]WW') %>]]"
+    link: "[[02 - Ψ - Memorium/weekly/<% moment(tp.file.title, 'YYYY-MM-DD-dddd').isoWeekday(4).format('GGGG/GGGG-[W]WW') %>]]"
     newTab: false
 ```
 ```meta-bind-button
@@ -29,6 +29,6 @@ label: Tomorrow →
 hidden: true
 actions:
   - type: open
-    link: "[[<%* tR += tp.user.router.memorium().daily %>/<% fileDate = moment(tp.file.title, 'YYYY-MM-DD-dddd').add(1, 'd').format('YYYY/MM-MMMM/YYYY-MM-DD-dddd') %>]]"
+    link: "[[02 - Ψ - Memorium/daily/<% fileDate = moment(tp.file.title, 'YYYY-MM-DD-dddd').add(1, 'd').format('YYYY/MM-MMMM/YYYY-MM-DD-dddd') %>]]"
     newTab: false
 ```
