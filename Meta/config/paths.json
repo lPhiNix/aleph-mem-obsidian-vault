@@ -9,7 +9,7 @@
   "MEMORIUM": {
     "ROOT": "02 - Ψ - Memorium",
     "JOURNAL": {
-      "ROOT": "journal",
+      "ROOT": "",
       "JOURNALS": {
         "DAILY": "daily",
         "WEEKLY": "weekly",
