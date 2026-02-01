@@ -268,8 +268,8 @@ function renderChart({labels, ratings, links, aliases, quarterlyAvg}) {
 async function render() {
   const [start,end] = getQuarterRange(dv.current().file.name);
 
-  const weeklyPath = '"<%* tR += tp.user.router.memorium().weekly; %>"';
-  const dailyPath  = '"<%* tR += tp.user.router.memorium().daily; %>"';
+  const weeklyPath = "02 - Ψ - Memorium/weekly";
+  const dailyPath  = "02 - Ψ - Memorium/daily";
 
   const {labels, ratings, links, aliases} =
     await loadQuarterWeeks(weeklyPath, dailyPath, start, end);
