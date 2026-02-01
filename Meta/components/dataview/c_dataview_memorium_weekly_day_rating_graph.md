@@ -259,7 +259,7 @@ async function render() {
   const {labels, ratings, links, aliases} = initWeekArrays();
   fillLabels(labels, startOfWeek);
 
-  const path = "02 - Ψ - Memorium/daily";
+  const path = '"02 - Ψ - Memorium/daily"';
   await loadRatings(path, startOfWeek, endOfWeek, ratings, links, aliases);
 
   const validRatings = ratings.filter(r => r != null);

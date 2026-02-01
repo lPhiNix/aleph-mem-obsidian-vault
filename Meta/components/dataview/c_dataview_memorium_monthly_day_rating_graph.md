@@ -238,7 +238,7 @@ function renderChart({labels, ratings, links, aliases, monthlyAvg, dailyAvg}) {
 async function render() {
   const [startOfMonth, endOfMonth] = getMonthRange(dv.current().file.name);
 
-  const path = "02 - Ψ - Memorium/daily";
+  const path = '"02 - Ψ - Memorium/daily"';
   const {labels, ratings, links, aliases} =
     await loadMonthlyRatings(path, startOfMonth, endOfMonth);
 
