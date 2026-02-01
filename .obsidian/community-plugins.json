@@ -11,10 +11,10 @@
   "metaedit",
   "iconic",
   "table-editor-obsidian",
-  "obsidian-excalidraw-plugin",
   "recent-files-obsidian",
   "tag-wrangler",
   "dataview",
   "obsidian-meta-bind-plugin",
-  "heatmap-tracker"
+  "heatmap-tracker",
+  "obsidian-excalidraw-plugin"
 ]
