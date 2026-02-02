@@ -37,8 +37,10 @@ tR += await tp.file.include("[[c_templater_memorium_daily_banner_config]]");
 
 <%"---"%>
 # ✦ <% moment(tp.file.title, 'YYYY-MM-DD-dddd').format("dddd, MMMM DD, YYYY") %>
-[[<% // create hidden link to weekly note for graph view
-moment(tp.file.title, 'YYYY-MM-DD-dddd').format('GGGG-[W]WW') %>|]]
+<%*
+tR += await tp.file.include("[[c_templater_memorium_daily_hide_weekly_link]]");
+tR += await tp.file.include("[[c_templater_memorium_daily_hide_monthly_link]]");
+%>
 <%*
 tR += await tp.file.include("[[c_metabind_memorium_daily_nav_buttons]]");
 %>
