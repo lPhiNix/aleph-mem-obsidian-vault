@@ -1,4 +1,4 @@
-`BUTTON[prev-day, current-week, next-day]`
+`BUTTON[prev-day, current-week, current-month, next-day]`
 ```meta-bind-button
 id: prev-day
 class: phone-responsive
@@ -19,6 +19,17 @@ hidden: true
 actions:
   - type: open
     link: "[[02 - Ψ - Memorium/weekly/<% moment(tp.file.title, 'YYYY-MM-DD-dddd').isoWeekday(4).format('GGGG/GGGG-[W]WW') %>]]"
+    newTab: false
+```
+```meta-bind-button
+id: current-month
+style: primary
+class: phone-responsive
+label: This Month
+hidden: true
+actions:
+  - type: open
+    link: "[[02 - Ψ - Memorium/monthly/<% moment(tp.file.title, 'YYYY-MM-DD-dddd').format('YYYY/YYYY-MM-MMMM') %>]]"
     newTab: false
 ```
 ```meta-bind-button
