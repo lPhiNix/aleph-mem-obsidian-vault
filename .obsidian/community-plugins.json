@@ -7,12 +7,9 @@
   "journals",
   "cmdr",
   "settings-search",
-  "metaedit",
   "iconic",
-  "table-editor-obsidian",
   "tag-wrangler",
   "dataview",
   "obsidian-meta-bind-plugin",
-  "heatmap-tracker",
-  "obsidian-excalidraw-plugin"
+  "heatmap-tracker"
 ]
