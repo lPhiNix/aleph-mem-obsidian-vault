@@ -1,4 +1,6 @@
 ```dataview
-TABLE memorium-alias AS Alias
-FROM [[<% fileDate = moment(tp.file.title).format('YYYY-MM-MMMM') %>]]
+TABLE memorium-alias AS Alias, memorium-day-rating AS Rating
+FROM [[<% fileDate = moment(tp.file.title).format('YYYY-MM-MMMM') %>]] 
+AND "02 - Ψ - Memorium/daily"
+SORT date(file.name, "yyyy-MM-dd-cccc") ASC
 ```
