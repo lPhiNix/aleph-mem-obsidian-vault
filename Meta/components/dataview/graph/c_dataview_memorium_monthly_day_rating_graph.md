@@ -1,6 +1,4 @@
 ```dataviewjs
-
-
 /**********************
  * CONFIGURACIÓN
  **********************/
@@ -88,32 +86,35 @@ function getMonthRange(fileName) {
   return [m.clone().startOf("month"), m.clone().endOf("month")];
 }
 
-async function loadMonthlyRatings(path, startOfMonth, endOfMonth) {
-  const entries = [];
+function initMonthArrays(startOfMonth, endOfMonth) {
+  const daysInMonth = endOfMonth.date();
+  return {
+    labels: Array(daysInMonth).fill(null),
+    ratings: Array(daysInMonth).fill(null),
+    links: Array(daysInMonth).fill(null),
+    aliases: Array(daysInMonth).fill(null)
+  };
+}
 
+function fillMonthLabels(labels, startOfMonth) {
+  for (let i = 0; i < labels.length; i++) {
+    labels[i] = startOfMonth.clone().add(i, "days").format("ddd, D MMM");
+  }
+}
+
+async function loadMonthlyRatings(path, startOfMonth, endOfMonth, ratings, links, aliases) {
   dv.pages(path)
     .where(p => p["memorium-day-rating"] != null && p["memorium-date"])
     .forEach(p => {
       const d = moment(p["memorium-date"].toISODate(), "YYYY-MM-DD");
       if (!d.isBetween(startOfMonth, endOfMonth, "day", "[]")) return;
 
-      entries.push({
-        date: d,
-        rating: p["memorium-day-rating"],
-        link: p.file.path,
-        alias: p["memorium-alias"]
-      });
+      // Calcula el índice basado en el día del mes (0-indexed)
+      const idx = d.date() - 1;
+      ratings[idx] = p["memorium-day-rating"];
+      links[idx] = p.file.path;
+      aliases[idx] = p["memorium-alias"];
     });
-
-  // Orden cronológico
-  entries.sort((a,b) => a.date - b.date);
-
-  return {
-    labels: entries.map(e => e.date.format("ddd, D MMM")),
-    ratings: entries.map(e => e.rating),
-    links: entries.map(e => e.link),
-    aliases: entries.map(e => e.alias)
-  };
 }
 
 /**********************
@@ -185,17 +186,32 @@ function renderChart({labels, ratings, links, aliases, monthlyAvg, dailyAvg}) {
       responsive: true,
       plugins: {
         legend: {
-          display: true
+          display: true,
+          labels: {
+            generateLabels: chart => {
+              const lbls = Chart.defaults.plugins.legend.labels.generateLabels(chart) || [];
+              if (!monthlyAvg) return lbls;
+              return lbls.map(lbl =>
+                lbl.text === "Day Rating"
+                  ? {...lbl, fillStyle: colorForValue(monthlyAvg), strokeStyle: colorForValue(monthlyAvg)}
+                  : lbl
+              );
+            }
+          }
         },
         tooltip: {
           callbacks: {
             label: ctx => {
               const i = ctx.dataIndex;
-              if (ctx.dataset.label === "Average") {
-                return dailyAvg[i] == null
+              const datasetLabel = ctx.dataset.label;
+
+              if (datasetLabel === "Average") {
+                const v = dailyAvg[i];
+                return v == null
                   ? "Average: —"
-                  : `Average (to date): ${dailyAvg[i].toFixed(2)}`;
+                  : `Average (to date): ${v.toFixed(2)}`;
               }
+
               return ratings[i] == null
                 ? ["No entry", "Rest / no log"]
                 : [
@@ -221,8 +237,10 @@ function renderChart({labels, ratings, links, aliases, monthlyAvg, dailyAvg}) {
             color: ctx => colorForValue(ctx?.tick?.value ?? ctx.value ?? 0)
           },
           grid: {
+            display: true,
             drawBorder: false,
             color: ctx => colorForValue(ctx?.tick?.value ?? ctx.value ?? 0, 0.12),
+            lineWidth: 1,
             borderDash: [4,4]
           }
         },
@@ -237,10 +255,11 @@ function renderChart({labels, ratings, links, aliases, monthlyAvg, dailyAvg}) {
  **********************/
 async function render() {
   const [startOfMonth, endOfMonth] = getMonthRange(dv.current().file.name);
+  const {labels, ratings, links, aliases} = initMonthArrays(startOfMonth, endOfMonth);
+  fillMonthLabels(labels, startOfMonth);
 
   const path = '"02 - Ψ - Memorium/daily"';
-  const {labels, ratings, links, aliases} =
-    await loadMonthlyRatings(path, startOfMonth, endOfMonth);
+  await loadMonthlyRatings(path, startOfMonth, endOfMonth, ratings, links, aliases);
 
   const validRatings = ratings.filter(r => r != null);
   const monthlyAvg = validRatings.length
@@ -266,6 +285,4 @@ async function render() {
 }
 
 ensureLibraries().then(render);
-
-
 ```
