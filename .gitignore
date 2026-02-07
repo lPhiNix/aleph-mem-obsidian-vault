@@ -2,3 +2,5 @@
 Data/*
 !Data/placeholder.png
 Test/*
+
+data.json.backup*
