@@ -1,4 +1,6 @@
 # ALL 
+placeholder.*
+
 Data/*
 !Data/placeholder.png
 Test/*
