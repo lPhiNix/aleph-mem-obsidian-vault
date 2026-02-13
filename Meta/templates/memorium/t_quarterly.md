@@ -62,7 +62,7 @@ tR += await tp.file.include("[[c_metabind_memorium_quarterly_summary_editor]]");
 tR += await tp.file.include("[[c_dataview_memorium_quarterly_day_rating_graph]]");
 %>
 
-### ✧ Month Overview
+### ✧ General Overview
 ---
 <%*
 tR += await tp.file.include("[[c_dataview_memorium_quarterly_month_list]]");
