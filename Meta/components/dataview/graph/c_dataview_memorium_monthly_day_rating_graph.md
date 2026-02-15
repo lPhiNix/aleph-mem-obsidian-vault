@@ -665,12 +665,7 @@ class ChartOptionsBuilder {
    */
   _buildXScaleOptions() {
     return {
-      grid: { display: false },
-      ticks: {
-        autoSkip: false,
-        maxRotation: 60,
-        minRotation: 30
-      }
+      grid: { display: false }
     };
   }
 }
