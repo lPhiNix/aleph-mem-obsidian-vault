@@ -415,34 +415,25 @@ class ChartDatasetBuilder {
     const { ratings } = quarterData;
     const { dailyAvg } = stats;
 
-    const barColors = this._buildBarColors(ratings);
-    const pointColors = this._buildPointColors(barColors);
+    const pointColors = this._buildPointColors(ratings);
 
     return [
       this._buildProgressionDataset(ratings, pointColors),
-      this._buildAverageDataset(dailyAvg),
-      this._buildBarDataset(ratings, barColors)
+      this._buildAverageDataset(dailyAvg)
     ];
-  }
-
-  /**
-   * Construye el array de colores para las barras
-   * @private
-   */
-  _buildBarColors(ratings) {
-    return ratings.map(rating => 
-      rating == null 
-        ? CONFIG.EMPTY_COLOR 
-        : (CONFIG.RATING_COLORS[rating] ?? CONFIG.EMPTY_COLOR)
-    );
   }
 
   /**
    * Construye el array de colores para los puntos
    * @private
    */
-  _buildPointColors(barColors) {
-    return barColors.map(color => ColorUtils.hexToRgba(color, 0.5));
+  _buildPointColors(ratings) {
+    return ratings.map(rating => {
+      const color = rating == null 
+        ? CONFIG.EMPTY_COLOR 
+        : (CONFIG.RATING_COLORS[rating] ?? CONFIG.EMPTY_COLOR);
+      return ColorUtils.hexToRgba(color, 1);
+    });
   }
 
   /**
@@ -450,22 +441,23 @@ class ChartDatasetBuilder {
    * @private
    */
   _buildProgressionDataset(ratings, pointColors) {
-    const accentLine = ColorUtils.cssColorWithAlpha(CONFIG.THEME.ACCENT_VAR, 0.7);
-    const accentSolid = ColorUtils.cssColorWithAlpha(CONFIG.THEME.ACCENT_VAR, 1);
+    const accentLine = ColorUtils.cssColorWithAlpha(CONFIG.THEME.ACCENT_VAR, 0.4);
+    const accentBorder = ColorUtils.cssColorWithAlpha(CONFIG.THEME.ACCENT_VAR, 0.8);
 
     return {
       type: "line",
-      label: "Progression",
+      label: "Day Rating",
       data: ratings,
       borderColor: accentLine,
       borderWidth: 2,
       tension: 0.4,
       spanGaps: true,
-      pointRadius: 5,
-      pointHoverRadius: 7,
+      pointRadius: 6,
+      pointHoverRadius: 8,
       pointBackgroundColor: pointColors,
-      pointBorderColor: accentSolid,
-      pointBorderWidth: 2
+      pointBorderColor: accentBorder,
+      pointBorderWidth: 2,
+      pointHoverBorderWidth: 3
     };
   }
 
@@ -474,8 +466,8 @@ class ChartDatasetBuilder {
    * @private
    */
   _buildAverageDataset(dailyAvg) {
-    const accentMedium = ColorUtils.cssColorWithAlpha(CONFIG.THEME.ACCENT_VAR, 0.5);
-    const accentSolid = ColorUtils.cssColorWithAlpha(CONFIG.THEME.ACCENT_VAR, 1);
+    const accentMedium = ColorUtils.cssColorWithAlpha(CONFIG.THEME.ACCENT_VAR, 0.35);
+    const accentBorder = ColorUtils.cssColorWithAlpha(CONFIG.THEME.ACCENT_VAR, 0.6);
 
     return {
       type: "line",
@@ -485,27 +477,13 @@ class ChartDatasetBuilder {
       borderColor: accentMedium,
       borderWidth: 2,
       spanGaps: true,
-      pointRadius: 5,
-      pointHoverRadius: 7,
-      pointBackgroundColor: dailyAvg.map(v => ColorUtils.getColorForRating(v, 0.5)),
-      pointBorderColor: accentSolid,
-      pointBorderWidth: 2,
+      pointRadius: 4,
+      pointHoverRadius: 6,
+      pointBackgroundColor: dailyAvg.map(v => ColorUtils.getColorForRating(v, 0.7)),
+      pointBorderColor: accentBorder,
+      pointBorderWidth: 1.5,
       borderDash: [6, 6],
       tension: 0
-    };
-  }
-
-  /**
-   * Construye el dataset de barras
-   * @private
-   */
-  _buildBarDataset(ratings, barColors) {
-    return {
-      type: "bar",
-      label: "Day Rating",
-      data: ratings,
-      backgroundColor: barColors,
-      borderRadius: 6
     };
   }
 }

@@ -55,7 +55,7 @@ tR += await tp.file.include("[[c_metabind_memorium_yearly_summary_editor]]");
 tR += await tp.file.include("[[c_dataview_memorium_yearly_day_grid]]");
 %>
 
-### ✧ Quarters Overview
+### ✧ General Overview
 ---
 <%*
 tR += await tp.file.include("[[c_dataview_memorium_yearly_quarter_list]]");
