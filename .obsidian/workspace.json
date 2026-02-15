@@ -70,16 +70,6 @@
               "icon": "lucide-bookmark",
               "title": "Bookmarks"
             }
-          },
-          {
-            "id": "320846bdd237adcd",
-            "type": "leaf",
-            "state": {
-              "type": "recent-files",
-              "state": {},
-              "icon": "clock",
-              "title": "Recent Files"
-            }
           }
         ]
       },
@@ -232,10 +222,7 @@
       "random-note:Open random note": false,
       "obsidian-kanban:Create new board": false,
       "iconic:Open rulebook": false,
-      "templater-obsidian:Templater": false,
-      "pexels-banner:🚩 Pixel Banner Menu": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": true,
-      "obsidian-excalidraw-plugin:New drawing": true
+      "templater-obsidian:Templater": false
     }
   },
   "active": "7768cf5eed5e1342",
