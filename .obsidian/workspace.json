@@ -50,7 +50,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Ψ",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -101,7 +101,7 @@
       {
         "id": "2f052bc40223a647",
         "type": "tabs",
-        "dimension": 61.959287531806616,
+        "dimension": 61.95928753180661,
         "children": [
           {
             "id": "276e9f8b1d130edd",
@@ -132,11 +132,7 @@
             "type": "leaf",
             "state": {
               "type": "all-properties",
-              "state": {
-                "sortOrder": "frequency",
-                "showSearch": false,
-                "searchQuery": ""
-              },
+              "state": {},
               "icon": "lucide-archive",
               "title": "All properties"
             }
@@ -146,12 +142,7 @@
             "type": "leaf",
             "state": {
               "type": "tag",
-              "state": {
-                "sortOrder": "frequency",
-                "useHierarchy": true,
-                "showSearch": false,
-                "searchQuery": ""
-              },
+              "state": {},
               "icon": "lucide-tags",
               "title": "Tags"
             }
@@ -161,15 +152,7 @@
             "type": "leaf",
             "state": {
               "type": "backlink",
-              "state": {
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              },
+              "state": {},
               "icon": "links-coming-in",
               "title": "Backlinks"
             }
@@ -179,16 +162,12 @@
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
-              "state": {
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              },
+              "state": {},
               "icon": "links-going-out",
               "title": "Outgoing links"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
         "id": "2cb30cdd678dfa50",
@@ -225,53 +204,6 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "7768cf5eed5e1342",
-  "lastOpenFiles": [
-    "02 - Ψ - Memorium/daily/2026/02-February/2026-02-21-Saturday.md",
-    "02 - Ψ - Memorium/daily/2026/02-February",
-    "02 - Ψ - Memorium/daily/2026",
-    "02 - Ψ - Memorium/daily",
-    "02 - Ψ - Memorium/journal/monthly/2026/2026-01-January.md",
-    "02 - Ψ - Memorium/journal/monthly/2026",
-    "02 - Ψ - Memorium/journal/monthly",
-    "02 - Ψ - Memorium/journal/monthly/2026/2026-02-February.md",
-    "02 - Ψ - Memorium/journal/daily/2026/02-February/2026-02-01-Sunday.md",
-    "02 - Ψ - Memorium/journal/weekly/2026/2026-W05.md",
-    "02 - Ψ - Memorium/journal/daily/2026/02-February",
-    "02 - Ψ - Memorium/journal/daily/2026/01-January/2026-01-27-Tuesday.md",
-    "02 - Ψ - Memorium/journal/weekly/2026/2026-W04.md",
-    "02 - Ψ - Memorium/journal/daily/2026/01-January/2026-01-20-Tuesday.md",
-    "02 - Ψ - Memorium/journal/weekly/2026/2026-W03.md",
-    "02 - Ψ - Memorium/journal/daily/2026/01-January/2026-01-14-Wednesday.md",
-    "02 - Ψ - Memorium/journal/weekly/2026/2026-W02.md",
-    "02 - Ψ - Memorium/journal/daily/2026/01-January/2026-01-07-Wednesday.md",
-    "02 - Ψ - Memorium/journal/weekly/2026/2026-W01.md",
-    "02 - Ψ - Memorium/journal/daily/2026/01-January/2026-01-02-Friday.md",
-    "02 - Ψ - Memorium/journal/daily/2026/01-January/2026-01-31-Saturday.md",
-    "02 - Ψ - Memorium/journal/daily/2026/01-January/2026-01-30-Friday.md",
-    "02 - Ψ - Memorium/journal/daily/2026/01-January/2026-01-29-Thursday.md",
-    "02 - Ψ - Memorium/journal/daily/2026/01-January/2026-01-28-Wednesday.md",
-    "02 - Ψ - Memorium/journal/daily/2026/01-January/2026-01-26-Monday.md",
-    "02 - Ψ - Memorium/journal/daily/2026/01-January/2026-01-25-Sunday.md",
-    "02 - Ψ - Memorium/journal/daily/2026/01-January/2026-01-24-Saturday.md",
-    "02 - Ψ - Memorium/journal/daily/2026/01-January/2026-01-23-Friday.md",
-    "02 - Ψ - Memorium/journal/daily/2026/01-January/2026-01-22-Thursday.md",
-    "02 - Ψ - Memorium/journal/daily/2026/01-January/2026-01-21-Wednesday.md",
-    "02 - Ψ - Memorium/journal/daily/2026/01-January/2026-01-19-Monday.md",
-    "02 - Ψ - Memorium/journal/daily/2025/12-December",
-    "02 - Ψ - Memorium/journal/daily/2025",
-    "02 - Ψ - Memorium/journal/weekly/2026",
-    "02 - Ψ - Memorium/journal/weekly",
-    "Meta/images/memorium/daily/FridayBanner.gif",
-    "Data/placeholder.png",
-    "Meta/images/util/graphview-image.jpg",
-    "Meta/images/util/graph.jpg",
-    "Meta/images/util/milky-way-5295160.jpg",
-    "Meta/images/util/DashboardBanner.gif",
-    "Data/media/img/star.png",
-    "Meta/images/QAIdeaBanner.gif",
-    "Meta/images/memorium/yearly/YearlyBanner.jpg",
-    "Meta/images/memorium/weekly/WeeklyBanner4.gif",
-    "90 - Ω - Harkaive/Bookshelf/Books/Sin título.canvas"
-  ]
+  "active": "276e9f8b1d130edd",
+  "lastOpenFiles": []
 }
