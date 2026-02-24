@@ -1,8 +1,19 @@
-# ALL 
-placeholder.*
+# Obsidian
+.obsidian/cache
+.obsidian/backlink.json
+.obsidian/bookmarks.json
+.trash/
 
+# Data
+placeholder.*
 Data/*
 !Data/placeholder.png
+
+# Test
 Test/*
 
+# Iconic backups
 data.json.backup*
+
+# Exclude macOS Finder (System Explorer) View States
+.DS_Store
