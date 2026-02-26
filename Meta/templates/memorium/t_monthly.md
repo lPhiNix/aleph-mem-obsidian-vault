@@ -31,9 +31,6 @@ tR += await tp.file.include("[[c_templater_memorium_monthly_frontmatter]]");
 <%*
 tR += await tp.file.include("[[c_templater_memorium_monthly_journals_frontmatter]]");
 %>
-<%*
-tR += await tp.file.include("[[c_templater_memorium_monthly_banner_config]]");
-%>
 
 <%"---"%>
 # *✦ <% moment(tp.file.title, 'YYYY-MM-MMMM').format('MM-MMMM') %>*
