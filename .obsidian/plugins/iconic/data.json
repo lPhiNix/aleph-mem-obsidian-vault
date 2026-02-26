@@ -125,17 +125,7 @@
     }
   },
   "bookmarkIcons": {},
-  "tagIcons": {
-    "AM": {
-      "icon": "lucide-codesandbox"
-    },
-    "NODE": {
-      "icon": "lucide-sparkles"
-    },
-    "NOTE": {
-      "icon": "lucide-sticky-note"
-    }
-  },
+  "tagIcons": {},
   "propertyIcons": {
     "creation": {
       "icon": "lucide-clock-arrow-up"
