@@ -1,8 +1,7 @@
 <%"---"%>
 
 <%*
-let version = "1.0.0"
-tR += await tp.file.include("[[c_templater_native_version_attribute]]") + version;
+tR += await tp.file.include("[[c_templater_native_version_attribute]]");
 %>
 <%*
 tR += await tp.file.include("[[c_templater_native_id_attribute]]");
@@ -61,3 +60,4 @@ tR += await tp.file.include("[[c_metabind_memorium_daily_summary_editor]]");
 <%*
 tR += await tp.file.include("[[c_dataview_memorium_daily_year_note_throwback]]");
 %>
+
