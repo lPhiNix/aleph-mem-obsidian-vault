@@ -57,7 +57,17 @@
     "class-memorium-quarterly",
     "class-memorium-weekly",
     "class-memorium-yearly",
-    "class-module-notes"
+    "class-module-notes",
+    "class-native-note",
+    "class-am-hide-all-frontmatter",
+    "class-am-hide-inline-title",
+    "class-am-hide-source-frontmatter",
+    "class-am-memorium-daily",
+    "class-am-memorium-monthly",
+    "class-am-memorium-quarterly",
+    "class-am-memorium-weekly",
+    "class-am-memorium-yearly",
+    "class-am-module-notes"
   ],
   "interfaceFontFamily": "",
   "textFontFamily": "",
