@@ -130,6 +130,9 @@
     "creation": {
       "icon": "lucide-clock-arrow-up"
     },
+    "cssclasses": {
+      "icon": "lucide-paintbrush"
+    },
     "favorite": {
       "icon": "lucide-star"
     },
