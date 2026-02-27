@@ -1,8 +1,7 @@
 <%"---"%>
 
 <%*
-let version = "1.0.0"
-tR += await tp.file.include("[[c_templater_native_version_attribute]]") + version;
+tR += await tp.file.include("[[c_templater_native_version_attribute]]");
 %>
 <%*
 tR += await tp.file.include("[[c_templater_native_id_attribute]]");
