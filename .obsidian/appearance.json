@@ -48,7 +48,16 @@
     "am-class-memorium-yearly",
     "am-class-module-notes",
     "am-layout-metabind-text-custom",
-    "am-layouts-memorium_callouts"
+    "am-layouts-memorium_callouts",
+    "class-hide-all-frontmatter",
+    "class-hide-inline-title",
+    "class-hide-source-frontmatter",
+    "class-memorium-daily",
+    "class-memorium-monthly",
+    "class-memorium-quarterly",
+    "class-memorium-weekly",
+    "class-memorium-yearly",
+    "class-module-notes"
   ],
   "interfaceFontFamily": "",
   "textFontFamily": "",
