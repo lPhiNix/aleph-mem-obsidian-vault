@@ -1,15 +1,14 @@
 /*------------------------------------------------------------------------------
                      Yearly Note Themes for Time Garden
-                    Elegant gradient styling for yearly overviews
+                Elegant gradient styling for yearly overviews
+             Requires: am-color-palette.css (enable in Appearance > CSS snippets)
 ------------------------------------------------------------------------------*/
-:root {
-  --highlight: #ffffff;
-  --primary: #aaaaaa;
-  --dark: #333333;
-}
 
 .yearly {
-  --dark: var(--dark);
+  --highlight: var(--c-am-memorium-yearly-highlight);
+  --primary: var(--c-am-memorium-yearly-primary);
+  --dark: var(--c-am-memorium-yearly-dark);
+  
   --text-normal: var(--highlight);
   --text-muted: var(--highlight);
   --text-faint: var(--highlight);
@@ -25,7 +24,7 @@
   --checkbox-color-hover: var(--highlight);
   --checkbox-border-color: var(--highlight);
   --list-marker-color: var(--highlight);
-  --code-background: black;
+  --code-background: var(--c-memorium-base-black);
   --code-normal: var(--primary); 
   --background-modifier-border-focus: var(--primary);
   --background-modifier-border: color-mix(in srgb, var(--highlight) 60%, transparent);
@@ -33,19 +32,12 @@
   --pill-cover-hover: color-mix(in srgb, var(--highlight) 60%, transparent);
 }
 
-/* Yearly theme colors */
-.yearly {
-  --highlight: #e0f7ff;
-  --primary: #8ca9d3;
-  --dark: #2d4159;
-}
-
 /* Gradient header styling */
 .yearly :is(
   .HyperMD-header.HyperMD-header-1,
   .markdown-rendered h1
 ) {
-  background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+  background: linear-gradient(135deg, var(--c-am-memorium-yearly-gradient-1-start), var(--c-am-memorium-yearly-gradient-1-end));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;
@@ -68,7 +60,7 @@
 .yearly .cm-formatting-header-1:has-text("✧"),
 .yearly .markdown-rendered h1:first-child:before {
   content: "✧";
-  background: linear-gradient(135deg, #f857a6, #ff5858);
+  background: linear-gradient(135deg, var(--c-am-memorium-yearly-gradient-2-start), var(--c-am-memorium-yearly-gradient-2-end));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;

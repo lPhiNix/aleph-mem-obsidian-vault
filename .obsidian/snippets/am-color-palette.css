@@ -1,0 +1,358 @@
+:root {
+
+    --c-am-intima:    #ff8fa3;
+    --c-am-cognitio:  #ffb36b;
+    --c-am-memorium:  #ffe066;
+    --c-am-noetheris: #8ce99a;
+    --c-am-devs:      #63e6be;
+    --c-am-viventia:  #74c0fc;
+    --c-am-kaelithra: #b197fc;
+    --c-am-ordus:     #da77f2;
+    --c-am-aethernum: #ced4da;
+    --c-am-harkaive:  #868e96;
+
+
+    --c-am-native-inline-title:  #ffffff;
+    --c-am-native-header-h2:     #fff1a8;
+    --c-am-native-header-h3:     #63e6be;
+    --c-am-native-header-h4:     #a5d8ff;
+    --c-am-native-header-h5:     #dfbffd;
+    --c-am-native-header-h6:     #ff9fb3;
+    --c-am-native-bold:          #81b9da;
+    --c-am-native-italic:        #00e49c;
+    --c-am-native-bold-italic:   #eddb7d;
+    --c-am-native-strikethrough: #636871;
+    --c-am-native-code:          #e3b258;
+    --c-am-native-code-bg:       rgba(229, 192, 123, 0.20);
+
+
+    --c-am-memorium-base-highlight: #ffffff;
+    --c-am-memorium-base-primary:   #aaaaaa;
+    --c-am-memorium-base-dark:      #333333;
+    --c-am-memorium-base-black:     #000000;
+
+    --c-am-memorium-daily-sunday-highlight: #e29eff;
+    --c-am-memorium-daily-sunday-primary:   #8944b4;
+    --c-am-memorium-daily-sunday-dark:      #3d204d;
+
+    --c-am-memorium-daily-monday-highlight: #9eceff;
+    --c-am-memorium-daily-monday-primary:   #6b9fff;
+    --c-am-memorium-daily-monday-dark:      #20344d;
+
+    --c-am-memorium-daily-tuesday-highlight: #9effce;
+    --c-am-memorium-daily-tuesday-primary:   #43a473;
+    --c-am-memorium-daily-tuesday-dark:      #204d3a;
+
+    --c-am-memorium-daily-wednesday-highlight: #ffee9e;
+    --c-am-memorium-daily-wednesday-primary:   #bea04c;
+    --c-am-memorium-daily-wednesday-dark:      #4d4720;
+
+    --c-am-memorium-daily-thursday-highlight: #ffb69e;
+    --c-am-memorium-daily-thursday-primary:   #db7b5b;
+    --c-am-memorium-daily-thursday-dark:      #4d2e20;
+
+    --c-am-memorium-daily-friday-highlight: #ff9e9e;
+    --c-am-memorium-daily-friday-primary:   #ff6b6b;
+    --c-am-memorium-daily-friday-dark:      #4d2020;
+
+    --c-am-memorium-daily-saturday-highlight: #ffa6d2;
+    --c-am-memorium-daily-saturday-primary:   #db5c9c;
+    --c-am-memorium-daily-saturday-dark:      #4d2038;
+
+    --c-am-memorium-monthly-january-highlight: #b9e8ff;
+    --c-am-memorium-monthly-january-primary:   #5294c4;
+    --c-am-memorium-monthly-january-dark:      #1c3b55;
+
+    --c-am-memorium-monthly-february-highlight: #d9c2ff;
+    --c-am-memorium-monthly-february-primary:   #8a5dc7;
+    --c-am-memorium-monthly-february-dark:      #36265a;
+
+    --c-am-memorium-monthly-march-highlight: #c7f0d8;
+    --c-am-memorium-monthly-march-primary:   #5fb485;
+    --c-am-memorium-monthly-march-dark:      #2a523d;
+
+    --c-am-memorium-monthly-april-highlight: #e8ffc7;
+    --c-am-memorium-monthly-april-primary:   #8abd57;
+    --c-am-memorium-monthly-april-dark:      #3c552a;
+
+    --c-am-memorium-monthly-may-highlight: #fff9c7;
+    --c-am-memorium-monthly-may-primary:   #dbc458;
+    --c-am-memorium-monthly-may-dark:      #635a2a;
+
+    --c-am-memorium-monthly-june-highlight: #ffe0c7;
+    --c-am-memorium-monthly-june-primary:   #e09d58;
+    --c-am-memorium-monthly-june-dark:      #654a2a;
+
+    --c-am-memorium-monthly-july-highlight: #ffc7c7;
+    --c-am-memorium-monthly-july-primary:   #e05858;
+    --c-am-memorium-monthly-july-dark:      #652a2a;
+
+    --c-am-memorium-monthly-august-highlight: #ffb38a;
+    --c-am-memorium-monthly-august-primary:   #f07542;
+    --c-am-memorium-monthly-august-dark:      #6b3420;
+
+    --c-am-memorium-monthly-september-highlight: #ffd68a;
+    --c-am-memorium-monthly-september-primary:   #e9a643;
+    --c-am-memorium-monthly-september-dark:      #664a1e;
+
+    --c-am-memorium-monthly-october-highlight: #ffad9e;
+    --c-am-memorium-monthly-october-primary:   #d1614b;
+    --c-am-memorium-monthly-october-dark:      #5e2c22;
+
+    --c-am-memorium-monthly-november-highlight: #e6b3cc;
+    --c-am-memorium-monthly-november-primary:   #ad5985;
+    --c-am-memorium-monthly-november-dark:      #4c273b;
+
+    --c-am-memorium-monthly-december-highlight: #b3c6e6;
+    --c-am-memorium-monthly-december-primary:   #5978ad;
+    --c-am-memorium-monthly-december-dark:      #27344c;
+
+    --c-am-memorium-quarterly-q1-highlight: #c7e0f0;
+    --c-am-memorium-quarterly-q1-primary:   #6a9cb8;
+    --c-am-memorium-quarterly-q1-dark:      #2a4050;
+
+    --c-am-memorium-quarterly-q2-highlight: #f0f7c7;
+    --c-am-memorium-quarterly-q2-primary:   #a8c265;
+    --c-am-memorium-quarterly-q2-dark:      #4d5830;
+
+    --c-am-memorium-quarterly-q3-highlight: #ffd8a8;
+    --c-am-memorium-quarterly-q3-primary:   #e69a5c;
+    --c-am-memorium-quarterly-q3-dark:      #664530;
+
+    --c-am-memorium-quarterly-q4-highlight: #e0c7d8;
+    --c-am-memorium-quarterly-q4-primary:   #9a6c8c;
+    --c-am-memorium-quarterly-q4-dark:      #432e3d;
+
+    --c-am-memorium-weekly-week1-highlight: #ffffff;
+    --c-am-memorium-weekly-week1-primary:   #ffffff;
+    --c-am-memorium-weekly-week1-dark:      #ffffff;
+
+    --c-am-memorium-weekly-week2-highlight: #cbe9fd;
+    --c-am-memorium-weekly-week2-primary:   #59a3dc;
+    --c-am-memorium-weekly-week2-dark:      #1c4871;
+
+    --c-am-memorium-weekly-week3-highlight: #c5e5fa;
+    --c-am-memorium-weekly-week3-primary:   #549cd7;
+    --c-am-memorium-weekly-week3-dark:      #1b456d;
+
+    --c-am-memorium-weekly-week4-highlight: #bfe1f8;
+    --c-am-memorium-weekly-week4-primary:   #4f94d3;
+    --c-am-memorium-weekly-week4-dark:      #1a4269;
+
+    --c-am-memorium-weekly-week5-highlight: #b9ddf5;
+    --c-am-memorium-weekly-week5-primary:   #4a8dce;
+    --c-am-memorium-weekly-week5-dark:      #193f65;
+
+    --c-am-memorium-weekly-week6-highlight: #b3d9f3;
+    --c-am-memorium-weekly-week6-primary:   #4586c9;
+    --c-am-memorium-weekly-week6-dark:      #183c61;
+
+    --c-am-memorium-weekly-week7-highlight: #add5f0;
+    --c-am-memorium-weekly-week7-primary:   #407fc5;
+    --c-am-memorium-weekly-week7-dark:      #17395d;
+
+    --c-am-memorium-weekly-week8-highlight: #a7d1ee;
+    --c-am-memorium-weekly-week8-primary:   #3b78c0;
+    --c-am-memorium-weekly-week8-dark:      #163659;
+
+    --c-am-memorium-weekly-week9-highlight: #a1cef0;
+    --c-am-memorium-weekly-week9-primary:   #3976bd;
+    --c-am-memorium-weekly-week9-dark:      #163455;
+
+    --c-am-memorium-weekly-week10-highlight: #9bd0f3;
+    --c-am-memorium-weekly-week10-primary:   #357ab9;
+    --c-am-memorium-weekly-week10-dark:      #153251;
+
+    --c-am-memorium-weekly-week11-highlight: #95cdf6;
+    --c-am-memorium-weekly-week11-primary:   #308fb5;
+    --c-am-memorium-weekly-week11-dark:      #142f4d;
+
+    --c-am-memorium-weekly-week12-highlight: #8fcaf8;
+    --c-am-memorium-weekly-week12-primary:   #2ba3b0;
+    --c-am-memorium-weekly-week12-dark:      #132d49;
+
+    --c-am-memorium-weekly-week13-highlight: #89c7fb;
+    --c-am-memorium-weekly-week13-primary:   #26b8ac;
+    --c-am-memorium-weekly-week13-dark:      #122a45;
+
+    --c-am-memorium-weekly-week14-highlight: #8fd9ce;
+    --c-am-memorium-weekly-week14-primary:   #23ba98;
+    --c-am-memorium-weekly-week14-dark:      #113d3c;
+
+    --c-am-memorium-weekly-week15-highlight: #94dbbe;
+    --c-am-memorium-weekly-week15-primary:   #33bd84;
+    --c-am-memorium-weekly-week15-dark:      #14463a;
+
+    --c-am-memorium-weekly-week16-highlight: #9addaf;
+    --c-am-memorium-weekly-week16-primary:   #43bf70;
+    --c-am-memorium-weekly-week16-dark:      #174f38;
+
+    --c-am-memorium-weekly-week17-highlight: #9fdfa0;
+    --c-am-memorium-weekly-week17-primary:   #53c25d;
+    --c-am-memorium-weekly-week17-dark:      #1a5836;
+
+    --c-am-memorium-weekly-week18-highlight: #a5e290;
+    --c-am-memorium-weekly-week18-primary:   #63c44a;
+    --c-am-memorium-weekly-week18-dark:      #1d6134;
+
+    --c-am-memorium-weekly-week19-highlight: #aae481;
+    --c-am-memorium-weekly-week19-primary:   #75c736;
+    --c-am-memorium-weekly-week19-dark:      #206a32;
+
+    --c-am-memorium-weekly-week20-highlight: #b0e772;
+    --c-am-memorium-weekly-week20-primary:   #87ca23;
+    --c-am-memorium-weekly-week20-dark:      #237330;
+
+    --c-am-memorium-weekly-week21-highlight: #b6e962;
+    --c-am-memorium-weekly-week21-primary:   #99cc10;
+    --c-am-memorium-weekly-week21-dark:      #267c2e;
+
+    --c-am-memorium-weekly-week22-highlight: #bcec53;
+    --c-am-memorium-weekly-week22-primary:   #abcf00;
+    --c-am-memorium-weekly-week22-dark:      #29852c;
+
+    --c-am-memorium-weekly-week23-highlight: #c2ee44;
+    --c-am-memorium-weekly-week23-primary:   #bbd100;
+    --c-am-memorium-weekly-week23-dark:      #2c8e2a;
+
+    --c-am-memorium-weekly-week24-highlight: #c8f134;
+    --c-am-memorium-weekly-week24-primary:   #cbd300;
+    --c-am-memorium-weekly-week24-dark:      #2f9728;
+
+    --c-am-memorium-weekly-week25-highlight: #cef325;
+    --c-am-memorium-weekly-week25-primary:   #dbd500;
+    --c-am-memorium-weekly-week25-dark:      #32a026;
+
+    --c-am-memorium-weekly-week26-highlight: #d4f616;
+    --c-am-memorium-weekly-week26-primary:   #ebd700;
+    --c-am-memorium-weekly-week26-dark:      #35a924;
+
+    --c-am-memorium-weekly-week27-highlight: #f4e04d;
+    --c-am-memorium-weekly-week27-primary:   #e9b91b;
+    --c-am-memorium-weekly-week27-dark:      #7a5e18;
+
+    --c-am-memorium-weekly-week28-highlight: #f5d84b;
+    --c-am-memorium-weekly-week28-primary:   #e6ab21;
+    --c-am-memorium-weekly-week28-dark:      #7a511a;
+
+    --c-am-memorium-weekly-week29-highlight: #f6d048;
+    --c-am-memorium-weekly-week29-primary:   #e39d27;
+    --c-am-memorium-weekly-week29-dark:      #7a451c;
+
+    --c-am-memorium-weekly-week30-highlight: #f7c846;
+    --c-am-memorium-weekly-week30-primary:   #e08f2d;
+    --c-am-memorium-weekly-week30-dark:      #7a391e;
+
+    --c-am-memorium-weekly-week31-highlight: #f8c043;
+    --c-am-memorium-weekly-week31-primary:   #dd8133;
+    --c-am-memorium-weekly-week31-dark:      #7a2d20;
+
+    --c-am-memorium-weekly-week32-highlight: #f9b841;
+    --c-am-memorium-weekly-week32-primary:   #da7339;
+    --c-am-memorium-weekly-week32-dark:      #7a2122;
+
+    --c-am-memorium-weekly-week33-highlight: #fab03e;
+    --c-am-memorium-weekly-week33-primary:   #d7653f;
+    --c-am-memorium-weekly-week33-dark:      #7a1524;
+
+    --c-am-memorium-weekly-week34-highlight: #fba83c;
+    --c-am-memorium-weekly-week34-primary:   #d45745;
+    --c-am-memorium-weekly-week34-dark:      #7a0926;
+
+    --c-am-memorium-weekly-week35-highlight: #fca039;
+    --c-am-memorium-weekly-week35-primary:   #d1494b;
+    --c-am-memorium-weekly-week35-dark:      #7a0028;
+
+    --c-am-memorium-weekly-week36-highlight: #fd9837;
+    --c-am-memorium-weekly-week36-primary:   #ce3b51;
+    --c-am-memorium-weekly-week36-dark:      #740033;
+
+    --c-am-memorium-weekly-week37-highlight: #fe9034;
+    --c-am-memorium-weekly-week37-primary:   #cb2d57;
+    --c-am-memorium-weekly-week37-dark:      #6e003e;
+
+    --c-am-memorium-weekly-week38-highlight: #ff8832;
+    --c-am-memorium-weekly-week38-primary:   #c81f5d;
+    --c-am-memorium-weekly-week38-dark:      #680049;
+
+    --c-am-memorium-weekly-week39-highlight: #ff802f;
+    --c-am-memorium-weekly-week39-primary:   #c51163;
+    --c-am-memorium-weekly-week39-dark:      #620054;
+
+    --c-am-memorium-weekly-week40-highlight: #ff7f87;
+    --c-am-memorium-weekly-week40-primary:   #c01e70;
+    --c-am-memorium-weekly-week40-dark:      #580060;
+
+    --c-am-memorium-weekly-week41-highlight: #fd7e97;
+    --c-am-memorium-weekly-week41-primary:   #ba2c7d;
+    --c-am-memorium-weekly-week41-dark:      #4e006c;
+
+    --c-am-memorium-weekly-week42-highlight: #fb7da7;
+    --c-am-memorium-weekly-week42-primary:   #b43a8a;
+    --c-am-memorium-weekly-week42-dark:      #440078;
+
+    --c-am-memorium-weekly-week43-highlight: #f97cb7;
+    --c-am-memorium-weekly-week43-primary:   #ae4897;
+    --c-am-memorium-weekly-week43-dark:      #3a0084;
+
+    --c-am-memorium-weekly-week44-highlight: #f77bc7;
+    --c-am-memorium-weekly-week44-primary:   #a856a4;
+    --c-am-memorium-weekly-week44-dark:      #300090;
+
+    --c-am-memorium-weekly-week45-highlight: #f57ad7;
+    --c-am-memorium-weekly-week45-primary:   #a264b1;
+    --c-am-memorium-weekly-week45-dark:      #26009c;
+
+    --c-am-memorium-weekly-week46-highlight: #f379e7;
+    --c-am-memorium-weekly-week46-primary:   #9c72be;
+    --c-am-memorium-weekly-week46-dark:      #1c00a8;
+
+    --c-am-memorium-weekly-week47-highlight: #f178f7;
+    --c-am-memorium-weekly-week47-primary:   #9680cb;
+    --c-am-memorium-weekly-week47-dark:      #1200b4;
+
+    --c-am-memorium-weekly-week48-highlight: #e27cfa;
+    --c-am-memorium-weekly-week48-primary:   #8c83d1;
+    --c-am-memorium-weekly-week48-dark:      #0800c0;
+
+    --c-am-memorium-weekly-week49-highlight: #d380fd;
+    --c-am-memorium-weekly-week49-primary:   #8286d8;
+    --c-am-memorium-weekly-week49-dark:      #0400cc;
+
+    --c-am-memorium-weekly-week50-highlight: #c484ff;
+    --c-am-memorium-weekly-week50-primary:   #788ade;
+    --c-am-memorium-weekly-week50-dark:      #0010d8;
+
+    --c-am-memorium-weekly-week51-highlight: #b588ff;
+    --c-am-memorium-weekly-week51-primary:   #6e8de5;
+    --c-am-memorium-weekly-week51-dark:      #001ce4;
+
+    --c-am-memorium-weekly-week52-highlight: #a68cff;
+    --c-am-memorium-weekly-week52-primary:   #6490eb;
+    --c-am-memorium-weekly-week52-dark:      #0028f0;
+
+    --c-am-memorium-yearly-highlight: #e0f7ff;
+    --c-am-memorium-yearly-primary:   #8ca9d3;
+    --c-am-memorium-yearly-dark:      #2d4159;
+
+    --c-am-memorium-yearly-gradient-1-start: #74ebd5;
+    --c-am-memorium-yearly-gradient-1-end:   #ACB6E5;
+    --c-am-memorium-yearly-gradient-2-start: #f857a6;
+    --c-am-memorium-yearly-gradient-2-end:   #ff5858;
+
+
+    --c-am-ordus-kanban-wishes-primary:      #ffc53d;
+    --c-am-ordus-kanban-to-do-primary:       #8E8E8E;
+    --c-am-ordus-kanban-in-progress-primary: #5C47CD;
+    --c-am-ordus-kanban-in-review-primary:   #1276E2;
+    --c-am-ordus-kanban-locked-primary:      #D21E24;
+    --c-am-ordus-kanban-close-primary:       #2C8C5E;
+
+    --c-am-ordus-kanban-wishes-secondary:      #251804;
+    --c-am-ordus-kanban-to-do-secondary:       #1A1A1A;
+    --c-am-ordus-kanban-in-progress-secondary: #15141a;
+    --c-am-ordus-kanban-in-review-secondary:   #11161B;
+    --c-am-ordus-kanban-locked-secondary:      #341414;
+    --c-am-ordus-kanban-close-secondary:       #121715;
+
+}

@@ -1,0 +1,71 @@
+/*------------------------------------------------------------------------------
+                     Native Note Theme
+             Requires: am-color-palette.css (enable in Appearance > CSS snippets)
+------------------------------------------------------------------------------*/
+
+.inline-title {
+  color: var(--c-native-inline-title) !important;
+}
+
+.am :is(h1),
+.am .cm-header-1 {
+  color: var(--interactive-accent);
+}
+
+.am :is(h2),
+.am .cm-header-2 {
+  color: var(--c-native-header-h2);
+}
+
+.am :is(h3),
+.am .cm-header-3 {
+  color: var(--c-native-header-h3);
+}
+
+.am :is(h4),
+.am .cm-header-4 {
+  color: var(--c-native-header-h4);
+}
+
+.am :is(h5),
+.am .cm-header-5 {
+  color: var(--c-native-header-h5);
+}
+
+.am :is(h6),
+.am .cm-header-6 {
+  color: var(--c-native-header-h6);
+}
+
+/****************************/
+
+.am :is(strong),
+.am .cm-strong {
+  color: var(--c-native-bold);
+  font-weight: 750;
+}
+
+.am :is(em),
+.am .cm-em {
+  color: var(--c-native-italic); 
+}
+
+.am :is(strong em),
+.am :is(em strong),
+.am .cm-strong .cm-em {
+  color: var(--c-native-bold-italic);
+}
+
+.am :is(del),
+.am .cm-strikethrough {
+  color: var(--c-native-strikethrough);
+}
+
+.am :is(code),
+.am .cm-inline-code {
+  color: var(--c-native-code);
+  background-color: var(--c-native-code-bg);
+  border-radius: 4px;
+  padding: 2px 4px;
+  font-size: 0.95em;
+}

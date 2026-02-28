@@ -1,0 +1,374 @@
+/*------------------------------------------------------------------------------
+                     Weekly Note Themes for Time Garden
+             Dynamic color progression for 52 weeks
+             Requires: am-color-palette.css (enable in Appearance > CSS snippets)
+------------------------------------------------------------------------------*/
+
+.weekly {
+  --highlight: var(--c-memorium-base-highlight);
+  --primary: var(--c-memorium-base-primary);
+  --dark: var(--c-memorium-base-dark);
+  
+  --text-normal: var(--highlight);
+  --text-muted: var(--highlight);
+  --text-faint: var(--highlight);
+  --checklist-done-color: var(--highlight);
+  --metadata-label-text-color: var(--highlight);
+  --metadata-input-text-color: var(--highlight);
+  --hr-color: var(--primary);
+  --blockquote-border-color: var(--primary);
+  --interactive-accent: var(--primary);
+  --collapse-icon-color-collapsed: var(--primary);
+  --checkbox-color: var(--primary);
+  --checkbox-marker-color: var(--dark);
+  --checkbox-color-hover: var(--highlight);
+  --checkbox-border-color: var(--highlight);
+  --list-marker-color: var(--highlight);
+  --code-background: var(--c-memorium-base-black);
+  --code-normal: var(--primary); 
+  --background-modifier-border-focus: var(--primary);
+  --background-modifier-border: color-mix(in srgb, var(--highlight) 60%, transparent);
+  --background-modifier-hover: color-mix(in srgb, var(--highlight) 60%, transparent);
+  --pill-cover-hover: color-mix(in srgb, var(--highlight) 60%, transparent);
+}
+
+/* Quarter 1 (Weeks 1-13): Blues to Greens */
+.week-1 {
+  --highlight: var(--c-am-memorium-weekly-week1-highlight);
+  --primary: var(--c-am-memorium-weekly-week1-primary);
+  --dark: var(--c-am-memorium-weekly-week1-dark);
+}
+
+.week-2 {
+  --highlight: var(--c-am-memorium-weekly-week2-highlight);
+  --primary: var(--c-am-memorium-weekly-week2-primary);
+  --dark: var(--c-am-memorium-weekly-week2-dark);
+}
+
+.week-3 {
+  --highlight: var(--c-am-memorium-weekly-week3-highlight);
+  --primary: var(--c-am-memorium-weekly-week3-primary);
+  --dark: var(--c-am-memorium-weekly-week3-dark);
+}
+
+.week-4 {
+  --highlight: var(--c-am-memorium-weekly-week4-highlight);
+  --primary: var(--c-am-memorium-weekly-week4-primary);
+  --dark: var(--c-am-memorium-weekly-week4-dark);
+}
+
+.week-5 {
+  --highlight: var(--c-am-memorium-weekly-week5-highlight);
+  --primary: var(--c-am-memorium-weekly-week5-primary);
+  --dark: var(--c-am-memorium-weekly-week5-dark);
+}
+
+.week-6 {
+  --highlight: var(--c-am-memorium-weekly-week6-highlight);
+  --primary: var(--c-am-memorium-weekly-week6-primary);
+  --dark: var(--c-am-memorium-weekly-week6-dark);
+}
+
+.week-7 {
+  --highlight: var(--c-am-memorium-weekly-week7-highlight);
+  --primary: var(--c-am-memorium-weekly-week7-primary);
+  --dark: var(--c-am-memorium-weekly-week7-dark);
+}
+
+.week-8 {
+  --highlight: var(--c-am-memorium-weekly-week8-highlight);
+  --primary: var(--c-am-memorium-weekly-week8-primary);
+  --dark: var(--c-am-memorium-weekly-week8-dark);
+}
+
+.week-9 {
+  --highlight: var(--c-am-memorium-weekly-week9-highlight);
+  --primary: var(--c-am-memorium-weekly-week9-primary);
+  --dark: var(--c-am-memorium-weekly-week9-dark);
+}
+
+.week-10 {
+  --highlight: var(--c-am-memorium-weekly-week10-highlight);
+  --primary: var(--c-am-memorium-weekly-week10-primary);
+  --dark: var(--c-am-memorium-weekly-week10-dark);
+}
+
+.week-11 {
+  --highlight: var(--c-am-memorium-weekly-week11-highlight);
+  --primary: var(--c-am-memorium-weekly-week11-primary);
+  --dark: var(--c-am-memorium-weekly-week11-dark);
+}
+
+.week-12 {
+  --highlight: var(--c-am-memorium-weekly-week12-highlight);
+  --primary: var(--c-am-memorium-weekly-week12-primary);
+  --dark: var(--c-am-memorium-weekly-week12-dark);
+}
+
+.week-13 {
+  --highlight: var(--c-am-memorium-weekly-week13-highlight);
+  --primary: var(--c-am-memorium-weekly-week13-primary);
+  --dark: var(--c-am-memorium-weekly-week13-dark);
+}
+
+/* Quarter 2 (Weeks 14-26): Greens to Yellows */
+.week-14 {
+  --highlight: var(--c-am-memorium-weekly-week14-highlight);
+  --primary: var(--c-am-memorium-weekly-week14-primary);
+  --dark: var(--c-am-memorium-weekly-week14-dark);
+}
+
+.week-15 {
+  --highlight: var(--c-am-memorium-weekly-week15-highlight);
+  --primary: var(--c-am-memorium-weekly-week15-primary);
+  --dark: var(--c-am-memorium-weekly-week15-dark);
+}
+
+.week-16 {
+  --highlight: var(--c-am-memorium-weekly-week16-highlight);
+  --primary: var(--c-am-memorium-weekly-week16-primary);
+  --dark: var(--c-am-memorium-weekly-week16-dark);
+}
+
+.week-17 {
+  --highlight: var(--c-am-memorium-weekly-week17-highlight);
+  --primary: var(--c-am-memorium-weekly-week17-primary);
+  --dark: var(--c-am-memorium-weekly-week17-dark);
+}
+
+.week-18 {
+  --highlight: var(--c-am-memorium-weekly-week18-highlight);
+  --primary: var(--c-am-memorium-weekly-week18-primary);
+  --dark: var(--c-am-memorium-weekly-week18-dark);
+}
+
+.week-19 {
+  --highlight: var(--c-am-memorium-weekly-week19-highlight);
+  --primary: var(--c-am-memorium-weekly-week19-primary);
+  --dark: var(--c-am-memorium-weekly-week19-dark);
+}
+
+.week-20 {
+  --highlight: var(--c-am-memorium-weekly-week20-highlight);
+  --primary: var(--c-am-memorium-weekly-week20-primary);
+  --dark: var(--c-am-memorium-weekly-week20-dark);
+}
+
+.week-21 {
+  --highlight: var(--c-am-memorium-weekly-week21-highlight);
+  --primary: var(--c-am-memorium-weekly-week21-primary);
+  --dark: var(--c-am-memorium-weekly-week21-dark);
+}
+
+.week-22 {
+  --highlight: var(--c-am-memorium-weekly-week22-highlight);
+  --primary: var(--c-am-memorium-weekly-week22-primary);
+  --dark: var(--c-am-memorium-weekly-week22-dark);
+}
+
+.week-23 {
+  --highlight: var(--c-am-memorium-weekly-week23-highlight);
+  --primary: var(--c-am-memorium-weekly-week23-primary);
+  --dark: var(--c-am-memorium-weekly-week23-dark);
+}
+
+.week-24 {
+  --highlight: var(--c-am-memorium-weekly-week24-highlight);
+  --primary: var(--c-am-memorium-weekly-week24-primary);
+  --dark: var(--c-am-memorium-weekly-week24-dark);
+}
+
+.week-25 {
+  --highlight: var(--c-am-memorium-weekly-week25-highlight);
+  --primary: var(--c-am-memorium-weekly-week25-primary);
+  --dark: var(--c-am-memorium-weekly-week25-dark);
+}
+
+.week-26 {
+  --highlight: var(--c-am-memorium-weekly-week26-highlight);
+  --primary: var(--c-am-memorium-weekly-week26-primary);
+  --dark: var(--c-am-memorium-weekly-week26-dark);
+}
+
+/* Quarter 3 (Weeks 27-39): Yellows to Reds */
+.week-27 {
+  --highlight: var(--c-am-memorium-weekly-week27-highlight);
+  --primary: var(--c-am-memorium-weekly-week27-primary);
+  --dark: var(--c-am-memorium-weekly-week27-dark);
+}
+
+.week-28 {
+  --highlight: var(--c-am-memorium-weekly-week28-highlight);
+  --primary: var(--c-am-memorium-weekly-week28-primary);
+  --dark: var(--c-am-memorium-weekly-week28-dark);
+}
+
+.week-29 {
+  --highlight: var(--c-am-memorium-weekly-week29-highlight);
+  --primary: var(--c-am-memorium-weekly-week29-primary);
+  --dark: var(--c-am-memorium-weekly-week29-dark);
+}
+
+.week-30 {
+  --highlight: var(--c-am-memorium-weekly-week30-highlight);
+  --primary: var(--c-am-memorium-weekly-week30-primary);
+  --dark: var(--c-am-memorium-weekly-week30-dark);
+}
+
+.week-31 {
+  --highlight: var(--c-am-memorium-weekly-week31-highlight);
+  --primary: var(--c-am-memorium-weekly-week31-primary);
+  --dark: var(--c-am-memorium-weekly-week31-dark);
+}
+
+.week-32 {
+  --highlight: var(--c-am-memorium-weekly-week32-highlight);
+  --primary: var(--c-am-memorium-weekly-week32-primary);
+  --dark: var(--c-am-memorium-weekly-week32-dark);
+}
+
+.week-33 {
+  --highlight: var(--c-am-memorium-weekly-week33-highlight);
+  --primary: var(--c-am-memorium-weekly-week33-primary);
+  --dark: var(--c-am-memorium-weekly-week33-dark);
+}
+
+.week-34 {
+  --highlight: var(--c-am-memorium-weekly-week34-highlight);
+  --primary: var(--c-am-memorium-weekly-week34-primary);
+  --dark: var(--c-am-memorium-weekly-week34-dark);
+}
+
+.week-35 {
+  --highlight: var(--c-am-memorium-weekly-week35-highlight);
+  --primary: var(--c-am-memorium-weekly-week35-primary);
+  --dark: var(--c-am-memorium-weekly-week35-dark);
+}
+
+.week-36 {
+  --highlight: var(--c-am-memorium-weekly-week36-highlight);
+  --primary: var(--c-am-memorium-weekly-week36-primary);
+  --dark: var(--c-am-memorium-weekly-week36-dark);
+}
+
+.week-37 {
+  --highlight: var(--c-am-memorium-weekly-week37-highlight);
+  --primary: var(--c-am-memorium-weekly-week37-primary);
+  --dark: var(--c-am-memorium-weekly-week37-dark);
+}
+
+.week-38 {
+  --highlight: var(--c-am-memorium-weekly-week38-highlight);
+  --primary: var(--c-am-memorium-weekly-week38-primary);
+  --dark: var(--c-am-memorium-weekly-week38-dark);
+}
+
+.week-39 {
+  --highlight: var(--c-am-memorium-weekly-week39-highlight);
+  --primary: var(--c-am-memorium-weekly-week39-primary);
+  --dark: var(--c-am-memorium-weekly-week39-dark);
+}
+
+/* Quarter 4 (Weeks 40-52): Reds to Purples to Blues */
+.week-40 {
+  --highlight: var(--c-am-memorium-weekly-week40-highlight);
+  --primary: var(--c-am-memorium-weekly-week40-primary);
+  --dark: var(--c-am-memorium-weekly-week40-dark);
+}
+
+.week-41 {
+  --highlight: var(--c-am-memorium-weekly-week41-highlight);
+  --primary: var(--c-am-memorium-weekly-week41-primary);
+  --dark: var(--c-am-memorium-weekly-week41-dark);
+}
+
+.week-42 {
+  --highlight: var(--c-am-memorium-weekly-week42-highlight);
+  --primary: var(--c-am-memorium-weekly-week42-primary);
+  --dark: var(--c-am-memorium-weekly-week42-dark);
+}
+
+.week-43 {
+  --highlight: var(--c-am-memorium-weekly-week43-highlight);
+  --primary: var(--c-am-memorium-weekly-week43-primary);
+  --dark: var(--c-am-memorium-weekly-week43-dark);
+}
+
+.week-44 {
+  --highlight: var(--c-am-memorium-weekly-week44-highlight);
+  --primary: var(--c-am-memorium-weekly-week44-primary);
+  --dark: var(--c-am-memorium-weekly-week44-dark);
+}
+
+.week-45 {
+  --highlight: var(--c-am-memorium-weekly-week45-highlight);
+  --primary: var(--c-am-memorium-weekly-week45-primary);
+  --dark: var(--c-am-memorium-weekly-week45-dark);
+}
+
+.week-46 {
+  --highlight: var(--c-am-memorium-weekly-week46-highlight);
+  --primary: var(--c-am-memorium-weekly-week46-primary);
+  --dark: var(--c-am-memorium-weekly-week46-dark);
+}
+
+.week-47 {
+  --highlight: var(--c-am-memorium-weekly-week47-highlight);
+  --primary: var(--c-am-memorium-weekly-week47-primary);
+  --dark: var(--c-am-memorium-weekly-week47-dark);
+}
+
+.week-48 {
+  --highlight: var(--c-am-memorium-weekly-week48-highlight);
+  --primary: var(--c-am-memorium-weekly-week48-primary);
+  --dark: var(--c-am-memorium-weekly-week48-dark);
+}
+
+.week-49 {
+  --highlight: var(--c-am-memorium-weekly-week49-highlight);
+  --primary: var(--c-am-memorium-weekly-week49-primary);
+  --dark: var(--c-am-memorium-weekly-week49-dark);
+}
+
+.week-50 {
+  --highlight: var(--c-am-memorium-weekly-week50-highlight);
+  --primary: var(--c-am-memorium-weekly-week50-primary);
+  --dark: var(--c-am-memorium-weekly-week50-dark);
+}
+
+.week-51 {
+  --highlight: var(--c-am-memorium-weekly-week51-highlight);
+  --primary: var(--c-am-memorium-weekly-week51-primary);
+  --dark: var(--c-am-memorium-weekly-week51-dark);
+}
+
+.week-52 {
+  --highlight: var(--c-am-memorium-weekly-week52-highlight);
+  --primary: var(--c-am-memorium-weekly-week52-primary);
+  --dark: var(--c-am-memorium-weekly-week52-dark);
+}
+
+.weekly :is(h1, .HyperMD-header.HyperMD-header-1) {
+  color: var(--primary);
+  font-style: italic;
+  font-size: 50px;
+  padding: 0 !important;
+}
+
+.weekly :is(h2, .HyperMD-header.HyperMD-header-2) {
+  color: var(--highlight);
+  font-size: 30px;
+  font-style: italic;
+  padding: 0 !important;
+}
+
+.weekly :is(h3, .HyperMD-header.HyperMD-header-3) {
+  color: var(--primary);
+
+  font-size: 32px;
+  padding-top: 0;
+}
+
+.weekly .metadata-property-icon {
+  color: var(--highlight);
+}

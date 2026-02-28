@@ -1,18 +1,7 @@
 /*------------------------------------------------------------------------------
                           AM - Colored Sidebar
+         Requires: am-color-palette.css (enable it in Appearance > CSS snippets)
 ------------------------------------------------------------------------------*/
-:root {
-  --c-intima:    #ff8fa3; /* Φ */
-  --c-cognitio:  #ffb36b; /* Θ */
-  --c-memorium:  #ffe066; /* Ψ */
-  --c-noetheris: #8ce99a; /* Σ */
-  --c-devs:      #63e6be; /* Λ */
-  --c-viventia:  #74c0fc; /* Ζ */
-  --c-kaelithra: #b197fc; /* Ξ */
-  --c-ordus:     #da77f2; /* Π */
-  --c-aethernum: #ced4da; /* Δ */
-  --c-harkaive:  #868e96; /* Ω */
-}
 
 /* ---------------------------------------------------------------------------
    Base styling
@@ -63,121 +52,121 @@
 /* =============================== Φ - Intima =============================== */
 
 .nav-folder:has(.nav-folder-title[data-path*="Φ"]) > .nav-folder-title {
-  color: var(--c-intima);
+  color: var(--c-am-intima);
 }
 
 .nav-folder:has(.nav-folder-title[data-path*="Φ"])
   > .nav-folder-children
   .nav-folder-title {
-  color: var(--c-intima);
+  color: var(--c-am-intima);
 }
 
 /* =============================== Θ - Cognitio =============================== */
 
 .nav-folder:has(.nav-folder-title[data-path*="Θ"]) > .nav-folder-title {
-  color: var(--c-cognitio);
+  color: var(--c-am-cognitio);
 }
 
 .nav-folder:has(.nav-folder-title[data-path*="Θ"])
   > .nav-folder-children
   .nav-folder-title {
-  color: var(--c-cognitio);
+  color: var(--c-am-cognitio);
 }
 
 /* =============================== Ψ - Memorium =============================== */
 
 .nav-folder:has(.nav-folder-title[data-path*="Ψ"]) > .nav-folder-title {
-  color: var(--c-memorium);
+  color: var(--c-am-memorium);
 }
 
 .nav-folder:has(.nav-folder-title[data-path*="Ψ"])
   > .nav-folder-children
   .nav-folder-title {
-  color: var(--c-memorium);
+  color: var(--c-am-memorium);
 }
 
 /* =============================== Σ - Noetheris =============================== */
 
 .nav-folder:has(.nav-folder-title[data-path*="Σ"]) > .nav-folder-title {
-  color: var(--c-noetheris);
+  color: var(--c-am-noetheris);
 }
 
 .nav-folder:has(.nav-folder-title[data-path*="Σ"])
   > .nav-folder-children
   .nav-folder-title {
-  color: var(--c-noetheris);
+  color: var(--c-am-noetheris);
 }
 
 /* =============================== Λ - Devs =============================== */
 
 .nav-folder:has(.nav-folder-title[data-path*="Λ"]) > .nav-folder-title {
-  color: var(--c-devs);
+  color: var(--c-am-devs);
 }
 
 .nav-folder:has(.nav-folder-title[data-path*="Λ"])
   > .nav-folder-children
   .nav-folder-title {
-  color: var(--c-devs);
+  color: var(--c-am-devs);
 }
 
 /* =============================== Ζ - Viventia =============================== */
 
 .nav-folder:has(.nav-folder-title[data-path*="Ζ"]) > .nav-folder-title {
-  color: var(--c-viventia);
+  color: var(--c-am-viventia);
 }
 
 .nav-folder:has(.nav-folder-title[data-path*="Ζ"])
   > .nav-folder-children
   .nav-folder-title {
-  color: var(--c-viventia);
+  color: var(--c-am-viventia);
 }
 
 /* =============================== Ξ - Kaelithra =============================== */
 
 .nav-folder:has(.nav-folder-title[data-path*="Ξ"]) > .nav-folder-title {
-  color: var(--c-kaelithra);
+  color: var(--c-am-kaelithra);
 }
 
 .nav-folder:has(.nav-folder-title[data-path*="Ξ"])
   > .nav-folder-children
   .nav-folder-title {
-  color: var(--c-kaelithra);
+  color: var(--c-am-kaelithra);
 }
 
 /* =============================== Π - Ordus =============================== */
 
 .nav-folder:has(.nav-folder-title[data-path*="Π"]) > .nav-folder-title {
-  color: var(--c-ordus);
+  color: var(--c-am-ordus);
 }
 
 .nav-folder:has(.nav-folder-title[data-path*="Π"])
   > .nav-folder-children
   .nav-folder-title {
-  color: var(--c-ordus);
+  color: var(--c-am-ordus);
 }
 
 /* =============================== Δ - Aethernum =============================== */
 
 .nav-folder:has(.nav-folder-title[data-path*="Δ"]) > .nav-folder-title {
-  color: var(--c-aethernum);
+  color: var(--c-am-aethernum);
 }
 
 .nav-folder:has(.nav-folder-title[data-path*="Δ"])
   > .nav-folder-children
   .nav-folder-title {
-  color: var(--c-aethernum);
+  color: var(--c-am-aethernum);
 }
 
 /* =============================== Ω - Harkaive =============================== */
 
 .nav-folder:has(.nav-folder-title[data-path*="Ω"]) > .nav-folder-title {
-  color: var(--c-harkaive);
+  color: var(--c-am-harkaive);
 }
 
 .nav-folder:has(.nav-folder-title[data-path*="Ω"])
   > .nav-folder-children
   .nav-folder-title {
-  color: var(--c-harkaive);
+  color: var(--c-am-harkaive);
 }
 
 /* =============================== AM (Dashboard) =============================== */

@@ -1,14 +1,13 @@
 /*------------------------------------------------------------------------------
                      Quarterly Note Themes for Time Garden
+             Requires: am-color-palette.css (enable in Appearance > CSS snippets)
 ------------------------------------------------------------------------------*/
-:root {
-  --highlight: #ffffff;
-  --primary: #aaaaaa;
-  --dark: #333333;
-}
 
 .quarterly {
-  --dark: var(--dark);
+  --highlight: var(--c-memorium-base-highlight);
+  --primary: var(--c-memorium-base-primary);
+  --dark: var(--c-memorium-base-dark);
+  
   --text-normal: var(--highlight);
   --text-muted: var(--highlight);
   --text-faint: var(--highlight);
@@ -24,7 +23,7 @@
   --checkbox-color-hover: var(--highlight);
   --checkbox-border-color: var(--highlight);
   --list-marker-color: var(--highlight);
-  --code-background: black;
+  --code-background: var(--c-memorium-base-black);
   --code-normal: var(--primary); 
   --background-modifier-border-focus: var(--primary);
   --background-modifier-border: color-mix(in srgb, var(--highlight) 60%, transparent);
@@ -34,30 +33,30 @@
 
 /* Q1 - Winter to Spring - Cool blues transitioning to greens */
 .quarter-1 {
-  --highlight: #c7e0f0;
-  --primary: #6a9cb8;
-  --dark: #2a4050;
+  --highlight: var(--c-am-memorium-quarterly-q1-highlight);
+  --primary: var(--c-am-memorium-quarterly-q1-primary);
+  --dark: var(--c-am-memorium-quarterly-q1-dark);
 }
 
 /* Q2 - Spring to Summer - Greens transitioning to warm yellows */
 .quarter-2 {
-  --highlight: #f0f7c7;
-  --primary: #a8c265;
-  --dark: #4d5830;
+  --highlight: var(--c-am-memorium-quarterly-q2-highlight);
+  --primary: var(--c-am-memorium-quarterly-q2-primary);
+  --dark: var(--c-am-memorium-quarterly-q2-dark);
 }
 
 /* Q3 - Summer to Fall - Warm yellows transitioning to oranges */
 .quarter-3 {
-  --highlight: #ffd8a8;
-  --primary: #e69a5c;
-  --dark: #664530;
+  --highlight: var(--c-am-memorium-quarterly-q3-highlight);
+  --primary: var(--c-am-memorium-quarterly-q3-primary);
+  --dark: var(--c-am-memorium-quarterly-q3-dark);
 }
 
 /* Q4 - Fall to Winter - Deep oranges transitioning to cool purples */
 .quarter-4 {
-  --highlight: #e0c7d8;
-  --primary: #9a6c8c;
-  --dark: #432e3d;
+  --highlight: var(--c-am-memorium-quarterly-q4-highlight);
+  --primary: var(--c-am-memorium-quarterly-q4-primary);
+  --dark: var(--c-am-memorium-quarterly-q4-dark);
 }
 
 .quarterly :is(h1, .HyperMD-header.HyperMD-header-1) {
