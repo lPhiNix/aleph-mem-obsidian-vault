@@ -33,45 +33,45 @@
 }
 
 .sunday, .Sunday {
-  --highlight: var(--c-daily-sunday-highlight);
-  --primary: var(--c-daily-sunday-primary);
-  --dark: var(--c-daily-sunday-dark);
+  --highlight: var(--c-am-memorium-daily-sunday-highlight);
+  --primary: var(--c-am-memorium-daily-sunday-primary);
+  --dark: var(--c-am-memorium-daily-sunday-dark);
 }
 
 .monday, .Monday {
-  --highlight: var(--c-daily-monday-highlight);
-  --primary: var(--c-daily-monday-primary);
-  --dark: var(--c-daily-monday-dark);
+  --highlight: var(--c-am-memorium-daily-monday-highlight);
+  --primary: var(--c-am-memorium-daily-monday-primary);
+  --dark: var(--c-am-memorium-daily-monday-dark);
 }
 
 .tuesday, .Tuesday {
-  --highlight: var(--c-daily-tuesday-highlight);
-  --primary: var(--c-daily-tuesday-primary);
-  --dark: var(--c-daily-tuesday-dark);
+  --highlight: var(--c-am-memorium-daily-tuesday-highlight);
+  --primary: var(--c-am-memorium-daily-tuesday-primary);
+  --dark: var(--c-am-memorium-daily-tuesday-dark);
 }
 
 .wednesday, .Wednesday {
-  --highlight: var(--c-daily-wednesday-highlight);
-  --primary: var(--c-daily-wednesday-primary);
-  --dark: var(--c-daily-wednesday-dark);
+  --highlight: var(--c-am-memorium-daily-wednesday-highlight);
+  --primary: var(--c-am-memorium-daily-wednesday-primary);
+  --dark: var(--c-am-memorium-daily-wednesday-dark);
 }
 
 .thursday, .Thursday {
-  --highlight: var(--c-daily-thursday-highlight);
-  --primary: var(--c-daily-thursday-primary);
-  --dark: var(--c-daily-thursday-dark);
+  --highlight: var(--c-am-memorium-daily-thursday-highlight);
+  --primary: var(--c-am-memorium-daily-thursday-primary);
+  --dark: var(--c-am-memorium-daily-thursday-dark);
 }
 
 .friday, .Friday {
-  --highlight: var(--c-daily-friday-highlight);
-  --primary: var(--c-daily-friday-primary);
-  --dark: var(--c-daily-friday-dark);
+  --highlight: var(--c-am-memorium-daily-friday-highlight);
+  --primary: var(--c-am-memorium-daily-friday-primary);
+  --dark: var(--c-am-memorium-daily-friday-dark);
 }
 
 .saturday, .Saturday {
-  --highlight: var(--c-daily-saturday-highlight);
-  --primary: var(--c-daily-saturday-primary);
-  --dark: var(--c-daily-saturday-dark);
+  --highlight: var(--c-am-memorium-daily-saturday-highlight);
+  --primary: var(--c-am-memorium-daily-saturday-primary);
+  --dark: var(--c-am-memorium-daily-saturday-dark);
 }
 
 .daily :is(h1, .HyperMD-header.HyperMD-header-1) {

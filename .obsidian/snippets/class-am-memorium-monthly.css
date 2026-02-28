@@ -33,78 +33,78 @@
   
   /* Winter months - Cool blues and purples */
   .january, .January {
-    --highlight: var(--c-monthly-january-highlight);
-    --primary: var(--c-monthly-january-primary);
-    --dark: var(--c-monthly-january-dark);
+    --highlight: var(--c-am-memorium-monthly-january-highlight);
+    --primary: var(--c-am-memorium-monthly-january-primary);
+    --dark: var(--c-am-memorium-monthly-january-dark);
   }
   
   .february, .February {
-    --highlight: var(--c-monthly-february-highlight);
-    --primary: var(--c-monthly-february-primary);
-    --dark: var(--c-monthly-february-dark);
+    --highlight: var(--c-am-memorium-monthly-february-highlight);
+    --primary: var(--c-am-memorium-monthly-february-primary);
+    --dark: var(--c-am-memorium-monthly-february-dark);
   }
   
   .march, .March {
-    --highlight: var(--c-monthly-march-highlight);
-    --primary: var(--c-monthly-march-primary);
-    --dark: var(--c-monthly-march-dark);
+    --highlight: var(--c-am-memorium-monthly-march-highlight);
+    --primary: var(--c-am-memorium-monthly-march-primary);
+    --dark: var(--c-am-memorium-monthly-march-dark);
   }
   
   /* Spring months - Greens and soft yellows */
   .april, .April {
-    --highlight: var(--c-monthly-april-highlight);
-    --primary: var(--c-monthly-april-primary);
-    --dark: var(--c-monthly-april-dark);
+    --highlight: var(--c-am-memorium-monthly-april-highlight);
+    --primary: var(--c-am-memorium-monthly-april-primary);
+    --dark: var(--c-am-memorium-monthly-april-dark);
   }
   
   .may, .May {
-    --highlight: var(--c-monthly-may-highlight);
-    --primary: var(--c-monthly-may-primary);
-    --dark: var(--c-monthly-may-dark);
+    --highlight: var(--c-am-memorium-monthly-may-highlight);
+    --primary: var(--c-am-memorium-monthly-may-primary);
+    --dark: var(--c-am-memorium-monthly-may-dark);
   }
   
   .june, .June {
-    --highlight: var(--c-monthly-june-highlight);
-    --primary: var(--c-monthly-june-primary);
-    --dark: var(--c-monthly-june-dark);
+    --highlight: var(--c-am-memorium-monthly-june-highlight);
+    --primary: var(--c-am-memorium-monthly-june-primary);
+    --dark: var(--c-am-memorium-monthly-june-dark);
   }
   
   /* Summer months - Yellows, oranges and reds */
   .july, .July {
-    --highlight: var(--c-monthly-july-highlight);
-    --primary: var(--c-monthly-july-primary);
-    --dark: var(--c-monthly-july-dark);
+    --highlight: var(--c-am-memorium-monthly-july-highlight);
+    --primary: var(--c-am-memorium-monthly-july-primary);
+    --dark: var(--c-am-memorium-monthly-july-dark);
   }
   
   .august, .August {
-    --highlight: var(--c-monthly-august-highlight);
-    --primary: var(--c-monthly-august-primary);
-    --dark: var(--c-monthly-august-dark);
+    --highlight: var(--c-am-memorium-monthly-august-highlight);
+    --primary: var(--c-am-memorium-monthly-august-primary);
+    --dark: var(--c-am-memorium-monthly-august-dark);
   }
   
   .september, .September {
-    --highlight: var(--c-monthly-september-highlight);
-    --primary: var(--c-monthly-september-primary);
-    --dark: var(--c-monthly-september-dark);
+    --highlight: var(--c-am-memorium-monthly-september-highlight);
+    --primary: var(--c-am-memorium-monthly-september-primary);
+    --dark: var(--c-am-memorium-monthly-september-dark);
   }
   
   /* Fall months - Oranges, reds, and purples */
   .october, .October {
-    --highlight: var(--c-monthly-october-highlight);
-    --primary: var(--c-monthly-october-primary);
-    --dark: var(--c-monthly-october-dark);
+    --highlight: var(--c-am-memorium-monthly-october-highlight);
+    --primary: var(--c-am-memorium-monthly-october-primary);
+    --dark: var(--c-am-memorium-monthly-october-dark);
   }
   
   .november, .November {
-    --highlight: var(--c-monthly-november-highlight);
-    --primary: var(--c-monthly-november-primary);
-    --dark: var(--c-monthly-november-dark);
+    --highlight: var(--c-am-memorium-monthly-november-highlight);
+    --primary: var(--c-am-memorium-monthly-november-primary);
+    --dark: var(--c-am-memorium-monthly-november-dark);
   }
   
   .december, .December {
-    --highlight: var(--c-monthly-december-highlight);
-    --primary: var(--c-monthly-december-primary);
-    --dark: var(--c-monthly-december-dark);
+    --highlight: var(--c-am-memorium-monthly-december-highlight);
+    --primary: var(--c-am-memorium-monthly-december-primary);
+    --dark: var(--c-am-memorium-monthly-december-dark);
   }
   
   .monthly :is(h1, .HyperMD-header.HyperMD-header-1) {

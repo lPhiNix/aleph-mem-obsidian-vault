@@ -5,9 +5,9 @@
 ------------------------------------------------------------------------------*/
 
 .yearly {
-  --highlight: var(--c-yearly-highlight);
-  --primary: var(--c-yearly-primary);
-  --dark: var(--c-yearly-dark);
+  --highlight: var(--c-am-memorium-yearly-highlight);
+  --primary: var(--c-am-memorium-yearly-primary);
+  --dark: var(--c-am-memorium-yearly-dark);
   
   --text-normal: var(--highlight);
   --text-muted: var(--highlight);
@@ -37,7 +37,7 @@
   .HyperMD-header.HyperMD-header-1,
   .markdown-rendered h1
 ) {
-  background: linear-gradient(135deg, var(--c-yearly-gradient-1-start), var(--c-yearly-gradient-1-end));
+  background: linear-gradient(135deg, var(--c-am-memorium-yearly-gradient-1-start), var(--c-am-memorium-yearly-gradient-1-end));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;
@@ -60,7 +60,7 @@
 .yearly .cm-formatting-header-1:has-text("✧"),
 .yearly .markdown-rendered h1:first-child:before {
   content: "✧";
-  background: linear-gradient(135deg, var(--c-yearly-gradient-2-start), var(--c-yearly-gradient-2-end));
+  background: linear-gradient(135deg, var(--c-am-memorium-yearly-gradient-2-start), var(--c-am-memorium-yearly-gradient-2-end));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;

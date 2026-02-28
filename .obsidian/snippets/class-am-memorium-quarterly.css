@@ -33,30 +33,30 @@
 
 /* Q1 - Winter to Spring - Cool blues transitioning to greens */
 .quarter-1 {
-  --highlight: var(--c-quarterly-q1-highlight);
-  --primary: var(--c-quarterly-q1-primary);
-  --dark: var(--c-quarterly-q1-dark);
+  --highlight: var(--c-am-memorium-quarterly-q1-highlight);
+  --primary: var(--c-am-memorium-quarterly-q1-primary);
+  --dark: var(--c-am-memorium-quarterly-q1-dark);
 }
 
 /* Q2 - Spring to Summer - Greens transitioning to warm yellows */
 .quarter-2 {
-  --highlight: var(--c-quarterly-q2-highlight);
-  --primary: var(--c-quarterly-q2-primary);
-  --dark: var(--c-quarterly-q2-dark);
+  --highlight: var(--c-am-memorium-quarterly-q2-highlight);
+  --primary: var(--c-am-memorium-quarterly-q2-primary);
+  --dark: var(--c-am-memorium-quarterly-q2-dark);
 }
 
 /* Q3 - Summer to Fall - Warm yellows transitioning to oranges */
 .quarter-3 {
-  --highlight: var(--c-quarterly-q3-highlight);
-  --primary: var(--c-quarterly-q3-primary);
-  --dark: var(--c-quarterly-q3-dark);
+  --highlight: var(--c-am-memorium-quarterly-q3-highlight);
+  --primary: var(--c-am-memorium-quarterly-q3-primary);
+  --dark: var(--c-am-memorium-quarterly-q3-dark);
 }
 
 /* Q4 - Fall to Winter - Deep oranges transitioning to cool purples */
 .quarter-4 {
-  --highlight: var(--c-quarterly-q4-highlight);
-  --primary: var(--c-quarterly-q4-primary);
-  --dark: var(--c-quarterly-q4-dark);
+  --highlight: var(--c-am-memorium-quarterly-q4-highlight);
+  --primary: var(--c-am-memorium-quarterly-q4-primary);
+  --dark: var(--c-am-memorium-quarterly-q4-dark);
 }
 
 .quarterly :is(h1, .HyperMD-header.HyperMD-header-1) {

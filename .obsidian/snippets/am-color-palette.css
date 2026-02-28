@@ -1,5 +1,5 @@
 :root {
-    
+
     --c-am-intima:    #ff8fa3;
     --c-am-cognitio:  #ffb36b;
     --c-am-memorium:  #ffe066;
@@ -335,10 +335,10 @@
     --c-am-memorium-yearly-primary:   #8ca9d3;
     --c-am-memorium-yearly-dark:      #2d4159;
 
-    --c-am-memorium-gradient-1-start: #74ebd5;
-    --c-am-memorium-gradient-1-end:   #ACB6E5;
-    --c-am-memorium-gradient-2-start: #f857a6;
-    --c-am-memorium-gradient-2-end:   #ff5858;
+    --c-am-memorium-yearly-gradient-1-start: #74ebd5;
+    --c-am-memorium-yearly-gradient-1-end:   #ACB6E5;
+    --c-am-memorium-yearly-gradient-2-start: #f857a6;
+    --c-am-memorium-yearly-gradient-2-end:   #ff5858;
 
 
     --c-am-ordus-kanban-wishes-primary:      #ffc53d;
