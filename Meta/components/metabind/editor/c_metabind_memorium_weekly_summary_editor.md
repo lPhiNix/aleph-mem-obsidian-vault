@@ -1,3 +1,3 @@
 ```meta-bind
-INPUT[editor(class(custom-editor)):memorium-weekly-summary]
+INPUT[editor(class(am-memorium-editor)):memorium-weekly-summary]
 ```
