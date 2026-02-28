@@ -1,14 +1,13 @@
 /*------------------------------------------------------------------------------
-                     Daily Note Themes inspired by CyanVoxel for Time Garden         
+                     Daily Note Themes inspired by CyanVoxel for Time Garden
+             Requires: am-color-palette.css (enable in Appearance > CSS snippets)         
 ------------------------------------------------------------------------------*/
-:root {
-  --highlight: #ffffff;
-  --primary: #aaaaaa;
-  --dark: #333333;
-}
 
 .daily {
-  --dark: var(--dark);
+  --highlight: var(--c-memorium-base-highlight);
+  --primary: var(--c-memorium-base-primary);
+  --dark: var(--c-memorium-base-dark);
+  
   --text-normal: var(--highlight);
   --text-muted: var(--highlight);
   --text-faint: var(--highlight);
@@ -24,7 +23,7 @@
   --checkbox-color-hover: var(--highlight);
   --checkbox-border-color: var(--highlight);
   --list-marker-color: var(--highlight);
-  --code-background: black;
+  --code-background: var(--c-memorium-base-black);
   --code-normal: var(--primary);
 
   --background-modifier-border-focus: var(--primary);
@@ -34,45 +33,45 @@
 }
 
 .sunday, .Sunday {
-  --highlight: #e29eff;
-  --primary: #8944b4;
-  --dark: #3d204d;
+  --highlight: var(--c-daily-sunday-highlight);
+  --primary: var(--c-daily-sunday-primary);
+  --dark: var(--c-daily-sunday-dark);
 }
 
 .monday, .Monday {
-  --highlight: #9eceff;
-  --primary: #6b9fff;
-  --dark: #20344d;
+  --highlight: var(--c-daily-monday-highlight);
+  --primary: var(--c-daily-monday-primary);
+  --dark: var(--c-daily-monday-dark);
 }
 
 .tuesday, .Tuesday {
-  --highlight: #9effce;
-  --primary: #43a473;
-  --dark: #204d3a;
+  --highlight: var(--c-daily-tuesday-highlight);
+  --primary: var(--c-daily-tuesday-primary);
+  --dark: var(--c-daily-tuesday-dark);
 }
 
 .wednesday, .Wednesday {
-  --highlight: #ffee9e;
-  --primary: #bea04c;
-  --dark: #4d4720;
+  --highlight: var(--c-daily-wednesday-highlight);
+  --primary: var(--c-daily-wednesday-primary);
+  --dark: var(--c-daily-wednesday-dark);
 }
 
 .thursday, .Thursday {
-  --highlight: #ffb69e;
-  --primary: #db7b5b;
-  --dark: #4d2e20;
+  --highlight: var(--c-daily-thursday-highlight);
+  --primary: var(--c-daily-thursday-primary);
+  --dark: var(--c-daily-thursday-dark);
 }
 
 .friday, .Friday {
-  --highlight: #ff9e9e;
-  --primary: #ff6b6b;
-  --dark: #4d2020;
+  --highlight: var(--c-daily-friday-highlight);
+  --primary: var(--c-daily-friday-primary);
+  --dark: var(--c-daily-friday-dark);
 }
 
 .saturday, .Saturday {
-  --highlight: #ffa6d2;
-  --primary: #db5c9c;
-  --dark: #4d2038;
+  --highlight: var(--c-daily-saturday-highlight);
+  --primary: var(--c-daily-saturday-primary);
+  --dark: var(--c-daily-saturday-dark);
 }
 
 .daily :is(h1, .HyperMD-header.HyperMD-header-1) {

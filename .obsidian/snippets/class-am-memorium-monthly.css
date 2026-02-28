@@ -1,14 +1,13 @@
 /*------------------------------------------------------------------------------
                      Monthly Note Themes for Time Garden
+             Requires: am-color-palette.css (enable in Appearance > CSS snippets)
 ------------------------------------------------------------------------------*/
-:root {
-    --highlight: #ffffff;
-    --primary: #aaaaaa;
-    --dark: #333333;
-  }
   
   .monthly {
-    --dark: var(--dark);
+    --highlight: var(--c-memorium-base-highlight);
+    --primary: var(--c-memorium-base-primary);
+    --dark: var(--c-memorium-base-dark);
+    
     --text-normal: var(--highlight);
     --text-muted: var(--highlight);
     --text-faint: var(--highlight);
@@ -24,7 +23,7 @@
     --checkbox-color-hover: var(--highlight);
     --checkbox-border-color: var(--highlight);
     --list-marker-color: var(--highlight);
-    --code-background: black;
+    --code-background: var(--c-memorium-base-black);
     --code-normal: var(--primary); 
     --background-modifier-border-focus: var(--primary);
     --background-modifier-border: color-mix(in srgb, var(--highlight) 60%, transparent);
@@ -34,78 +33,78 @@
   
   /* Winter months - Cool blues and purples */
   .january, .January {
-    --highlight: #b9e8ff;
-    --primary: #5294c4;
-    --dark: #1c3b55;
+    --highlight: var(--c-monthly-january-highlight);
+    --primary: var(--c-monthly-january-primary);
+    --dark: var(--c-monthly-january-dark);
   }
   
   .february, .February {
-    --highlight: #d9c2ff;
-    --primary: #8a5dc7;
-    --dark: #36265a;
+    --highlight: var(--c-monthly-february-highlight);
+    --primary: var(--c-monthly-february-primary);
+    --dark: var(--c-monthly-february-dark);
   }
   
   .march, .March {
-    --highlight: #c7f0d8;
-    --primary: #5fb485;
-    --dark: #2a523d;
+    --highlight: var(--c-monthly-march-highlight);
+    --primary: var(--c-monthly-march-primary);
+    --dark: var(--c-monthly-march-dark);
   }
   
   /* Spring months - Greens and soft yellows */
   .april, .April {
-    --highlight: #e8ffc7;
-    --primary: #8abd57;
-    --dark: #3c552a;
+    --highlight: var(--c-monthly-april-highlight);
+    --primary: var(--c-monthly-april-primary);
+    --dark: var(--c-monthly-april-dark);
   }
   
   .may, .May {
-    --highlight: #fff9c7;
-    --primary: #dbc458;
-    --dark: #635a2a;
+    --highlight: var(--c-monthly-may-highlight);
+    --primary: var(--c-monthly-may-primary);
+    --dark: var(--c-monthly-may-dark);
   }
   
   .june, .June {
-    --highlight: #ffe0c7;
-    --primary: #e09d58;
-    --dark: #654a2a;
+    --highlight: var(--c-monthly-june-highlight);
+    --primary: var(--c-monthly-june-primary);
+    --dark: var(--c-monthly-june-dark);
   }
   
   /* Summer months - Yellows, oranges and reds */
   .july, .July {
-    --highlight: #ffc7c7;
-    --primary: #e05858;
-    --dark: #652a2a;
+    --highlight: var(--c-monthly-july-highlight);
+    --primary: var(--c-monthly-july-primary);
+    --dark: var(--c-monthly-july-dark);
   }
   
   .august, .August {
-    --highlight: #ffb38a;
-    --primary: #f07542;
-    --dark: #6b3420;
+    --highlight: var(--c-monthly-august-highlight);
+    --primary: var(--c-monthly-august-primary);
+    --dark: var(--c-monthly-august-dark);
   }
   
   .september, .September {
-    --highlight: #ffd68a;
-    --primary: #e9a643;
-    --dark: #664a1e;
+    --highlight: var(--c-monthly-september-highlight);
+    --primary: var(--c-monthly-september-primary);
+    --dark: var(--c-monthly-september-dark);
   }
   
   /* Fall months - Oranges, reds, and purples */
   .october, .October {
-    --highlight: #ffad9e;
-    --primary: #d1614b;
-    --dark: #5e2c22;
+    --highlight: var(--c-monthly-october-highlight);
+    --primary: var(--c-monthly-october-primary);
+    --dark: var(--c-monthly-october-dark);
   }
   
   .november, .November {
-    --highlight: #e6b3cc;
-    --primary: #ad5985;
-    --dark: #4c273b;
+    --highlight: var(--c-monthly-november-highlight);
+    --primary: var(--c-monthly-november-primary);
+    --dark: var(--c-monthly-november-dark);
   }
   
   .december, .December {
-    --highlight: #b3c6e6;
-    --primary: #5978ad;
-    --dark: #27344c;
+    --highlight: var(--c-monthly-december-highlight);
+    --primary: var(--c-monthly-december-primary);
+    --dark: var(--c-monthly-december-dark);
   }
   
   .monthly :is(h1, .HyperMD-header.HyperMD-header-1) {

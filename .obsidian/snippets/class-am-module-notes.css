@@ -1,23 +1,7 @@
-/* ===============================
-   Time Garden – Variables
-=============================== */
-
-:root {
-  --c-intima:    #ff8fa3;
-  --c-cognitio:  #ffb36b;
-  --c-memorium:  #ffe066;
-  --c-noetheris: #8ce99a;
-  --c-devs:      #63e6be;
-  --c-viventia:  #74c0fc;
-  --c-kaelithra: #b197fc;
-  --c-ordus:     #da77f2;
-  --c-aethernum: #ced4da;
-  --c-harkaive:  #868e96;
-}
-
-/* ===============================
+/*===============================
    Contextual headings – Time Garden
-=============================== */
+   Requires: am-color-palette.css (enable in Appearance > CSS snippets)
+===============================*/
 
 /* Φ — Inthima */
 .inthima :is(h1, h2, h3, h4, h5, h6),

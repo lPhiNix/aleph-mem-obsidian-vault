@@ -1,18 +1,10 @@
+/*------------------------------------------------------------------------------
+                     Native Note Theme
+             Requires: am-color-palette.css (enable in Appearance > CSS snippets)
+------------------------------------------------------------------------------*/
+
 .inline-title {
-  color: #ffffff !important;
-}
-
-:root {
-  --h-2:   #fff1a8; 
-  --h-3:   #63e6be; 
-  --h-4:   #a5d8ff; 
-  --h-5:   #dfbffd; 
-  --h-6:   #ff9fb3; 
-
-  --bold:  #81b9da;   
-  --crsv:  #00e49c;
-  --b-crsv:#eddb7d;
-  --del: 
+  color: var(--c-native-inline-title) !important;
 }
 
 .am :is(h1),
@@ -22,57 +14,57 @@
 
 .am :is(h2),
 .am .cm-header-2 {
-  color: var(--h-2);
+  color: var(--c-native-header-h2);
 }
 
 .am :is(h3),
 .am .cm-header-3 {
-  color: var(--h-3);
+  color: var(--c-native-header-h3);
 }
 
 .am :is(h4),
 .am .cm-header-4 {
-  color: var(--h-4);
+  color: var(--c-native-header-h4);
 }
 
 .am :is(h5),
 .am .cm-header-5 {
-  color: var(--h-5);
+  color: var(--c-native-header-h5);
 }
 
 .am :is(h6),
 .am .cm-header-6 {
-  color: var(--h-6);
+  color: var(--c-native-header-h6);
 }
 
 /****************************/
 
 .am :is(strong),
 .am .cm-strong {
-  color: var(--bold);
+  color: var(--c-native-bold);
   font-weight: 750;
 }
 
 .am :is(em),
 .am .cm-em {
-  color: var(--crsv); 
+  color: var(--c-native-italic); 
 }
 
 .am :is(strong em),
 .am :is(em strong),
 .am .cm-strong .cm-em {
-  color: var(--b-crsv);
+  color: var(--c-native-bold-italic);
 }
 
 .am :is(del),
 .am .cm-strikethrough {
-  color: #636871;
+  color: var(--c-native-strikethrough);
 }
 
 .am :is(code),
 .am .cm-inline-code {
-  color: #e3b258;
-  background-color: rgba(229, 192, 123, 0.20);
+  color: var(--c-native-code);
+  background-color: var(--c-native-code-bg);
   border-radius: 4px;
   padding: 2px 4px;
   font-size: 0.95em;

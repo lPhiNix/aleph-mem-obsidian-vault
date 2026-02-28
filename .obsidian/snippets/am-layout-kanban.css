@@ -1,32 +1,17 @@
-:root {
---wishes-color: #ffc53d;
---to-do-color: #8E8E8E;
---in-progress-color: #5C47CD;
---in-review-color: #1276E2;
---locked-color: #D21E24;
---close-color: #2C8C5E;
-
---secondary-wishes-color: #251804;
---secondary-to-do-color: #1A1A1A;
---secondary-in-progress-color: #15141a;
---secondary-in-review-color: #11161B;
---secondary-locked-color: #341414;
---secondary-close-color: #121715;
-}
-
 /* ================================== */
 /* Kanban – Colores por columna (REAL) */
+/*          Requires: am-color-palette.css */
 /* ================================== */
 
-.kanban-plugin__lane-wrapper:nth-child(1) .kanban-plugin__lane {background-color: var(--secondary-wishes-color); } /* DESEOS */
-.kanban-plugin__lane-wrapper:nth-child(2) .kanban-plugin__lane {background-color: var(--secondary-to-do-color)} /* LARGO PLAZO */
-.kanban-plugin__lane-wrapper:nth-child(3) .kanban-plugin__lane {background-color: var(--secondary-to-do-color)} /* CORTO PLAZO */
-.kanban-plugin__lane-wrapper:nth-child(4) .kanban-plugin__lane {background-color: var(--secondary-to-do-color)} /* ESTA SEMANA */
-.kanban-plugin__lane-wrapper:nth-child(5) .kanban-plugin__lane {background-color: var(--secondary-to-do-color)} /* AHORA */
-.kanban-plugin__lane-wrapper:nth-child(6) .kanban-plugin__lane {background-color: var(--secondary-in-progress-color)} /* EN PROGRESO */
-.kanban-plugin__lane-wrapper:nth-child(7) .kanban-plugin__lane {background-color: var(--secondary-in-review-color)} /* EN REVISION */
-.kanban-plugin__lane-wrapper:nth-child(8) .kanban-plugin__lane {background-color: var(--secondary-locked-color)} /* BLOQUEADO */
-.kanban-plugin__lane-wrapper:nth-child(9) .kanban-plugin__lane {background-color: var(--secondary-close-color)} /* CERRADO */
+.kanban-plugin__lane-wrapper:nth-child(1) .kanban-plugin__lane {background-color: var(--c-kanban-wishes-secondary); } /* DESEOS */
+.kanban-plugin__lane-wrapper:nth-child(2) .kanban-plugin__lane {background-color: var(--c-kanban-to-do-secondary)} /* LARGO PLAZO */
+.kanban-plugin__lane-wrapper:nth-child(3) .kanban-plugin__lane {background-color: var(--c-kanban-to-do-secondary)} /* CORTO PLAZO */
+.kanban-plugin__lane-wrapper:nth-child(4) .kanban-plugin__lane {background-color: var(--c-kanban-to-do-secondary)} /* ESTA SEMANA */
+.kanban-plugin__lane-wrapper:nth-child(5) .kanban-plugin__lane {background-color: var(--c-kanban-to-do-secondary)} /* AHORA */
+.kanban-plugin__lane-wrapper:nth-child(6) .kanban-plugin__lane {background-color: var(--c-kanban-in-progress-secondary)} /* EN PROGRESO */
+.kanban-plugin__lane-wrapper:nth-child(7) .kanban-plugin__lane {background-color: var(--c-kanban-in-review-secondary)} /* EN REVISION */
+.kanban-plugin__lane-wrapper:nth-child(8) .kanban-plugin__lane {background-color: var(--c-kanban-locked-secondary)} /* BLOQUEADO */
+.kanban-plugin__lane-wrapper:nth-child(9) .kanban-plugin__lane {background-color: var(--c-kanban-close-secondary)} /* CERRADO */
 
 .kanban-plugin__lane {
 	border: none !important;
@@ -36,15 +21,15 @@
 /* Kanban – Colores del título */
 /* ================================== */
 
-.kanban-plugin__lane-wrapper:nth-child(1) .kanban-plugin__lane-header-wrapper {color: var(--wishes-color);}
-.kanban-plugin__lane-wrapper:nth-child(2) .kanban-plugin__lane-header-wrapper {color: var(--to-do-color);}
-.kanban-plugin__lane-wrapper:nth-child(3) .kanban-plugin__lane-header-wrapper {color: var(--to-do-color)}
-.kanban-plugin__lane-wrapper:nth-child(4) .kanban-plugin__lane-header-wrapper {color: var(--to-do-color)}
-.kanban-plugin__lane-wrapper:nth-child(5) .kanban-plugin__lane-header-wrapper {color: var(--to-do-color)}
-.kanban-plugin__lane-wrapper:nth-child(6) .kanban-plugin__lane-header-wrapper {color: var(--in-progress-color)}
-.kanban-plugin__lane-wrapper:nth-child(7) .kanban-plugin__lane-header-wrapper {color: var(--in-review-color)}
-.kanban-plugin__lane-wrapper:nth-child(8) .kanban-plugin__lane-header-wrapper {color: var(--locked-color)}
-.kanban-plugin__lane-wrapper:nth-child(9) .kanban-plugin__lane-header-wrapper {color: var(--close-color)}
+.kanban-plugin__lane-wrapper:nth-child(1) .kanban-plugin__lane-header-wrapper {color: var(--c-kanban-wishes-primary);}
+.kanban-plugin__lane-wrapper:nth-child(2) .kanban-plugin__lane-header-wrapper {color: var(--c-kanban-to-do-primary);}
+.kanban-plugin__lane-wrapper:nth-child(3) .kanban-plugin__lane-header-wrapper {color: var(--c-kanban-to-do-primary)}
+.kanban-plugin__lane-wrapper:nth-child(4) .kanban-plugin__lane-header-wrapper {color: var(--c-kanban-to-do-primary)}
+.kanban-plugin__lane-wrapper:nth-child(5) .kanban-plugin__lane-header-wrapper {color: var(--c-kanban-to-do-primary)}
+.kanban-plugin__lane-wrapper:nth-child(6) .kanban-plugin__lane-header-wrapper {color: var(--c-kanban-in-progress-primary)}
+.kanban-plugin__lane-wrapper:nth-child(7) .kanban-plugin__lane-header-wrapper {color: var(--c-kanban-in-review-primary)}
+.kanban-plugin__lane-wrapper:nth-child(8) .kanban-plugin__lane-header-wrapper {color: var(--c-kanban-locked-primary)}
+.kanban-plugin__lane-wrapper:nth-child(9) .kanban-plugin__lane-header-wrapper {color: var(--c-kanban-close-primary)}
 
 /* ================================== */
 /* Kanban – Tarjetas con color de columna */
