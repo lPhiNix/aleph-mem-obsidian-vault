@@ -73,8 +73,8 @@
     "class-am-module-notes",
     "class-am-native-note"
   ],
-  "interfaceFontFamily": "",
-  "textFontFamily": "",
+  "interfaceFontFamily": "JetBrains Mono,Cascadia Code,Menlo,Inter",
+  "textFontFamily": "JetBrains Mono,Cascadia Code,Menlo,Inter",
   "nativeMenus": false,
   "theme": "obsidian",
   "showViewHeader": true,
