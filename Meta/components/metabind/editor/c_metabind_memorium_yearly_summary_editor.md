@@ -1,3 +1,3 @@
 ```meta-bind
-INPUT[editor(class(custom-editor)):memorium-yearly-summary]
+INPUT[editor(class(am-memorium-editor)):memorium-yearly-summary]
 ```
