@@ -1,0 +1,11 @@
+h1, h2, h3, h4, h5, h6,
+.markdown-preview-view h1,
+.markdown-preview-view h2,
+.markdown-preview-view h3,
+.markdown-preview-view h4,
+.markdown-preview-view h5,
+.markdown-preview-view h6,
+.markdown-source-view.mod-cm6 .cm-header,
+.HyperMD-header {
+  font-family: var(--font-default) !important;
+}

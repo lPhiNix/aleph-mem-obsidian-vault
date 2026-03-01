@@ -71,10 +71,12 @@
     "class-am-memorium-weekly",
     "class-am-memorium-yearly",
     "class-am-module-notes",
-    "class-am-native-note"
+    "class-am-native-note",
+    "am-layout-custom-fonts",
+    "am-layout-exclude-custom-fonts"
   ],
-  "interfaceFontFamily": "JetBrains Mono,Cascadia Code,Menlo,Inter",
-  "textFontFamily": "JetBrains Mono,Cascadia Code,Menlo,Inter",
+  "interfaceFontFamily": "JetBrains Mono,Cascadia Code,Inter",
+  "textFontFamily": "JetBrains Mono,Cascadia Code,Inter",
   "nativeMenus": false,
   "theme": "obsidian",
   "showViewHeader": true,
