@@ -397,6 +397,20 @@
       ],
       "enabled": true,
       "icon": "lucide-file-json-2"
+    },
+    {
+      "id": "5Qavz",
+      "name": "Journal",
+      "match": "all",
+      "conditions": [
+        {
+          "source": "path",
+          "operator": "startsWith",
+          "value": "02 - Ψ - Memorium/"
+        }
+      ],
+      "enabled": true,
+      "icon": "lucide-calendar"
     }
   ],
   "folderRules": [
