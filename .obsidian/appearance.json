@@ -79,7 +79,8 @@
     "am-layout-ordus-kanban",
     "am-layout-metabind-text",
     "am-layout-simple-calendar",
-    "am-layout-journal-simple-calendar"
+    "am-layout-journal-simple-calendar",
+    "aleph-mem-color-palette"
   ],
   "interfaceFontFamily": "JetBrains Mono,Cascadia Code,Inter",
   "textFontFamily": "JetBrains Mono,Cascadia Code,Inter",
