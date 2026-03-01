@@ -73,7 +73,13 @@
     "class-am-module-notes",
     "class-am-native-note",
     "am-layout-custom-fonts",
-    "am-layout-exclude-custom-fonts"
+    "am-layout-exclude-custom-fonts",
+    "am-layout-exclude-fonts",
+    "am-layouts-memorium-callouts",
+    "am-layout-ordus-kanban",
+    "am-layout-metabind-text",
+    "am-layout-simple-calendar",
+    "am-layout-journal-simple-calendar"
   ],
   "interfaceFontFamily": "JetBrains Mono,Cascadia Code,Inter",
   "textFontFamily": "JetBrains Mono,Cascadia Code,Inter",
