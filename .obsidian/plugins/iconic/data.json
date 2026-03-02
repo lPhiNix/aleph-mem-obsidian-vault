@@ -125,7 +125,14 @@
     }
   },
   "bookmarkIcons": {},
-  "tagIcons": {},
+  "tagIcons": {
+    "NOTE": {
+      "icon": "lucide-sticky-note"
+    },
+    "MEMORIUM": {
+      "icon": "lucide-codesandbox"
+    }
+  },
   "propertyIcons": {
     "creation": {
       "icon": "lucide-clock-arrow-up"
@@ -136,11 +143,11 @@
     "favorite": {
       "icon": "lucide-star"
     },
-    "id": {
-      "icon": "lucide-hash"
+    "key": {
+      "icon": "lucide-key-round"
     },
     "version": {
-      "icon": "lucide-component"
+      "icon": "lucide-hash"
     }
   },
   "ribbonIcons": {},

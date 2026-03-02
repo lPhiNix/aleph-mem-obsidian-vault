@@ -3,9 +3,9 @@
     "aliases": "aliases",
     "cssclasses": "multitext",
     "tags": "tags",
-    "id": "text",
     "version": "text",
     "creation": "datetime",
-    "favorite": "checkbox"
+    "favorite": "checkbox",
+    "key": "text"
   }
 }

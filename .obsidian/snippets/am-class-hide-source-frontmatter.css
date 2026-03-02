@@ -6,7 +6,8 @@
     display: none;
 }
 
-.hide-source-frontmatter .metadata-property[data-property-key="id"],
+.hide-source-frontmatter .metadata-property[data-property-key="version"],
+.hide-source-frontmatter .metadata-property[data-property-key="key"],
 .hide-source-frontmatter .metadata-property[data-property-key="creation"],
 .hide-source-frontmatter .metadata-property[data-property-key="tags"],
 .hide-source-frontmatter .metadata-property[data-property-key="favorite"] {

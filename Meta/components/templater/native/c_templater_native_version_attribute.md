@@ -26,8 +26,8 @@ if (templateFile) {
         hash += (hash << 1) + (hash << 4) + (hash << 7) + (hash << 8) + (hash << 24);
     }
     
-    const versionHash = "_" + (hash >>> 0).toString(16).substring(0, 8);
-    tR += "version: " + versionHash + "\n";
+    const versionHash = "#" + (hash >>> 0).toString(16).substring(0, 8);
+    tR += "version: \"" + versionHash + "\"\n";
 } else {
     tR += "version: unknown\n";
 }
