@@ -182,6 +182,10 @@
   margin-bottom: 4px;
 }
 
+.am .mb-button-inner {
+  font-weight: 800;
+}
+
 /* ========================================================= */
 /* PARAGRAPHS & OTHER ELEMENTS                              */
 /* ========================================================= */
@@ -189,6 +193,10 @@
 .am p {
   margin-top: 4px;
   margin-bottom: 4px;
+}
+
+.am .cm-line:not(.HyperMD-header):not(.HyperMD-quote):not(.HyperMD-list-line) {
+  color: var(--text-normal);
 }
 
 .am hr {

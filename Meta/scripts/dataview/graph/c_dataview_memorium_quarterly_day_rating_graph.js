@@ -8,18 +8,18 @@
  **********************/
 const CONFIG = {
   // Colores
-  EMPTY_COLOR: "#d1d5db",
+  EMPTY_COLOR: "#2a2a2a",
   RATING_COLORS: {
-    1: "#707070ff",
-    2: "#f87171",
-    3: "#fbbf24",
+    1: "#4a4a4a",
+    2: "#ef4444",
+    3: "#f59e0b",
     4: "#fbbf24",
-    5: "#34d399",
+    5: "#10b981",
     6: "#3b82f6",
-    7: "#d047efff",
-    8: "#d047efff",
-    9: "#d378a5ff",
-    10: "#d1a5bbff"
+    7: "#a855f7",
+    8: "#c026d3",
+    9: "#ec4899",
+    10: "#f472b6"
   },
 
   // Rutas
