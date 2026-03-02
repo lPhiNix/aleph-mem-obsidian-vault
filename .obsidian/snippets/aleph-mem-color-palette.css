@@ -13,16 +13,16 @@
 
 
     --c-am-native-inline-title:  #ffffff;
-    --c-am-native-header-h2:     #fff1a8;
-    --c-am-native-header-h3:     #63e6be;
+    --c-am-native-header-h2:     #63e6be;
+    --c-am-native-header-h3:     #fff1a8;
     --c-am-native-header-h4:     #a5d8ff;
     --c-am-native-header-h5:     #dfbffd;
     --c-am-native-header-h6:     #ff9fb3;
-    --c-am-native-bold:          #81b9da;
+    --c-am-native-bold:          #c0d0d9;
     --c-am-native-italic:        #00e49c;
     --c-am-native-bold-italic:   #eddb7d;
     --c-am-native-strikethrough: #636871;
-    --c-am-native-code:          #e3b258;
+    --c-am-native-code:          #dbc192;
     --c-am-native-code-bg:       rgba(229, 192, 123, 0.20);
 
 

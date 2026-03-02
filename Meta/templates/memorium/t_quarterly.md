@@ -18,7 +18,7 @@ tR += await tp.file.include("[[c_templater_native_favorite_attribute]]");
 %>
 <%*
 let classes = [
-	"hide-source-frontmatter", "hide-inline-title", "quarterly",
+	"hide-source-frontmatter", "quarterly",
 	"quarter-" + moment(tp.file.title, "YYYY-[Q]Q").format("Q")
 ];
 tR += await tp.file.include("[[c_templater_native_cssclasses_attribute]]") + classes.map(t => "\n- "+t).join("");
@@ -45,20 +45,20 @@ tR += await tp.file.include("[[c_metabind_memorium_quarterly_alias_text]]");
 %>
 
 ---
-### ✧ Summary
+## ✧ Summary
 
 <%*
 tR += await tp.file.include("[[c_metabind_memorium_quarterly_summary_editor]]");
 %>
 
-### ✧ Ratings
+## ✧ Ratings
 ---
 
 <%*
 tR += await tp.file.include("[[c_dataview_memorium_quarterly_day_rating_graph]]");
 %>
 
-### ✧ General Overview
+## ✧ General Overview
 ---
 <%*
 tR += await tp.file.include("[[c_dataview_memorium_quarterly_month_list]]");

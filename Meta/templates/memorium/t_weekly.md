@@ -18,7 +18,7 @@ tR += await tp.file.include("[[c_templater_native_favorite_attribute]]");
 %>
 <%*
 let classes = [
-	"hide-source-frontmatter", "hide-inline-title", "weekly",
+	"hide-source-frontmatter", "weekly",
 	"week-" + moment(tp.file.title, "YYYY-[W]WW").format("W")
 ];
 tR += await tp.file.include("[[c_templater_native_cssclasses_attribute]]") + classes.map(t => "\n- "+t).join("");
@@ -43,20 +43,20 @@ tR += await tp.file.include("[[c_metabind_memorium_weekly_alias_text]]");
 %>
 
 ---
-### ✧ Summary
+## ✧ Summary
 
 <%*
 tR += await tp.file.include("[[c_metabind_memorium_weekly_summary_editor]]");
 %>
 
-### ✧ Ratings
+## ✧ Ratings
 ---
 
 <%*
 tR += await tp.file.include("[[c_dataview_memorium_weekly_day_rating_graph]]");
 %>
 
-### ✧ General Overview
+## ✧ General Overview
 ---
 <%*
 tR += await tp.file.include("[[c_dataview_memorium_weekly_day_list]]");

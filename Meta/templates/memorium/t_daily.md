@@ -18,7 +18,7 @@ tR += await tp.file.include("[[c_templater_native_favorite_attribute]]");
 %>
 <%*
 let classes = [
-	"hide-source-frontmatter", "hide-inline-title", "daily",
+	"hide-source-frontmatter", "daily",
 	moment(tp.file.title, "YYYY-MM-DD").format("dddd").toLowerCase()
 ];
 tR += await tp.file.include("[[c_templater_native_cssclasses_attribute]]") + classes.map(t => "\n- "+t).join("");
@@ -45,13 +45,13 @@ tR += await tp.file.include("[[c_metabind_memorium_daily_nav_buttons]]");
 tR += await tp.file.include("[[c_metabind_memorium_daily_alias_text]]");
 %>
 ---
-### ✧ Rating
+## ✧ Rating
 
 <%*
 tR += await tp.file.include("[[c_metabind_memorium_day_rating_slider]]");
 %>
 ---
-### ✧ Summary
+## ✧ Summary
 
 <%*
 tR += await tp.file.include("[[c_metabind_memorium_daily_summary_editor]]");

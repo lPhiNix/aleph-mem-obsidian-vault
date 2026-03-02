@@ -75,56 +75,64 @@
 }
 
 .daily :is(h1, .HyperMD-header.HyperMD-header-1) {
-  color: var(--primary);
-  font-size: 47px;
-  padding: 0 !important;
+  color: var(--primary) !important;
 }
 .daily :is(h2, .HyperMD-header.HyperMD-header-2) {
-  color: var(--highlight);
-  font-size: 30px;
-  font-style: italic;
-  padding: 0 !important;
+  color: var(--primary) !important;
 }
 .daily :is(h3, .HyperMD-header.HyperMD-header-3) {
-  color: var(--primary);
-
-  font-size: 32px;
-  padding-top: 0;
+  color: var(--highlight) !important;
 }
 .daily :is(h4, .HyperMD-header.HyperMD-header-4) {
-  background-color: var(--primary);
-  color: var(--dark);
-  font-weight: 900;
-  margin-bottom: 0;
-  padding-top: 0;
-  font-size: 20px;
-  width: fit-content;
-  padding-left: 6px;
-  padding-right: 6px;
-  border-radius: 8px;
-  word-wrap: normal;
-}
-.daily p {
-  margin-top: 4px;
-  margin-bottom: 4px;
+  background-color: var(--primary) !important;
+  color: var(--dark) !important;
 }
 .daily :is(a:link, .cm-hmd-internal-link) {
-  color: var(--primary);
+  color: var(--primary) !important;
 }
 .daily :is(a:hover, .cm-hmd-internal-link:hover) {
-  color: var(--highlight);
+  color: var(--highlight) !important;
 }
-.daily hr {
-  margin-top: 20px !important;
-  margin-bottom: 20px !important;
-}
-
-.daily img {
-  display: block !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-}
-
 .daily .metadata-property-icon {
-  color: var(--highlight);
+  color: var(--highlight) !important;
+}
+.daily .input-alias input::placeholder {
+  color: var(--dark) !important;
+}
+.daily .mb-button-inner {
+  color: var(--dark)
+}
+.daily :is(.tag, .cm-hashtag, .multi-select-pill, .metadata-property-value .tag) {
+  color: var(--primary) !important;
+  background-color: var(--dark) !important;
+}
+.daily :is(.multi-select-pill .svg-icon, .tag .svg-icon) {
+  color: var(--primary) !important;
+}
+.daily .am-memorium-progress-bar[data-internal-value="2"] .mb-progress-bar-progress {
+  background-color: #ef4444 !important;
+}
+.daily .am-memorium-progress-bar[data-internal-value="3"] .mb-progress-bar-progress {
+  background-color: #f59e0b !important;
+}
+.daily .am-memorium-progress-bar[data-internal-value="4"] .mb-progress-bar-progress {
+  background-color: #fbbf24 !important;
+}
+.daily .am-memorium-progress-bar[data-internal-value="5"] .mb-progress-bar-progress {
+  background-color: #10b981 !important;
+}
+.daily .am-memorium-progress-bar[data-internal-value="6"] .mb-progress-bar-progress {
+  background-color: #3b82f6 !important;
+}
+.daily .am-memorium-progress-bar[data-internal-value="7"] .mb-progress-bar-progress {
+  background-color: #a855f7 !important;
+}
+.daily .am-memorium-progress-bar[data-internal-value="8"] .mb-progress-bar-progress {
+  background-color: #c026d3 !important;
+}
+.daily .am-memorium-progress-bar[data-internal-value="9"] .mb-progress-bar-progress {
+  background-color: #ec4899 !important;
+}
+.daily .am-memorium-progress-bar[data-internal-value="10"] .mb-progress-bar-progress {
+  background-color: #f472b6 !important;
 }
