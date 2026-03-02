@@ -11,7 +11,7 @@ do {
   }
 } while (value >= (2n**64n - (2n**64n % max)));
 
-const id = (value % max).toString().padStart(16, '0');
+const key = (value % max).toString().padStart(16, '0');
 
-tR += `id: "${id}"`;
+tR += `key: "${key}"`;
 %>

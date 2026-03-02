@@ -4,7 +4,7 @@
 tR += await tp.file.include("[[c_templater_native_version_attribute]]");
 %>
 <%*
-tR += await tp.file.include("[[c_templater_native_id_attribute]]");
+tR += await tp.file.include("[[c_templater_native_key_attribute]]");
 %>
 <%*
 tR += await tp.file.include("[[c_templater_native_creation_attribute]]");

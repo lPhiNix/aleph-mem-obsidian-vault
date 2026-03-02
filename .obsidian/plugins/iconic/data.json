@@ -136,8 +136,8 @@
     "favorite": {
       "icon": "lucide-star"
     },
-    "id": {
-      "icon": "lucide-hash"
+    "key": {
+      "icon": "lucide-key-round"
     },
     "version": {
       "icon": "lucide-component"
