@@ -1,43 +1,85 @@
-/*------------------------------------------------------------------------------
-                     Native Note Theme
-             Requires: am-color-palette.css (enable in Appearance > CSS snippets)
-------------------------------------------------------------------------------*/
 
-.inline-title {
+/* ========================================================= */
+/* INLINE TITLE                                              */
+/* ========================================================= */
+
+.am .inline-title {
   color: var(--c-am-native-inline-title) !important;
 }
 
-.am :is(h1),
-.am .cm-header-1 {
+.am .iconic-title-wrapper .iconic-icon {
+  color: var(--c-am-native-inline-title) !important;
+}
+
+/* ========================================================= */
+/* HEADERS - Font Family                                     */
+/* ========================================================= */
+
+.am h1, .am h2, .am h3, .am h4, .am h5, .am h6,
+.am.markdown-preview-view h1,
+.am.markdown-preview-view h2,
+.am.markdown-preview-view h3,
+.am.markdown-preview-view h4,
+.am.markdown-preview-view h5,
+.am.markdown-preview-view h6,
+.am.markdown-source-view.mod-cm6 .cm-header,
+.am .HyperMD-header {
+  font-family: var(--font-default) !important;
+}
+
+/* ========================================================= */
+/* HEADERS - Sizes & Styling                                */
+/* ========================================================= */
+
+.am :is(h1, .HyperMD-header.HyperMD-header-1) {
   color: var(--interactive-accent);
+  font-size: 40px;
+  padding: 0 !important;
 }
 
-.am :is(h2),
-.am .cm-header-2 {
+.am :is(h2, .HyperMD-header.HyperMD-header-2) {
   color: var(--c-am-native-header-h2);
+  font-size: 32px;
+  padding: 0;
 }
 
-.am :is(h3),
-.am .cm-header-3 {
+.am :is(h3, .HyperMD-header.HyperMD-header-3) {
   color: var(--c-am-native-header-h3);
+  font-size: 30px;
+  font-style: italic;
+  padding-top: 0 !important;
 }
 
-.am :is(h4),
-.am .cm-header-4 {
+.am :is(h4, .HyperMD-header.HyperMD-header-4) {
   color: var(--c-am-native-header-h4);
+  font-weight: 900;
+  margin-bottom: 0;
+  padding-top: 0;
+  font-size: 20px;
+  width: fit-content;
+  padding-left: 6px;
+  padding-right: 6px;
+  border-radius: 8px;
+  word-wrap: normal;
 }
 
-.am :is(h5),
-.am .cm-header-5 {
+.am :is(h5, .HyperMD-header.HyperMD-header-5) {
   color: var(--c-am-native-header-h5);
+  font-weight: 700;
+  width: fit-content;
+  padding-left: 6px;
+  word-wrap: normal;
 }
 
-.am :is(h6),
-.am .cm-header-6 {
+.am :is(h6, .HyperMD-header.HyperMD-header-6) {
   color: var(--c-am-native-header-h6);
+  padding-left: 6px;
+  font-style: italic;
 }
 
-/****************************/
+/* ========================================================= */
+/* TEXT FORMATTING                                           */
+/* ========================================================= */
 
 .am :is(strong),
 .am .cm-strong {
@@ -52,7 +94,6 @@
 
 .am :is(strong em),
 .am :is(em strong),
-.am :is(strong em),
 .am .cm-strong .cm-em {
   color: var(--c-am-native-bold-italic);
 }
@@ -62,10 +103,101 @@
   color: var(--c-am-native-strikethrough);
 }
 
-.am :is(code),
-.am .cm-inline-code {
-  color: var(--c-am-native-code);
+.am :is(mark),
+.am .cm-highlight,
+.am.markdown-source-view .cm-highlight {
+  background-color: color-mix(in srgb, var(--interactive-accent) 20%, transparent);
+}
+
+/* ========================================================= */
+/* BLOCKQUOTES                                               */
+/* ========================================================= */
+
+.am blockquote {
+  border-left: 3px solid var(--interactive-accent);
+  background-color: var(--code-background);
+  padding: 10px 15px;
+  border-radius: 6px;
+}
+
+/* ========================================================= */
+/* CALLOUTS                                                  */
+/* ========================================================= */
+
+.am .callout {
+  border: none !important;
+  border-left: 0 !important;
+  border-radius: 0 !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  transition: all 0.2s ease !important;
+}
+
+.am .callout .callout-title {
+  background-color: transparent !important;
+  border: none !important;
+  color: var(--text-muted) !important;
+  font-style: italic !important;
+  padding: 0 12px !important;
+}
+
+.am .callout .callout-content {
+  background-color: transparent !important;
+  border: none !important;
+  color: var(--text-normal) !important;
+  padding: 0 12px !important;
+}
+
+.am .callout:hover .callout-title {
+  color: var(--text-normal) !important;
+}
+
+/* ========================================================= */
+/* METABIND INPUT                                            */
+/* ========================================================= */
+
+.am .input-alias {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.am .input-alias input {
+  background-color: var(--background-primary);
+  border: 1px solid var(--interactive-accent);
   border-radius: 4px;
-  padding: 2px 4px;
-  font-size: 0.95em;
+  padding: 8px;
+  width: 100%;
+  font-size: 1.25em;
+  height: auto;
+}
+
+.am .input-alias input:focus {
+  outline: none;
+  border-color: var(--interactive-accent-hover);
+  box-shadow: 0 0 3px var(--interactive-accent);
+}
+
+.am .input-alias .meta-bind-label {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+/* ========================================================= */
+/* PARAGRAPHS & OTHER ELEMENTS                              */
+/* ========================================================= */
+
+.am p {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.am hr {
+  margin-top: 20px !important;
+  margin-bottom: 20px !important;
+}
+
+.am img {
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }

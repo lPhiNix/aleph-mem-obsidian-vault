@@ -39,19 +39,19 @@ tR += await tp.file.include("[[c_metabind_memorium_yearly_alias_text]]");
 %>
 
 ---
-### ✧ Summary
+## ✧ Summary
 
 <%*
 tR += await tp.file.include("[[c_metabind_memorium_yearly_summary_editor]]");
 %>
 
-### ✧ Ratings
+## ✧ Ratings
 ---
 <%*
 tR += await tp.file.include("[[c_dataview_memorium_yearly_day_grid]]");
 %>
 
-### ✧ General Overview
+## ✧ General Overview
 ---
 <%*
 tR += await tp.file.include("[[c_dataview_memorium_yearly_quarter_list]]");
