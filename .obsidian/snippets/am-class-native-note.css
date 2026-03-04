@@ -153,7 +153,7 @@
 }
 
 /* ========================================================= */
-/* METABIND INPUT                                            */
+/* METABIND                                                 */
 /* ========================================================= */
 
 .am .input-alias {
@@ -184,6 +184,28 @@
 
 .am .mb-button-inner {
   font-weight: 800;
+}
+
+.daily .is-mobile .mb-button-group {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  gap: 0 !important;
+  width: 100% !important;
+}
+.daily .is-mobile .mb-button-group .mb-button {
+  flex: 1 1 0 !important;
+  min-width: 0 !important;
+}
+.daily .is-mobile .mb-button-group .mb-button-inner {
+  width: 100% !important;
+  padding: 0.25rem 0.5rem !important;
+  font-size: clamp(0.6rem, 2.5vw, 0.875rem) !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+}
+.daily .is-mobile .metadata-content {
+  background-color: transparent !important;
 }
 
 /* ========================================================= */
