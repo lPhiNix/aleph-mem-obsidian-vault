@@ -109,6 +109,9 @@
 .daily :is(.multi-select-pill .svg-icon, .tag .svg-icon) {
   color: var(--primary) !important;
 }
+.daily .right-triangle {
+  stroke: var(--highlight) !important;
+}
 .daily .am-memorium-progress-bar .mb-progress-bar-input {
   display: flex !important;
   align-items: center !important;
@@ -189,4 +192,25 @@
 }
 .daily .am-memorium-progress-bar .mb-progress-bar-label-right {
   display: none !important;
+}
+.daily .mb-button-group {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  gap: 0 !important;
+  width: 100% !important;
+}
+.daily .mb-button-group .mb-button {
+  flex: 1 1 0 !important;
+  min-width: 0 !important;
+}
+.daily .mb-button-group .mb-button-inner {
+  width: 100% !important;
+  padding: 0.25rem 0.5rem !important;
+  font-size: clamp(0.6rem, 2.5vw, 0.875rem) !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+}
+.daily .metadata-content {
+  background-color: none !important;
 }
