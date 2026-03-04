@@ -60,110 +60,41 @@
 }
 
 .quarterly :is(h1, .HyperMD-header.HyperMD-header-1) {
-  color: var(--primary);
-  font-size: 58px;
-  padding: 0 !important;
-}
-
-.quarterly :is(h2, .HyperMD-header.HyperMD-header-2) {
-  color: var(--highlight);
-  font-size: 38px;
+  color: var(--primary) !important;
   font-style: italic;
-  padding: 0 !important;
 }
-
+.quarterly :is(h2, .HyperMD-header.HyperMD-header-2) {
+  color: var(--highlight) !important;
+}
 .quarterly :is(h3, .HyperMD-header.HyperMD-header-3) {
-  color: var(--primary); 
-  font-size: 40px;
-  padding-top: 0;
+  color: var(--primary) !important; 
 }
-
 .quarterly :is(h4, .HyperMD-header.HyperMD-header-4) {
-  background-color: var(--primary);
-  color: var(--dark);
-  font-weight: 900;
-  margin-bottom: 0;
-  padding-top: 0;
-  font-size: 24px;
-  width: fit-content;
-  padding-left: 10px;
-  padding-right: 10px;
-  border-radius: 8px;
-  word-wrap: normal;
+  background-color: var(--primary) !important;
+  color: var(--dark) !important;
 }
-
-.quarterly p {
-  margin-top: 8px;
-  margin-bottom: 8px;
-}
-
 .quarterly :is(a:link, .cm-hmd-internal-link) {
-  color: var(--primary);
+  color: var(--primary) !important;
 }
-
 .quarterly :is(a:hover, .cm-hmd-internal-link:hover) {
-  color: var(--highlight);
+  color: var(--highlight) !important;
 }
-
-.quarterly hr {
-  margin-top: 28px !important;
-  margin-bottom: 28px !important;
-}
-
-.quarterly img {
-  display: block !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-}
-
-:is(.quarter-1, .quarter-2, .quarter-3, .quarter-4) svg {
-  color: color-mix(in srgb, var(--highlight) 60%, transparent);
-}
-
-/* Target the custom class */
-.custom-progress-bar {
-  color: white;
-  background-color: rgb(from var(--primary) r g b / 0.2);
-  border-radius: 5px;
-}
-
-.quarterly-summary-container {
-  background-color: color-mix(in srgb, var(--primary) 15%, transparent);
-  border-radius: 10px;
-  padding: 15px;
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-
-.quarterly-metrics {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin: 18px 0;
-}
-
-.quarterly-metric-card {
-  background-color: color-mix(in srgb, var(--primary) 30%, transparent);
-  border-radius: 10px;
-  padding: 12px;
-  flex: 1;
-  min-width: 180px;
-  text-align: center;
-}
-
-.quarterly-metric-value {
-  font-size: 28px;
-  font-weight: bold;
-  color: var(--highlight);
-}
-
-.quarterly-metric-label {
-  font-size: 16px;
-  color: var(--highlight);
-  opacity: 0.8;
-}
-
 .quarterly .metadata-property-icon {
-  color: var(--highlight);
+  color: var(--highlight) !important;
+}
+.quarterly .input-alias input::placeholder {
+color: var(--dark) !important;
+}
+.quarterly .mb-button-inner {
+  color: var(--dark) !important;
+}
+.quarterly :is(.tag, .cm-hashtag, .multi-select-pill, .metadata-property-value .tag) {
+  color: var(--primary) !important;
+  background-color: var(--dark) !important;
+}
+.quarterly :is(.multi-select-pill .svg-icon, .tag .svg-icon) {
+  color: var(--primary) !important;
+}
+.quarterly .right-triangle {
+  stroke: var(--highlight) !important;
 }
