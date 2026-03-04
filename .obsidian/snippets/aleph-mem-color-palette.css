@@ -123,9 +123,9 @@
     --c-am-memorium-quarterly-q4-primary:   #9a6c8c;
     --c-am-memorium-quarterly-q4-dark:      #432e3d;
 
-    --c-am-memorium-weekly-week1-highlight: #ffffff;
+    --c-am-memorium-weekly-week1-highlight: #a0a0a0;
     --c-am-memorium-weekly-week1-primary:   #ffffff;
-    --c-am-memorium-weekly-week1-dark:      #b1b1b1;
+    --c-am-memorium-weekly-week1-dark:      #424242;
 
     --c-am-memorium-weekly-week2-highlight: #cbe9fd;
     --c-am-memorium-weekly-week2-primary:   #59a3dc;
@@ -336,8 +336,8 @@
     --c-am-memorium-weekly-week53-dark:      #424242;
 
     --c-am-memorium-yearly-highlight: #ffffff;
-    --c-am-memorium-yearly-primary:   #b1b1b1;
-    --c-am-memorium-yearly-dark:      #ffffff;
+    --c-am-memorium-yearly-primary:   #ffffff;
+    --c-am-memorium-yearly-dark:      #b1b1b1;
 
 
     --c-am-ordus-kanban-wishes-primary:      #ffc53d;
