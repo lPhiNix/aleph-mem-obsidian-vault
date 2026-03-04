@@ -32,143 +32,46 @@
   --pill-cover-hover: color-mix(in srgb, var(--highlight) 60%, transparent);
 }
 
-/* Gradient header styling */
-.yearly :is(
-  .HyperMD-header.HyperMD-header-1,
-  .markdown-rendered h1
-) {
-  background: linear-gradient(135deg, var(--c-am-memorium-yearly-gradient-1-start), var(--c-am-memorium-yearly-gradient-1-end));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: transparent;
-  background-clip: text;
-
-  font-size: 64px;
+.yearly :is(h1, .HyperMD-header.HyperMD-header-1) {
+  color: var(--primary) !important;
+  font-style: italic;
+  font-size: 64px !important;
   text-align: center;
   margin: 10px auto;
-  padding: 10px 0 !important;
+  padding: 10px 0;
 }
-
-/* Style for star symbol */
-.yearly .markdown-rendered h1:first-child {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-
-.yearly .cm-formatting-header-1:has-text("✧"),
-.yearly .markdown-rendered h1:first-child:before {
-  content: "✧";
-  background: linear-gradient(135deg, var(--c-am-memorium-yearly-gradient-2-start), var(--c-am-memorium-yearly-gradient-2-end));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: transparent;
-  background-clip: text;
-  font-size: 60px;
-  margin-right: 15px;
-}
-
-/* Regular header styling */
 .yearly :is(h2, .HyperMD-header.HyperMD-header-2) {
-  color: var(--highlight);
-  font-size: 42px;
-  font-style: italic;
-  padding: 0 !important;
+  color: var(--highlight) !important;
 }
-
 .yearly :is(h3, .HyperMD-header.HyperMD-header-3) {
-  color: var(--primary); 
-  font-size: 44px;
-  padding-top: 0;
+  color: var(--primary) !important; 
 }
-
 .yearly :is(h4, .HyperMD-header.HyperMD-header-4) {
-  background-color: var(--primary);
-  color: var(--dark);
-  font-weight: 900;
-  margin-bottom: 0;
-  padding-top: 0;
-  font-size: 26px;
-  width: fit-content;
-  padding-left: 12px;
-  padding-right: 12px;
-  border-radius: 8px;
-  word-wrap: normal;
+  background-color: var(--primary) !important;
+  color: var(--dark) !important;
 }
-
-.yearly p {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
 .yearly :is(a:link, .cm-hmd-internal-link) {
-  color: var(--primary);
+  color: var(--primary) !important;
 }
-
 .yearly :is(a:hover, .cm-hmd-internal-link:hover) {
-  color: var(--highlight);
+  color: var(--highlight) !important;
 }
-
-.yearly hr {
-  margin-top: 32px !important;
-  margin-bottom: 32px !important;
-}
-
-.yearly img {
-  display: block !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-}
-
-.yearly svg {
-  color: color-mix(in srgb, var(--highlight) 60%, transparent);
-}
-
-/* Target the custom class */
-.custom-progress-bar {
-  color: white;
-  background-color: rgb(from var(--primary) r g b / 0.2);
-  border-radius: 5px;
-}
-
-.yearly-summary-container {
-  background-color: color-mix(in srgb, var(--primary) 15%, transparent);
-  border-radius: 12px;
-  padding: 18px;
-  margin-top: 18px;
-  margin-bottom: 18px;
-}
-
-.yearly-metrics {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 15px;
-  margin: 20px 0;
-}
-
-.yearly-metric-card {
-  background-color: color-mix(in srgb, var(--primary) 30%, transparent);
-  border-radius: 12px;
-  padding: 15px;
-  flex: 1;
-  min-width: 200px;
-  text-align: center;
-}
-
-.yearly-metric-value {
-  font-size: 32px;
-  font-weight: bold;
-  color: var(--highlight);
-}
-
-.yearly-metric-label {
-  font-size: 18px;
-  color: var(--highlight);
-  opacity: 0.8;
-}
-
 .yearly .metadata-property-icon {
-  color: var(--highlight);
+  color: var(--highlight) !important;
+}
+.yearly .input-alias input::placeholder {
+color: var(--dark) !important;
+}
+.yearly .mb-button-inner {
+  color: var(--dark) !important;
+}
+.yearly :is(.tag, .cm-hashtag, .multi-select-pill, .metadata-property-value .tag) {
+  color: var(--primary) !important;
+  background-color: var(--dark) !important;
+}
+.yearly :is(.multi-select-pill .svg-icon, .tag .svg-icon) {
+  color: var(--primary) !important;
+}
+.yearly .right-triangle {
+  stroke: var(--highlight) !important;
 }

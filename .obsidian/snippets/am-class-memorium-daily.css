@@ -100,7 +100,7 @@
   color: var(--dark) !important;
 }
 .daily .mb-button-inner {
-  color: var(--dark)
+  color: var(--dark) !important;
 }
 .daily :is(.tag, .cm-hashtag, .multi-select-pill, .metadata-property-value .tag) {
   color: var(--primary) !important;
@@ -192,25 +192,4 @@
 }
 .daily .am-memorium-progress-bar .mb-progress-bar-label-right {
   display: none !important;
-}
-.daily .mb-button-group {
-  display: flex !important;
-  flex-wrap: nowrap !important;
-  gap: 0 !important;
-  width: 100% !important;
-}
-.daily .mb-button-group .mb-button {
-  flex: 1 1 0 !important;
-  min-width: 0 !important;
-}
-.daily .mb-button-group .mb-button-inner {
-  width: 100% !important;
-  padding: 0.25rem 0.5rem !important;
-  font-size: clamp(0.6rem, 2.5vw, 0.875rem) !important;
-  white-space: nowrap !important;
-  overflow: hidden !important;
-  text-overflow: ellipsis !important;
-}
-.daily .metadata-content {
-  background-color: transparent !important;
 }

@@ -32,7 +32,7 @@ tR += await tp.file.include("[[c_templater_memorium_quarterly_journals_frontmatt
 %>
 
 <%"---"%>
-# *✦ <% moment(tp.file.title, 'YYYY-[Q]Q').format('YYYY [Q]Q') %>*
+# ✦ <% moment(tp.file.title, 'YYYY-[Q]Q').format('YYYY [Q]Q') %>
 <%*
 tR += await tp.file.include("[[c_templater_memorium_quarterly_hide_yearly_link]]");
 %>

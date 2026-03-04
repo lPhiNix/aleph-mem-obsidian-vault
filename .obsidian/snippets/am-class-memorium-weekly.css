@@ -26,6 +26,7 @@
   --list-marker-color: var(--highlight);
   --code-background: var(--c-memorium-base-black);
   --code-normal: var(--primary); 
+  
   --background-modifier-border-focus: var(--primary);
   --background-modifier-border: color-mix(in srgb, var(--highlight) 60%, transparent);
   --background-modifier-hover: color-mix(in srgb, var(--highlight) 60%, transparent);
@@ -348,27 +349,47 @@
   --dark: var(--c-am-memorium-weekly-week52-dark);
 }
 
+.week-53 {
+  --highlight: var(--c-am-memorium-weekly-week53-highlight);
+  --primary: var(--c-am-memorium-weekly-week53-primary);
+  --dark: var(--c-am-memorium-weekly-week53-dark);
+}
+
 .weekly :is(h1, .HyperMD-header.HyperMD-header-1) {
-  color: var(--primary);
+  color: var(--primary) !important;
   font-style: italic;
-  font-size: 50px;
-  padding: 0 !important;
 }
-
 .weekly :is(h2, .HyperMD-header.HyperMD-header-2) {
-  color: var(--highlight);
-  font-size: 30px;
-  font-style: italic;
-  padding: 0 !important;
+  color: var(--highlight) !important;
 }
-
 .weekly :is(h3, .HyperMD-header.HyperMD-header-3) {
-  color: var(--primary);
-
-  font-size: 32px;
-  padding-top: 0;
+  color: var(--primary) !important;
 }
-
 .weekly .metadata-property-icon {
-  color: var(--highlight);
+  color: var(--highlight) !important;
+}
+.weekly :is(a:link, .cm-hmd-internal-link) {
+  color: var(--primary) !important;
+}
+.weekly :is(a:hover, .cm-hmd-internal-link:hover) {
+  color: var(--highlight) !important;
+}
+.weekly .metadata-property-icon {
+  color: var(--highlight) !important;
+}
+.weekly .input-alias input::placeholder {
+  color: var(--dark) !important;
+}
+.weekly .mb-button-inner {
+  color: var(--dark) !important;
+}
+.weekly :is(.tag, .cm-hashtag, .multi-select-pill, .metadata-property-value .tag) {
+  color: var(--primary) !important;
+  background-color: var(--dark) !important;
+}
+.weekly :is(.multi-select-pill .svg-icon, .tag .svg-icon) {
+  color: var(--primary) !important;
+}
+.weekly .right-triangle {
+  stroke: var(--highlight) !important;
 }
