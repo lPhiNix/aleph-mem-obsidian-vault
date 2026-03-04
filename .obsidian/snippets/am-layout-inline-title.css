@@ -1,0 +1,7 @@
+.inline-title {
+  color: var(--c-am-native-inline-title) !important;
+}
+
+.iconic-title-wrapper .iconic-icon {
+  color: var(--c-am-native-inline-title) !important;
+}

@@ -82,7 +82,8 @@
     "am-class-native-note",
     "am-global-font",
     "am-layout-custom-fonts",
-    "am-layout-fonts"
+    "am-layout-fonts",
+    "am-layout-inline-title"
   ],
   "interfaceFontFamily": "",
   "textFontFamily": "",

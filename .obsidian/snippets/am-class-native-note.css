@@ -1,16 +1,3 @@
-
-/* ========================================================= */
-/* INLINE TITLE                                              */
-/* ========================================================= */
-
-.am .inline-title {
-  color: var(--c-am-native-inline-title) !important;
-}
-
-.am .iconic-title-wrapper .iconic-icon {
-  color: var(--c-am-native-inline-title) !important;
-}
-
 /* ========================================================= */
 /* HEADERS - Font Family                                     */
 /* ========================================================= */
