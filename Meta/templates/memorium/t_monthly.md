@@ -10,7 +10,10 @@ tR += await tp.file.include("[[c_templater_native_key_attribute]]");
 tR += await tp.file.include("[[c_templater_native_creation_attribute]]");
 %>
 <%*
-let tags = ["NOTE"];
+let tags = [
+	"NOTE", "MEMORIUM", "monthly",
+	moment(tp.file.title, "YYYY-MM-MMMM").format("MMMM").toLowerCase()
+];
 tR += (await tp.file.include("[[c_templater_native_tags_attribute]]")) + tags.map(t => "\n- "+t).join("");
 %>
 <%*
