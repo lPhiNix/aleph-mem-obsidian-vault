@@ -10,7 +10,10 @@ tR += await tp.file.include("[[c_templater_native_key_attribute]]");
 tR += await tp.file.include("[[c_templater_native_creation_attribute]]");
 %>
 <%*
-let tags = ["NOTE"];
+let tags = [
+	"NOTE", "MEMORIUM", "quarterly",
+	"quarter" + moment(tp.file.title, "YYYY-[Q]Q").format("Q")
+];
 tR += (await tp.file.include("[[c_templater_native_tags_attribute]]")) + tags.map(t => "\n- "+t).join("");
 %>
 <%*
@@ -32,7 +35,7 @@ tR += await tp.file.include("[[c_templater_memorium_quarterly_journals_frontmatt
 %>
 
 <%"---"%>
-# ✦ <% moment(tp.file.title, 'YYYY-[Q]Q').format('YYYY [Q]Q') %>
+# ✦ <% moment(tp.file.title, 'YYYY-[Q]Q').format('[Quarter ]Q, YYYY') %>
 <%*
 tR += await tp.file.include("[[c_templater_memorium_quarterly_hide_yearly_link]]");
 %>

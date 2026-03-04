@@ -131,6 +131,21 @@
     },
     "MEMORIUM": {
       "icon": "lucide-codesandbox"
+    },
+    "daily": {
+      "icon": "lucide-calendar"
+    },
+    "weekly": {
+      "icon": "lucide-calendar"
+    },
+    "monthly": {
+      "icon": "lucide-calendar"
+    },
+    "quarterly": {
+      "icon": "lucide-calendar"
+    },
+    "yearly": {
+      "icon": "lucide-calendar"
     }
   },
   "propertyIcons": {
