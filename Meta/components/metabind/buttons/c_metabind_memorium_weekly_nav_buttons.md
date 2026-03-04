@@ -3,7 +3,7 @@
 id: prev-week
 style: primary
 class: phone-responsive
-label: ← Previous Week
+label: <- Previous Week
 hidden: true
 actions:
   - type: open
@@ -14,7 +14,7 @@ actions:
 id: next-week
 style: primary
 class: phone-responsive
-label: Next Week →
+label: Next Week ->
 hidden: true
 actions:
   - type: open

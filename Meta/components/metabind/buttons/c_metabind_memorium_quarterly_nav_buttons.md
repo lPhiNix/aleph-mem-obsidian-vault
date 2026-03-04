@@ -2,7 +2,7 @@
 ```meta-bind-button
 id: prev-quarter
 style: primary
-label: ← Previous Quarter
+label: <- Previous Quarter
 hidden: true
 actions:
   - type: open
@@ -22,7 +22,7 @@ actions:
 ```meta-bind-button
 id: next-quarter
 style: primary
-label: Next Quarter →
+label: Next Quarter ->
 hidden: true
 actions:
     - type: open

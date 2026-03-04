@@ -3,7 +3,7 @@
 id: prev-year
 style: primary
 class: phone-responsive
-label: ← Previous Year
+label: <- Previous Year
 hidden: true
 actions:
   - type: open
@@ -14,7 +14,7 @@ actions:
 id: next-year
 class: phone-responsive
 style: primary
-label: Next Year →
+label: Next Year ->
 hidden: true
 actions:
     - type: open
