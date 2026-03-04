@@ -3,7 +3,7 @@
 id: prev-month
 style: primary
 class: phone-responsive
-label: ← Previous Month
+label: <- Previous Month
 hidden: true
 actions:
   - type: open
@@ -35,7 +35,7 @@ actions:
 id: next-month
 style: primary
 class: phone-responsive
-label: Next Month →
+label: Next Month ->
 hidden: true
 actions:
     - type: open

@@ -3,7 +3,7 @@
 id: prev-day
 class: phone-responsive
 style: primary
-label: ← Yesterday
+label: <- Yesterday
 hidden: true
 actions:
   - type: open
@@ -36,7 +36,7 @@ actions:
 id: next-day
 style: primary
 class: phone-responsive
-label: Tomorrow →
+label: Tomorrow ->
 hidden: true
 actions:
   - type: open
