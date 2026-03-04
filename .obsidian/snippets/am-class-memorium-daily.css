@@ -100,7 +100,7 @@
   color: var(--dark) !important;
 }
 .daily .mb-button-inner {
-  color: var(--dark)
+  color: var(--dark) !important;
 }
 .daily :is(.tag, .cm-hashtag, .multi-select-pill, .metadata-property-value .tag) {
   color: var(--primary) !important;

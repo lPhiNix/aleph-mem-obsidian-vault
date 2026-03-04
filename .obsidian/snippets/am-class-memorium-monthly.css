@@ -3,214 +3,147 @@
              Requires: am-color-palette.css (enable in Appearance > CSS snippets)
 ------------------------------------------------------------------------------*/
   
-  .monthly {
-    --highlight: var(--c-memorium-base-highlight);
-    --primary: var(--c-memorium-base-primary);
-    --dark: var(--c-memorium-base-dark);
-    
-    --text-normal: var(--highlight);
-    --text-muted: var(--highlight);
-    --text-faint: var(--highlight);
-    --checklist-done-color: var(--highlight);
-    --metadata-label-text-color: var(--highlight);
-    --metadata-input-text-color: var(--highlight);
-    --hr-color: var(--primary);
-    --blockquote-border-color: var(--primary);
-    --interactive-accent: var(--primary);
-    --collapse-icon-color-collapsed: var(--primary);
-    --checkbox-color: var(--primary);
-    --checkbox-marker-color: var(--dark);
-    --checkbox-color-hover: var(--highlight);
-    --checkbox-border-color: var(--highlight);
-    --list-marker-color: var(--highlight);
-    --code-background: var(--c-memorium-base-black);
-    --code-normal: var(--primary); 
-    --background-modifier-border-focus: var(--primary);
-    --background-modifier-border: color-mix(in srgb, var(--highlight) 60%, transparent);
-    --background-modifier-hover: color-mix(in srgb, var(--highlight) 60%, transparent);
-    --pill-cover-hover: color-mix(in srgb, var(--highlight) 60%, transparent);
-  }
+.monthly {
+  --highlight: var(--c-memorium-base-highlight);
+  --primary: var(--c-memorium-base-primary);
+  --dark: var(--c-memorium-base-dark);
   
-  /* Winter months - Cool blues and purples */
-  .january, .January {
-    --highlight: var(--c-am-memorium-monthly-january-highlight);
-    --primary: var(--c-am-memorium-monthly-january-primary);
-    --dark: var(--c-am-memorium-monthly-january-dark);
-  }
-  
-  .february, .February {
-    --highlight: var(--c-am-memorium-monthly-february-highlight);
-    --primary: var(--c-am-memorium-monthly-february-primary);
-    --dark: var(--c-am-memorium-monthly-february-dark);
-  }
-  
-  .march, .March {
-    --highlight: var(--c-am-memorium-monthly-march-highlight);
-    --primary: var(--c-am-memorium-monthly-march-primary);
-    --dark: var(--c-am-memorium-monthly-march-dark);
-  }
-  
-  /* Spring months - Greens and soft yellows */
-  .april, .April {
-    --highlight: var(--c-am-memorium-monthly-april-highlight);
-    --primary: var(--c-am-memorium-monthly-april-primary);
-    --dark: var(--c-am-memorium-monthly-april-dark);
-  }
-  
-  .may, .May {
-    --highlight: var(--c-am-memorium-monthly-may-highlight);
-    --primary: var(--c-am-memorium-monthly-may-primary);
-    --dark: var(--c-am-memorium-monthly-may-dark);
-  }
-  
-  .june, .June {
-    --highlight: var(--c-am-memorium-monthly-june-highlight);
-    --primary: var(--c-am-memorium-monthly-june-primary);
-    --dark: var(--c-am-memorium-monthly-june-dark);
-  }
-  
-  /* Summer months - Yellows, oranges and reds */
-  .july, .July {
-    --highlight: var(--c-am-memorium-monthly-july-highlight);
-    --primary: var(--c-am-memorium-monthly-july-primary);
-    --dark: var(--c-am-memorium-monthly-july-dark);
-  }
-  
-  .august, .August {
-    --highlight: var(--c-am-memorium-monthly-august-highlight);
-    --primary: var(--c-am-memorium-monthly-august-primary);
-    --dark: var(--c-am-memorium-monthly-august-dark);
-  }
-  
-  .september, .September {
-    --highlight: var(--c-am-memorium-monthly-september-highlight);
-    --primary: var(--c-am-memorium-monthly-september-primary);
-    --dark: var(--c-am-memorium-monthly-september-dark);
-  }
-  
-  /* Fall months - Oranges, reds, and purples */
-  .october, .October {
-    --highlight: var(--c-am-memorium-monthly-october-highlight);
-    --primary: var(--c-am-memorium-monthly-october-primary);
-    --dark: var(--c-am-memorium-monthly-october-dark);
-  }
-  
-  .november, .November {
-    --highlight: var(--c-am-memorium-monthly-november-highlight);
-    --primary: var(--c-am-memorium-monthly-november-primary);
-    --dark: var(--c-am-memorium-monthly-november-dark);
-  }
-  
-  .december, .December {
-    --highlight: var(--c-am-memorium-monthly-december-highlight);
-    --primary: var(--c-am-memorium-monthly-december-primary);
-    --dark: var(--c-am-memorium-monthly-december-dark);
-  }
-  
-  .monthly :is(h1, .HyperMD-header.HyperMD-header-1) {
-    color: var(--primary);
-    font-size: 52px;
-    padding: 0 !important;
-  }
-  
-  .monthly :is(h2, .HyperMD-header.HyperMD-header-2) {
-    color: var(--highlight);
-    font-size: 34px;
-    font-style: italic;
-    padding: 0 !important;
-  }
-  
-  .monthly :is(h3, .HyperMD-header.HyperMD-header-3) {
-    color: var(--primary); 
-    font-size: 36px;
-    padding-top: 0;
-  }
-  
-  .monthly :is(h4, .HyperMD-header.HyperMD-header-4) {
-    color: var(--primary);
-    margin-bottom: 0;
-    padding-top: 0;
-    font-size: 30px;
-    width: fit-content;
-    padding-left: 8px;
-    padding-right: 8px;
-  }
-  
-  .monthly p {
-    margin-top: 6px;
-    margin-bottom: 6px;
-  }
-  
-  .monthly :is(a:link, .cm-hmd-internal-link) {
-    color: var(--primary);
-  }
-  
-  .monthly :is(a:hover, .cm-hmd-internal-link:hover) {
-    color: var(--highlight);
-  }
-  
-  .monthly hr {
-    margin-top: 24px !important;
-    margin-bottom: 24px !important;
-  }
-  
-  .monthly img {
-    display: block !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-  }
-  
-  :is(.january, .January, .february, .February, .march, .March, 
-      .april, .April, .may, .May, .june, .June,
-      .july, .July, .august, .August, .september, .September,
-      .october, .October, .november, .November, .december, .December) svg {
-    color: color-mix(in srgb, var(--highlight) 60%, transparent);
-  }
-  
-  /* Target the custom class */
-  .custom-progress-bar {
-    color: white;
-    background-color: rgb(from var(--primary) r g b / 0.2);
-    border-radius: 5px;
-  }
-  
-  .monthly-summary-container {
-    background-color: color-mix(in srgb, var(--primary) 15%, transparent);
-    border-radius: 8px;
-    padding: 12px;
-    margin-top: 12px;
-    margin-bottom: 12px;
-  }
-  
-  .monthly-metrics {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin: 15px 0;
-  }
-  
-  .monthly-metric-card {
-    background-color: color-mix(in srgb, var(--primary) 30%, transparent);
-    border-radius: 8px;
-    padding: 10px;
-    flex: 1;
-    min-width: 150px;
-    text-align: center;
-  }
-  
-  .monthly-metric-value {
-    font-size: 24px;
-    font-weight: bold;
-    color: var(--highlight);
-  }
-  
-  .monthly-metric-label {
-    font-size: 14px;
-    color: var(--highlight);
-    opacity: 0.8;
-  }
+  --text-normal: var(--highlight);
+  --text-muted: var(--highlight);
+  --text-faint: var(--highlight);
+  --checklist-done-color: var(--highlight);
+  --metadata-label-text-color: var(--highlight);
+  --metadata-input-text-color: var(--highlight);
+  --hr-color: var(--primary);
+  --blockquote-border-color: var(--primary);
+  --interactive-accent: var(--primary);
+  --collapse-icon-color-collapsed: var(--primary);
+  --checkbox-color: var(--primary);
+  --checkbox-marker-color: var(--dark);
+  --checkbox-color-hover: var(--highlight);
+  --checkbox-border-color: var(--highlight);
+  --list-marker-color: var(--highlight);
+  --code-background: var(--c-memorium-base-black);
+  --code-normal: var(--primary); 
 
-  .monthly .metadata-property-icon {
-    color: var(--highlight);
-  }
+  --background-modifier-border-focus: var(--primary);
+  --background-modifier-border: color-mix(in srgb, var(--highlight) 60%, transparent);
+  --background-modifier-hover: color-mix(in srgb, var(--highlight) 60%, transparent);
+  --pill-cover-hover: color-mix(in srgb, var(--highlight) 60%, transparent);
+}
+
+/* Winter months - Cool blues and purples */
+.january, .January {
+  --highlight: var(--c-am-memorium-monthly-january-highlight);
+  --primary: var(--c-am-memorium-monthly-january-primary);
+  --dark: var(--c-am-memorium-monthly-january-dark);
+}
+
+.february, .February {
+  --highlight: var(--c-am-memorium-monthly-february-highlight);
+  --primary: var(--c-am-memorium-monthly-february-primary);
+  --dark: var(--c-am-memorium-monthly-february-dark);
+}
+
+.march, .March {
+  --highlight: var(--c-am-memorium-monthly-march-highlight);
+  --primary: var(--c-am-memorium-monthly-march-primary);
+  --dark: var(--c-am-memorium-monthly-march-dark);
+}
+
+/* Spring months - Greens and soft yellows */
+.april, .April {
+  --highlight: var(--c-am-memorium-monthly-april-highlight);
+  --primary: var(--c-am-memorium-monthly-april-primary);
+  --dark: var(--c-am-memorium-monthly-april-dark);
+}
+
+.may, .May {
+  --highlight: var(--c-am-memorium-monthly-may-highlight);
+  --primary: var(--c-am-memorium-monthly-may-primary);
+  --dark: var(--c-am-memorium-monthly-may-dark);
+}
+
+.june, .June {
+  --highlight: var(--c-am-memorium-monthly-june-highlight);
+  --primary: var(--c-am-memorium-monthly-june-primary);
+  --dark: var(--c-am-memorium-monthly-june-dark);
+}
+
+/* Summer months - Yellows, oranges and reds */
+.july, .July {
+  --highlight: var(--c-am-memorium-monthly-july-highlight);
+  --primary: var(--c-am-memorium-monthly-july-primary);
+  --dark: var(--c-am-memorium-monthly-july-dark);
+}
+
+.august, .August {
+  --highlight: var(--c-am-memorium-monthly-august-highlight);
+  --primary: var(--c-am-memorium-monthly-august-primary);
+  --dark: var(--c-am-memorium-monthly-august-dark);
+}
+
+.september, .September {
+  --highlight: var(--c-am-memorium-monthly-september-highlight);
+  --primary: var(--c-am-memorium-monthly-september-primary);
+  --dark: var(--c-am-memorium-monthly-september-dark);
+}
+
+/* Fall months - Oranges, reds, and purples */
+.october, .October {
+  --highlight: var(--c-am-memorium-monthly-october-highlight);
+  --primary: var(--c-am-memorium-monthly-october-primary);
+  --dark: var(--c-am-memorium-monthly-october-dark);
+}
+
+.november, .November {
+  --highlight: var(--c-am-memorium-monthly-november-highlight);
+  --primary: var(--c-am-memorium-monthly-november-primary);
+  --dark: var(--c-am-memorium-monthly-november-dark);
+}
+
+.december, .December {
+  --highlight: var(--c-am-memorium-monthly-december-highlight);
+  --primary: var(--c-am-memorium-monthly-december-primary);
+  --dark: var(--c-am-memorium-monthly-december-dark);
+}
+
+.monthly :is(h1, .HyperMD-header.HyperMD-header-1) {
+  color: var(--primary) !important;
+  font-style: italic;
+}
+.monthly :is(h2, .HyperMD-header.HyperMD-header-2) {
+  color: var(--highlight) !important;
+}
+.monthly :is(h3, .HyperMD-header.HyperMD-header-3) {
+  color: var(--primary) !important; 
+}
+.monthly :is(h4, .HyperMD-header.HyperMD-header-4) {
+  background-color: var(--primary) !important;
+  color: var(--dark) !important;
+}
+.monthly :is(a:link, .cm-hmd-internal-link) {
+  color: var(--primary) !important;
+}
+.monthly :is(a:hover, .cm-hmd-internal-link:hover) {
+  color: var(--highlight) !important;
+}
+.monthly .metadata-property-icon {
+  color: var(--highlight) !important;
+}
+.monthly .input-alias input::placeholder {
+color: var(--dark) !important;
+}
+.monthly .mb-button-inner {
+  color: var(--dark) !important;
+}
+.monthly :is(.tag, .cm-hashtag, .multi-select-pill, .metadata-property-value .tag) {
+  color: var(--primary) !important;
+  background-color: var(--dark) !important;
+}
+.monthly :is(.multi-select-pill .svg-icon, .tag .svg-icon) {
+  color: var(--primary) !important;
+}
+.monthly .right-triangle {
+  stroke: var(--highlight) !important;
+}
