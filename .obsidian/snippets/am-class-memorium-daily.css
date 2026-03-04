@@ -109,30 +109,108 @@
 .daily :is(.multi-select-pill .svg-icon, .tag .svg-icon) {
   color: var(--primary) !important;
 }
+.daily .right-triangle {
+  stroke: var(--highlight) !important;
+}
+.daily .am-memorium-progress-bar .mb-progress-bar-input {
+  display: flex !important;
+  align-items: center !important;
+  padding-right: 2rem !important;
+}
+.daily .am-memorium-progress-bar .mb-progress-bar-progress {
+  min-width: 5% !important;
+  max-width: calc(100% - 0.25rem) !important;
+}
+.daily .am-memorium-progress-bar[data-internal-value="1"] .mb-progress-bar-progress {
+  background-color: #4a4a4a !important;
+}
+.daily .am-memorium-progress-bar[data-internal-value="1"] .mb-progress-bar-value {
+  color: #4a4a4a !important;
+}
 .daily .am-memorium-progress-bar[data-internal-value="2"] .mb-progress-bar-progress {
   background-color: #ef4444 !important;
+}
+.daily .am-memorium-progress-bar[data-internal-value="2"] .mb-progress-bar-value {
+  color: #ef4444 !important;
 }
 .daily .am-memorium-progress-bar[data-internal-value="3"] .mb-progress-bar-progress {
   background-color: #f59e0b !important;
 }
+.daily .am-memorium-progress-bar[data-internal-value="3"] .mb-progress-bar-value {
+  color: #f59e0b !important;
+}
 .daily .am-memorium-progress-bar[data-internal-value="4"] .mb-progress-bar-progress {
   background-color: #fbbf24 !important;
+}
+.daily .am-memorium-progress-bar[data-internal-value="4"] .mb-progress-bar-value {
+  color: #fbbf24 !important;
 }
 .daily .am-memorium-progress-bar[data-internal-value="5"] .mb-progress-bar-progress {
   background-color: #10b981 !important;
 }
+.daily .am-memorium-progress-bar[data-internal-value="5"] .mb-progress-bar-value {
+  color: #10b981 !important;
+}
 .daily .am-memorium-progress-bar[data-internal-value="6"] .mb-progress-bar-progress {
   background-color: #3b82f6 !important;
+}
+.daily .am-memorium-progress-bar[data-internal-value="6"] .mb-progress-bar-value {
+  color: #3b82f6 !important;
 }
 .daily .am-memorium-progress-bar[data-internal-value="7"] .mb-progress-bar-progress {
   background-color: #a855f7 !important;
 }
+.daily .am-memorium-progress-bar[data-internal-value="7"] .mb-progress-bar-value {
+  color: #a855f7 !important;
+}
 .daily .am-memorium-progress-bar[data-internal-value="8"] .mb-progress-bar-progress {
   background-color: #c026d3 !important;
+}
+.daily .am-memorium-progress-bar[data-internal-value="8"] .mb-progress-bar-value {
+  color: #c026d3 !important;
 }
 .daily .am-memorium-progress-bar[data-internal-value="9"] .mb-progress-bar-progress {
   background-color: #ec4899 !important;
 }
+.daily .am-memorium-progress-bar[data-internal-value="9"] .mb-progress-bar-value {
+  color: #ec4899 !important;
+}
 .daily .am-memorium-progress-bar[data-internal-value="10"] .mb-progress-bar-progress {
   background-color: #f472b6 !important;
+}
+.daily .am-memorium-progress-bar[data-internal-value="10"] .mb-progress-bar-value {
+  color: #f472b6 !important;
+}
+.daily .am-memorium-progress-bar .mb-progress-bar-value {
+  display: block !important;
+  width: 100% !important;
+  text-align: right !important;
+  padding-right: 0.5rem !important;
+}
+.daily .am-memorium-progress-bar .mb-progress-bar-label-left {
+  display: none !important;
+}
+.daily .am-memorium-progress-bar .mb-progress-bar-label-right {
+  display: none !important;
+}
+.daily .mb-button-group {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  gap: 0 !important;
+  width: 100% !important;
+}
+.daily .mb-button-group .mb-button {
+  flex: 1 1 0 !important;
+  min-width: 0 !important;
+}
+.daily .mb-button-group .mb-button-inner {
+  width: 100% !important;
+  padding: 0.25rem 0.5rem !important;
+  font-size: clamp(0.6rem, 2.5vw, 0.875rem) !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+}
+.daily .metadata-content {
+  background-color: none !important;
 }
