@@ -1,0 +1,6 @@
+.aethernum {
+  --highlight: var(--c-am-aethernum-highlight);
+  --primary: var(--c-am-aethernum-primary);
+  --secondary: var(--c-am-aethernum-secondary);
+  --dark: var(--c-am-aethernum-dark);
+}

@@ -3,6 +3,7 @@ tags:
   - NODE
 cssclasses:
   - am
+  - module
   - noetheris
 ---
 # Σ - Noetheris

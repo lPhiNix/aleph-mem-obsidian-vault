@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400&display=swap');
 
-* {
+*:not(.math, .math *) {
   font-family: "JetBrains Mono", monospace, var(--font-default) !important;
+}
+
+:is(h1, h2, h3, h4, h5, h6, .cm-header, .HyperMD-header),
+.markdown-preview-view :is(h1, h2, h3, h4, h5, h6),
+.markdown-source-view.mod-cm6 .cm-header
+{
+  font-family: var(--font-default) !important;
 }
