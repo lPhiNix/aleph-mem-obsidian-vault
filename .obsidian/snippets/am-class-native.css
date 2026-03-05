@@ -2,36 +2,49 @@
 /* BASE STYLES - AM CLASS                                    */
 /* ========================================================= */
 
-/* Headers - Font Family */
-.am :is(h1, h2, h3, h4, h5, h6, .cm-header, .HyperMD-header),
-.am.markdown-preview-view :is(h1, h2, h3, h4, h5, h6),
-.am.markdown-source-view.mod-cm6 .cm-header {
-  font-family: var(--font-default) !important;
+.am {
+  --c-h1: var(--interactive-accent);
+  --c-h2: var(--c-am-native-header-h2);
+  --c-h3: var(--c-am-native-header-h3);
+  --c-h4: var(--c-am-native-header-h4);
+  --c-h5: var(--c-am-native-header-h5);
+  --c-h6: var(--c-am-native-header-h6);
+
+  --c-text: var(--text-normal);
+  --c-bold: var(--c-am-native-bold);
+  --c-italic: var(--c-am-native-italic);
+  --c-bold-italic: var(--c-am-native-bold-italic);
+  --c-strikethrough: var(--c-am-native-strikethrough);
+  --c-mark: var(--interactive-accent);
+
+  --c-blockquote-border: var(--interactive-accent);
+  --c-blockquote-bg: var(--code-background);
+
+  --c-mb-input-bg: var(--background-primary);
+  --c-mb-input-border: var(--interactive-accent);
+  --c-mb-input-border-focus: var(--interactive-accent-hover);
+  --c-mb-input-box-shadow-focus: var(--interactive-accent);
 }
 
-/* Headers - Sizes & Styling */
+
 .am :is(h1, .HyperMD-header-1) {
-  color: var(--interactive-accent);
-  text-shadow: 0 0 20px color-mix(in srgb, var(--interactive-accent) 40%, transparent);
+  color: var(--c-h1);
   font-size: 40px;
   padding: 0 !important;
 }
-
 .am :is(h2, .HyperMD-header-2) {
-  color: var(--c-am-native-header-h2);
+  color: var(--c-h2);
   font-size: 32px;
   padding: 0;
 }
-
 .am :is(h3, .HyperMD-header-3) {
-  color: var(--c-am-native-header-h3);
+  color: var(--c-h3);
   font-size: 28px;
   font-style: italic;
   padding-top: 0 !important;
 }
-
 .am :is(h4, .HyperMD-header-4) {
-  color: var(--c-am-native-header-h4);
+  color: var(--c-h4);
   font-weight: 900;
   font-size: 20px;
   width: fit-content;
@@ -40,17 +53,15 @@
   border-radius: 8px;
   word-wrap: normal;
 }
-
 .am :is(h5, .HyperMD-header-5) {
-  color: var(--c-am-native-header-h5);
+  color: var(--c-h5);
   font-weight: 700;
   width: fit-content;
   padding-left: 6px;
   word-wrap: normal;
 }
-
 .am :is(h6, .HyperMD-header-6) {
-  color: var(--c-am-native-header-h6);
+  color: var(--c-h6);
   font-style: italic;
   padding-left: 6px;
 }
@@ -59,26 +70,38 @@
 /* TEXT FORMATTING                                           */
 /* ========================================================= */
 
+
+.am .cm-line:not(.HyperMD-header, .HyperMD-quote, .HyperMD-list-line),
+.am p {
+  color: var(--c-text);
+}
 .am :is(strong, .cm-strong) {
-  color: var(--c-am-native-bold);
+  color: var(--c-bold);
   font-weight: 750;
 }
-
 .am :is(em, .cm-em) {
-  color: var(--c-am-native-italic); 
+  color: var(--c-italic); 
 }
-
 .am :is(strong em, em strong, .cm-strong .cm-em) {
-  color: var(--c-am-native-bold-italic);
+  color: var(--c-bold-italic);
 }
-
 .am :is(del, .cm-strikethrough) {
-  color: var(--c-am-native-strikethrough);
+  color: var(--c-strikethrough);
 }
-
 .am :is(mark, .cm-highlight),
 .am.markdown-source-view .cm-highlight {
-  background-color: color-mix(in srgb, var(--interactive-accent) 20%, transparent);
+  background-color: color-mix(in srgb, var(--c-mark) 20%, transparent);
+}
+
+.am p {
+  margin: 4px 0;
+}
+.am hr {
+  margin: 20px 0 !important;
+}
+.am img {
+  display: block !important;
+  margin-inline: auto !important;
 }
 
 /* ========================================================= */
@@ -87,7 +110,7 @@
 
 .am blockquote {
   border-left: 3px solid var(--interactive-accent);
-  background-color: var(--code-background);
+  background-color: var(--c-blockquote-bg);
   padding: 10px 15px;
   border-radius: 6px;
 }
@@ -104,61 +127,44 @@
   box-shadow: none !important;
   transition: all 0.2s ease !important;
 }
-
 .am .callout .callout-title {
   background-color: transparent !important;
   border: none !important;
-  color: var(--text-muted) !important;
   font-style: italic !important;
   padding: 0 12px !important;
 }
-
 .am .callout .callout-content {
   background-color: transparent !important;
   border: none !important;
-  color: var(--text-normal) !important;
   padding: 0 12px !important;
 }
 
-.am .callout:hover .callout-title {
-  color: var(--text-normal) !important;
-}
-
 /* ========================================================= */
-/* METABIND                                                 */
+/* METABIND                                           */
 /* ========================================================= */
 
-.am .input-alias {
-  width: 100%;
-  margin: 10px 0;
-}
-
-.am .input-alias input {
+.am .mb-input input {
   width: 100%;
   height: auto;
   padding: 8px;
   font-size: 1.25em;
-  background-color: var(--background-primary);
-  border: 1px solid var(--interactive-accent);
+  background-color: var(--c-mb-input-bg);
+  border: 1px solid var(--c-mb-input-border);
   border-radius: 4px;
 }
-
 .am .input-alias input:focus {
   outline: none;
-  border-color: var(--interactive-accent-hover);
-  box-shadow: 0 0 3px var(--interactive-accent);
+  border-color: var(--c-mb-input-border-focus);
+  box-shadow: 0 0 3px var(--c-mb-input-box-shadow-focus);
 }
-
 .am .input-alias .meta-bind-label {
   font-weight: bold;
   margin-bottom: 4px;
 }
-
 .am .mb-button-inner {
   font-weight: 800;
 }
 
-/* Mobile-specific Metabind Styles */
 @media (max-width: 768px) {
   .daily .mb-button-group {
     display: flex !important;
@@ -185,150 +191,3 @@
 .daily .metadata-content {
     background-color: transparent !important;
   }
-
-/* ========================================================= */
-/* PARAGRAPHS & OTHER ELEMENTS                              */
-/* ========================================================= */
-
-.am p {
-  margin: 4px 0;
-}
-
-.am .cm-line:not(.HyperMD-header, .HyperMD-quote, .HyperMD-list-line) {
-  color: var(--text-normal);
-}
-
-.am hr {
-  margin: 20px 0 !important;
-}
-
-.am img {
-  display: block !important;
-  margin-inline: auto !important;
-}
-
-/* ========================================================= */
-/* MODULE COMMON STYLES                                      */
-/* (Applied only when a module class is present)             */
-/* ========================================================= */
-
-/* Headers with theme colors */
-:is(.inthima, .cognitio, .noetheris, .devs, .viventia, .kaelithra, .ordus, .aethernum) :is(h1, .HyperMD-header-1) {
-  color: var(--primary) !important;
-}
-
-:is(.inthima, .cognitio, .noetheris, .devs, .viventia, .kaelithra, .ordus, .aethernum) :is(h2, .HyperMD-header-2) {
-  color: var(--secondary) !important;
-  text-shadow: 0 0 15px color-mix(in srgb, var(--secondary) 30%, transparent);
-}
-
-:is(.inthima, .cognitio, .noetheris, .devs, .viventia, .kaelithra, .ordus, .aethernum) :is(h3, .HyperMD-header-3) {
-  color: var(--highlight) !important;
-}
-
-:is(.inthima, .cognitio, .noetheris, .devs, .viventia, .kaelithra, .ordus, .aethernum) :is(h4, .HyperMD-header-4) {
-  background: var(--highlight) !important;
-  color: var(--dark) !important;
-  box-shadow: 0 2px 8px color-mix(in srgb, var(--primary) 30%, transparent);
-}
-
-:is(.inthima, .cognitio, .noetheris, .devs, .viventia, .kaelithra, .ordus, .aethernum) :is(h5, .HyperMD-header-5) {
-  color: var(--secondary) !important;
-  border-left: 3px solid var(--primary);
-}
-
-:is(.inthima, .cognitio, .noetheris, .devs, .viventia, .kaelithra, .ordus, .aethernum) :is(h6, .HyperMD-header-6) {
-  color: color-mix(in srgb, var(--primary) 80%, var(--highlight)) !important;
-}
-
-/* Links */
-:is(.inthima, .cognitio, .noetheris, .devs, .viventia, .kaelithra, .ordus, .aethernum) :is(a:link, .cm-hmd-internal-link) {
-  color: var(--secondary) !important;
-  text-decoration-color: color-mix(in srgb, var(--secondary) 40%, transparent) !important;
-}
-
-:is(.inthima, .cognitio, .noetheris, .devs, .viventia, .kaelithra, .ordus, .aethernum) :is(a:hover, .cm-hmd-internal-link:hover) {
-  color: var(--highlight) !important;
-  text-decoration-color: var(--primary) !important;
-}
-
-/* Blockquotes */
-:is(.inthima, .cognitio, .noetheris, .devs, .viventia, .kaelithra, .ordus, .aethernum) blockquote {
-  border-left-color: var(--secondary) !important;
-  background: color-mix(in srgb, var(--dark) 30%, transparent) !important;
-  box-shadow: inset 0 0 10px color-mix(in srgb, var(--primary) 10%, transparent);
-}
-
-/* Text formatting with theme colors */
-:is(.inthima, .cognitio, .noetheris, .devs, .viventia, .kaelithra, .ordus, .aethernum) :is(strong, .cm-strong) {
-  color: var(--secondary) !important;
-  text-shadow: 0 0 5px color-mix(in srgb, var(--secondary) 20%, transparent);
-}
-
-:is(.inthima, .cognitio, .noetheris, .devs, .viventia, .kaelithra, .ordus, .aethernum) :is(em, .cm-em) {
-  color: color-mix(in srgb, var(--primary) 70%, var(--highlight)) !important;
-}
-
-:is(.inthima, .cognitio, .noetheris, .devs, .viventia, .kaelithra, .ordus, .aethernum) :is(mark, .cm-highlight) {
-  background: linear-gradient(to right, color-mix(in srgb, var(--secondary) 25%, transparent), color-mix(in srgb, var(--primary) 25%, transparent)) !important;
-  color: var(--highlight) !important;
-  border-radius: 2px;
-}
-
-/* Tags */
-:is(.inthima, .cognitio, .noetheris, .devs, .viventia, .kaelithra, .ordus, .aethernum) :is(.tag, .cm-hashtag, .multi-select-pill, .metadata-property-value .tag) {
-  color: var(--highlight) !important;
-  background: linear-gradient(135deg, var(--dark), color-mix(in srgb, var(--dark) 80%, var(--primary))) !important;
-  border: 1px solid color-mix(in srgb, var(--primary) 50%, transparent);
-  box-shadow: 0 1px 3px color-mix(in srgb, var(--dark) 50%, transparent);
-}
-
-:is(.inthima, .cognitio, .noetheris, .devs, .viventia, .kaelithra, .ordus, .aethernum) :is(.tag:hover, .cm-hashtag:hover, .multi-select-pill:hover) {
-  background: linear-gradient(135deg, color-mix(in srgb, var(--dark) 90%, var(--primary)), var(--dark)) !important;
-  border-color: var(--primary);
-}
-
-:is(.inthima, .cognitio, .noetheris, .devs, .viventia, .kaelithra, .ordus, .aethernum) :is(.multi-select-pill, .tag) .svg-icon {
-  color: var(--secondary) !important;
-}
-
-/* Metadata */
-:is(.inthima, .cognitio, .noetheris, .devs, .viventia, .kaelithra, .ordus, .aethernum) .metadata-property-icon {
-  color: var(--highlight) !important;
-}
-
-:is(.inthima, .cognitio, .noetheris, .devs, .viventia, .kaelithra, .ordus, .aethernum) .input-alias input::placeholder {
-  color: var(--dark) !important;
-}
-
-:is(.inthima, .cognitio, .noetheris, .devs, .viventia, .kaelithra, .ordus, .aethernum) .mb-button-inner {
-  color: var(--dark) !important;
-}
-
-/* Misc */
-:is(.inthima, .cognitio, .noetheris, .devs, .viventia, .kaelithra, .ordus, .aethernum) .right-triangle {
-  stroke: var(--highlight) !important;
-}
-
-/* Progress Bar */
-:is(.inthima, .cognitio, .noetheris, .devs, .viventia, .kaelithra, .ordus, .aethernum) .am-memorium-progress-bar .mb-progress-bar-input {
-  display: flex !important;
-  align-items: center !important;
-  padding-right: 2rem !important;
-}
-
-:is(.inthima, .cognitio, .noetheris, .devs, .viventia, .kaelithra, .ordus, .aethernum) .am-memorium-progress-bar .mb-progress-bar-progress {
-  min-width: 7.5% !important;
-  max-width: calc(100% - 0.25rem) !important;
-}
-
-:is(.inthima, .cognitio, .noetheris, .devs, .viventia, .kaelithra, .ordus, .aethernum) .am-memorium-progress-bar .mb-progress-bar-value {
-  display: block !important;
-  width: 100% !important;
-  text-align: right !important;
-  padding-right: 0.5rem !important;
-}
-
-:is(.inthima, .cognitio, .noetheris, .devs, .viventia, .kaelithra, .ordus, .aethernum) .am-memorium-progress-bar :is(.mb-progress-bar-label-left, .mb-progress-bar-label-right) {
-  display: none !important;
-}

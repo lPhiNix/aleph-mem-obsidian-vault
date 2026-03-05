@@ -1,0 +1,6 @@
+.inthima {
+  --highlight: var(--c-am-inthima-highlight);
+  --primary: var(--c-am-inthima-primary);
+  --secondary: var(--c-am-inthima-secondary);
+  --dark: var(--c-am-inthima-dark);
+}

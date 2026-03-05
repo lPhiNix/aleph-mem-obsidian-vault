@@ -1,6 +1,8 @@
 ---
 cssclasses:
   - am
+tags:
+  - "#hola"
 ---
 # Obsidian Native Markdown Benchmark
 ---
@@ -150,11 +152,11 @@ console.log(theme);
 
 ## Tablas
 
-|Columna A|Columna B|Columna C|
-|--:|:-:|:--|
-|Derecha|Centro|Izquierda|
-|123|456|789|
-|Texto|**Bold**|_Italic_|
+| Columna A | Columna B | Columna C |
+| --------: | :-------: | :-------- |
+|   Derecha |  Centro   | Izquierda |
+|       123 |    456    | 789       |
+|     Texto | **Bold**  | _Italic_  |
 
 ---
 

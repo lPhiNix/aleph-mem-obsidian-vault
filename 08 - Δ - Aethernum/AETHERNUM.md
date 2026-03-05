@@ -3,6 +3,7 @@ tags:
   - NODE
 cssclasses:
   - am
+  - module
   - aethernum
 ---
 # Δ - Aethernum
