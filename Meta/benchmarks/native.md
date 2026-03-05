@@ -1,5 +1,7 @@
 ---
 cssclasses:
+  - module
+  - inthima
   - am
 tags:
   - "#hola"
