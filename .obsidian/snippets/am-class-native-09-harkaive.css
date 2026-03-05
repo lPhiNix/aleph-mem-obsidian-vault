@@ -1,0 +1,124 @@
+.harkaive {
+  --highlight: var(--c-am-harkaive-highlight);
+  --primary: var(--c-am-harkaive-primary);
+  --secondary: var(--c-am-harkaive-secondary);
+  --dark: var(--c-am-harkaive-dark);
+  
+  --text-normal: var(--highlight);
+  --text-muted: color-mix(in srgb, var(--highlight) 85%, var(--primary));
+  --text-faint: color-mix(in srgb, var(--highlight) 60%, var(--primary));
+  --checklist-done-color: var(--secondary);
+  --metadata-label-text-color: var(--primary);
+  --metadata-input-text-color: var(--highlight);
+  --hr-color: var(--secondary);
+  --blockquote-border-color: var(--primary);
+  --interactive-accent: var(--primary);
+  --collapse-icon-color-collapsed: var(--secondary);
+  --checkbox-color: var(--secondary);
+  --checkbox-marker-color: var(--dark);
+  --checkbox-color-hover: var(--highlight);
+  --checkbox-border-color: var(--primary);
+  --list-marker-color: var(--secondary);
+  --code-background: var(--c-memorium-base-black);
+  --code-normal: var(--primary);
+
+  --background-modifier-border-focus: var(--secondary);
+  --background-modifier-border: color-mix(in srgb, var(--primary) 50%, transparent);
+  --background-modifier-hover: color-mix(in srgb, var(--secondary) 40%, transparent);
+  --pill-cover-hover: color-mix(in srgb, var(--highlight) 60%, transparent);
+}
+
+.harkaive :is(h1, .HyperMD-header.HyperMD-header-1) {
+  color: var(--primary) !important;
+  text-shadow: 0 0 20px color-mix(in srgb, var(--primary) 40%, transparent);
+}
+.harkaive :is(h2, .HyperMD-header.HyperMD-header-2) {
+  color: var(--secondary) !important;
+  text-shadow: 0 0 15px color-mix(in srgb, var(--secondary) 30%, transparent);
+}
+.harkaive :is(h3, .HyperMD-header.HyperMD-header-3) {
+  color: var(--highlight) !important;
+}
+.harkaive :is(h4, .HyperMD-header.HyperMD-header-4) {
+  background: var(--highlight) !important;
+  color: var(--dark) !important;
+  box-shadow: 0 2px 8px color-mix(in srgb, var(--primary) 30%, transparent);
+}
+.harkaive :is(h5, .HyperMD-header.HyperMD-header-5) {
+  color: var(--secondary) !important;
+  border-left: 3px solid var(--primary);
+}
+.harkaive :is(h6, .HyperMD-header.HyperMD-header-6) {
+  color: color-mix(in srgb, var(--primary) 80%, var(--highlight)) !important;
+}
+.harkaive :is(a:link, .cm-hmd-internal-link) {
+  color: var(--secondary) !important;
+  text-decoration-color: color-mix(in srgb, var(--secondary) 40%, transparent) !important;
+}
+.harkaive :is(a:hover, .cm-hmd-internal-link:hover) {
+  color: var(--highlight) !important;
+  text-decoration-color: var(--primary) !important;
+}
+.harkaive .metadata-property-icon {
+  color: var(--highlight) !important;
+}
+.harkaive .input-alias input::placeholder {
+  color: var(--dark) !important;
+}
+.harkaive .mb-button-inner {
+  color: var(--dark) !important;
+}
+.harkaive :is(.tag, .cm-hashtag, .multi-select-pill, .metadata-property-value .tag) {
+  color: var(--highlight) !important;
+  background: linear-gradient(135deg, var(--dark), color-mix(in srgb, var(--dark) 80%, var(--primary))) !important;
+  border: 1px solid color-mix(in srgb, var(--primary) 50%, transparent);
+  box-shadow: 0 1px 3px color-mix(in srgb, var(--dark) 50%, transparent);
+}
+.harkaive :is(.tag:hover, .cm-hashtag:hover, .multi-select-pill:hover) {
+  background: linear-gradient(135deg, color-mix(in srgb, var(--dark) 90%, var(--primary)), var(--dark)) !important;
+  border-color: var(--primary);
+}
+.harkaive :is(.multi-select-pill .svg-icon, .tag .svg-icon) {
+  color: var(--secondary) !important;
+}
+.harkaive blockquote {
+  border-left-color: var(--secondary) !important;
+  background: color-mix(in srgb, var(--dark) 30%, transparent) !important;
+  box-shadow: inset 0 0 10px color-mix(in srgb, var(--primary) 10%, transparent);
+}
+.harkaive :is(strong, .cm-strong) {
+  color: var(--secondary) !important;
+  text-shadow: 0 0 5px color-mix(in srgb, var(--secondary) 20%, transparent);
+}
+.harkaive :is(em, .cm-em) {
+  color: color-mix(in srgb, var(--primary) 70%, var(--highlight)) !important;
+}
+.harkaive :is(mark, .cm-highlight) {
+  background: linear-gradient(to right, color-mix(in srgb, var(--secondary) 25%, transparent), color-mix(in srgb, var(--primary) 25%, transparent)) !important;
+  color: var(--highlight) !important;
+  border-radius: 2px;
+}
+.harkaive .right-triangle {
+  stroke: var(--highlight) !important;
+}
+.harkaive .am-memorium-progress-bar .mb-progress-bar-input {
+  display: flex !important;
+  align-items: center !important;
+  padding-right: 2rem !important;
+}
+.harkaive .am-memorium-progress-bar .mb-progress-bar-progress {
+  min-width: 7.5% !important;
+  max-width: calc(100% - 0.25rem) !important;
+}
+.harkaive .am-memorium-progress-bar .mb-progress-bar-value {
+  display: block !important;
+  width: 100% !important;
+  text-align: right !important;
+  padding-right: 0.5rem !important;
+}
+.harkaive .am-memorium-progress-bar .mb-progress-bar-label-left {
+  display: none !important;
+}
+.harkaive .am-memorium-progress-bar .mb-progress-bar-label-right {
+  display: none !important;
+}

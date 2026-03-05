@@ -23,7 +23,52 @@
     --c-am-native-bold-italic:   #eddb7d;
     --c-am-native-strikethrough: #636871;
     --c-am-native-code:          #dbc192;
-    --c-am-native-code-bg:       rgba(229, 192, 123, 0.20);
+
+
+    --c-am-inthima-highlight: #ecb3be;
+    --c-am-inthima-primary:   #ff8fa3;
+    --c-am-inthima-secondary: #fb4466;
+    --c-am-inthima-dark:      #93263a;
+
+    --c-am-cognitio-highlight: #ffd4a8;
+    --c-am-cognitio-primary:   #ffb36b;
+    --c-am-cognitio-secondary: #e68a2e;
+    --c-am-cognitio-dark:      #7a4a1f;
+
+    --c-am-noetheris-highlight: #b8f0c2;
+    --c-am-noetheris-primary:   #8ce99a;
+    --c-am-noetheris-secondary: #4fb862;
+    --c-am-noetheris-dark:      #2a5c34;
+
+    --c-am-devs-highlight: #a3f0d8;
+    --c-am-devs-primary:   #63e6be;
+    --c-am-devs-secondary: #2eb894;
+    --c-am-devs-dark:      #1a5c4a;
+
+    --c-am-viventia-highlight: #b3dbfd;
+    --c-am-viventia-primary:   #74c0fc;
+    --c-am-viventia-secondary: #3d9ae6;
+    --c-am-viventia-dark:      #1f4d73;
+
+    --c-am-kaelithra-highlight: #d4c5fd;
+    --c-am-kaelithra-primary:   #b197fc;
+    --c-am-kaelithra-secondary: #8a5fe6;
+    --c-am-kaelithra-dark:      #452f73;
+
+    --c-am-ordus-highlight: #ecb3f6;
+    --c-am-ordus-primary:   #da77f2;
+    --c-am-ordus-secondary: #c23dd9;
+    --c-am-ordus-dark:      #612f6c;
+
+    --c-am-aethernum-highlight: #e8ebed;
+    --c-am-aethernum-primary:   #ced4da;
+    --c-am-aethernum-secondary: #868e96;
+    --c-am-aethernum-dark:      #495057;
+
+    --c-am-harkaive-highlight: #adb5bd;
+    --c-am-harkaive-primary:   #868e96;
+    --c-am-harkaive-secondary: #6c757d;
+    --c-am-harkaive-dark:      #343a40;
 
 
     --c-am-memorium-base-highlight: #ffffff;
