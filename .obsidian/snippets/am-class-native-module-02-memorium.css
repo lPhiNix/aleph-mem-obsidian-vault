@@ -12,7 +12,7 @@
   padding-right: 2rem !important;
 }
 .memorium .am-memorium-progress-bar .mb-progress-bar-progress {
-  min-width: 7.5% !important;
+  min-width: 5% !important;
   max-width: calc(100% - 0.25rem) !important;
 }
 .memorium .am-memorium-progress-bar[data-internal-value="1"] .mb-progress-bar-progress {
