@@ -2,6 +2,8 @@
 cssclasses:
   - native
   - main
+  - module
+  - inthima
 tags:
   - MEMORIUM
   - daily
@@ -126,7 +128,6 @@ Imagen local (si existe en el vault):
 > que continúa aquí.
 > 
 > > Cita anidada.
-> > > Nose.
 
 ---
 

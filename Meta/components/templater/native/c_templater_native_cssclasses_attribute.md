@@ -1,5 +1,5 @@
 <% "cssclasses: " + [
-	"am"
+	"native"
 ].map(
 	tag => "\n- " + tag
 ).join("") %>

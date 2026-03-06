@@ -1,0 +1,20 @@
+/*------------------------------------------------------------------------------
+                     Yearly Note Themes for Time Garden
+                Elegant gradient styling for yearly overviews
+             Requires: am-color-palette.css (enable in Appearance > CSS snippets)
+------------------------------------------------------------------------------*/
+
+.yearly {
+  --highlight: var(--c-am-memorium-yearly-highlight);
+  --primary: var(--c-am-memorium-yearly-primary);
+  --secondary: var(--c-am-memorium-yearly-secondary);
+  --dark: var(--c-am-memorium-yearly-dark);
+}
+
+.yearly :is(h1, .HyperMD-header.HyperMD-header-1) {
+  font-style: italic;
+  font-size: 64px !important;
+  text-align: center;
+  margin: 10px auto;
+  padding: 10px 0;
+}

@@ -1,0 +1,36 @@
+/*------------------------------------------------------------------------------
+                     Quarterly Note Themes for Time Garden
+             Requires: am-color-palette.css (enable in Appearance > CSS snippets)
+------------------------------------------------------------------------------*/
+
+.quarter-1 {
+  --highlight: var(--c-am-memorium-quarterly-q1-highlight);
+  --primary: var(--c-am-memorium-quarterly-q1-primary);
+  --secondary: var(--c-am-memorium-quarterly-q1-secondary);
+  --dark: var(--c-am-memorium-quarterly-q1-dark);
+}
+
+.quarter-2 {
+  --highlight: var(--c-am-memorium-quarterly-q2-highlight);
+  --primary: var(--c-am-memorium-quarterly-q2-primary);
+  --secondary: var(--c-am-memorium-quarterly-q2-secondary);
+  --dark: var(--c-am-memorium-quarterly-q2-dark);
+}
+
+.quarter-3 {
+  --highlight: var(--c-am-memorium-quarterly-q3-highlight);
+  --primary: var(--c-am-memorium-quarterly-q3-primary);
+  --secondary: var(--c-am-memorium-quarterly-q3-secondary);
+  --dark: var(--c-am-memorium-quarterly-q3-dark);
+}
+
+.quarter-4 {
+  --highlight: var(--c-am-memorium-quarterly-q4-highlight);
+  --primary: var(--c-am-memorium-quarterly-q4-primary);
+  --secondary: var(--c-am-memorium-quarterly-q4-secondary);
+  --dark: var(--c-am-memorium-quarterly-q4-dark);
+}
+
+.quarterly :is(h1, .HyperMD-header.HyperMD-header-1) {
+  font-style: italic;
+}

@@ -37,20 +37,20 @@
 
 /* Borde base de las tarjetas */
 .kanban-plugin__item {
-  border: 1px solid color-mix(in srgb, gray, transparent) !important;
+  border: 1px solid color-mix(in srgb, var(--interactive-accent) 30%, transparent) !important;
   border-left-width: 4px !important;
 }
 
 /* Hover más marcado */
 .kanban-plugin__item:hover {
-  border-color: color-mix(in srgb, gray, transparent) !important;
+  border-color: color-mix(in srgb, var(--interactive-accent) 50%, transparent) !important;
 }
 
 /* Tarjeta seleccionada / foco */
 .kanban-plugin__item.is-selected,
 .kanban-plugin__item:focus-within {
-  border-color: gray !important;
-  box-shadow: 0 0 0 1px color-mix(in srgb, gray, transparent);
+  border-color: var(--interactive-accent) !important;
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--interactive-accent) 50%, transparent);
 }
 
 /* ================================== */
