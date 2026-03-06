@@ -2,49 +2,20 @@
 /* BASE STYLES - AM CLASS                                    */
 /* ========================================================= */
 
-.am {
-  --c-h1: var(--interactive-accent);
-  --c-h2: var(--c-am-native-header-h2);
-  --c-h3: var(--c-am-native-header-h3);
-  --c-h4: var(--c-am-native-header-h4);
-  --c-h5: var(--c-am-native-header-h5);
-  --c-h6: var(--c-am-native-header-h6);
-
-  --c-text: var(--text-normal);
-  --c-bold: var(--c-am-native-bold);
-  --c-italic: var(--c-am-native-italic);
-  --c-bold-italic: var(--c-am-native-bold-italic);
-  --c-strikethrough: var(--c-am-native-strikethrough);
-  --c-mark: var(--interactive-accent);
-
-  --c-blockquote-border: var(--interactive-accent);
-  --c-blockquote-bg: var(--code-background);
-
-  --c-mb-input-bg: var(--background-primary);
-  --c-mb-input-border: var(--interactive-accent);
-  --c-mb-input-border-focus: var(--interactive-accent-hover);
-  --c-mb-input-box-shadow-focus: var(--interactive-accent);
-}
-
-
-.am :is(h1, .HyperMD-header-1) {
-  color: var(--c-h1);
+.native :is(h1, .HyperMD-header-1) {
   font-size: 40px;
-  padding: 0 !important;
+  padding: 0;
 }
-.am :is(h2, .HyperMD-header-2) {
-  color: var(--c-h2);
+.native :is(h2, .HyperMD-header-2) {
   font-size: 32px;
   padding: 0;
 }
-.am :is(h3, .HyperMD-header-3) {
-  color: var(--c-h3);
+.native :is(h3, .HyperMD-header-3) {
   font-size: 28px;
   font-style: italic;
-  padding-top: 0 !important;
+  padding-top: 0;
 }
-.am :is(h4, .HyperMD-header-4) {
-  color: var(--c-h4);
+.native :is(h4, .HyperMD-header-4) {
   font-weight: 900;
   font-size: 20px;
   width: fit-content;
@@ -53,132 +24,96 @@
   border-radius: 8px;
   word-wrap: normal;
 }
-.am :is(h5, .HyperMD-header-5) {
-  color: var(--c-h5);
+.native :is(h5, .HyperMD-header-5) {
   font-weight: 700;
   width: fit-content;
   padding-left: 6px;
   word-wrap: normal;
 }
-.am :is(h6, .HyperMD-header-6) {
-  color: var(--c-h6);
+.native :is(h6, .HyperMD-header-6) {
   font-style: italic;
   padding-left: 6px;
 }
 
-/* ========================================================= */
-/* TEXT FORMATTING                                           */
-/* ========================================================= */
-
-
-.am .cm-line:not(.HyperMD-header, .HyperMD-quote, .HyperMD-list-line),
-.am p {
-  color: var(--c-text);
-}
-.am :is(strong, .cm-strong) {
-  color: var(--c-bold);
+.native :is(strong, .cm-strong) {
   font-weight: 750;
 }
-.am :is(em, .cm-em) {
-  color: var(--c-italic); 
-}
-.am :is(strong em, em strong, .cm-strong .cm-em) {
-  color: var(--c-bold-italic);
-}
-.am :is(del, .cm-strikethrough) {
-  color: var(--c-strikethrough);
-}
-.am :is(mark, .cm-highlight),
-.am.markdown-source-view .cm-highlight {
-  background-color: color-mix(in srgb, var(--c-mark) 20%, transparent);
-}
-
-.am p {
+.native p {
   margin: 4px 0;
 }
-.am hr {
-  margin: 20px 0 !important;
+.native hr {
+  margin: 20px 0;
 }
-.am img {
-  display: block !important;
-  margin-inline: auto !important;
+.native img {
+  display: block;
+  margin-inline: auto;
 }
 
-/* ========================================================= */
-/* BLOCKQUOTES                                               */
-/* ========================================================= */
-
-.am blockquote {
-  border-left: 3px solid var(--interactive-accent);
-  background-color: var(--c-blockquote-bg);
+.native blockquote {
   padding: 10px 15px;
-  border-radius: 6px;
+  border-radius: 5px;
+  border-left-width: 5px !important;
+}
+
+.native .callout {
+  border-radius: 0;
+  background-color: transparent;
+  box-shadow: none;
+  transition: all 0.2s ease;
+}
+
+.native .metadata-content {
+    background-color: transparent;
 }
 
 /* ========================================================= */
-/* CALLOUTS                                                  */
-/* ========================================================= */
 
-.am .callout {
-  border: none !important;
-  border-left: 0 !important;
-  border-radius: 0 !important;
-  background-color: transparent !important;
-  box-shadow: none !important;
-  transition: all 0.2s ease !important;
-}
-.am .callout .callout-title {
-  background-color: transparent !important;
-  border: none !important;
-  font-style: italic !important;
-  padding: 0 12px !important;
-}
-.am .callout .callout-content {
-  background-color: transparent !important;
-  border: none !important;
-  padding: 0 12px !important;
-}
-
-/* ========================================================= */
-/* METABIND                                           */
-/* ========================================================= */
-
-.am .mb-input input {
+.native .input-alias input {
   width: 100%;
   height: auto;
   padding: 8px;
   font-size: 1.25em;
-  background-color: var(--c-mb-input-bg);
-  border: 1px solid var(--c-mb-input-border);
   border-radius: 4px;
+  border-radius: 0;
 }
-.am .input-alias input:focus {
+.native .input-alias input:focus {
   outline: none;
-  border-color: var(--c-mb-input-border-focus);
-  box-shadow: 0 0 3px var(--c-mb-input-box-shadow-focus);
 }
-.am .input-alias .meta-bind-label {
+.native .input-alias .meta-bind-label {
   font-weight: bold;
   margin-bottom: 4px;
 }
-.am .mb-button-inner {
+.native .mb-input input {
+  border-width: 1px;
+  border-style: solid;
+}
+.native .mb-editor-input {
+  border-radius: 0;
+}
+.native .mb-progress-bar-input {
+  border-radius: 0;
+}
+.native .mb-progress-bar-progress {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.native .mb-button-inner {
   font-weight: 800;
 }
-
 @media (max-width: 768px) {
-  .daily .mb-button-group {
+  .native .mb-button-group {
     display: flex !important;
     flex-wrap: nowrap !important;
     gap: 0 !important;
     width: 100% !important;
   }
 
-  .daily .mb-button-group .mb-button {
+  .native .mb-button-group .mb-button {
     flex: 1 1 0 !important;
     min-width: 0 !important;
   }
 
-  .daily .mb-button-group .mb-button-inner {
+  .native .mb-button-group .mb-button-inner {
     width: 100% !important;
     padding: 0.25rem 0.5rem !important;
     font-size: clamp(0.6rem, 2.5vw, 0.875rem) !important;
@@ -187,7 +122,3 @@
     text-overflow: ellipsis !important;
   }
 }
-
-.daily .metadata-content {
-    background-color: transparent !important;
-  }

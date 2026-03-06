@@ -1,8 +1,10 @@
 ---
 tags:
-  - NODE
+  - MEMORIUM
 cssclasses:
-  - am
+  - native
+  - main
+  - module
   - memorium
 ---
 # Ψ - Memorium

@@ -4,8 +4,16 @@
 /* ========================================================= */
 
 /* Common Obsidian variable overrides */
+
 .module {
-  --text-normal: var(--highlight);
+  --highlight: var(--c-am-module-base-highlight);
+  --primary: var(--c-am-module-base-primary);
+  --secondary: var(--c-am-module-base-secondary);
+  --dark: var(--c-am-module-base-dark);
+}
+
+.module {
+
   --text-muted: color-mix(in srgb, var(--highlight) 85%, var(--primary));
   --text-faint: color-mix(in srgb, var(--highlight) 60%, var(--primary));
   --checklist-done-color: var(--secondary);
@@ -27,6 +35,7 @@
   --background-modifier-border: color-mix(in srgb, var(--primary) 50%, transparent);
   --background-modifier-hover: color-mix(in srgb, var(--secondary) 40%, transparent);
   --pill-cover-hover: color-mix(in srgb, var(--highlight) 60%, transparent);
+
 }
 
 .module :is(h1, .HyperMD-header-1) {
@@ -50,22 +59,11 @@
   color: color-mix(in srgb, var(--primary) 80%, var(--highlight)) !important;
 }
 .module :is(a:link, .cm-hmd-internal-link) {
-  color: var(--secondary) !important;
-  text-decoration-color: color-mix(in srgb, var(--secondary) 40%, transparent) !important;
+  color: var(--primary) !important;
 }
 .module :is(a:hover, .cm-hmd-internal-link:hover) {
   color: var(--highlight) !important;
   text-decoration-color: var(--primary) !important;
-}
-.module :is(blockquote) {
-  border-left-color: var(--secondary) !important;
-}
-.module .cm-line:not(.HyperMD-header-1, .HyperMD-header-2, .HyperMD-header-3, .HyperMD-header-4, .HyperMD-header-5, .HyperMD-header-6) {
-  color: var(--highlight) !important;
-}
-.module .callout-title,
-.module .callout-title-inner {
-  color: var(--secondary) !important;
 }
 .module :is(strong, .cm-strong) {
   color: var(--secondary) !important;
@@ -86,23 +84,39 @@
 .module thead tr {
   border-bottom-color: var(--secondary) !important;
 }
+.module :is(blockquote) {
+  border-left-color: var(--secondary) !important;
+}
+.module .callout {
+  border-color: var(--secondary) !important;
+}
+.module .callout-title,
+.module .callout-title-inner {
+  color: var(--secondary) !important;
+}
+.module .callout-icon svg {
+  stroke: var(--highlight) !important;
+}
 .module :is(.tag, .cm-hashtag, .multi-select-pill, .metadata-property-value .tag) {
   color: var(--highlight) !important;
-  background: linear-gradient(135deg, var(--dark), color-mix(in srgb, var(--dark) 80%, var(--primary))) !important;
-  border: 1px solid color-mix(in srgb, var(--primary) 50%, transparent);
-  box-shadow: 0 1px 3px color-mix(in srgb, var(--dark) 50%, transparent);
+  background-color: var(--dark) !important;
 }
 .module :is(.tag:hover, .cm-hashtag:hover, .multi-select-pill:hover) {
   background: linear-gradient(135deg, color-mix(in srgb, var(--dark) 90%, var(--primary)), var(--dark)) !important;
   border-color: var(--primary);
 }
 .module :is(.multi-select-pill, .tag) .svg-icon {
-  color: var(--secondary) !important;
+  color: var(--highlight) !important;
 }
 .module .metadata-property-icon {
   color: var(--highlight) !important;
 }
 .module .metadata-property-value {
+  color: var(--highlight) !important;
+}
+.module .metadata-property-value input,
+.module .metadata-property-value time,
+.module .metadata-property-value .multi-select-container {
   color: var(--highlight) !important;
 }
 .input-alias input::placeholder {
@@ -111,8 +125,20 @@
 .module .mb-button-inner {
   color: var(--dark) !important;
 }
+.module .metadata-properties-title {
+  color: var(--primary) !important;
+}
 .module .right-triangle {
   stroke: var(--highlight) !important;
+}
+.module .mb-input input {
+  border-color: var(--secondary) !important;
+}
+.module .mb-progress-bar-input {
+  border-color: var(--secondary) !important;
+}
+.module .mb-editor-input {
+  border-color: var(--secondary) !important;
 }
 .module .am-memorium-progress-bar .mb-progress-bar-input {
   display: flex !important;
