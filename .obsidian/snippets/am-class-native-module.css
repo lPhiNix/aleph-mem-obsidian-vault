@@ -58,6 +58,7 @@
 .module :is(h6, .HyperMD-header-6) {
   color: color-mix(in srgb, var(--primary) 80%, var(--highlight)) !important;
 }
+
 .module :is(a:link, .cm-hmd-internal-link) {
   color: var(--primary) !important;
 }
@@ -78,12 +79,14 @@
   color: var(--highlight) !important;
   border-radius: 2px;
 }
+
 .module :is(table, th, td, tr) {
   border-color: var(--primary) !important;
 }
 .module thead tr {
   border-bottom-color: var(--secondary) !important;
 }
+
 .module :is(blockquote) {
   border-left-color: var(--secondary) !important;
 }
@@ -97,6 +100,7 @@
 .module .callout-icon svg {
   stroke: var(--highlight) !important;
 }
+
 .module :is(.tag, .cm-hashtag, .multi-select-pill, .metadata-property-value .tag) {
   color: var(--highlight) !important;
   background-color: var(--dark) !important;
@@ -108,6 +112,7 @@
 .module :is(.multi-select-pill, .tag) .svg-icon {
   color: var(--highlight) !important;
 }
+
 .module .metadata-property-icon {
   color: var(--highlight) !important;
 }
@@ -119,7 +124,21 @@
 .module .metadata-property-value .multi-select-container {
   color: var(--highlight) !important;
 }
-.input-alias input::placeholder {
+
+.module .table-view-th {
+  color: var(--primary) !important;
+}
+.module .dataview-error-box {
+  border-color: var(--dark) !important;
+}
+.module .dataview-error-message {
+  color: var(--highlight) !important;
+}
+
+.module .mb-input input {
+  background-color: var(--c-main-mb-input-bg);
+}
+.module .mb-input input::placeholder {
   color: var(--dark) !important;
 }
 .module .mb-button-inner {
