@@ -2,7 +2,6 @@
 ```meta-bind-button
 id: prev-week
 style: primary
-class: phone-responsive
 label: <- Previous Week
 hidden: true
 actions:
@@ -13,7 +12,6 @@ actions:
 ```meta-bind-button
 id: next-week
 style: primary
-class: phone-responsive
 label: Next Week ->
 hidden: true
 actions:

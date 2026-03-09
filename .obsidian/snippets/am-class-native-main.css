@@ -16,10 +16,6 @@
 
   --c-main-quote-border: /* var(--c-am-native-main-quote-border) */ var(--interactive-accent);
   --c-main-quote-bg: /* var(--c-am-native-main-quote-bg) */ var(--code-background);
-
-  --c-main-mb-input-bg: /* var(--c-am-native-main-mb-input-bg) */ var(--background-primary);
-  --c-main-mb-input-border-focus: /* var(--c-am-native-main-mb-input-border-focus) */ var(--interactive-accent-hover);
-  --c-main-mb-input-box-shadow-focus: /* var(--c-am-native-main-mb-input-box-shadow-focus) */ var(--interactive-accent);
   
 }
 
@@ -67,15 +63,4 @@
 .main blockquote {
   border-left: 3px solid var(--c-main-quote-border);
   background-color: var(--c-main-quote-bg);
-}
-
-.main .mb-input input {
-  background-color: var(--c-main-mb-input-bg);
-}
-.main .input-alias input:focus {
-  border-color: var(--c-main-mb-input-border-focus);
-  box-shadow: 0 0 3px var(--c-main-mb-input-box-shadow-focus);
-}
-.main .mb-progress-bar-input {
-  background-color: var(--c-main-mb-input-bg);
 }

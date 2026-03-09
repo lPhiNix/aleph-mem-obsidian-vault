@@ -1,3 +1,3 @@
 ```meta-bind
-INPUT[editor(class(am-memorium-editor)):memorium-quarterly-summary]
+INPUT[editor(class(text-editor-content)):memorium-quarterly-summary]
 ```

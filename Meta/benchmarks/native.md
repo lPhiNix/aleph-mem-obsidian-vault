@@ -1,7 +1,8 @@
 ---
 cssclasses:
   - native
-  - main
+  - module
+  - memorium
 tags:
   - MEMORIUM
   - daily

@@ -2,7 +2,6 @@
 ```meta-bind-button
 id: prev-month
 style: primary
-class: phone-responsive
 label: <- Previous Month
 hidden: true
 actions:
@@ -13,7 +12,6 @@ actions:
 ```meta-bind-button
 id: current-quarter
 style: primary
-class: phone-responsive
 label: This Quarter
 hidden: true
 actions:
@@ -34,7 +32,6 @@ actions:
 ```meta-bind-button
 id: next-month
 style: primary
-class: phone-responsive
 label: Next Month ->
 hidden: true
 actions:

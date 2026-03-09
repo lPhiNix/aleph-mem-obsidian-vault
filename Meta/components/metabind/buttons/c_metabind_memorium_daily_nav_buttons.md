@@ -1,7 +1,7 @@
 `BUTTON[prev-day, current-week, current-month, next-day]`
 ```meta-bind-button
 id: prev-day
-class: phone-responsive
+class: nav-buttons
 style: primary
 label: <- Yesterday
 hidden: true
@@ -13,7 +13,7 @@ actions:
 ```meta-bind-button
 id: current-week 
 style: primary
-class: phone-responsive
+class: nav-buttons
 label: This Week
 hidden: true
 actions:
@@ -24,7 +24,7 @@ actions:
 ```meta-bind-button
 id: current-month
 style: primary
-class: phone-responsive
+class: nav-buttons
 label: This Month
 hidden: true
 actions:
@@ -35,7 +35,7 @@ actions:
 ```meta-bind-button
 id: next-day
 style: primary
-class: phone-responsive
+class: nav-buttons
 label: Tomorrow ->
 hidden: true
 actions:

@@ -11,7 +11,7 @@
   "enableJs": false,
   "viewFieldDisplayNullAsEmpty": false,
   "enableSyntaxHighlighting": true,
-  "enableEditorRightClickMenu": true,
+  "enableEditorRightClickMenu": false,
   "inputFieldTemplates": [],
   "buttonTemplates": [],
   "excludedFolders": [

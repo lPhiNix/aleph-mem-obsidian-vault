@@ -115,7 +115,6 @@
     "am-class-module-08-aethernum",
     "am-layout-fonts",
     "am-class-module-main",
-    "am-class-native-module-00-inthima",
     "am-class-native-module-01-cognitio",
     "am-class-native-module-03-noetheris",
     "am-class-native-module-04-devs",
@@ -129,8 +128,12 @@
     "am-class-native-module-02-memorium-weekly",
     "am-class-native-module-02-memorium-quarterly",
     "am-class-native-module-02-memorium-monthly",
-    "am-class-native-module-02-memorium-daily",
-    "am-class-native-module"
+    "am-class-native-module",
+    "am-layout-input-alias",
+    "am-layout-rating-bar",
+    "am-layout-text-editor-content",
+    "am-class-native-module-00-inthima",
+    "am-layout-scrollable-content"
   ],
   "interfaceFontFamily": "",
   "textFontFamily": "",
