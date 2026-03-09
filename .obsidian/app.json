@@ -8,5 +8,7 @@
   "showInlineTitle": true,
   "foldHeading": false,
   "defaultViewMode": "preview",
-  "livePreview": true
+  "livePreview": true,
+  "propertiesInDocument": "visible",
+  "showIndentGuide": false
 }

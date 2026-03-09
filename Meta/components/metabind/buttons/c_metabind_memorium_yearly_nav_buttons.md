@@ -2,7 +2,6 @@
 ```meta-bind-button
 id: prev-year
 style: primary
-class: phone-responsive
 label: <- Previous Year
 hidden: true
 actions:
@@ -12,7 +11,6 @@ actions:
 ```
 ```meta-bind-button
 id: next-year
-class: phone-responsive
 style: primary
 label: Next Year ->
 hidden: true

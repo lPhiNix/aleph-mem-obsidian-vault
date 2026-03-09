@@ -52,7 +52,8 @@
 .native blockquote {
   padding: 10px 15px;
   border-radius: 5px;
-  border-left-width: 5px !important;
+  border-left-width: 5px;
+  background-color: var(--code-background);
 }
 
 .native .callout {
@@ -63,46 +64,15 @@
 }
 
 .native .metadata-content {
-    background-color: transparent;
+  background-color: transparent;
 }
 
 /* ========================================================= */
 
-.native .input-alias input {
-  width: 100%;
-  height: auto;
-  padding: 8px;
-  font-size: 1.25em;
-  border-radius: 4px;
+.native .mb-input-type-text input {
   border-radius: 0;
 }
-.native .input-alias input:focus {
-  outline: none;
-}
-.native .input-alias .meta-bind-label {
-  font-weight: bold;
-  margin-bottom: 4px;
-}
-.native .mb-input input {
-  border-width: 1px;
-  border-style: solid;
-}
-.native .mb-editor-input {
-  border-radius: 0;
-}
-.native .mb-progress-bar-input {
-  border-radius: 0;
-}
-.native .mb-progress-bar-progress {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-}
-.native .mb-button {
-  border-radius: 0 !important;
-}
+
 .native .mb-button-inner {
   font-weight: 800;
-  border-radius: 0 !important;
 }

@@ -68,7 +68,6 @@
 }
 .module :is(strong, .cm-strong) {
   color: var(--secondary) !important;
-  text-shadow: 0 0 5px color-mix(in srgb, var(--secondary) 20%, transparent);
 }
 .module :is(em, .cm-em) {
   color: color-mix(in srgb, var(--primary) 70%, var(--highlight)) !important;
@@ -78,6 +77,10 @@
   background: linear-gradient(to right, color-mix(in srgb, var(--secondary) 25%, transparent), color-mix(in srgb, var(--primary) 25%, transparent)) !important;
   color: var(--highlight) !important;
   border-radius: 2px;
+}
+
+.module input[type="checkbox"]:hover {
+  border-color: var(--highlight) !important;
 }
 
 .module :is(table, th, td, tr) {
@@ -107,11 +110,12 @@
 }
 .module :is(.tag:hover, .cm-hashtag:hover, .multi-select-pill:hover) {
   background: linear-gradient(135deg, color-mix(in srgb, var(--dark) 90%, var(--primary)), var(--dark)) !important;
-  border-color: var(--primary);
+  border-color: var(--dark) !important;
 }
 .module :is(.multi-select-pill, .tag) .svg-icon {
   color: var(--highlight) !important;
 }
+
 
 .module .metadata-property-icon {
   color: var(--highlight) !important;
@@ -124,6 +128,19 @@
 .module .metadata-property-value .multi-select-container {
   color: var(--highlight) !important;
 }
+.module input[type="datetime-local"]::-webkit-datetime-edit-text {
+  color: var(--highlight) !important;
+}
+.module input[type="datetime-local"]::-webkit-datetime-edit-fields-wrapper {
+  color: var(--highlight) !important;
+}
+
+.module .metadata-properties-title {
+  color: var(--primary) !important;
+}
+.module .right-triangle {
+  stroke: var(--highlight) !important;
+}
 
 .module .table-view-th {
   color: var(--primary) !important;
@@ -135,45 +152,21 @@
   color: var(--highlight) !important;
 }
 
-.module .mb-input input {
-  background-color: var(--c-main-mb-input-bg);
-}
 .module .mb-input input::placeholder {
   color: var(--dark) !important;
 }
+.module .mb-input input {
+  color: var(--highlight) !important;
+  border-color: var(--secondary) !important;
+}
+
 .module .mb-button-inner {
   color: var(--dark) !important;
 }
-.module .metadata-properties-title {
-  color: var(--primary) !important;
-}
-.module .right-triangle {
-  stroke: var(--highlight) !important;
-}
-.module .mb-input input {
-  border-color: var(--secondary) !important;
-}
+
 .module .mb-progress-bar-input {
   border-color: var(--secondary) !important;
 }
 .module .mb-editor-input {
   border-color: var(--secondary) !important;
-}
-.module .am-memorium-progress-bar .mb-progress-bar-input {
-  display: flex !important;
-  align-items: center !important;
-  padding-right: 2rem !important;
-}
-.module .am-memorium-progress-bar .mb-progress-bar-progress {
-  min-width: 7.5% !important;
-  max-width: calc(100% - 0.25rem) !important;
-}
-.module .am-memorium-progress-bar .mb-progress-bar-value {
-  display: block !important;
-  width: 100% !important;
-  text-align: right !important;
-  padding-right: 0.5rem !important;
-}
-.module :is(.mb-progress-bar-label-left, .mb-progress-bar-label-right) {
-  display: none !important;
 }

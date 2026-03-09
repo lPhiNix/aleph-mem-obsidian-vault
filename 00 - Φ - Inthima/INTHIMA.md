@@ -2,10 +2,9 @@
 tags:
   - NODE
 cssclasses:
-  - native
-  - main
   - module
   - inthima
+  - native
 ---
 # Φ - Inthima
 
