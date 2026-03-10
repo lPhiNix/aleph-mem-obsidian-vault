@@ -63,6 +63,6 @@ tR += await tp.file.include("[[c_metabind_memorium_daily_summary_editor]]");
 ## ✧ General Overview
 ---
 <%*
-tR += await tp.file.include("[[c_dataview_memorium_daily_year_note_throwback]]");
+tR += await tp.file.include("[[c_dataview_memorium_daily_throwback]]");
 %>
 

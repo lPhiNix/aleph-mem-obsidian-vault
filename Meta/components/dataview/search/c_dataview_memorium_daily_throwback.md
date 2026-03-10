@@ -1,4 +1,4 @@
->[!journal]- &nbsp;This Note From Different Years
+>[!example]- &nbsp;This Note From Different Years
 >```dataview
 TABLE memorium-alias AS Alias, memorium-day-rating AS Rating
 FROM "02 - Ψ - Memorium/daily"

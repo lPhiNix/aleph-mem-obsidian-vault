@@ -60,3 +60,7 @@ tR += await tp.file.include("[[c_dataview_memorium_yearly_day_grid]]");
 <%*
 tR += await tp.file.include("[[c_dataview_memorium_yearly_quarter_list]]");
 %>
+
+<%*
+tR += await tp.file.include("[[c_dataview_memorium_yearly_throwback]]");
+%>

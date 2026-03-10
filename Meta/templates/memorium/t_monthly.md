@@ -67,3 +67,7 @@ tR += await tp.file.include("[[c_dataview_memorium_monthly_day_rating_graph]]");
 <%*
 tR += await tp.file.include("[[c_dataview_memorium_monthly_week_list]]");
 %>
+
+<%*
+tR += await tp.file.include("[[c_dataview_memorium_monthly_throwback]]");
+%>
