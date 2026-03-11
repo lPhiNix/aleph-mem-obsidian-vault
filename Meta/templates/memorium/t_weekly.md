@@ -35,6 +35,9 @@ let classes = [
 ];
 tR += await tp.file.include("[[c_templater_native_cssclasses_attribute]]") + classes.map(t => "\n- "+t).join("");
 %>
+<%*
+tR += await tp.file.include("[[c_templater_native_alias_attribute]]");
+%>
 
 <%*
 tR += await tp.file.include("[[c_templater_memorium_weekly_frontmatter]]");

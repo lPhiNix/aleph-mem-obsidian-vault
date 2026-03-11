@@ -48,7 +48,6 @@
     "am-color-palette",
     "am-layout-metabind-text-custom",
     "am-layouts-memorium_callouts",
-    "am-layout-kanban",
     "am-layout-hide-journal-calendar-buttons",
     "class-am-hide-all-frontmatter",
     "class-am-hide-inline-title",
@@ -129,7 +128,8 @@
     "am-layout-rating-bar",
     "am-layout-text-editor-content",
     "am-class-native-module-00-inthima",
-    "am-layout-scrollable-content"
+    "am-layout-scrollable-content",
+    "am-layout-kanban"
   ],
   "interfaceFontFamily": "",
   "textFontFamily": "",
