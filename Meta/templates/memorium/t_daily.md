@@ -17,6 +17,16 @@ let tags = [
 tR += (await tp.file.include("[[c_templater_native_tags_attribute]]")) + tags.map(t => "\n- "+t).join("");
 %>
 <%*
+let links = [
+	moment(tp.file.title, 'YYYY-MM-DD-dddd').format('GGGG-[W]WW'),
+	moment(tp.file.title, 'YYYY-MM-DD-dddd').format('YYYY-MM-MMMM')
+];
+tR += (await tp.file.include("[[c_templater_native_context_attribute]]")) + links.map(t => "\n- \"[[" + t + "]]\"").join("");
+%>
+<%*
+tR += await tp.file.include("[[c_templater_native_related_attribute]]");
+%>
+<%*
 tR += await tp.file.include("[[c_templater_native_favorite_attribute]]");
 %>
 <%*
@@ -36,10 +46,6 @@ tR += await tp.file.include("[[c_templater_memorium_daily_journals_frontmatter]]
 
 <%"---"%>
 # ✦ <% moment(tp.file.title, 'YYYY-MM-DD-dddd').format("dddd, MMMM DD, YYYY") %>
-<%*
-tR += await tp.file.include("[[c_templater_memorium_daily_hide_weekly_link]]");
-tR += await tp.file.include("[[c_templater_memorium_daily_hide_monthly_link]]");
-%>
 <%*
 tR += await tp.file.include("[[c_metabind_memorium_daily_nav_buttons]]");
 %>

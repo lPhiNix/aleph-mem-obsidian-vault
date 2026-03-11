@@ -6,6 +6,8 @@
     "version": "text",
     "creation": "datetime",
     "favorite": "checkbox",
-    "key": "text"
+    "key": "text",
+    "context": "multitext",
+    "related": "multitext"
   }
 }

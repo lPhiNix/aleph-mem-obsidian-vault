@@ -1,5 +1,5 @@
 {
-  "promptDelete": false,
+  "promptDelete": true,
   "strictLineBreaks": false,
   "showLineNumber": false,
   "showUnsupportedFiles": true,
@@ -10,5 +10,6 @@
   "defaultViewMode": "preview",
   "livePreview": true,
   "propertiesInDocument": "visible",
-  "showIndentGuide": false
+  "showIndentGuide": false,
+  "useMarkdownLinks": false
 }
