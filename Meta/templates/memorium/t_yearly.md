@@ -19,6 +19,15 @@ tR += (await tp.file.include("[[c_templater_native_tags_attribute]]")) + tags.ma
 tR += await tp.file.include("[[c_templater_native_favorite_attribute]]");
 %>
 <%*
+let links = [
+	"MEMORIUM"
+];
+tR += (await tp.file.include("[[c_templater_native_context_attribute]]")) + links.map(t => "\n- \"[[" + t + "]]\"").join("");
+%>
+<%*
+tR += await tp.file.include("[[c_templater_native_related_attribute]]");
+%>
+<%*
 let classes = [
 	"hide-source-frontmatter", "module", "memorium", "yearly"
 ]
@@ -59,4 +68,8 @@ tR += await tp.file.include("[[c_dataview_memorium_yearly_day_grid]]");
 ---
 <%*
 tR += await tp.file.include("[[c_dataview_memorium_yearly_quarter_list]]");
+%>
+
+<%*
+tR += await tp.file.include("[[c_dataview_memorium_yearly_throwback]]");
 %>

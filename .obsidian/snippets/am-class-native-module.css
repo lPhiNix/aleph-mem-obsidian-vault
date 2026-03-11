@@ -60,7 +60,7 @@
 }
 
 .module :is(a:link, .cm-hmd-internal-link) {
-  color: var(--primary) !important;
+  color: var(--highlight) !important;
 }
 .module :is(a:hover, .cm-hmd-internal-link:hover) {
   color: var(--highlight) !important;
@@ -104,15 +104,39 @@
   stroke: var(--highlight) !important;
 }
 
-.module :is(.tag, .cm-hashtag, .multi-select-pill, .metadata-property-value .tag) {
+.module :is(.tag, .cm-hashtag, .metadata-property-value .tag) {
   color: var(--highlight) !important;
   background-color: var(--dark) !important;
 }
-.module :is(.tag:hover, .cm-hashtag:hover, .multi-select-pill:hover) {
+.module [data-property-type="tags"] .multi-select-pill {
+  color: var(--highlight) !important;
+  background-color: var(--dark) !important;
+}
+.module [data-property-type="multitext"] .multi-select-pill {
+  color: var(--highlight) !important;
+  background-color: transparent !important;
+}
+.module [data-property-type="multitext"] .multi-select-pill .internal-link {
+  color: var(--h) !important;
+}
+.module [data-property-type="multitext"] .multi-select-pill .internal-link:hover {
+  color: var(--highlight) !important;
+}
+.module :is(.tag:hover, .cm-hashtag:hover) {
   background: linear-gradient(135deg, color-mix(in srgb, var(--dark) 90%, var(--primary)), var(--dark)) !important;
   border-color: var(--dark) !important;
 }
-.module :is(.multi-select-pill, .tag) .svg-icon {
+.module [data-property-type="tags"] .multi-select-pill:hover {
+  background: linear-gradient(135deg, color-mix(in srgb, var(--dark) 90%, var(--primary)), var(--dark)) !important;
+  border-color: var(--dark) !important;
+}
+.module [data-property-type="multitext"] .multi-select-pill:hover {
+  background: transparent !important;
+  border-color: var(--dark) !important;
+}
+.module [data-property-type="tags"] .multi-select-pill .svg-icon,
+.module [data-property-type="multitext"] .multi-select-pill .svg-icon,
+.module .tag .svg-icon {
   color: var(--highlight) !important;
 }
 

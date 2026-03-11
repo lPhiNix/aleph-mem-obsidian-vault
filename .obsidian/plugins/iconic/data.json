@@ -149,6 +149,9 @@
     }
   },
   "propertyIcons": {
+    "context": {
+      "icon": "lucide-network"
+    },
     "creation": {
       "icon": "lucide-clock-arrow-up"
     },
@@ -160,6 +163,9 @@
     },
     "key": {
       "icon": "lucide-key-round"
+    },
+    "related": {
+      "icon": "lucide-link"
     },
     "version": {
       "icon": "lucide-hash"

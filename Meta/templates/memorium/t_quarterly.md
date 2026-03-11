@@ -17,6 +17,15 @@ let tags = [
 tR += (await tp.file.include("[[c_templater_native_tags_attribute]]")) + tags.map(t => "\n- "+t).join("");
 %>
 <%*
+let links = [
+	moment(tp.file.title, 'YYYY-[Q]Q').format('YYYY')
+];
+tR += (await tp.file.include("[[c_templater_native_context_attribute]]")) + links.map(t => "\n- \"[[" + t + "]]\"").join("");
+%>
+<%*
+tR += await tp.file.include("[[c_templater_native_related_attribute]]");
+%>
+<%*
 tR += await tp.file.include("[[c_templater_native_favorite_attribute]]");
 %>
 <%*
@@ -36,9 +45,6 @@ tR += await tp.file.include("[[c_templater_memorium_quarterly_journals_frontmatt
 
 <%"---"%>
 # ✦ <% moment(tp.file.title, 'YYYY-[Q]Q').format('[Quarter ]Q, YYYY') %>
-<%*
-tR += await tp.file.include("[[c_templater_memorium_quarterly_hide_yearly_link]]");
-%>
 <%*
 tR += await tp.file.include("[[c_metabind_memorium_quarterly_nav_buttons]]");
 %>
@@ -65,4 +71,8 @@ tR += await tp.file.include("[[c_dataview_memorium_quarterly_day_rating_graph]]"
 ---
 <%*
 tR += await tp.file.include("[[c_dataview_memorium_quarterly_month_list]]");
+%>
+
+<%*
+tR += await tp.file.include("[[c_dataview_memorium_quarterly_throwback]]");
 %>
