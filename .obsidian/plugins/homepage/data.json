@@ -6,7 +6,7 @@
       "kind": "File",
       "openOnStartup": true,
       "openMode": "Replace all open notes",
-      "manualOpenMode": "Keep open notes",
+      "manualOpenMode": "Replace all open notes",
       "view": "Default view",
       "revertView": true,
       "openWhenEmpty": true,
