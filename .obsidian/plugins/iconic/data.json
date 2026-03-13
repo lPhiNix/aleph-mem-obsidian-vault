@@ -146,9 +146,18 @@
     },
     "yearly": {
       "icon": "lucide-calendar"
+    },
+    "ORDUS": {
+      "icon": "lucide-codesandbox"
+    },
+    "task": {
+      "icon": "lucide-tag"
     }
   },
   "propertyIcons": {
+    "alias": {
+      "icon": "lucide-at-sign"
+    },
     "context": {
       "icon": "lucide-network"
     },
@@ -439,6 +448,20 @@
       ],
       "enabled": true,
       "icon": "lucide-calendar"
+    },
+    {
+      "id": "hKQiX",
+      "name": "Tasks",
+      "match": "all",
+      "conditions": [
+        {
+          "source": "path",
+          "operator": "startsWith",
+          "value": "07 - Π - Ordus/tasks/"
+        }
+      ],
+      "enabled": true,
+      "icon": "lucide-tag"
     }
   ],
   "folderRules": [

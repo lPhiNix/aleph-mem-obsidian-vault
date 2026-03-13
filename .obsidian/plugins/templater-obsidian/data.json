@@ -37,6 +37,10 @@
     {
       "folder": "02 - Ψ - Memorium/yearly",
       "template": "Meta/templates/memorium/t_yearly.md"
+    },
+    {
+      "folder": "07 - Π - Ordus/tasks",
+      "template": "Meta/templates/ordus/t_task.md"
     }
   ],
   "enable_file_templates": false,
