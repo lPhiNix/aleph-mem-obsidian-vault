@@ -129,7 +129,8 @@
     "am-layout-text-editor-content",
     "am-class-native-module-00-inthima",
     "am-layout-scrollable-content",
-    "am-layout-kanban"
+    "am-layout-kanban",
+    "am-class-native-main"
   ],
   "interfaceFontFamily": "",
   "textFontFamily": "",

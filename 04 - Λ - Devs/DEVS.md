@@ -3,9 +3,11 @@ tags:
   - NODE
 cssclasses:
   - native
-  - main
   - module
   - devs
+  - hide-source-frontmatter
+context:
+  - "[[AM]]"
 ---
 # Λ - Devs
 
@@ -19,6 +21,3 @@ cssclasses:
 >
 > _La "V" es una U latina._
 > 
-###### Volver a [[AM]]
----
-## Index
