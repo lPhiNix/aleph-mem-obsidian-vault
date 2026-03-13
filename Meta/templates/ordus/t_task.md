@@ -38,6 +38,12 @@ tR += await tp.file.include("[[c_templater_native_alias_attribute]]");
 %>
 
 <%*
+tR += await tp.file.include("[[c_templater_ordus_task_state]]");
+%>
+<%*
+tR += await tp.file.include("[[c_templater_ordus_task_priority]]");
+%>
+<%*
 tR += await tp.file.include("[[c_templater_ordus_task_description]]");
 %>
 
