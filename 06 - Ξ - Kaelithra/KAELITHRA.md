@@ -3,9 +3,11 @@ tags:
   - NODE
 cssclasses:
   - native
-  - main
   - module
   - kaelithra
+  - hide-source-frontmatter
+context:
+  - "[[AM]]"
 ---
 # Ξ - Kaelithra
 
@@ -16,7 +18,4 @@ cssclasses:
 > El infierno esta **vacío**, los demonios están todos **aquí**.
 > - William Shakespeare
 > 
-###### Volver a [[AM]]
----
-## Index
 
