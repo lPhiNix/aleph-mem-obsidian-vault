@@ -180,7 +180,11 @@
       "icon": "lucide-hash"
     }
   },
-  "ribbonIcons": {},
+  "ribbonIcons": {
+    "homepage:Open homepage": {
+      "icon": "lucide-codesandbox"
+    }
+  },
   "fileRules": [
     {
       "id": "HhZnf",
