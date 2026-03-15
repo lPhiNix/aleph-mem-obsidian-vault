@@ -13,9 +13,8 @@ context:
 
 > 
 > **_KAELITHRA (Ξ)_**
-> _mundo, personas, sociedad, cultura, realidad_
+> _world, live, time, space, reality_
 > 
-> El infierno esta **vacío**, los demonios están todos **aquí**.
-> - William Shakespeare
+> Lorem ipsum dolor sit amet consectetur adipiscing elit laoreet pulvinar blandit, ridiculus varius lobortis viverra lacinia parturient gravida hac integer, turpis in congue imperdiet tellus dis etiam libero suscipit.
 > 
 
