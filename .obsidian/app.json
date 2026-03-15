@@ -11,5 +11,6 @@
   "livePreview": true,
   "propertiesInDocument": "visible",
   "showIndentGuide": false,
-  "useMarkdownLinks": false
+  "useMarkdownLinks": false,
+  "userIgnoreFilters": null
 }
