@@ -5,10 +5,10 @@
 .trash/
 
 # Vault
-02 - Ψ - Memorium/*
-!MEMORIUM.md
-07 - Π - Ordus/*
-!ORDUS.md
+ALEPH-MEM/02 - Ψ - Memorium/*
+!ALEPH-MEM/02 - Ψ - Memorium/MEMORIUM.md
+ALEPH-MEM/07 - Π - Ordus/*
+!ALEPH-MEM/07 - Π - Ordus/ORDUS.md
 
 # Data
 placeholder.*
