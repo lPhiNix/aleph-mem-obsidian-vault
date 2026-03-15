@@ -192,6 +192,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "callout-manager:Insert Callout": false,
       "command-palette:Open command palette": false,
       "graph:Open graph view": false,
       "switcher:Open quick switcher": false,
