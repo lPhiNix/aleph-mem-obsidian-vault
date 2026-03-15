@@ -1,7 +1,4 @@
 >[!example]- &nbsp;Days In This Month
->```dataview
-TABLE alias AS Alias, memorium-day-rating AS Rating
-FROM [[<% fileDate = moment(tp.file.title, 'YYYY-MM-MMMM').format('YYYY-MM-MMMM') %>]] 
-AND "02 - Ψ - Memorium/daily"
-SORT date(file.name, "yyyy-MM-dd-cccc") ASC
+>```dataviewjs
+>await dv.view("Meta/dataview-views/search/c_dataview_memorium_monthly_week_list");
 >```

@@ -1,8 +1,4 @@
 >[!example]- &nbsp;This Month From Different Years
->```dataview
-TABLE alias AS Alias
-FROM "02 - Ψ - Memorium/monthly"
-WHERE dateformat(memorium-date, "MM") = dateformat(this.memorium-date, "MM")
-  AND file.name != this.file.name
-SORT file.name ASC
+>```dataviewjs
+>await dv.view("Meta/dataview-views/search/c_dataview_memorium_monthly_throwback");
 >```
