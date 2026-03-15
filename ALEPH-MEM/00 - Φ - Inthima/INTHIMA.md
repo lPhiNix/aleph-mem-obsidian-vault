@@ -13,7 +13,7 @@ context:
 
 > 
 > **_INTHIMA (Φ)_**
-> _yo, tú, nosotros, amor_
+> _me, you, we, love_
 > 
-> Es increíble lo que hacemos por **amor**. Lo lejos que llegamos. Lo que somos capaces de **sacrificar**. Tal vez, el infierno... solo este **lleno de amor**...
+> Lorem ipsum dolor sit amet consectetur adipiscing elit laoreet pulvinar blandit, ridiculus varius lobortis viverra lacinia parturient gravida hac integer, turpis in congue imperdiet tellus dis etiam libero suscipit.
 > 

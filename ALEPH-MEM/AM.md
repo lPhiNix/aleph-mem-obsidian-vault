@@ -7,5 +7,5 @@ cssclasses:
 # ✦✧✦ AM ✦✧✦
 
 > 
-> En el momento en que pienses en **rendirte**, piensa en la razón por la que **aguantaste tanto tiempo**...
+> Lorem ipsum dolor sit amet consectetur adipiscing elit laoreet pulvinar blandit, ridiculus varius lobortis viverra lacinia parturient gravida hac integer, turpis in congue imperdiet tellus dis etiam libero suscipit.
 > 
