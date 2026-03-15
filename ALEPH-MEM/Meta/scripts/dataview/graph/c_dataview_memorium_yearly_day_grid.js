@@ -36,7 +36,7 @@ const CONFIG = {
   PROPERTIES: {
     RATING: "memorium-day-rating",
     DATE: "memorium-date",
-    ALIAS: "memorium-alias"
+    ALIAS: "alias"
   },
   
   // Funciones calculadas
