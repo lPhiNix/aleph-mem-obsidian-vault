@@ -1,5 +1,5 @@
 > [!IMPORTANT]  
-> This repository and README is a work in progress.
+> This repository and README are a work in progress.
 
 # Aleph-Mem Obsidian Vault
 
