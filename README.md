@@ -1,5 +1,5 @@
 > [!IMPORTANT]  
-> This repository and README is a work in progress and will soon contain a complete writeup of the inner workings of the vault, including the detailed usage of each plugin and QoL features such as [Hotkeys for Templates](https://github.com/Vinzent03/obsidian-hotkeys-for-templates).
+> This repository and README is a work in progress.
 
 # Aleph-Mem Obsidian Vault
 
