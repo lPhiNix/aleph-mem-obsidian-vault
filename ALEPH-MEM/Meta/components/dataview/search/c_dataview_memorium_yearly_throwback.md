@@ -1,4 +1,4 @@
 >[!memorium]- &nbsp;Other Years
 >```dataviewjs
->await dv.view("Meta/scripts/dataview/search/c_dataview_memorium_yearly_throwback");
+>await dv.view("Meta/scripts/view/dataview/search/dataview_memorium_yearly_throwback");
 >```
