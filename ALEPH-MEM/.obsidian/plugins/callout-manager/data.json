@@ -1,7 +1,33 @@
 {
   "callouts": {
-    "custom": [],
-    "settings": {}
+    "custom": [
+      "memorium"
+    ],
+    "settings": {
+      "memorium": [
+        {
+          "changes": {
+            "icon": "lucide-calendar-search"
+          }
+        },
+        {
+          "condition": {
+            "colorScheme": "light"
+          },
+          "changes": {
+            "color": "255, 247, 0"
+          }
+        },
+        {
+          "condition": {
+            "colorScheme": "dark"
+          },
+          "changes": {
+            "color": "255, 247, 0"
+          }
+        }
+      ]
+    }
   },
   "calloutDetection": {
     "obsidian": true,
