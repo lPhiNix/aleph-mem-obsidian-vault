@@ -19,6 +19,10 @@
       "template": "Meta/templates/test/t_test.md"
     },
     {
+      "folder": "02 - Ψ - Memorium",
+      "template": "Meta/templates/dashboards/t_memorium.md"
+    },
+    {
       "folder": "02 - Ψ - Memorium/daily",
       "template": "Meta/templates/memorium/t_daily.md"
     },

@@ -12,5 +12,6 @@
   "propertiesInDocument": "visible",
   "showIndentGuide": false,
   "useMarkdownLinks": false,
-  "userIgnoreFilters": null
+  "userIgnoreFilters": null,
+  "deleteUnlinkedAttachments": "never"
 }
