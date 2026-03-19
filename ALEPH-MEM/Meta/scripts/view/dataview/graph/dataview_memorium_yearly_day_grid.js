@@ -571,9 +571,31 @@ class HeatmapRenderer {
     wrapper.appendChild(this._renderStats(stats));
 
     const monthLabels = new MonthLabelCalculator(this.config).calculateLabels(columns);
-    wrapper.appendChild(this._renderMonthHeader(monthLabels));
-    wrapper.appendChild(this._renderGrid(columns, ratingMap, start, end));
-    wrapper.appendChild(this._renderMonthlyAverages(monthLabels, stats.monthlyAverages));
+
+    const gridRow = document.createElement("div");
+    gridRow.style.cssText = `display:flex;align-items:flex-start;gap:8px`;
+
+    // Fixed weekday labels (outside scroll)
+    const weekdayWrapper = document.createElement("div");
+    weekdayWrapper.style.cssText = `display:flex;flex-direction:column;gap:8px;flex-shrink:0`;
+    const monthSpacer = document.createElement("div");
+    monthSpacer.style.cssText = `height:${this.config.MONTH_FONT_SIZE + 4}px`;
+    weekdayWrapper.appendChild(monthSpacer);
+    weekdayWrapper.appendChild(this._renderWeekdayLabels());
+    gridRow.appendChild(weekdayWrapper);
+
+    // Scrollable grid area (no weekday labels inside)
+    const gridScroll = document.createElement("div");
+    gridScroll.style.cssText = `overflow-x:auto;overflow-y:hidden;padding-bottom:4px;flex:1;min-width:0`;
+    const gridInner = document.createElement("div");
+    gridInner.style.cssText = `width:max-content;display:flex;flex-direction:column;gap:8px`;
+    gridInner.appendChild(this._renderMonthHeader(monthLabels));
+    gridInner.appendChild(this._renderHeatmapColumns(columns, ratingMap, start, end));
+    gridInner.appendChild(this._renderMonthlyAverages(monthLabels, stats.monthlyAverages));
+    gridScroll.appendChild(gridInner);
+    gridRow.appendChild(gridScroll);
+
+    wrapper.appendChild(gridRow);
     wrapper.appendChild(this._renderProgressBar(stats));
     wrapper.appendChild(this._renderLegend(stats.distribution));
 
@@ -589,7 +611,6 @@ class HeatmapRenderer {
       padding: 16px;
       background: rgba(0,0,0,0.1);
       border-radius: 8px;
-      max-width: fit-content;
     `;
     return wrapper;
   }
@@ -635,10 +656,8 @@ class HeatmapRenderer {
     const monthRow = document.createElement("div");
     monthRow.style.cssText = `
       display: flex;
-      margin-left: ${this.config.CELL_SIZE + 16}px;
       position: relative;
       height: ${this.config.MONTH_FONT_SIZE + 4}px;
-      margin-bottom: 4px;
     `;
 
     monthLabels.forEach(monthData => {
@@ -805,7 +824,6 @@ class HeatmapRenderer {
     const row = document.createElement("div");
     row.style.cssText = `
       display: flex;
-      margin-left: ${this.config.CELL_SIZE + 16}px;
       position: relative;
       height: ${this.config.CELL_SIZE}px;
       margin-top: 2px;
