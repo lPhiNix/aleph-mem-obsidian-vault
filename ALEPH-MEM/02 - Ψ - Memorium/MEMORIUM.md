@@ -14,6 +14,7 @@ cssclasses:
 # Ψ
 # Memorium
 ---
+## ✦ Module
 > 
 > **_MEMORIUM (Ψ)_**
 > _memories, past, that which is no longer_
@@ -22,7 +23,8 @@ cssclasses:
 > 
 
 ---
-`BUTTON[today, current-week, current-month, current-quarterly, current-year]`
+## ✧ Navigation
+`BUTTON[today, current-week, current-month, current-quarter, current-year]`
 ```meta-bind-button
 id: today
 class: nav-buttons
@@ -57,10 +59,10 @@ actions:
     newTab: false
 ```
 ```meta-bind-button
-id: current-quarterly
+id: current-quarter
 style: primary
 class: nav-buttons
-label: This Quarterly
+label: This Quarter
 hidden: true
 actions:
   - type: open
@@ -79,3 +81,7 @@ actions:
     newTab: false
 ```
 ---
+## ✧ Today
+
+>[!memorium]- &nbsp;Today
+>nose
