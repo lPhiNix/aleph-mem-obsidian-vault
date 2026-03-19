@@ -1,4 +1,5 @@
-.hide-inline-title div.inline-title {
+.hide-inline-title div.mod-header, 
+.hide-inline-title .iconic-title-wrapper {
     display: none;
     visibility: hidden;
     opacity: 0;
