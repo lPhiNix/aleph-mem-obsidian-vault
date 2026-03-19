@@ -27,7 +27,7 @@ const CONFIG = {
   },
   
   // Etiquetas
-  WEEKDAYS: ["", "Tue", "", "Thu", "", "Sat", ""],
+  WEEKDAYS: ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"],
   
   // Rutas
   DAILY_NOTES_PATH: '"02 - Ψ - Memorium/daily"',
@@ -141,6 +141,136 @@ class RatingDataManager {
     if (value == null) return this.config.EMPTY_COLOR;
     const roundedValue = Math.round(value);
     return this.config.RATING_COLORS[roundedValue] ?? this.config.EMPTY_COLOR;
+  }
+}
+
+/**********************
+ * CALCULADOR DE ESTADÍSTICAS
+ **********************/
+class StatsCalculator {
+  static compute(ratingMap, start, end) {
+    const today = moment();
+    const effectiveEnd = today.isBefore(end) ? today : end;
+    const totalDays = Math.max(0, effectiveEnd.diff(start, "days") + 1);
+    const recordedDays = ratingMap.size;
+
+    let sum = 0, bestRating = null, worstRating = null;
+    ratingMap.forEach(d => {
+      sum += d.rating;
+      if (bestRating === null || d.rating > bestRating) bestRating = d.rating;
+      if (worstRating === null || d.rating < worstRating) worstRating = d.rating;
+    });
+    const avg = recordedDays > 0 ? sum / recordedDays : 0;
+
+    const { current, max } = StatsCalculator._calculateStreaks(ratingMap, start, effectiveEnd);
+    const distribution = StatsCalculator._calculateDistribution(ratingMap);
+    const monthlyAverages = StatsCalculator._calculateMonthlyAverages(ratingMap);
+
+    return { totalDays, recordedDays, avg, currentStreak: current, maxStreak: max, distribution, monthlyAverages, bestRating, worstRating };
+  }
+
+  static _calculateStreaks(ratingMap, start, effectiveEnd) {
+    let current = 0;
+    const checking = effectiveEnd.clone();
+    while (checking.isSameOrAfter(start, "day")) {
+      if (ratingMap.has(DateUtils.formatDateKey(checking))) {
+        current++;
+        checking.subtract(1, "day");
+      } else {
+        break;
+      }
+    }
+
+    let max = 0, temp = 0;
+    const cur = start.clone();
+    while (cur.isSameOrBefore(effectiveEnd, "day")) {
+      if (ratingMap.has(DateUtils.formatDateKey(cur))) {
+        temp++;
+        if (temp > max) max = temp;
+      } else {
+        temp = 0;
+      }
+      cur.add(1, "day");
+    }
+
+    return { current, max };
+  }
+
+  static _calculateDistribution(ratingMap) {
+    const dist = {};
+    for (let i = 1; i <= 10; i++) dist[i] = 0;
+    ratingMap.forEach(d => {
+      const r = Math.round(d.rating);
+      if (dist[r] !== undefined) dist[r]++;
+    });
+    return dist;
+  }
+
+  static _calculateMonthlyAverages(ratingMap) {
+    const months = new Map();
+    ratingMap.forEach((data, dateKey) => {
+      const monthKey = dateKey.substring(0, 7);
+      if (!months.has(monthKey)) months.set(monthKey, { sum: 0, count: 0 });
+      months.get(monthKey).sum += data.rating;
+      months.get(monthKey).count++;
+    });
+    const result = new Map();
+    months.forEach((v, k) => result.set(k, v.sum / v.count));
+    return result;
+  }
+}
+
+/**********************
+ * GESTOR DE TOOLTIP
+ **********************/
+class TooltipManager {
+  constructor() {
+    document.querySelectorAll(".aleph-heatmap-tooltip").forEach(el => el.remove());
+    this._el = document.createElement("div");
+    this._el.className = "aleph-heatmap-tooltip";
+    this._el.style.cssText = `
+      position: fixed;
+      background: rgba(12,12,12,0.97);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 6px;
+      padding: 8px 10px;
+      pointer-events: none;
+      z-index: 99999;
+      display: none;
+      font-size: 12px;
+      line-height: 1.6;
+      min-width: 150px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.6);
+    `;
+    document.body.appendChild(this._el);
+  }
+
+  show(event, day, data, rating, color) {
+    const dateStr = day.format("ddd DD MMM YYYY").toUpperCase();
+    const ratingLine = rating != null
+      ? `<div style="display:flex;align-items:center;gap:6px;margin-top:4px">
+           <div style="width:8px;height:8px;border-radius:2px;background:${color};flex-shrink:0"></div>
+           <span style="font-weight:700;color:${color}">${rating} / 10</span>
+         </div>`
+      : `<div style="opacity:0.4;margin-top:4px;font-size:11px">No entry</div>`;
+    const aliasLine = data?.alias
+      ? `<div style="opacity:0.5;font-size:11px;margin-top:2px">${data.alias}</div>`
+      : "";
+    this._el.innerHTML = `
+      <div style="font-weight:600;opacity:0.65;font-size:10px;letter-spacing:0.6px">${dateStr}</div>
+      ${ratingLine}${aliasLine}
+    `;
+    this._el.style.display = "block";
+    this._move(event);
+  }
+
+  move(event) { this._move(event); }
+  hide() { this._el.style.display = "none"; }
+  destroy() { this._el.remove(); }
+
+  _move(event) {
+    this._el.style.left = `${event.clientX + 14}px`;
+    this._el.style.top = `${event.clientY - 14}px`;
   }
 }
 
@@ -384,7 +514,7 @@ class MonthLabelCalculator {
       
       labels.push({
         position: centerPosition,
-        label: moment(monthKey + "-01").format("MMM"),
+        label: moment(monthKey + "-01").format("MMM").toUpperCase(),
         month: monthKey
       });
     });
@@ -423,33 +553,33 @@ class HeatmapRenderer {
   constructor(config, dataManager) {
     this.config = config;
     this.dataManager = dataManager;
+    this.activeFilter = null;
+    this.allCells = [];
+    this._legendItems = [];
+    this.tooltip = null;
   }
 
-  /**
-   * Renderiza el heatmap completo
-   * @param {Array} columns - Columnas del grid
-   * @param {Map} ratingMap - Mapa de ratings
-   * @param {moment.Moment} start - Fecha inicio
-   * @param {moment.Moment} end - Fecha fin
-   * @param {HTMLElement} container - Contenedor DOM
-   */
-  render(columns, ratingMap, start, end, container) {
-    const wrapper = this._createWrapper();
-    
-    const monthLabels = new MonthLabelCalculator(this.config).calculateLabels(columns);
-    const monthRow = this._renderMonthHeader(monthLabels);
-    wrapper.appendChild(monthRow);
+  render(columns, ratingMap, start, end, container, year) {
+    this.allCells = [];
+    this._legendItems = [];
+    if (this.tooltip) this.tooltip.destroy();
+    this.tooltip = new TooltipManager();
 
-    const gridWrapper = this._renderGrid(columns, ratingMap, start, end);
-    wrapper.appendChild(gridWrapper);
+    const wrapper = this._createWrapper();
+    const stats = StatsCalculator.compute(ratingMap, start, end);
+
+    wrapper.appendChild(this._renderStats(stats));
+
+    const monthLabels = new MonthLabelCalculator(this.config).calculateLabels(columns);
+    wrapper.appendChild(this._renderMonthHeader(monthLabels));
+    wrapper.appendChild(this._renderGrid(columns, ratingMap, start, end));
+    wrapper.appendChild(this._renderMonthlyAverages(monthLabels, stats.monthlyAverages));
+    wrapper.appendChild(this._renderProgressBar(stats));
+    wrapper.appendChild(this._renderLegend(stats.distribution));
 
     container.appendChild(wrapper);
   }
 
-  /**
-   * Crea el contenedor principal
-   * @private
-   */
   _createWrapper() {
     const wrapper = document.createElement("div");
     wrapper.style.cssText = `
@@ -464,10 +594,43 @@ class HeatmapRenderer {
     return wrapper;
   }
 
-  /**
-   * Renderiza la fila de encabezados de mes
-   * @private
-   */
+  _renderStats(stats) {
+    const { avg, recordedDays, totalDays, currentStreak, maxStreak, bestRating, worstRating } = stats;
+    const completionPct = totalDays > 0 ? Math.round((recordedDays / totalDays) * 100) : 0;
+
+    const row = document.createElement("div");
+    row.style.cssText = `display:flex;gap:20px;flex-wrap:wrap;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.05);margin-bottom:4px`;
+
+    const items = [
+      { label: "AVG RATING", value: avg > 0 ? avg.toFixed(1) : "—", color: avg > 0 ? this.dataManager.getColorForRating(Math.round(avg)) : null },
+      { label: "LOGGED",     value: `${recordedDays} / ${totalDays}` },
+      { label: "COMPLETION", value: `${completionPct}%` },
+      { label: "STREAK",     value: `${currentStreak}d` },
+      { label: "BEST STREAK",value: `${maxStreak}d` },
+      { label: "BEST DAY",   value: bestRating != null ? bestRating : "—", color: bestRating != null ? this.dataManager.getColorForRating(Math.round(bestRating)) : null },
+      { label: "WORST DAY",  value: worstRating != null ? worstRating : "—", color: worstRating != null ? this.dataManager.getColorForRating(Math.round(worstRating)) : null },
+    ];
+
+    items.forEach(({ label, value, color }) => {
+      const el = document.createElement("div");
+      el.style.cssText = `display:flex;flex-direction:column;gap:2px`;
+
+      const lbl = document.createElement("div");
+      lbl.textContent = label;
+      lbl.style.cssText = `font-size:9px;opacity:0.35;letter-spacing:0.8px;font-weight:600`;
+
+      const val = document.createElement("div");
+      val.textContent = value;
+      val.style.cssText = `font-size:15px;font-weight:700;opacity:0.85${color ? `;color:${color}` : ""}`;
+
+      el.appendChild(lbl);
+      el.appendChild(val);
+      row.appendChild(el);
+    });
+
+    return row;
+  }
+
   _renderMonthHeader(monthLabels) {
     const monthRow = document.createElement("div");
     monthRow.style.cssText = `
@@ -479,17 +642,12 @@ class HeatmapRenderer {
     `;
 
     monthLabels.forEach(monthData => {
-      const label = this._createMonthLabel(monthData);
-      monthRow.appendChild(label);
+      monthRow.appendChild(this._createMonthLabel(monthData));
     });
 
     return monthRow;
   }
 
-  /**
-   * Crea una etiqueta de mes individual
-   * @private
-   */
   _createMonthLabel(monthData) {
     const el = document.createElement("div");
     el.textContent = monthData.label;
@@ -505,27 +663,16 @@ class HeatmapRenderer {
     return el;
   }
 
-  /**
-   * Renderiza el grid completo con etiquetas de días y celdas
-   * @private
-   */
   _renderGrid(columns, ratingMap, start, end) {
     const gridWrapper = document.createElement("div");
     gridWrapper.style.cssText = `display: flex; gap: 8px;`;
 
-    const weekdayColumn = this._renderWeekdayLabels();
-    gridWrapper.appendChild(weekdayColumn);
-
-    const heatmapContainer = this._renderHeatmapColumns(columns, ratingMap, start, end);
-    gridWrapper.appendChild(heatmapContainer);
+    gridWrapper.appendChild(this._renderWeekdayLabels());
+    gridWrapper.appendChild(this._renderHeatmapColumns(columns, ratingMap, start, end));
 
     return gridWrapper;
   }
 
-  /**
-   * Renderiza la columna de etiquetas de días de la semana
-   * @private
-   */
   _renderWeekdayLabels() {
     const weekdayCol = document.createElement("div");
     weekdayCol.style.cssText = `
@@ -551,10 +698,6 @@ class HeatmapRenderer {
     return weekdayCol;
   }
 
-  /**
-   * Renderiza todas las columnas del heatmap
-   * @private
-   */
   _renderHeatmapColumns(columns, ratingMap, start, end) {
     const container = document.createElement("div");
     container.style.cssText = `display: flex; gap: ${this.config.GAP}px;`;
@@ -563,42 +706,28 @@ class HeatmapRenderer {
       if (index > 0 && this._needsMonthSpacer(columns[index - 1], column)) {
         container.appendChild(this._createMonthSpacer());
       }
-
-      const columnElement = this._renderColumn(column, ratingMap, start, end);
-      container.appendChild(columnElement);
+      container.appendChild(this._renderColumn(column, ratingMap, start, end));
     });
 
     return container;
   }
 
-  /**
-   * Verifica si se necesita un espaciador entre columnas
-   * @private
-   */
   _needsMonthSpacer(prevColumn, currentColumn) {
-    return prevColumn && 
-           currentColumn.month && 
-           prevColumn.month && 
-           currentColumn.month !== prevColumn.month && 
-           (!currentColumn.isSplit || 
-            !prevColumn.isSplit || 
+    return prevColumn &&
+           currentColumn.month &&
+           prevColumn.month &&
+           currentColumn.month !== prevColumn.month &&
+           (!currentColumn.isSplit ||
+            !prevColumn.isSplit ||
             currentColumn.splitGroupId !== prevColumn.splitGroupId);
   }
 
-  /**
-   * Crea un espaciador entre meses
-   * @private
-   */
   _createMonthSpacer() {
     const spacer = document.createElement("div");
     spacer.style.cssText = `width: ${this.config.CELL_SIZE}px;`;
     return spacer;
   }
 
-  /**
-   * Renderiza una columna individual
-   * @private
-   */
   _renderColumn(column, ratingMap, start, end) {
     const col = document.createElement("div");
     col.style.cssText = `
@@ -608,24 +737,19 @@ class HeatmapRenderer {
     `;
 
     column.days.forEach(day => {
-      const cell = this._renderCell(day, ratingMap, start, end);
-      col.appendChild(cell);
+      col.appendChild(this._renderCell(day, ratingMap, start, end));
     });
 
     return col;
   }
 
-  /**
-   * Renderiza una celda individual del heatmap
-   * @private
-   */
   _renderCell(day, ratingMap, start, end) {
     const cell = document.createElement("div");
     cell.style.cssText = `
       width: ${this.config.CELL_SIZE}px;
       height: ${this.config.CELL_SIZE}px;
       border-radius: 2px;
-      transition: all 0.2s ease;
+      transition: transform 0.15s ease;
     `;
 
     if (!day || !DateUtils.isDateInRange(day, start, end)) {
@@ -633,64 +757,185 @@ class HeatmapRenderer {
       return cell;
     }
 
+    if (day.isSame(moment(), "day")) {
+      cell.style.outline = "2px solid rgba(255,255,255,0.75)";
+      cell.style.outlineOffset = "1px";
+    }
+
     this._configureCellData(cell, day, ratingMap);
     return cell;
   }
 
-  /**
-   * Configura los datos y comportamiento de una celda
-   * @private
-   */
   _configureCellData(cell, day, ratingMap) {
     const dateKey = DateUtils.formatDateKey(day);
     const data = ratingMap.get(dateKey);
     const rating = data?.rating ?? null;
 
-    // Estilos visuales
     cell.style.background = this.dataManager.getColorForRating(rating);
     cell.style.cursor = data?.link ? "pointer" : "default";
     cell.style.opacity = rating == null ? "0.3" : "1";
 
-    // Tooltip
-    cell.title = this._generateTooltip(day, data, rating);
-
-    // Interactividad
-    this._addCellInteractions(cell, rating, data);
+    this.allCells.push({ cell, rating });
+    this._addCellInteractions(cell, day, rating, data);
   }
 
-  /**
-   * Genera el texto del tooltip
-   * @private
-   */
-  _generateTooltip(day, data, rating) {
-    if (data) {
-      return `${day.format("DD MMM YYYY")}\nRating: ${rating}\n${data.alias ?? ""}`;
-    }
-    return `${day.format("DD MMM YYYY")}\nNo entry`;
-  }
-
-  /**
-   * Añade las interacciones de hover y click a una celda
-   * @private
-   */
-  _addCellInteractions(cell, rating, data) {
+  _addCellInteractions(cell, day, rating, data) {
     const color = this.dataManager.getColorForRating(rating);
 
-    cell.onmouseenter = () => {
+    cell.onmouseenter = (e) => {
       cell.style.transform = "scale(1.2)";
       cell.style.zIndex = "10";
-      cell.style.boxShadow = `0 0 8px ${color}`;
+      this.tooltip.show(e, day, data, rating, color);
     };
+
+    cell.onmousemove = (e) => { this.tooltip.move(e); };
 
     cell.onmouseleave = () => {
       cell.style.transform = "scale(1)";
       cell.style.zIndex = "1";
-      cell.style.boxShadow = "none";
+      this.tooltip.hide();
     };
 
     if (data?.link) {
       cell.onclick = () => app.workspace.openLinkText(data.link, "", true);
     }
+  }
+
+  _renderMonthlyAverages(monthLabels, monthlyAverages) {
+    const row = document.createElement("div");
+    row.style.cssText = `
+      display: flex;
+      margin-left: ${this.config.CELL_SIZE + 16}px;
+      position: relative;
+      height: ${this.config.CELL_SIZE}px;
+      margin-top: 2px;
+    `;
+
+    monthLabels.forEach(monthData => {
+      const avg = monthlyAverages.get(monthData.month);
+      const el = document.createElement("div");
+      el.style.cssText = `
+        position: absolute;
+        left: ${monthData.position}px;
+        transform: translateX(-50%);
+        font-size: ${this.config.MONTH_FONT_SIZE - 1}px;
+        font-weight: 700;
+        color: ${avg != null ? this.dataManager.getColorForRating(Math.round(avg)) : "inherit"};
+        opacity: ${avg != null ? "0.85" : "0.2"};
+      `;
+      el.textContent = avg != null ? avg.toFixed(1) : "—";
+      row.appendChild(el);
+    });
+
+    return row;
+  }
+
+  _renderProgressBar(stats) {
+    const { recordedDays, totalDays } = stats;
+    const pct = totalDays > 0 ? (recordedDays / totalDays) * 100 : 0;
+
+    const wrapper = document.createElement("div");
+    wrapper.style.cssText = `display:flex;flex-direction:column;gap:4px;margin-top:2px`;
+
+    const labelRow = document.createElement("div");
+    labelRow.style.cssText = `display:flex;justify-content:space-between;font-size:9px;opacity:0.35;letter-spacing:0.6px;font-weight:600`;
+    const left = document.createElement("span"); left.textContent = "YEAR PROGRESS";
+    const right = document.createElement("span"); right.textContent = `${recordedDays} / ${totalDays} DAYS`;
+    labelRow.appendChild(left);
+    labelRow.appendChild(right);
+
+    const track = document.createElement("div");
+    track.style.cssText = `width:100%;height:4px;background:rgba(255,255,255,0.07);border-radius:2px;overflow:hidden`;
+
+    const fill = document.createElement("div");
+    fill.style.cssText = `height:100%;width:${pct.toFixed(1)}%;background:rgba(255,255,255,0.3);border-radius:2px`;
+
+    track.appendChild(fill);
+    wrapper.appendChild(labelRow);
+    wrapper.appendChild(track);
+    return wrapper;
+  }
+
+  _renderLegend(distribution) {
+    const wrapper = document.createElement("div");
+    wrapper.style.cssText = `display:flex;flex-direction:column;gap:6px;margin-top:4px;padding-top:8px;border-top:1px solid rgba(255,255,255,0.05)`;
+
+    const titleRow = document.createElement("div");
+    titleRow.style.cssText = `font-size:9px;opacity:0.35;letter-spacing:0.8px;font-weight:600`;
+    titleRow.textContent = "RATING LEGEND  —  CLICK TO FILTER";
+    wrapper.appendChild(titleRow);
+
+    const legendRow = document.createElement("div");
+    legendRow.style.cssText = `display:flex;gap:6px;align-items:flex-end`;
+
+    const totalDist = Object.values(distribution).reduce((a, b) => a + b, 0);
+
+    for (let i = 1; i <= 10; i++) {
+      const color = this.config.RATING_COLORS[i];
+      const count = distribution[i] || 0;
+      const pct = totalDist > 0 ? (count / totalDist) * 100 : 0;
+
+      const item = document.createElement("div");
+      item.style.cssText = `display:flex;flex-direction:column;align-items:center;gap:2px;cursor:pointer;user-select:none`;
+
+      const bar = document.createElement("div");
+      bar.style.cssText = `width:${this.config.CELL_SIZE}px;background:rgba(255,255,255,0.06);border-radius:2px 2px 0 0;overflow:hidden;height:32px;display:flex;align-items:flex-end`;
+      const fill = document.createElement("div");
+      const fillH = Math.max(pct > 0 ? 2 : 0, Math.round((pct / 100) * 32));
+      fill.style.cssText = `width:100%;height:${fillH}px;background:${color};border-radius:2px 2px 0 0`;
+      bar.appendChild(fill);
+
+      const swatch = document.createElement("div");
+      swatch.style.cssText = `width:${this.config.CELL_SIZE}px;height:${this.config.CELL_SIZE}px;border-radius:2px;background:${color};transition:all 0.15s`;
+
+      const label = document.createElement("div");
+      label.style.cssText = `font-size:9px;opacity:0.45;font-weight:700;letter-spacing:0.3px`;
+      label.textContent = i;
+
+      const countEl = document.createElement("div");
+      countEl.style.cssText = `font-size:8px;opacity:0.3;font-weight:600`;
+      countEl.textContent = count > 0 ? count : "";
+
+      item.appendChild(bar);
+      item.appendChild(swatch);
+      item.appendChild(label);
+      item.appendChild(countEl);
+      legendRow.appendChild(item);
+
+      item._swatch = swatch;
+      item._ratingValue = i;
+      this._legendItems.push(item);
+
+      item.onclick = () => this._toggleFilter(i);
+      item.onmouseenter = () => { if (this.activeFilter !== i) swatch.style.transform = "scale(1.1)"; };
+      item.onmouseleave = () => { if (this.activeFilter !== i) swatch.style.transform = "scale(1)"; };
+    }
+
+    wrapper.appendChild(legendRow);
+    return wrapper;
+  }
+
+  _toggleFilter(rating) {
+    this.activeFilter = this.activeFilter === rating ? null : rating;
+    this._applyFilter();
+  }
+
+  _applyFilter() {
+    const active = this.activeFilter;
+    this.allCells.forEach(({ cell, rating }) => {
+      if (active === null) {
+        cell.style.opacity = rating == null ? "0.3" : "1";
+      } else {
+        cell.style.opacity = (rating != null && Math.round(rating) === active) ? "1" : "0.07";
+      }
+    });
+
+    this._legendItems.forEach(item => {
+      const isActive = active === item._ratingValue;
+      item._swatch.style.outline = isActive ? "2px solid rgba(255,255,255,0.8)" : "none";
+      item._swatch.style.outlineOffset = "1px";
+      item._swatch.style.transform = isActive ? "scale(1.15)" : "scale(1)";
+    });
   }
 }
 
@@ -716,7 +961,7 @@ class YearlyHeatmapApp {
         return;
       }
 
-      const { start, end } = yearRange;
+      const { start, end, year } = yearRange;
       
       const ratingMap = await this.dataManager.loadRatings(
         this.config.DAILY_NOTES_PATH,
@@ -726,7 +971,7 @@ class YearlyHeatmapApp {
 
       const columns = YearGridBuilder.buildGrid(start, end);
       
-      this.renderer.render(columns, ratingMap, start, end, this.dv.container);
+      this.renderer.render(columns, ratingMap, start, end, this.dv.container, year);
       
     } catch (error) {
       this._showError(`Error: ${error.message}`);

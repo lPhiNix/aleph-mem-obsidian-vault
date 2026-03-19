@@ -34,7 +34,7 @@ const CONFIG = {
 
   // Chart.js
   CHART: {
-    HEIGHT: 220,
+    HEIGHT: 420,
     CANVAS_ID: "_memoriumChart"
   },
 
@@ -370,7 +370,9 @@ class QuarterStatsCalculator {
     return {
       quarterlyAvg: this._calculateQuarterlyAverage(validRatings),
       dailyAvg: this._calculateDailyAverage(ratings),
-      validCount: validRatings.length
+      validCount: validRatings.length,
+      bestRating: validRatings.length > 0 ? Math.max(...validRatings) : null,
+      worstRating: validRatings.length > 0 ? Math.min(...validRatings) : null
     };
   }
 
@@ -699,58 +701,232 @@ class QuarterlyChartRenderer {
     this.config = config;
     this.datasetBuilder = new ChartDatasetBuilder(config);
     this.optionsBuilder = new ChartOptionsBuilder(config);
+    this.activeFilter = null;
+    this._chart = null;
+    this._quarterData = null;
+    this._originalPointColors = null;
+    this._legendItems = [];
   }
 
-  /**
-   * Renderiza el gráfico completo
-   * @param {Object} quarterData - Datos del trimestre
-   * @param {Object} stats - Estadísticas
-   */
-  render(quarterData, stats) {
-    this._renderStatsSummary(stats);
-    this._renderChart(quarterData, stats);
-  }
+  render(quarterData, stats, year, quarter) {
+    this._quarterData = quarterData;
+    const wrapper = this._createWrapper();
 
-  /**
-   * Renderiza el resumen de estadísticas
-   * @private
-   */
-  _renderStatsSummary(stats) {
-    if (stats.quarterlyAvg != null) {
-      const avgColor = ColorUtils.getColorForRating(stats.quarterlyAvg);
-      this.dv.paragraph(
-        `**Average Rating (Quarter):** <span style="color:${avgColor}; font-weight:bold;">${stats.quarterlyAvg.toFixed(2)}</span> (${stats.validCount} days)`
-      );
-    } else {
-      this.dv.paragraph("_No ratings logged this quarter_");
-    }
-  }
+    wrapper.appendChild(this._renderStats(quarterData, stats));
 
-  /**
-   * Renderiza el gráfico Chart.js
-   * @private
-   */
-  _renderChart(quarterData, stats) {
     const canvas = this._createCanvas();
+    wrapper.appendChild(canvas);
+    wrapper.appendChild(this._renderProgressBar(stats, year, quarter));
+    wrapper.appendChild(this._renderLegend(quarterData));
+
+    this.dv.container.appendChild(wrapper);
+    this._buildChart(canvas, quarterData, stats);
+  }
+
+  _createWrapper() {
+    const wrapper = document.createElement("div");
+    wrapper.style.cssText = `
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      padding: 16px;
+      background: rgba(0,0,0,0.1);
+      border-radius: 8px;
+    `;
+    return wrapper;
+  }
+
+  _renderStats(quarterData, stats) {
+    const { quarterlyAvg, validCount, bestRating, worstRating } = stats;
+    const totalDays = quarterData.ratings.length;
+    const completionPct = Math.round((validCount / totalDays) * 100);
+
+    const row = document.createElement("div");
+    row.style.cssText = `display:flex;gap:20px;flex-wrap:wrap;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.05);margin-bottom:4px`;
+
+    const items = [
+      { label: "AVG RATING", value: quarterlyAvg != null ? quarterlyAvg.toFixed(1) : "—", color: quarterlyAvg != null ? ColorUtils.getColorForRating(quarterlyAvg) : null },
+      { label: "LOGGED",     value: `${validCount} / ${totalDays}` },
+      { label: "COMPLETION", value: `${completionPct}%` },
+      { label: "BEST DAY",   value: bestRating != null ? String(bestRating) : "—", color: bestRating != null ? ColorUtils.getColorForRating(bestRating) : null },
+      { label: "WORST DAY",  value: worstRating != null ? String(worstRating) : "—", color: worstRating != null ? ColorUtils.getColorForRating(worstRating) : null },
+    ];
+
+    items.forEach(({ label, value, color }) => {
+      const el = document.createElement("div");
+      el.style.cssText = `display:flex;flex-direction:column;gap:2px`;
+
+      const lbl = document.createElement("div");
+      lbl.textContent = label;
+      lbl.style.cssText = `font-size:9px;opacity:0.35;letter-spacing:0.8px;font-weight:600`;
+
+      const val = document.createElement("div");
+      val.textContent = value;
+      val.style.cssText = `font-size:15px;font-weight:700;opacity:0.85${color ? `;color:${color}` : ""}`;
+
+      el.appendChild(lbl);
+      el.appendChild(val);
+      row.appendChild(el);
+    });
+
+    return row;
+  }
+
+  _createCanvas() {
+    const canvas = document.createElement("canvas");
+    canvas.setAttribute("height", String(CONFIG.CHART.HEIGHT));
+    return canvas;
+  }
+
+  _buildChart(canvas, quarterData, stats) {
     const datasets = this.datasetBuilder.buildDatasets(quarterData, stats);
     const options = this.optionsBuilder.buildOptions(quarterData, stats);
 
-    window[CONFIG.CHART.CANVAS_ID] = new Chart(canvas, {
-      data: {
-        labels: quarterData.labels,
-        datasets
-      },
+    const ratingDataset = datasets.find(d => d.label === "Day Rating");
+    if (ratingDataset) {
+      this._originalPointColors = [...ratingDataset.pointBackgroundColor];
+    }
+
+    this._chart = new Chart(canvas, {
+      data: { labels: quarterData.labels, datasets },
       options
     });
+    window[CONFIG.CHART.CANVAS_ID] = this._chart;
   }
 
-  /**
-   * Crea el elemento canvas
-   * @private
-   */
-  _createCanvas() {
-    return this.dv.el("canvas", "", {
-      attr: { height: CONFIG.CHART.HEIGHT }
+  _renderProgressBar(stats, year, quarter) {
+    const { validCount } = stats;
+    const totalDays = this._quarterData.ratings.length;
+    const start = moment(`${year}-${(quarter - 1) * 3 + 1}`, "YYYY-M").startOf("quarter");
+    const end = start.clone().endOf("quarter");
+    const today = moment();
+    const effectiveDays = today.isBetween(start, end, "day", "[]")
+      ? today.diff(start, "days") + 1
+      : totalDays;
+    const pct = (validCount / effectiveDays) * 100;
+
+    const wrapper = document.createElement("div");
+    wrapper.style.cssText = `display:flex;flex-direction:column;gap:4px;margin-top:2px`;
+
+    const labelRow = document.createElement("div");
+    labelRow.style.cssText = `display:flex;justify-content:space-between;font-size:9px;opacity:0.35;letter-spacing:0.6px;font-weight:600`;
+    const left = document.createElement("span"); left.textContent = "QUARTER PROGRESS";
+    const right = document.createElement("span"); right.textContent = `${validCount} / ${totalDays} DAYS`;
+    labelRow.appendChild(left);
+    labelRow.appendChild(right);
+
+    const track = document.createElement("div");
+    track.style.cssText = `width:100%;height:4px;background:rgba(255,255,255,0.07);border-radius:2px;overflow:hidden`;
+
+    const fill = document.createElement("div");
+    fill.style.cssText = `height:100%;width:${Math.min(100, pct).toFixed(1)}%;background:rgba(255,255,255,0.3);border-radius:2px`;
+
+    track.appendChild(fill);
+    wrapper.appendChild(labelRow);
+    wrapper.appendChild(track);
+    return wrapper;
+  }
+
+  _renderLegend(quarterData) {
+    const { ratings } = quarterData;
+    const distribution = {};
+    for (let i = 1; i <= 10; i++) distribution[i] = 0;
+    ratings.forEach(r => {
+      if (r != null) {
+        const rounded = Math.round(r);
+        if (distribution[rounded] !== undefined) distribution[rounded]++;
+      }
+    });
+    const totalDist = Object.values(distribution).reduce((a, b) => a + b, 0);
+
+    const wrapper = document.createElement("div");
+    wrapper.style.cssText = `display:flex;flex-direction:column;gap:6px;margin-top:4px;padding-top:8px;border-top:1px solid rgba(255,255,255,0.05)`;
+
+    const titleRow = document.createElement("div");
+    titleRow.style.cssText = `font-size:9px;opacity:0.35;letter-spacing:0.8px;font-weight:600`;
+    titleRow.textContent = "RATING LEGEND  —  CLICK TO FILTER";
+    wrapper.appendChild(titleRow);
+
+    const legendRow = document.createElement("div");
+    legendRow.style.cssText = `display:flex;gap:6px;align-items:flex-end`;
+    this._legendItems = [];
+
+    for (let i = 1; i <= 10; i++) {
+      const color = this.config.RATING_COLORS[i];
+      const count = distribution[i] || 0;
+      const pct = totalDist > 0 ? (count / totalDist) * 100 : 0;
+
+      const item = document.createElement("div");
+      item.style.cssText = `display:flex;flex-direction:column;align-items:center;gap:2px;cursor:pointer;user-select:none`;
+
+      const bar = document.createElement("div");
+      bar.style.cssText = `width:18px;background:rgba(255,255,255,0.06);border-radius:2px 2px 0 0;overflow:hidden;height:32px;display:flex;align-items:flex-end`;
+      const fill = document.createElement("div");
+      const fillH = Math.max(pct > 0 ? 2 : 0, Math.round((pct / 100) * 32));
+      fill.style.cssText = `width:100%;height:${fillH}px;background:${color};border-radius:2px 2px 0 0`;
+      bar.appendChild(fill);
+
+      const swatch = document.createElement("div");
+      swatch.style.cssText = `width:18px;height:18px;border-radius:2px;background:${color};transition:all 0.15s`;
+
+      const label = document.createElement("div");
+      label.style.cssText = `font-size:9px;opacity:0.45;font-weight:700;letter-spacing:0.3px`;
+      label.textContent = i;
+
+      const countEl = document.createElement("div");
+      countEl.style.cssText = `font-size:8px;opacity:0.3;font-weight:600`;
+      countEl.textContent = count > 0 ? count : "";
+
+      item.appendChild(bar);
+      item.appendChild(swatch);
+      item.appendChild(label);
+      item.appendChild(countEl);
+      legendRow.appendChild(item);
+
+      item._swatch = swatch;
+      item._ratingValue = i;
+      this._legendItems.push(item);
+
+      item.onclick = () => this._toggleFilter(i);
+      item.onmouseenter = () => { if (this.activeFilter !== i) swatch.style.transform = "scale(1.1)"; };
+      item.onmouseleave = () => { if (this.activeFilter !== i) swatch.style.transform = "scale(1)"; };
+    }
+
+    wrapper.appendChild(legendRow);
+    return wrapper;
+  }
+
+  _toggleFilter(rating) {
+    this.activeFilter = this.activeFilter === rating ? null : rating;
+    this._applyChartFilter();
+    this._applyLegendFilter();
+  }
+
+  _applyChartFilter() {
+    if (!this._chart || !this._originalPointColors || !this._quarterData) return;
+    const active = this.activeFilter;
+    const ratingDataset = this._chart.data.datasets.find(d => d.label === "Day Rating");
+    if (!ratingDataset) return;
+
+    ratingDataset.pointBackgroundColor = this._quarterData.ratings.map((r, i) => {
+      if (active === null) return this._originalPointColors[i];
+      const rounded = r != null ? Math.round(r) : null;
+      return rounded === active ? this._originalPointColors[i] : "rgba(255,255,255,0.05)";
+    });
+    ratingDataset.pointRadius = this._quarterData.ratings.map(r => {
+      if (active === null) return 6;
+      return r != null && Math.round(r) === active ? 8 : 3;
+    });
+    this._chart.update("none");
+  }
+
+  _applyLegendFilter() {
+    const active = this.activeFilter;
+    this._legendItems.forEach(item => {
+      const isActive = active === item._ratingValue;
+      item._swatch.style.outline = isActive ? "2px solid rgba(255,255,255,0.8)" : "none";
+      item._swatch.style.outlineOffset = "1px";
+      item._swatch.style.transform = isActive ? "scale(1.15)" : "scale(1)";
     });
   }
 }
@@ -780,7 +956,7 @@ class QuarterlyChartApp {
         return;
       }
       
-      const { start, end } = rangeResult;
+      const { start, end, year, quarter } = rangeResult;
       
       const quarterData = await this.dataManager.loadQuarterData(
         this.config.DAILY_NOTES_PATH,
@@ -790,7 +966,7 @@ class QuarterlyChartApp {
       
       const stats = QuarterStatsCalculator.calculate(quarterData.ratings);
       
-      this.renderer.render(quarterData, stats);
+      this.renderer.render(quarterData, stats, year, quarter);
       
     } catch (error) {
       this._showError(`Error: ${error.message}`);
