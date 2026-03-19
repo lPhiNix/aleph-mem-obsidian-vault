@@ -250,7 +250,7 @@ class TooltipManager {
     const ratingLine = rating != null
       ? `<div style="display:flex;align-items:center;gap:6px;margin-top:4px">
            <div style="width:8px;height:8px;border-radius:2px;background:${color};flex-shrink:0"></div>
-           <span style="font-weight:700;color:${color}">${rating} / 10</span>
+           <span style="font-weight:700;color:${color}">☆${rating}</span>
          </div>`
       : `<div style="opacity:0.4;margin-top:4px;font-size:11px">No entry</div>`;
     const aliasLine = data?.alias
@@ -620,21 +620,21 @@ class HeatmapRenderer {
     const completionPct = totalDays > 0 ? Math.round((recordedDays / totalDays) * 100) : 0;
 
     const row = document.createElement("div");
-    row.style.cssText = `display:flex;gap:20px;flex-wrap:wrap;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.05);margin-bottom:4px`;
+    row.style.cssText = `display:flex;gap:20px;flex-wrap:wrap;justify-content:center;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.05);margin-bottom:4px`;
 
     const items = [
-      { label: "AVG RATING", value: avg > 0 ? avg.toFixed(1) : "—", color: avg > 0 ? this.dataManager.getColorForRating(Math.round(avg)) : null },
+      { label: "AVG RATING", value: avg > 0 ? `☆${avg.toFixed(1)}` : "—", color: avg > 0 ? this.dataManager.getColorForRating(Math.round(avg)) : null },
       { label: "LOGGED",     value: `${recordedDays} / ${totalDays}` },
       { label: "COMPLETION", value: `${completionPct}%` },
       { label: "STREAK",     value: `${currentStreak}d` },
       { label: "BEST STREAK",value: `${maxStreak}d` },
-      { label: "BEST DAY",   value: bestRating != null ? bestRating : "—", color: bestRating != null ? this.dataManager.getColorForRating(Math.round(bestRating)) : null },
-      { label: "WORST DAY",  value: worstRating != null ? worstRating : "—", color: worstRating != null ? this.dataManager.getColorForRating(Math.round(worstRating)) : null },
+      { label: "BEST DAY",   value: bestRating != null ? `☆${bestRating}` : "—", color: bestRating != null ? this.dataManager.getColorForRating(Math.round(bestRating)) : null },
+      { label: "WORST DAY",  value: worstRating != null ? `☆${worstRating}` : "—", color: worstRating != null ? this.dataManager.getColorForRating(Math.round(worstRating)) : null },
     ];
 
     items.forEach(({ label, value, color }) => {
       const el = document.createElement("div");
-      el.style.cssText = `display:flex;flex-direction:column;gap:2px`;
+      el.style.cssText = `display:flex;flex-direction:column;align-items:center;gap:2px`;
 
       const lbl = document.createElement("div");
       lbl.textContent = label;
@@ -841,7 +841,7 @@ class HeatmapRenderer {
         color: ${avg != null ? this.dataManager.getColorForRating(Math.round(avg)) : "inherit"};
         opacity: ${avg != null ? "0.85" : "0.2"};
       `;
-      el.textContent = avg != null ? avg.toFixed(1) : "—";
+      el.textContent = avg != null ? `☆${avg.toFixed(1)}` : "—";
       row.appendChild(el);
     });
 
@@ -876,7 +876,7 @@ class HeatmapRenderer {
 
   _renderLegend(distribution) {
     const wrapper = document.createElement("div");
-    wrapper.style.cssText = `display:flex;flex-direction:column;gap:6px;margin-top:4px;padding-top:8px;border-top:1px solid rgba(255,255,255,0.05)`;
+    wrapper.style.cssText = `display:flex;flex-direction:column;align-items:center;gap:6px;margin-top:4px;padding-top:8px;border-top:1px solid rgba(255,255,255,0.05)`;
 
     const titleRow = document.createElement("div");
     titleRow.style.cssText = `font-size:9px;opacity:0.35;letter-spacing:0.8px;font-weight:600`;
@@ -884,7 +884,7 @@ class HeatmapRenderer {
     wrapper.appendChild(titleRow);
 
     const legendRow = document.createElement("div");
-    legendRow.style.cssText = `display:flex;gap:6px;align-items:flex-end`;
+    legendRow.style.cssText = `display:flex;gap:6px;align-items:flex-end;justify-content:center`;
 
     const totalDist = Object.values(distribution).reduce((a, b) => a + b, 0);
 
