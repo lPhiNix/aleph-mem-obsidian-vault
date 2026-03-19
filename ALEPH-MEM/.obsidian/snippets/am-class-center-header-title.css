@@ -1,6 +1,4 @@
 .center-header-title :is(h1, .HyperMD-header.HyperMD-header-1) {
-  font-style: italic;
-  font-size: 64px !important;
   text-align: center;
   margin: 10px auto;
   padding: 10px 0;
