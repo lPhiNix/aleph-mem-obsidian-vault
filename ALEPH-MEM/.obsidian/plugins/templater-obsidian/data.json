@@ -15,8 +15,12 @@
   "enable_folder_templates": true,
   "folder_templates": [
     {
-      "folder": "Test",
-      "template": "Meta/templates/test/t_test.md"
+      "folder": "00 - Φ - Inthima",
+      "template": "Meta/templates/dashboards/t_inthima.md"
+    },
+    {
+      "folder": "01 - Θ - Cognitio",
+      "template": "Meta/templates/dashboards/t_cognitio.md"
     },
     {
       "folder": "02 - Ψ - Memorium",
@@ -43,8 +47,40 @@
       "template": "Meta/templates/memorium/t_yearly.md"
     },
     {
+      "folder": "03 - Σ - Noetheris",
+      "template": "Meta/templates/dashboards/t_noetheris.md"
+    },
+    {
+      "folder": "04 - Λ - Devs",
+      "template": "Meta/templates/dashboards/t_devs.md"
+    },
+    {
+      "folder": "05 - Ζ - Viventia",
+      "template": "Meta/templates/dashboards/t_viventia.md"
+    },
+    {
+      "folder": "06 - Ξ - Kaelithra",
+      "template": "Meta/templates/dashboards/t_kaelithra.md"
+    },
+    {
+      "folder": "07 - Π - Ordus",
+      "template": "Meta/templates/dashboards/t_ordus.md"
+    },
+    {
       "folder": "07 - Π - Ordus/tasks",
       "template": "Meta/templates/ordus/t_task.md"
+    },
+    {
+      "folder": "08 - Δ - Aethernum",
+      "template": "Meta/templates/dashboards/t_aethernum.md"
+    },
+    {
+      "folder": "09 - Ω - Harkaive",
+      "template": "Meta/templates/dashboards/t_harkaive.md"
+    },
+    {
+      "folder": "Test",
+      "template": "Meta/templates/test/t_test.md"
     }
   ],
   "enable_file_templates": false,
