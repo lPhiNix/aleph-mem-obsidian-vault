@@ -131,7 +131,8 @@
     "am-layout-scrollable-content",
     "am-layout-kanban",
     "am-class-native-main",
-    "am-class-center-header-title"
+    "am-class-center-header-title",
+    "am-class-italic-header-title"
   ],
   "interfaceFontFamily": "",
   "textFontFamily": "",

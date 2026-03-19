@@ -30,7 +30,3 @@
   --secondary: var(--c-am-memorium-quarterly-q4-secondary);
   --dark: var(--c-am-memorium-quarterly-q4-dark);
 }
-
-.quarterly :is(h1, .HyperMD-header.HyperMD-header-1) {
-  font-style: italic;
-}

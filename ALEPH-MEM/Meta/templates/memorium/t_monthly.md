@@ -31,7 +31,8 @@ tR += await tp.file.include("[[c_templater_native_favorite_attribute]]");
 %>
 <%*
 let classes = [
-	"hide-source-frontmatter", "monthly", "module", "memorium",
+	"hide-source-frontmatter", "italic-header-title",
+	"monthly", "module", "memorium",
 	moment(tp.file.title, "YYYY-MM-MMMM").format("MMMM").toLowerCase()
 ];
 tR += await tp.file.include("[[c_templater_native_cssclasses_attribute]]") + classes.map(t => "\n- "+t).join("");

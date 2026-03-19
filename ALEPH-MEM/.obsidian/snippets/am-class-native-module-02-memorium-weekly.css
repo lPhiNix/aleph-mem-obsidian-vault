@@ -374,7 +374,3 @@
   --secondary: var(--c-am-memorium-weekly-week53-secondary);
   --dark: var(--c-am-memorium-weekly-week53-dark);
 }
-
-.weekly :is(h1, .HyperMD-header.HyperMD-header-1) {
-  font-style: italic;
-}

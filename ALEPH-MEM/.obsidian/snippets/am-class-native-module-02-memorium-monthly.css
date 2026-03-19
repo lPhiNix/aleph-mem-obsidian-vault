@@ -86,7 +86,3 @@
   --secondary: var(--c-am-memorium-monthly-december-secondary);
   --dark: var(--c-am-memorium-monthly-december-dark);
 }
-
-.monthly :is(h1, .HyperMD-header.HyperMD-header-1) {
-  font-style: italic;
-}
