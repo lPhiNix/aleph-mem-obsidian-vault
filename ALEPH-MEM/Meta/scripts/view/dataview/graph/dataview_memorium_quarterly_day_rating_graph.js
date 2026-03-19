@@ -585,7 +585,7 @@ class ChartOptionsBuilder {
     const value = dailyAvg[index];
     return value == null 
       ? "Average: —" 
-      : `Average (to date): ${value.toFixed(2)}`;
+      : `Average (to date): ☆${value.toFixed(2)}`;
   }
 
   /**
@@ -598,7 +598,7 @@ class ChartOptionsBuilder {
     }
 
     return [
-      `Day Rating: ${ratings[index]}`,
+      `Day Rating: ☆${ratings[index]}`,
       `Note: ${aliases[index] ?? "Unnamed"}`
     ];
   }
@@ -743,19 +743,19 @@ class QuarterlyChartRenderer {
     const completionPct = Math.round((validCount / totalDays) * 100);
 
     const row = document.createElement("div");
-    row.style.cssText = `display:flex;gap:20px;flex-wrap:wrap;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.05);margin-bottom:4px`;
+    row.style.cssText = `display:flex;gap:20px;flex-wrap:wrap;justify-content:center;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.05);margin-bottom:4px`;
 
     const items = [
-      { label: "AVG RATING", value: quarterlyAvg != null ? quarterlyAvg.toFixed(1) : "—", color: quarterlyAvg != null ? ColorUtils.getColorForRating(quarterlyAvg) : null },
+      { label: "AVG RATING", value: quarterlyAvg != null ? `☆${quarterlyAvg.toFixed(1)}` : "—", color: quarterlyAvg != null ? ColorUtils.getColorForRating(quarterlyAvg) : null },
       { label: "LOGGED",     value: `${validCount} / ${totalDays}` },
       { label: "COMPLETION", value: `${completionPct}%` },
-      { label: "BEST DAY",   value: bestRating != null ? String(bestRating) : "—", color: bestRating != null ? ColorUtils.getColorForRating(bestRating) : null },
-      { label: "WORST DAY",  value: worstRating != null ? String(worstRating) : "—", color: worstRating != null ? ColorUtils.getColorForRating(worstRating) : null },
+      { label: "BEST DAY",   value: bestRating != null ? `☆${bestRating}` : "—", color: bestRating != null ? ColorUtils.getColorForRating(bestRating) : null },
+      { label: "WORST DAY",  value: worstRating != null ? `☆${worstRating}` : "—", color: worstRating != null ? ColorUtils.getColorForRating(worstRating) : null },
     ];
 
     items.forEach(({ label, value, color }) => {
       const el = document.createElement("div");
-      el.style.cssText = `display:flex;flex-direction:column;gap:2px`;
+      el.style.cssText = `display:flex;flex-direction:column;align-items:center;gap:2px`;
 
       const lbl = document.createElement("div");
       lbl.textContent = label;
@@ -841,7 +841,7 @@ class QuarterlyChartRenderer {
     const totalDist = Object.values(distribution).reduce((a, b) => a + b, 0);
 
     const wrapper = document.createElement("div");
-    wrapper.style.cssText = `display:flex;flex-direction:column;gap:6px;margin-top:4px;padding-top:8px;border-top:1px solid rgba(255,255,255,0.05)`;
+    wrapper.style.cssText = `display:flex;flex-direction:column;align-items:center;gap:6px;margin-top:4px;padding-top:8px;border-top:1px solid rgba(255,255,255,0.05)`;
 
     const titleRow = document.createElement("div");
     titleRow.style.cssText = `font-size:9px;opacity:0.35;letter-spacing:0.8px;font-weight:600`;
@@ -849,7 +849,7 @@ class QuarterlyChartRenderer {
     wrapper.appendChild(titleRow);
 
     const legendRow = document.createElement("div");
-    legendRow.style.cssText = `display:flex;gap:6px;align-items:flex-end`;
+    legendRow.style.cssText = `display:flex;gap:6px;align-items:flex-end;justify-content:center`;
     this._legendItems = [];
 
     for (let i = 1; i <= 10; i++) {
