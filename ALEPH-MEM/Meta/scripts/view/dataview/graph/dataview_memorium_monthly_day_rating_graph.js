@@ -61,6 +61,7 @@ class ChartLibraryLoader {
   static async ensureLibraries() {
     await this._loadChartJs();
     await this._loadAnnotationPlugin();
+    Chart.defaults.font.family = "'JetBrains Mono', monospace";
   }
 
   /**
