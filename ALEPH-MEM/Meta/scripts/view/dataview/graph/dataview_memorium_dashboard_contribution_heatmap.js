@@ -219,9 +219,17 @@ class ContribDataManager {
     const map = new Map(); // dateKey → [{name, path}]
 
     this.dv.pages(CCONFIG.PATH).forEach(page => {
-      if (!page.file.ctime) return;
-      const date = moment(page.file.ctime.toISODate());
-      if (!cInRange(date, start, end)) return;
+      let date;
+      if (page.creation) {
+        const raw = page.creation;
+        // Dataview puede devolver un objeto DateTime (Luxon) o un string
+        date = moment(typeof raw.toISODate === "function" ? raw.toISODate() : raw);
+      } else if (page.file.ctime) {
+        date = moment(page.file.ctime.toISODate());
+      } else {
+        return;
+      }
+      if (!date.isValid() || !cInRange(date, start, end)) return;
       const key = cFmtKey(date);
       if (!map.has(key)) map.set(key, []);
       map.get(key).push({ name: page.file.name, path: page.file.path });
