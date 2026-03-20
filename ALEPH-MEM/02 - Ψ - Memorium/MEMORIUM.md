@@ -89,8 +89,3 @@ actions:
     link: "[[02 - Ψ - Memorium/yearly/2026]]"
     newTab: false
 ```
----
-## ✧ Today
-
->[!memorium]- &nbsp;Today
->nose
