@@ -21,7 +21,7 @@ const CCONFIG = {
 
   ACCENT: "#ffe066",
 
-  WEEKDAYS: ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"],
+  WEEKDAYS: ["MON", "TUE", "WED", "THU", "FRI", "SAT", "SUN"],
 
   PATH: '"02 - Ψ - Memorium"',
 
@@ -52,8 +52,8 @@ function cColorForCount(count) {
 class ContribGridBuilder {
   static build(start, end) {
     const columns = [];
-    let cur = start.clone().startOf("week");
-    const last = end.clone().endOf("week");
+    let cur = start.clone().startOf("isoWeek");
+    const last = end.clone().endOf("isoWeek");
 
     while (cur.isSameOrBefore(last)) {
       const week = this._week(cur);
