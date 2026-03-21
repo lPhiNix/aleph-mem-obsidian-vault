@@ -217,8 +217,12 @@ class ContribDataManager {
 
   load(start, end) {
     const map = new Map(); // dateKey → [{name, path}]
+    const modFolder = CCONFIG.PATH.replace(/"/g, "");
 
     this.dv.pages(CCONFIG.PATH).forEach(page => {
+      // Exclude notes directly in the module root (not inside any subfolder)
+      if (!page.file.folder.includes(modFolder + "/")) return;
+
       let date;
       if (page.creation) {
         const raw = page.creation;
