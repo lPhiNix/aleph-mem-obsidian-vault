@@ -27,7 +27,7 @@ const CONFIG = {
   },
   
   // Etiquetas
-  WEEKDAYS: ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"],
+  WEEKDAYS: ["MON", "TUE", "WED", "THU", "FRI", "SAT", "SUN"],
   
   // Rutas
   DAILY_NOTES_PATH: '"02 - Ψ - Memorium/daily"',
@@ -285,8 +285,8 @@ class YearGridBuilder {
    * @returns {Array} Array de columnas con días agrupados
    */
   static buildGrid(start, end) {
-    const firstDay = start.clone().startOf("week");
-    const lastDay = end.clone().endOf("week");
+    const firstDay = start.clone().startOf("isoWeek");
+    const lastDay = end.clone().endOf("isoWeek");
     
     const columns = [];
     let currentDate = firstDay.clone();
