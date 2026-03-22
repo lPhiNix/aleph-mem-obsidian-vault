@@ -350,7 +350,7 @@ class ContribRenderer {
     const pct = totalDays > 0 ? Math.round((activeDays / totalDays) * 100) : 0;
 
     const row = document.createElement("div");
-    row.style.cssText = `display:flex;gap:0;flex-wrap:wrap;justify-content:center;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.05);margin-bottom:4px`;
+    row.style.cssText = `display:flex;gap:4px;flex-wrap:wrap;justify-content:center;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.05);margin-bottom:4px`;
 
     const items = [
       { label: "TOTAL NOTES", value: totalNotes,                            highlight: true },
@@ -362,12 +362,7 @@ class ContribRenderer {
       { label: "MAX STREAK",  value: `${maxStreak}d`                                        },
     ];
 
-    items.forEach(({ label, value, highlight }, idx) => {
-      if (idx > 0) {
-        const sep = document.createElement("div");
-        sep.style.cssText = `width:1px;background:rgba(255,255,255,0.07);align-self:stretch;margin:4px 0`;
-        row.appendChild(sep);
-      }
+    items.forEach(({ label, value, highlight }) => {
       const el = document.createElement("div");
       el.style.cssText = `display:flex;flex-direction:column;align-items:center;gap:2px;padding:4px 16px`;
 
