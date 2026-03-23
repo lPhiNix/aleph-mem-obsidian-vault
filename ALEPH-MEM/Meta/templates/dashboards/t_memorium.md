@@ -12,7 +12,7 @@ tR += (await tp.file.include("[[c_templater_native_context_attribute]]")) + link
 <%*
 let classes = [
 	"hide-all-frontmatter", "huge-header-title", "center-header-title",
-	"hide-inline-title", "module", "memorium"
+	"hide-inline-title", "native", "module", "memorium"
 ];
 tR += await tp.file.include("[[c_templater_native_cssclasses_attribute]]") + classes.map(t => "\n- "+t).join("");
 %>
@@ -20,8 +20,10 @@ tR += await tp.file.include("[[c_templater_native_cssclasses_attribute]]") + cla
 <%"---"%>
 
 # Ψ
-# ✦ Memorium ✦
+# Memorium
 ---
+## ✦ Module
+
 > 
 > **_MEMORIUM (Ψ)_**
 > _memories, past, that which is no longer_
@@ -29,8 +31,14 @@ tR += await tp.file.include("[[c_templater_native_cssclasses_attribute]]") + cla
 > Lorem ipsum dolor sit amet consectetur adipiscing elit laoreet pulvinar blandit, ridiculus varius lobortis viverra lacinia parturient gravida hac integer, turpis in congue imperdiet tellus dis etiam libero suscipit.
 > 
 
+## ✦ Contribution
 ---
+<%*
+tR += await tp.file.include("[[c_dataview_memorium_dashboard_contribution_heatmap]]");
+%>
+---
+
+## ✧ Navigation
 <%*
 tR += await tp.file.include("[[c_metabind_memorium_dashboard_nav_buttons]]");
 %>
----
