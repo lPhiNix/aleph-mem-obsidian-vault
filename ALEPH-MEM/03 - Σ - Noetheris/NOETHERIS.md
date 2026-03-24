@@ -1,5 +1,5 @@
 ---
-version: "#e102b77a972f"
+version: "#b4dce45dbb96"
 context:
 cssclasses:
   - native
@@ -14,11 +14,17 @@ cssclasses:
 # Σ
 # Noetheris
 ---
+## ✦ Module
+
 > 
 > **_NOETHERIS (Σ)_**
 > _knowledge, wisdom, learning, science, deep understanding_
 > 
 > Lorem ipsum dolor sit amet consectetur adipiscing elit laoreet pulvinar blandit, ridiculus varius lobortis viverra lacinia parturient gravida hac integer, turpis in congue imperdiet tellus dis etiam libero suscipit.
->
+> 
 
+## ✦ Contribution
 ---
+```dataviewjs
+await dv.view("Meta/scripts/view/dataview/graph/dataview_noetheris_dashboard_contribution_heatmap");
+```

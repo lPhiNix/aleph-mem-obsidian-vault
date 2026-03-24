@@ -1,5 +1,5 @@
 ---
-version: "#4d1a2f489ec5"
+version: "#3cfaf61d7347"
 context:
 cssclasses:
   - native
@@ -14,11 +14,17 @@ cssclasses:
 # Ξ
 # Kaelithra
 ---
+## ✦ Module
+
 > 
 > **_KAELITHRA (Ξ)_**
 > _world, live, time, space, reality_
 > 
 > Lorem ipsum dolor sit amet consectetur adipiscing elit laoreet pulvinar blandit, ridiculus varius lobortis viverra lacinia parturient gravida hac integer, turpis in congue imperdiet tellus dis etiam libero suscipit.
->
+> 
 
+## ✦ Contribution
 ---
+```dataviewjs
+await dv.view("Meta/scripts/view/dataview/graph/dataview_kaelithra_dashboard_contribution_heatmap");
+```

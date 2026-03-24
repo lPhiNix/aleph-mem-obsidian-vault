@@ -1,5 +1,5 @@
 ---
-version: "#abfd700120b5"
+version: "#621df9a8dcae"
 context:
 cssclasses:
   - native
@@ -14,11 +14,17 @@ cssclasses:
 # Π
 # Ordus
 ---
+## ✦ Module
+
 > 
 > **_ORDUS (Π)_**
 > _order, planning, organization_
 > 
 > Lorem ipsum dolor sit amet consectetur adipiscing elit laoreet pulvinar blandit, ridiculus varius lobortis viverra lacinia parturient gravida hac integer, turpis in congue imperdiet tellus dis etiam libero suscipit.
->
+> 
 
+## ✦ Contribution
 ---
+```dataviewjs
+await dv.view("Meta/scripts/view/dataview/graph/dataview_ordus_dashboard_contribution_heatmap");
+```

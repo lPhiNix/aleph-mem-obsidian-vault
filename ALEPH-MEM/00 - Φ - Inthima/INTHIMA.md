@@ -1,5 +1,5 @@
 ---
-version: "#aa627ee1712b"
+version: "#aa2c9f22987f"
 context:
 cssclasses:
   - native
@@ -14,11 +14,17 @@ cssclasses:
 # Φ
 # Inthima
 ---
+## ✦ Module
+
 > 
 > **_INTHIMA (Φ)_**
 > _me, you, we, love_
 > 
 > Lorem ipsum dolor sit amet consectetur adipiscing elit laoreet pulvinar blandit, ridiculus varius lobortis viverra lacinia parturient gravida hac integer, turpis in congue imperdiet tellus dis etiam libero suscipit.
->
+> 
 
+## ✦ Contribution
 ---
+```dataviewjs
+await dv.view("Meta/scripts/view/dataview/graph/dataview_inthima_dashboard_contribution_heatmap");
+```
