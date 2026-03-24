@@ -22,11 +22,17 @@ tR += await tp.file.include("[[c_templater_native_cssclasses_attribute]]") + cla
 # Z
 # Viventia
 ---
+## ✦ Module
+
 > 
 > **_VIVENTIA (Z)_**
 > _hobbies, life, funny, passion, creativity_
 > 
 > Lorem ipsum dolor sit amet consectetur adipiscing elit laoreet pulvinar blandit, ridiculus varius lobortis viverra lacinia parturient gravida hac integer, turpis in congue imperdiet tellus dis etiam libero suscipit.
->
+> 
 
+## ✦ Contribution
 ---
+<%*
+tR += await tp.file.include("[[c_dataview_viventia_dashboard_contribution_heatmap]]");
+%>

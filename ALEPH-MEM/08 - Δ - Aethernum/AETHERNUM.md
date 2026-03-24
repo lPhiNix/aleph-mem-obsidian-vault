@@ -1,5 +1,5 @@
 ---
-version: "#729237275ce6"
+version: "#bae9b1b1007a"
 context:
 cssclasses:
   - native
@@ -14,11 +14,17 @@ cssclasses:
 # Δ
 # Aethernum
 ---
+## ✦ Module
+
 > 
 > **_AETHERNUM (Δ)_**
-> infrastructure, systems, foundations_
+> _infrastructure, systems, foundations_
 > 
 > Lorem ipsum dolor sit amet consectetur adipiscing elit laoreet pulvinar blandit, ridiculus varius lobortis viverra lacinia parturient gravida hac integer, turpis in congue imperdiet tellus dis etiam libero suscipit.
->
+> 
 
+## ✦ Contribution
 ---
+```dataviewjs
+await dv.view("Meta/scripts/view/dataview/graph/dataview_aethernum_dashboard_contribution_heatmap");
+```

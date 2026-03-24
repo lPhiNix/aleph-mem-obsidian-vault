@@ -22,11 +22,17 @@ tR += await tp.file.include("[[c_templater_native_cssclasses_attribute]]") + cla
 # Φ
 # Inthima
 ---
+## ✦ Module
+
 > 
 > **_INTHIMA (Φ)_**
 > _me, you, we, love_
 > 
 > Lorem ipsum dolor sit amet consectetur adipiscing elit laoreet pulvinar blandit, ridiculus varius lobortis viverra lacinia parturient gravida hac integer, turpis in congue imperdiet tellus dis etiam libero suscipit.
->
+> 
 
+## ✦ Contribution
 ---
+<%*
+tR += await tp.file.include("[[c_dataview_inthima_dashboard_contribution_heatmap]]");
+%>
