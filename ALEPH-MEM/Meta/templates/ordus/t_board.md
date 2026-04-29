@@ -17,32 +17,19 @@ cssclasses:
 
 ---
 
-## 💛 WISHES
+## 🩶 BACKLOG
 
 
 
-## 🩶 LONG-TERM
+## 🎯 TO DO
 
 
 
-## 🩶 SHORT-TERM
+## 🔵 IN PROGRESS (3)
 
 
 
-## 🩶 THIS WEEK
-
-
-
-## 🩶 NOW
-
-
-
-## 🔵 IN PROGRESS (5)
-
-
-
-## 🟣 IN REVIEW (10)
-
+## 🟣 IN REVIEW (5)
 
 
 ## ⛔ LOCKED (5)
@@ -50,7 +37,7 @@ cssclasses:
 **Complete**
 
 
-## ✅️ CLOSE (10)
+## ✅ DONE
 
 **Complete**
 
