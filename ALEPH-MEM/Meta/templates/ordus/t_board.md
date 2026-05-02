@@ -13,15 +13,21 @@ tp.hooks.on_all_templates_executed(async () => {
 ---
 
 kanban-plugin: board
-cssclasses:
+
+<%*
+let classes = [
+	"hide-source-frontmatter", "module", "ordus", "kanban"
+];
+tR += await tp.file.include("[[c_templater_native_cssclasses_attribute]]") + classes.map(t => "\n- "+t).join("");
+%>
 
 ---
 
-## 🩶 BACKLOG
+## 💛 BACKLOG
 
 
 
-## 🎯 TO DO
+## 🩶 TO DO
 
 
 
