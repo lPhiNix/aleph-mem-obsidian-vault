@@ -49,7 +49,7 @@ tR += await tp.file.include("[[c_templater_ordus_task_description]]");
 
 
 <%"---"%>
-# ✦ Task º<% tp.file.title %>
+# ✦ Task #<% tp.file.title.replace(/^.*-/, '') %>
 <%*
 tR += await tp.file.include("[[c_metabind_memorium_daily_nav_buttons]]");
 %>
