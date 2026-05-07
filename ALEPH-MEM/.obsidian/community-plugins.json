@@ -12,5 +12,6 @@
   "dataview",
   "callout-manager",
   "obsidian-meta-bind-plugin",
-  "obsidian-kanban-am"
+  "obsidian-kanban-am",
+  "js-engine"
 ]
