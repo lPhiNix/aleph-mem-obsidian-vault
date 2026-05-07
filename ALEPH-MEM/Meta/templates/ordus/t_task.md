@@ -17,7 +17,7 @@ tR += (await tp.file.include("[[c_templater_native_tags_attribute]]")) + tags.ma
 %>
 <%*
 let links = [
-	
+	tp.file.title.replace(/-\d+$/, '')
 ];
 tR += (await tp.file.include("[[c_templater_native_context_attribute]]")) + links.map(t => "\n- \"[[" + t + "]]\"").join("");
 %>
@@ -38,28 +38,62 @@ tR += await tp.file.include("[[c_templater_native_alias_attribute]]");
 %>
 
 <%*
-tR += await tp.file.include("[[c_templater_ordus_task_state]]");
-%>
-<%*
 tR += await tp.file.include("[[c_templater_ordus_task_priority]]");
 %>
 <%*
+tR += await tp.file.include("[[c_templater_ordus_task_business]]");
+%>
+<%*
 tR += await tp.file.include("[[c_templater_ordus_task_description]]");
+%>
+<%*
+tR += await tp.file.include("[[c_templater_ordus_task_checklist]]");
+%>
+<%*
+tR += await tp.file.include("[[c_templater_ordus_task_checklist_done]]");
 %>
 
 
 <%"---"%>
 # ✦ Task #<% tp.file.title.replace(/^.*-/, '') %>
 <%*
-tR += await tp.file.include("[[c_metabind_memorium_daily_nav_buttons]]");
+tR += await tp.file.include("[[c_metabind_ordus_task_nav_buttons]]");
 %>
-
 <%*
 tR += await tp.file.include("[[c_metabind_ordus_task_alias_text]]");
+%>
+
+---
+## ✧ Priority
+
+<%*
+tR += await tp.file.include("[[c_metabind_ordus_priority_slider]]");
+%>
+
+---
+## ✧ Business
+<%*
+tR += await tp.file.include("[[c_metabind_ordus_business_slider]]");
 %>
 ---
 ## ✧ Summary
 
 <%*
 tR += await tp.file.include("[[c_matabind_ordus_task_description_editor]]");
+%>
+
+---
+## ✧ Checklist
+<%*
+tR += await tp.file.include("[[c_dataview_ordus_task_checklist]]");
+%>
+
+---
+## ✧ Subtasks
+<%*
+tR += await tp.file.include("[[c_metabind_ordus_task_subtask_button]]");
+%>
+
+<%*
+tR += await tp.file.include("[[c_dataview_ordus_task_subtask_list]]");
 %>

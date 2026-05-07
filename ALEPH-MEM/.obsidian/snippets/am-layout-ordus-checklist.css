@@ -1,0 +1,48 @@
+/* Checklist — fila input + botones (DataView) */
+.ordus-checklist-input-row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.ordus-checklist-text-input {
+  flex: 1;
+  background-color: var(--background-primary);
+  padding: 6px 10px;
+  font-size: var(--font-text-size);
+  font-family: var(--font-text);
+  border: 1px solid var(--input-border-color);
+  border-radius: var(--input-radius);
+  color: var(--text-normal);
+  min-width: 0;
+}
+
+.ordus-checklist-text-input:focus {
+  outline: none;
+  border-color: var(--interactive-accent);
+  box-shadow: 0 0 0 2px hsla(var(--interactive-accent-hsl), 0.25);
+}
+
+.ordus-checklist-btn {
+  padding: 6px 14px;
+  font-size: var(--font-text-size);
+  font-family: var(--font-text);
+  border-radius: var(--input-radius);
+  cursor: pointer;
+  border: 1px solid var(--background-modifier-border);
+  background: var(--background-secondary);
+  color: var(--text-normal);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.ordus-checklist-btn.mod-cta {
+  background: var(--interactive-accent);
+  color: var(--text-on-accent);
+  border-color: var(--interactive-accent);
+}
+
+.ordus-checklist-btn:hover {
+  opacity: 0.85;
+}

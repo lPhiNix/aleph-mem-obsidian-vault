@@ -134,7 +134,11 @@
     "am-class-center-header-title",
     "am-class-italic-header-title",
     "am-class-huge-header-title",
-    "am-class-kanban"
+    "am-class-kanban",
+    "am-layout-priority-bar",
+    "am-layout-business-bar",
+    "am-layout-nav-buttons",
+    "am-layout-buttons"
   ],
   "interfaceFontFamily": "",
   "textFontFamily": "",
