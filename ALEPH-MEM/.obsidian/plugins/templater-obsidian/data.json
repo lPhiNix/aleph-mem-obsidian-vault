@@ -102,5 +102,10 @@
   "startup_templates": [
     "Meta/templates/t_startup_guard.md"
   ],
-  "intellisense_render": 1
+  "intellisense_render": 1,
+  "ignore_folders_on_creation": [
+    {
+      "folder": ""
+    }
+  ]
 }
