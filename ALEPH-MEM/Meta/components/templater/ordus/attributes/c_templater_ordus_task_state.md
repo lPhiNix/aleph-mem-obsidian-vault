@@ -1,1 +1,0 @@
-<%"ordus-state: "%>

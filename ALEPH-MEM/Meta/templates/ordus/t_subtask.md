@@ -11,14 +11,17 @@ tR += await tp.file.include("[[c_templater_native_creation_attribute]]");
 %>
 <%*
 let tags = [
-	"NOTE", "ORDUS", "task",
+	"NOTE", "ORDUS", "task", "subtask",
 ];
 tR += (await tp.file.include("[[c_templater_native_tags_attribute]]")) + tags.map(t => "\n- "+t).join("");
 %>
 <%*
-let links = [
-	tp.file.title.replace(/-\d+$/, '')
-];
+let parentFile = tp.config.active_file;
+let parentBasename = (parentFile && parentFile.path.includes("07 - Π - Ordus/tasks/")) ? parentFile.basename : "";
+let boardName = parentBasename ? parentBasename.replace(/-\d+$/, '') : "";
+let links = [];
+if (boardName) links.push(boardName);
+if (parentBasename) links.push(parentBasename);
 tR += (await tp.file.include("[[c_templater_native_context_attribute]]")) + links.map(t => "\n- \"[[" + t + "]]\"").join("");
 %>
 <%*
@@ -38,12 +41,6 @@ tR += await tp.file.include("[[c_templater_native_alias_attribute]]");
 %>
 
 <%*
-tR += await tp.file.include("[[c_templater_ordus_task_priority]]");
-%>
-<%*
-tR += await tp.file.include("[[c_templater_ordus_task_business]]");
-%>
-<%*
 tR += await tp.file.include("[[c_templater_ordus_task_description]]");
 %>
 <%*
@@ -53,9 +50,8 @@ tR += await tp.file.include("[[c_templater_ordus_task_checklist]]");
 tR += await tp.file.include("[[c_templater_ordus_task_checklist_done]]");
 %>
 
-
 <%"---"%>
-# ✦ Task #<% tp.file.title.replace(/^.*-/, '') %>
+# ✦ <% tp.file.title %>
 <%*
 tR += await tp.file.include("[[c_metabind_ordus_task_nav_buttons]]");
 %>
@@ -63,18 +59,6 @@ tR += await tp.file.include("[[c_metabind_ordus_task_nav_buttons]]");
 tR += await tp.file.include("[[c_metabind_ordus_task_alias_text]]");
 %>
 
----
-## ✧ Priority
-
-<%*
-tR += await tp.file.include("[[c_metabind_ordus_priority_slider]]");
-%>
-
----
-## ✧ Business
-<%*
-tR += await tp.file.include("[[c_metabind_ordus_business_slider]]");
-%>
 ---
 ## ✧ Summary
 
@@ -86,14 +70,4 @@ tR += await tp.file.include("[[c_matabind_ordus_task_description_editor]]");
 ## ✧ Checklist
 <%*
 tR += await tp.file.include("[[c_dataview_ordus_task_checklist]]");
-%>
-
----
-## ✧ Subtasks
-<%*
-tR += await tp.file.include("[[c_metabind_ordus_task_subtask_button]]");
-%>
-
-<%*
-tR += await tp.file.include("[[c_dataview_ordus_task_subtask_list]]");
 %>

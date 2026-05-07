@@ -1,0 +1,66 @@
+/* Business bar — ordus-business (1–5)                    */
+/* Colors match am-class-kanban.css ordus-business palette */
+
+.business-bar .mb-progress-bar-input {
+  display: flex !important;
+  align-items: center !important;
+  padding-right: 2rem !important;
+  overflow: hidden !important;
+}
+.business-bar .mb-progress-bar-progress {
+  min-width: 5%;
+  max-width: calc(100% - 0.25rem) !important;
+}
+.business-bar .mb-progress-bar-value {
+  display: block !important;
+  width: 100% !important;
+  text-align: right !important;
+  padding-right: 0.5rem !important;
+}
+.business-bar .mb-progress-bar-value::before {
+  content: "P";
+}
+.business-bar .mb-progress-bar-label-left,
+.business-bar .mb-progress-bar-label-right {
+  display: none !important;
+}
+
+/* 1 */
+.business-bar[data-internal-value="1"] .mb-progress-bar-progress {
+  background-color: rgb(0, 162, 255) !important;
+}
+.business-bar[data-internal-value="1"] .mb-progress-bar-value {
+  color: rgb(0, 162, 255) !important;
+}
+
+/* 2 */
+.business-bar[data-internal-value="2"] .mb-progress-bar-progress {
+  background-color: rgb(24, 255, 109) !important;
+}
+.business-bar[data-internal-value="2"] .mb-progress-bar-value {
+  color: rgb(24, 255, 109) !important;
+}
+
+/* 3 */
+.business-bar[data-internal-value="3"] .mb-progress-bar-progress {
+  background-color: rgb(255, 179, 0) !important;
+}
+.business-bar[data-internal-value="3"] .mb-progress-bar-value {
+  color: rgb(255, 179, 0) !important;
+}
+
+/* 4 */
+.business-bar[data-internal-value="4"] .mb-progress-bar-progress {
+  background-color: rgb(255, 72, 0) !important;
+}
+.business-bar[data-internal-value="4"] .mb-progress-bar-value {
+  color: rgb(255, 72, 0) !important;
+}
+
+/* 5 */
+.business-bar[data-internal-value="5"] .mb-progress-bar-progress {
+  background-color: rgb(221, 0, 255) !important;
+}
+.business-bar[data-internal-value="5"] .mb-progress-bar-value {
+  color: rgb(221, 0, 255) !important;
+}
