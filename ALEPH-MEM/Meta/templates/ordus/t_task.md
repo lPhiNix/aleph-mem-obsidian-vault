@@ -56,9 +56,7 @@ tR += await tp.file.include("[[c_templater_ordus_task_checklist_done]]");
 
 <%"---"%>
 # ✦ Task #<% tp.file.title.replace(/^.*-/, '') %>
-<%*
-tR += await tp.file.include("[[c_metabind_ordus_task_nav_buttons]]");
-%>
+
 <%*
 tR += await tp.file.include("[[c_metabind_ordus_task_alias_text]]");
 %>
