@@ -7,6 +7,22 @@
 const current = dv.current();
 const file = app.vault.getAbstractFileByPath(current.file.path);
 
+// Claves para preservar estado entre re-renders de DataView
+const stateKey = `ordus-checklist-input-${current.file.path}`;
+const obsKey  = `ordus-checklist-obs-${current.file.path}`;
+
+// MutationObserver: escucha hasta que aparezca el nuevo input y lo enfoca
+function setupFocusRestore() {
+  if (window[obsKey]) { window[obsKey].disconnect(); delete window[obsKey]; }
+  const target = dv.container.parentElement || dv.container;
+  const obs = new MutationObserver(() => {
+    const newInput = target.querySelector(".ordus-checklist-text-input");
+    if (newInput) { newInput.focus(); obs.disconnect(); delete window[obsKey]; }
+  });
+  obs.observe(target, { childList: true, subtree: true });
+  window[obsKey] = obs;
+}
+
 // Estado local (fuente de verdad para el render)
 let items = Array.from(current["ordus-checklist"] || []);
 let doneItems = Array.from(current["ordus-checklist-done"] || []);
@@ -21,6 +37,9 @@ const textInput = inputRow.createEl("input", {
   attr: { type: "text", placeholder: "New item..." },
   cls: "ordus-checklist-text-input"
 });
+// Restaurar el valor del input entre re-renders
+textInput.value = window[stateKey] || "";
+textInput.addEventListener("input", () => { window[stateKey] = textInput.value; });
 
 const btnRow = inputRow.createEl("div", { cls: "mb-button-group" });
 
@@ -45,14 +64,14 @@ function renderList() {
     const checked = doneSet.has(item);
     const li = ul.createEl("li", {
       cls: "task-list-item" + (checked ? " is-checked" : ""),
-      attr: { "data-task": checked ? "x" : " " }
+      attr: { "data-task": checked ? "x" : " ", style: "display:flex;align-items:flex-start;gap:6px;" }
     });
     const cb = li.createEl("input", {
       cls: "task-list-item-checkbox",
-      attr: { type: "checkbox" }
+      attr: { type: "checkbox", style: "flex-shrink:0;margin-top:3px;" }
     });
     cb.checked = checked;
-    li.createEl("span", { text: item });
+    li.createEl("span", { text: item, attr: { style: "flex:1;word-break:break-word;" } });
 
     cb.addEventListener("click", async (e) => {
       e.stopPropagation();
@@ -79,10 +98,12 @@ renderList();
 // --- Boton Add ---
 addBtn.addEventListener("click", async () => {
   const v = textInput.value.trim();
-  if (!v || items.includes(v)) return;
+  if (!v) return;
   items.push(v);
+  window[stateKey] = "";
   textInput.value = "";
   renderList();
+  setupFocusRestore();
   await app.fileManager.processFrontMatter(file, fm => {
     fm["ordus-checklist"] = items.slice();
   });
