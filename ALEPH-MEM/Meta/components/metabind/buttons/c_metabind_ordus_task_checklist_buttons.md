@@ -1,21 +1,12 @@
-`BUTTON[add-checklist-item, remove-checklist-item]`
+`BUTTON[add-checklist-item, remove-checklist-item, remove-all-checklist-items]`
 ```meta-bind-button
 id: add-checklist-item
 style: primary
 label: + Add
 hidden: true
 actions:
-  - type: inlineJS
-    code: |
-      const file = context.file;
-      const fm = app.metadataCache.getFileCache(file)?.frontmatter;
-      const newItem = (fm?.["ordus-checklist-input"] || "").trim();
-      if (!newItem) return;
-      await app.fileManager.processFrontMatter(file, f => {
-        if (!Array.isArray(f["ordus-checklist"])) f["ordus-checklist"] = [];
-        f["ordus-checklist"].push(newItem);
-        f["ordus-checklist-input"] = "";
-      });
+  - type: js
+    file: Meta/scripts/jsengine/ordus/checklist_add.js
 ```
 ```meta-bind-button
 id: remove-checklist-item
@@ -23,15 +14,15 @@ style: primary
 label: "- Remove Last"
 hidden: true
 actions:
-  - type: inlineJS
-    code: |
-      const file = context.file;
-      await app.fileManager.processFrontMatter(file, f => {
-        if (!Array.isArray(f["ordus-checklist"]) || f["ordus-checklist"].length === 0) return;
-        const removed = f["ordus-checklist"].pop();
-        if (Array.isArray(f["ordus-checklist-done"])) {
-          const idx = f["ordus-checklist-done"].indexOf(removed);
-          if (idx > -1) f["ordus-checklist-done"].splice(idx, 1);
-        }
-      });
+  - type: js
+    file: Meta/scripts/jsengine/ordus/checklist_remove_last.js
+```
+```meta-bind-button
+id: remove-all-checklist-items
+style: primary
+label: Remove All
+hidden: true
+actions:
+  - type: js
+    file: Meta/scripts/jsengine/ordus/checklist_remove_all.js
 ```
