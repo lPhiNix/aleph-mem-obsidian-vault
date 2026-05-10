@@ -50,7 +50,7 @@ tR += await tp.file.include("[[c_templater_ordus_task_checklist]]");
 tR += await tp.file.include("[[c_templater_ordus_task_checklist_done]]");
 %>
 <%*
-tR += await tp.file.include("[[c_templater_ordus_task_checklist_new_item]]");
+tR += await tp.file.include("[[c_templater_ordus_task_checklist_input]]");
 %>
 
 <%"---"%>

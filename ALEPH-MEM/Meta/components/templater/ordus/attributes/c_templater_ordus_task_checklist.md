@@ -1,1 +1,1 @@
-ordus-checklist: []
+<%"ordus-checklist: " + "[]"%>
