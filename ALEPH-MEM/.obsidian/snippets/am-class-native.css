@@ -76,3 +76,20 @@
 .native .mb-button-inner {
   font-weight: 800;
 }
+
+.native .mb-input-type-text input {
+  background-color: var(--background-primary);
+  width: 100%;
+  height: auto;
+  padding: 8px;
+  border-width: 1px;
+  border-style: solid;
+}
+.native .mb-input-type-text:hover input {
+  background-color: var(--background-primary);
+  outline: none;
+}
+.native .meta-bind-label {
+  font-weight: bold;
+  margin-bottom: 4px;
+}

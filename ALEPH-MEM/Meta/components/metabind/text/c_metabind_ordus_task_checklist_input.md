@@ -1,3 +1,3 @@
 ```meta-bind
-INPUT[text(placeholder('New item...'), class('ordus-checklist-text-input')):ordus-checklist-input]
+INPUT[text(placeholder('New item...')):ordus-checklist-input]
 ```
