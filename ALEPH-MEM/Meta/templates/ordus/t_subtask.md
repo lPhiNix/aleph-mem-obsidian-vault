@@ -16,23 +16,11 @@ let tags = [
 tR += (await tp.file.include("[[c_templater_native_tags_attribute]]")) + tags.map(t => "\n- "+t).join("");
 %>
 <%*
-let parentFile = tp.config.active_file;
-let parentBasename = (parentFile && parentFile.path.includes("07 - Π - Ordus/tasks/")) ? parentFile.basename : "";
-let boardName = parentBasename ? parentBasename.replace(/-\d+$/, '') : "";
-let subtaskTitle = tp.file.title;
-if (parentBasename) {
-  const taskNumber = parentBasename.match(/-(\d+)$/)?.[1] ?? '';
-  const prefix = `${boardName}-${taskNumber}-`;
-  const existing = app.vault.getFiles().filter(f =>
-    f.path.startsWith("07 - Π - Ordus/subtasks/") && f.basename.startsWith(prefix)
-  );
-  subtaskTitle = `${prefix}${existing.length + 1}`;
-  await tp.file.rename(subtaskTitle);
-}
-let links = [];
-if (boardName) links.push(boardName);
-if (parentBasename) links.push(parentBasename);
-tR += (await tp.file.include("[[c_templater_native_context_attribute]]")) + links.map(t => "\n- \"[[" + t + "]]\"").join("");
+const child = await tp.user.create_child_note(tp, {
+  parentFolder: "07 - Π - Ordus/tasks/",
+  childFolder: "07 - Π - Ordus/subtasks"
+});
+tR += child.context;
 %>
 <%*
 tR += await tp.file.include("[[c_templater_native_related_attribute]]");
@@ -64,7 +52,7 @@ tR += await tp.file.include("[[c_templater_ordus_task_checklist_input]]");
 %>
 
 <%"---"%>
-# ✦ Subtask #<% subtaskTitle.replace(/^.*-/, '') %>
+# ✦ Subtask #<% child.title.replace(/^.*-/, '') %>
 
 <%*
 tR += await tp.file.include("[[c_metabind_ordus_task_alias_text]]");
