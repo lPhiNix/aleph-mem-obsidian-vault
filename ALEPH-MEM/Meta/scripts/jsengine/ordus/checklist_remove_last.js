@@ -1,4 +1,10 @@
 const file = context.file;
+
+// Actualizar UI instantáneamente via estado compartido
+const state = window._ordusChecklist?.[file.path];
+if (state) state.removeLast();
+
+// Persistir en frontmatter en segundo plano
 await app.fileManager.processFrontMatter(file, f => {
   if (!Array.isArray(f["ordus-checklist"]) || f["ordus-checklist"].length === 0) return;
   const removed = f["ordus-checklist"].pop();

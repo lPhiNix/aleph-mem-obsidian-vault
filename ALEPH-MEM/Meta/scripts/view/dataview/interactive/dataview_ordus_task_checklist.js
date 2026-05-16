@@ -3,6 +3,8 @@
  * Solo renderiza la lista. El input y los botones son
  * componentes MetaBind externos (c_metabind_ordus_checklist_*).
  * Estado local en memoria para evitar lag de metadataCache en checkboxes.
+ * Estado compartido via window._ordusChecklist para que los botones
+ * actualicen la vista sin esperar el ciclo de re-render de Dataview.
  **********************/
 
 const current = dv.current();
@@ -54,3 +56,19 @@ function renderList() {
 }
 
 renderList();
+
+// Registrar estado compartido para que los botones (JSEngine) accedan sin re-render
+if (!window._ordusChecklist) window._ordusChecklist = {};
+window._ordusChecklist[current.file.path] = {
+  getItems:     () => items,
+  getDoneItems: () => doneItems,
+  addItem:      (item) => { items.push(item); renderList(); },
+  removeLast:   () => {
+    if (items.length === 0) return;
+    const removed = items.pop();
+    const idx = doneItems.indexOf(removed);
+    if (idx > -1) doneItems.splice(idx, 1);
+    renderList();
+  },
+  removeAll:    () => { items = []; doneItems = []; renderList(); },
+};
