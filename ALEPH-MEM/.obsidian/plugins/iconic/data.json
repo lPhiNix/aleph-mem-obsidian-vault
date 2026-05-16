@@ -478,6 +478,20 @@
       ],
       "enabled": true,
       "icon": "lucide-tag"
+    },
+    {
+      "id": "zuPG4",
+      "name": "Subtasks",
+      "match": "all",
+      "conditions": [
+        {
+          "source": "path",
+          "operator": "startsWith",
+          "value": "07 - Π - Ordus/subtasks/"
+        }
+      ],
+      "enabled": true,
+      "icon": "lucide-ticket"
     }
   ],
   "folderRules": [

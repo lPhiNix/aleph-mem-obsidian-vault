@@ -19,6 +19,16 @@ tR += (await tp.file.include("[[c_templater_native_tags_attribute]]")) + tags.ma
 let parentFile = tp.config.active_file;
 let parentBasename = (parentFile && parentFile.path.includes("07 - Π - Ordus/tasks/")) ? parentFile.basename : "";
 let boardName = parentBasename ? parentBasename.replace(/-\d+$/, '') : "";
+let subtaskTitle = tp.file.title;
+if (parentBasename) {
+  const taskNumber = parentBasename.match(/-(\d+)$/)?.[1] ?? '';
+  const prefix = `${boardName}-${taskNumber}-`;
+  const existing = app.vault.getFiles().filter(f =>
+    f.path.startsWith("07 - Π - Ordus/subtasks/") && f.basename.startsWith(prefix)
+  );
+  subtaskTitle = `${prefix}${existing.length + 1}`;
+  await tp.file.rename(subtaskTitle);
+}
 let links = [];
 if (boardName) links.push(boardName);
 if (parentBasename) links.push(parentBasename);
@@ -54,7 +64,7 @@ tR += await tp.file.include("[[c_templater_ordus_task_checklist_input]]");
 %>
 
 <%"---"%>
-# ✦ <% tp.file.title %>
+# ✦ Subtask #<% subtaskTitle.replace(/^.*-/, '') %>
 
 <%*
 tR += await tp.file.include("[[c_metabind_ordus_task_alias_text]]");
@@ -69,12 +79,13 @@ tR += await tp.file.include("[[c_matabind_ordus_task_description_editor]]");
 
 ---
 ## ✧ Checklist
-<%*
-tR += await tp.file.include("[[c_metabind_ordus_checklist_input]]");
-%>
-<%*
-tR += await tp.file.include("[[c_metabind_ordus_checklist_buttons]]");
-%>
+
 <%*
 tR += await tp.file.include("[[c_dataview_ordus_task_checklist]]");
+%>
+<%*
+tR += await tp.file.include("[[c_metabind_ordus_task_checklist_input]]");
+%>
+<%*
+tR += await tp.file.include("[[c_metabind_ordus_task_checklist_buttons]]");
 %>

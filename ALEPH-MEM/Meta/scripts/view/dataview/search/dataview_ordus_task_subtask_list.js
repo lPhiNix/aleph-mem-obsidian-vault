@@ -5,18 +5,14 @@
  **********************/
 
 const current = dv.current();
+const linked = new Set([
+  ...current.file.inlinks.map(l => l.path),
+  ...current.file.outlinks.map(l => l.path)
+]);
 
-const subtasks = dv.pages('"07 - Π - Ordus/tasks"')
-  .where(p =>
-    p.file.path !== current.file.path &&
-    p.file.outlinks.some(l => l.path === current.file.path)
-  )
+const subtasks = dv.pages('"07 - Π - Ordus/subtasks"')
+  .where(p => linked.has(p.file.path))
   .sort(p => p["ordus-priority"] ?? 0, "desc");
-
-if (subtasks.length === 0) {
-  dv.el("p", "No subtasks yet.", { cls: "ordus-empty" });
-  return;
-}
 
 dv.table(
   ["Task", "Name"],
