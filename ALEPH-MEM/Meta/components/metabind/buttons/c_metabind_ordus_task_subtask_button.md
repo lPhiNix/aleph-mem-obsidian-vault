@@ -7,6 +7,6 @@ hidden: true
 actions:
   - type: templaterCreateNote
     templateFile: "Meta/templates/ordus/t_subtask.md"
-    folderPath: "07 - Π - Ordus/tasks"
+    folderPath: "07 - Π - Ordus/subtasks"
     openNote: true
 ```
