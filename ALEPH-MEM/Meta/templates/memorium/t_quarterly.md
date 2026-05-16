@@ -1,6 +1,9 @@
 <%"---"%>
 
 <%*
+tR += await tp.file.include("[[c_templater_native_preview_mode_forcer]]");
+%>
+<%*
 tR += await tp.file.include("[[c_templater_native_version_attribute]]");
 %>
 <%*
