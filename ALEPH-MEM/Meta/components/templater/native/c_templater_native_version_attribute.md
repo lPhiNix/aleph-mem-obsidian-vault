@@ -1,1 +1,2 @@
-<%* tR += await tp.user.generate_template_hash_version(tp); %>
+<%* tR += await tp.user.generate_template_hash_version(tp); 
+%>

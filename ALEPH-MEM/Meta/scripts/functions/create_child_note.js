@@ -33,6 +33,26 @@ module.exports = async (tp, config) => {
   const title = `${prefix}${existing.length + 1}`;
   await tp.file.rename(title);
 
+  // Switch to preview when Meta Bind opens the new note
+  const _newFile = tp.config.target_file;
+  let _handled = false;
+  const _switchToPreview = () => {
+    if (_handled) return;
+    let targetLeaf = null;
+    app.workspace.iterateAllLeaves(leaf => {
+      if (leaf.view?.file === _newFile) targetLeaf = leaf;
+    });
+    if (!targetLeaf) return;
+    _handled = true;
+    app.workspace.offref(_handler);
+    const state = targetLeaf.getViewState();
+    targetLeaf.setViewState({ ...state, state: { ...state.state, mode: "preview" } });
+  };
+  const _handler = app.workspace.on("file-open", (openedFile) => {
+    if (openedFile === _newFile) _switchToPreview();
+  });
+  setTimeout(_switchToPreview, 800);
+
   // Build context links — detect BOARD-NUMBER pattern to include ancestor
   const links = [];
   const boardMatch = parent.match(/^(.+)-\d+$/);
