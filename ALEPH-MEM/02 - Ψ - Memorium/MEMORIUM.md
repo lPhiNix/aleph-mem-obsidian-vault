@@ -41,7 +41,7 @@ label: Today
 hidden: true
 actions:
   - type: open
-    link: "[[02 - Ψ - Memorium/daily/2026/03-March/2026-03-24-Tuesday]]"
+    link: "[[02 - Ψ - Memorium/01 - Daily/2026/03-March/2026-03-24-Tuesday]]"
     newTab: false
 ```
 ```meta-bind-button
@@ -52,7 +52,7 @@ label: This Week
 hidden: true
 actions:
   - type: open
-    link: "[[02 - Ψ - Memorium/weekly/2026/2026-W13]]"
+    link: "[[02 - Ψ - Memorium/02 - Weekly/2026/2026-W13]]"
     newTab: false
 ```
 ```meta-bind-button
@@ -63,7 +63,7 @@ label: This Month
 hidden: true
 actions:
   - type: open
-    link: "[[02 - Ψ - Memorium/monthly/2026/2026-03-March]]"
+    link: "[[02 - Ψ - Memorium/03 - Monthly/2026/2026-03-March]]"
     newTab: false
 ```
 ```meta-bind-button
@@ -74,7 +74,7 @@ label: This Quarterly
 hidden: true
 actions:
   - type: open
-    link: "[[02 - Ψ - Memorium/quarterly/2026/2026-Q1]]"
+    link: "[[02 - Ψ - Memorium/04 - Quarterly/2026/2026-Q1]]"
     newTab: false
 ```
 ```meta-bind-button
@@ -85,6 +85,6 @@ label: This Year
 hidden: true
 actions:
   - type: open
-    link: "[[02 - Ψ - Memorium/yearly/2026]]"
+    link: "[[02 - Ψ - Memorium/05 - Yearly/2026]]"
     newTab: false
 ```

@@ -27,23 +27,23 @@
       "template": "Meta/templates/dashboards/t_memorium.md"
     },
     {
-      "folder": "02 - Ψ - Memorium/daily",
+      "folder": "02 - Ψ - Memorium/01 - Daily",
       "template": "Meta/templates/memorium/t_daily.md"
     },
     {
-      "folder": "02 - Ψ - Memorium/weekly",
+      "folder": "02 - Ψ - Memorium/02 - Weekly",
       "template": "Meta/templates/memorium/t_weekly.md"
     },
     {
-      "folder": "02 - Ψ - Memorium/monthly",
+      "folder": "02 - Ψ - Memorium/03 - Monthly",
       "template": "Meta/templates/memorium/t_monthly.md"
     },
     {
-      "folder": "02 - Ψ - Memorium/quarterly",
+      "folder": "02 - Ψ - Memorium/04 - Quarterly",
       "template": "Meta/templates/memorium/t_quarterly.md"
     },
     {
-      "folder": "02 - Ψ - Memorium/yearly",
+      "folder": "02 - Ψ - Memorium/05 - Yearly",
       "template": "Meta/templates/memorium/t_yearly.md"
     },
     {

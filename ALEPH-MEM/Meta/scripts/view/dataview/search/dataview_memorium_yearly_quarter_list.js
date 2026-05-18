@@ -9,7 +9,7 @@ const linked = new Set([
   ...current.file.outlinks.map(l => l.path)
 ]);
 
-const pages = dv.pages('"02 - Ψ - Memorium/quarterly"')
+const pages = dv.pages('"02 - Ψ - Memorium/04 - Quarterly"')
   .where(p => linked.has(p.file.path))
   .sort(p => p.file.name, "asc");
 

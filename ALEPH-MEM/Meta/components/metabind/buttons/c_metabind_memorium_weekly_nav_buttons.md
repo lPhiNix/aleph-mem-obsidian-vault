@@ -6,7 +6,7 @@ label: <- Previous Week
 hidden: true
 actions:
   - type: open
-    link: "[[02 - Ψ - Memorium/weekly/<% moment(tp.file.title, 'GGGG-[W]WW').subtract(1, 'w').format('GGGG') %>/<% moment(tp.file.title, 'GGGG-[W]WW').subtract(1, 'w').format('GGGG-[W]WW') %>]]"
+    link: "[[02 - Ψ - Memorium/02 - Weekly/<% moment(tp.file.title, 'GGGG-[W]WW').subtract(1, 'w').format('GGGG') %>/<% moment(tp.file.title, 'GGGG-[W]WW').subtract(1, 'w').format('GGGG-[W]WW') %>]]"
     newTab: false
 ```
 ```meta-bind-button
@@ -16,6 +16,6 @@ label: Next Week ->
 hidden: true
 actions:
   - type: open
-    link: "[[02 - Ψ - Memorium/weekly/<% moment(tp.file.title, 'GGGG-[W]WW').add(1, 'w').format('GGGG') %>/<% moment(tp.file.title, 'GGGG-[W]WW').add(1, 'w').format('GGGG-[W]WW') %>]]"
+    link: "[[02 - Ψ - Memorium/02 - Weekly/<% moment(tp.file.title, 'GGGG-[W]WW').add(1, 'w').format('GGGG') %>/<% moment(tp.file.title, 'GGGG-[W]WW').add(1, 'w').format('GGGG-[W]WW') %>]]"
     newTab: false
 ```

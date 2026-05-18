@@ -6,7 +6,7 @@
 const current = dv.current();
 const currentMM = current["memorium-date"].toFormat("MM");
 
-const pages = dv.pages('"02 - Ψ - Memorium/monthly"')
+const pages = dv.pages('"02 - Ψ - Memorium/03 - Monthly"')
   .where(p => {
     if (p.file.name === current.file.name) return false;
     const date = p["memorium-date"];

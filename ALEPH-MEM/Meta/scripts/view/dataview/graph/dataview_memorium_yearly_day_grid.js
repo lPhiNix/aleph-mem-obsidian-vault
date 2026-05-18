@@ -30,7 +30,7 @@ const CONFIG = {
   WEEKDAYS: ["MON", "TUE", "WED", "THU", "FRI", "SAT", "SUN"],
   
   // Rutas
-  DAILY_NOTES_PATH: '"02 - Ψ - Memorium/daily"',
+  DAILY_NOTES_PATH: '"02 - Ψ - Memorium/01 - Daily"',
   
   // Propiedades de página
   PROPERTIES: {
