@@ -6,7 +6,7 @@
 const current = dv.current();
 const currentSuffix = current.file.name.replace(/^\d{4}-/, "");
 
-const pages = dv.pages('"02 - Ψ - Memorium/weekly"')
+const pages = dv.pages('"02 - Ψ - Memorium/02 - Weekly"')
   .where(p =>
     p.file.name !== current.file.name &&
     p.file.name.replace(/^\d{4}-/, "") === currentSuffix

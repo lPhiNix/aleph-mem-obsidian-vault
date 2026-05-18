@@ -6,7 +6,7 @@ label: <- Previous Month
 hidden: true
 actions:
   - type: open
-    link: "[[02 - Ψ - Memorium/monthly/<% fileDate = moment(tp.file.title, 'YYYY-MM-MMMM').subtract(1, 'month').format('YYYY/YYYY-MM-MMMM') %>]]"
+    link: "[[02 - Ψ - Memorium/03 - Monthly/<% fileDate = moment(tp.file.title, 'YYYY-MM-MMMM').subtract(1, 'month').format('YYYY/YYYY-MM-MMMM') %>]]"
     newTab: false
 ```
 ```meta-bind-button
@@ -16,7 +16,7 @@ label: This Quarter
 hidden: true
 actions:
     - type: open  
-      link: "[[02 - Ψ - Memorium/quarterly/<% fileDate = moment(tp.file.title, 'YYYY-MM-MMMM').format('YYYY/YYYY-[Q]Q') %>]]"
+      link: "[[02 - Ψ - Memorium/04 - Quarterly/<% fileDate = moment(tp.file.title, 'YYYY-MM-MMMM').format('YYYY/YYYY-[Q]Q') %>]]"
       newTab: false
 ```
 ```meta-bind-button
@@ -26,7 +26,7 @@ label: This Year
 hidden: true
 actions:
     - type: open  
-      link: "[[02 - Ψ - Memorium/yearly/<% fileDate = moment(tp.file.title, 'YYYY-MM-MMMM').format('YYYY') %>]]"
+      link: "[[02 - Ψ - Memorium/05 - Yearly/<% fileDate = moment(tp.file.title, 'YYYY-MM-MMMM').format('YYYY') %>]]"
       newTab: false
 ```
 ```meta-bind-button
@@ -36,6 +36,6 @@ label: Next Month ->
 hidden: true
 actions:
     - type: open
-      link: "[[02 - Ψ - Memorium/monthly/<% fileDate = moment(tp.file.title, 'YYYY-MM-MMMM').add(1, 'month').format('YYYY/YYYY-MM-MMMM') %>]]"
+      link: "[[02 - Ψ - Memorium/03 - Monthly/<% fileDate = moment(tp.file.title, 'YYYY-MM-MMMM').add(1, 'month').format('YYYY/YYYY-MM-MMMM') %>]]"
       newTab: false
 ```

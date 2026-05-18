@@ -6,7 +6,7 @@
 const current = dv.current();
 const currentMMDD = current.file.day.toFormat("MM-dd");
 
-const pages = dv.pages('"02 - Ψ - Memorium/daily"')
+const pages = dv.pages('"02 - Ψ - Memorium/01 - Daily"')
   .where(p => {
     if (p.file.name === current.file.name) return false;
     const date = p["memorium-date"];

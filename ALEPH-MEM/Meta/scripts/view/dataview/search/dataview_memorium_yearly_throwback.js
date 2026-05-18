@@ -5,7 +5,7 @@
 
 const current = dv.current();
 
-const pages = dv.pages('"02 - Ψ - Memorium/yearly"')
+const pages = dv.pages('"02 - Ψ - Memorium/05 - Yearly"')
   .where(p => p.file.name !== current.file.name)
   .sort(p => p.file.name, "asc");
 

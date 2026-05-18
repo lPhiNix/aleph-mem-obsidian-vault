@@ -7,7 +7,7 @@ label: Today
 hidden: true
 actions:
   - type: open
-    link: "[[02 - Ψ - Memorium/daily/<% moment().format('YYYY/MM-MMMM/YYYY-MM-DD-dddd') %>]]"
+    link: "[[02 - Ψ - Memorium/01 - Daily/<% moment().format('YYYY/MM-MMMM/YYYY-MM-DD-dddd') %>]]"
     newTab: false
 ```
 ```meta-bind-button
@@ -18,7 +18,7 @@ label: This Week
 hidden: true
 actions:
   - type: open
-    link: "[[02 - Ψ - Memorium/weekly/<% moment().isoWeekday(4).format('GGGG/GGGG-[W]WW') %>]]"
+    link: "[[02 - Ψ - Memorium/02 - Weekly/<% moment().isoWeekday(4).format('GGGG/GGGG-[W]WW') %>]]"
     newTab: false
 ```
 ```meta-bind-button
@@ -29,7 +29,7 @@ label: This Month
 hidden: true
 actions:
   - type: open
-    link: "[[02 - Ψ - Memorium/monthly/<% moment().format('YYYY/YYYY-MM-MMMM') %>]]"
+    link: "[[02 - Ψ - Memorium/03 - Monthly/<% moment().format('YYYY/YYYY-MM-MMMM') %>]]"
     newTab: false
 ```
 ```meta-bind-button
@@ -40,7 +40,7 @@ label: This Quarterly
 hidden: true
 actions:
   - type: open
-    link: "[[02 - Ψ - Memorium/quarterly/<% moment().format('YYYY/YYYY-[Q]Q') %>]]"
+    link: "[[02 - Ψ - Memorium/04 - Quarterly/<% moment().format('YYYY/YYYY-[Q]Q') %>]]"
     newTab: false
 ```
 ```meta-bind-button
@@ -51,6 +51,6 @@ label: This Year
 hidden: true
 actions:
   - type: open
-    link: "[[02 - Ψ - Memorium/yearly/<% moment().format('YYYY') %>]]"
+    link: "[[02 - Ψ - Memorium/05 - Yearly/<% moment().format('YYYY') %>]]"
     newTab: false
 ```

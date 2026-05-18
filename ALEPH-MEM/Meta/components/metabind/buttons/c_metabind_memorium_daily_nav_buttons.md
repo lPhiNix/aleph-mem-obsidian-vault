@@ -7,7 +7,7 @@ label: <- Yesterday
 hidden: true
 actions:
   - type: open
-    link: "[[02 - Ψ - Memorium/daily/<% fileDate = moment(tp.file.title, 'YYYY-MM-DD-dddd').subtract(1, 'd').format('YYYY/MM-MMMM/YYYY-MM-DD-dddd') %>]]"
+    link: "[[02 - Ψ - Memorium/01 - Daily/<% fileDate = moment(tp.file.title, 'YYYY-MM-DD-dddd').subtract(1, 'd').format('YYYY/MM-MMMM/YYYY-MM-DD-dddd') %>]]"
     newTab: false
 ```
 ```meta-bind-button
@@ -18,7 +18,7 @@ label: This Week
 hidden: true
 actions:
   - type: open
-    link: "[[02 - Ψ - Memorium/weekly/<% moment(tp.file.title, 'YYYY-MM-DD-dddd').isoWeekday(4).format('GGGG/GGGG-[W]WW') %>]]"
+    link: "[[02 - Ψ - Memorium/02 - Weekly/<% moment(tp.file.title, 'YYYY-MM-DD-dddd').isoWeekday(4).format('GGGG/GGGG-[W]WW') %>]]"
     newTab: false
 ```
 ```meta-bind-button
@@ -29,7 +29,7 @@ label: This Month
 hidden: true
 actions:
   - type: open
-    link: "[[02 - Ψ - Memorium/monthly/<% moment(tp.file.title, 'YYYY-MM-DD-dddd').format('YYYY/YYYY-MM-MMMM') %>]]"
+    link: "[[02 - Ψ - Memorium/03 - Monthly/<% moment(tp.file.title, 'YYYY-MM-DD-dddd').format('YYYY/YYYY-MM-MMMM') %>]]"
     newTab: false
 ```
 ```meta-bind-button
@@ -40,6 +40,6 @@ label: Tomorrow ->
 hidden: true
 actions:
   - type: open
-    link: "[[02 - Ψ - Memorium/daily/<% fileDate = moment(tp.file.title, 'YYYY-MM-DD-dddd').add(1, 'd').format('YYYY/MM-MMMM/YYYY-MM-DD-dddd') %>]]"
+    link: "[[02 - Ψ - Memorium/01 - Daily/<% fileDate = moment(tp.file.title, 'YYYY-MM-DD-dddd').add(1, 'd').format('YYYY/MM-MMMM/YYYY-MM-DD-dddd') %>]]"
     newTab: false
 ```

@@ -23,7 +23,7 @@ const CONFIG = {
   },
 
   // Rutas
-  DAILY_NOTES_PATH: '"02 - Ψ - Memorium/daily"',
+  DAILY_NOTES_PATH: '"02 - Ψ - Memorium/01 - Daily"',
 
   // Propiedades de página
   PROPERTIES: {
