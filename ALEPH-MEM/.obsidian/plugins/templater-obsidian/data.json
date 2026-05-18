@@ -67,12 +67,16 @@
       "template": "Meta/templates/dashboards/t_ordus.md"
     },
     {
+      "folder": "07 - Π - Ordus/boards",
+      "template": "Meta/templates/ordus/t_board.md"
+    },
+    {
       "folder": "07 - Π - Ordus/tasks",
       "template": "Meta/templates/ordus/t_task.md"
     },
     {
-      "folder": "07 - Π - Ordus/boards",
-      "template": "Meta/templates/ordus/t_board.md"
+      "folder": "07 - Π - Ordus/subtasks",
+      "template": "Meta/templates/ordus/t_subtask.md"
     },
     {
       "folder": "08 - Δ - Aethernum",
