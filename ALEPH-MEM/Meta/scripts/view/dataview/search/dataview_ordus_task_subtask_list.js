@@ -10,7 +10,7 @@ const linked = new Set([
   ...current.file.outlinks.map(l => l.path)
 ]);
 
-const subtasks = dv.pages('"07 - Π - Ordus/subtasks"')
+const subtasks = dv.pages('"07 - Π - Ordus/03 - Subtasks"')
   .where(p => linked.has(p.file.path))
   .sort(p => p["ordus-priority"] ?? 0, "desc");
 

@@ -67,15 +67,15 @@
       "template": "Meta/templates/dashboards/t_ordus.md"
     },
     {
-      "folder": "07 - Π - Ordus/boards",
+      "folder": "07 - Π - Ordus/01 - Boards",
       "template": "Meta/templates/ordus/t_board.md"
     },
     {
-      "folder": "07 - Π - Ordus/tasks",
+      "folder": "07 - Π - Ordus/02 - Tasks",
       "template": "Meta/templates/ordus/t_task.md"
     },
     {
-      "folder": "07 - Π - Ordus/subtasks",
+      "folder": "07 - Π - Ordus/03 - Subtasks",
       "template": "Meta/templates/ordus/t_subtask.md"
     },
     {
