@@ -473,7 +473,7 @@
         {
           "source": "path",
           "operator": "startsWith",
-          "value": "07 - Π - Ordus/tasks/"
+          "value": "07 - Π - Ordus/02 - Tasks/"
         }
       ],
       "enabled": true,
@@ -487,7 +487,7 @@
         {
           "source": "path",
           "operator": "startsWith",
-          "value": "07 - Π - Ordus/subtasks/"
+          "value": "07 - Π - Ordus/03 - Subtasks/"
         }
       ],
       "enabled": true,
