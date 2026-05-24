@@ -1,7 +1,8 @@
 {
   "callouts": {
     "custom": [
-      "memorium"
+      "memorium",
+      "ordus"
     ],
     "settings": {
       "memorium": [
@@ -24,6 +25,14 @@
           },
           "changes": {
             "color": "255, 247, 0"
+          }
+        }
+      ],
+      "ordus": [
+        {
+          "changes": {
+            "icon": "lucide-ticket",
+            "color": "218, 119, 242"
           }
         }
       ]
