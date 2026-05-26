@@ -19,9 +19,6 @@ let tags = [
 tR += (await tp.file.include("[[c_templater_native_tags_attribute]]")) + tags.map(t => "\n- "+t).join("");
 %>
 <%*
-tR += await tp.file.include("[[c_templater_native_favorite_attribute]]");
-%>
-<%*
 let links = [
 	"MEMORIUM"
 ];
