@@ -29,7 +29,7 @@ const CONFIG = {
   PROPERTIES: {
     RATING: "memorium-day-rating",
     DATE: "memorium-date",
-    ALIAS: "alias"
+    ALIAS: "aliases"
   },
 
   // Chart.js

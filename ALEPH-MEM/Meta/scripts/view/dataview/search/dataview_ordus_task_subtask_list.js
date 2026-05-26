@@ -18,6 +18,6 @@ dv.table(
   ["Task", "Name"],
   subtasks.map(p => [
     p.file.link,
-    p.alias ?? "—"
+    p.aliases ?? "—"
   ])
 );

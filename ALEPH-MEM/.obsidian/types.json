@@ -8,7 +8,6 @@
     "favorite": "checkbox",
     "key": "text",
     "context": "multitext",
-    "related": "multitext",
-    "alias": "text"
+    "related": "multitext"
   }
 }
