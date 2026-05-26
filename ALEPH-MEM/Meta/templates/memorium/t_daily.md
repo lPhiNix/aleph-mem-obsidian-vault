@@ -30,9 +30,6 @@ tR += (await tp.file.include("[[c_templater_native_context_attribute]]")) + link
 tR += await tp.file.include("[[c_templater_native_related_attribute]]");
 %>
 <%*
-tR += await tp.file.include("[[c_templater_native_favorite_attribute]]");
-%>
-<%*
 let classes = [
 	"hide-source-frontmatter", "module", "memorium",
 	moment(tp.file.title, "YYYY-MM-DD").format("dddd").toLowerCase()
