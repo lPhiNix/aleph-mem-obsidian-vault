@@ -164,6 +164,9 @@
     },
     "AM": {
       "icon": "lucide-codesandbox"
+    },
+    "board": {
+      "icon": "lucide-trello"
     }
   },
   "propertyIcons": {
