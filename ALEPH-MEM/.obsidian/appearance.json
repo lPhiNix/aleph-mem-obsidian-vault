@@ -138,7 +138,8 @@
     "am-layout-priority-bar",
     "am-layout-business-bar",
     "am-layout-nav-buttons",
-    "am-layout-buttons"
+    "am-layout-buttons",
+    "am-layout-header-tags-attribute"
   ],
   "interfaceFontFamily": "",
   "textFontFamily": "",

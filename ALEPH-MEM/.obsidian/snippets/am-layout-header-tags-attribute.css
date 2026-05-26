@@ -1,0 +1,14 @@
+.metadata-content {
+    display:flex;
+    flex-direction:column;
+}
+
+.metadata-property[data-property-key="tags"]{
+    order:-999;
+    margin-bottom:12px;
+}
+
+.metadata-property[data-property-key="tags"] 
+.metadata-property-key{
+    display:none;
+}
