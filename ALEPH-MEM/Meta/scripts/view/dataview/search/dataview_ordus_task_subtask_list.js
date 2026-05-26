@@ -15,7 +15,7 @@ const subtasks = dv.pages('"07 - Π - Ordus/03 - Subtasks"')
   .sort(p => p["ordus-priority"] ?? 0, "desc");
 
 dv.table(
-  ["Task", "Name"],
+  ["Task", "Alias"],
   subtasks.map(p => [
     p.file.link,
     p.aliases ?? "—"
