@@ -167,9 +167,6 @@
     }
   },
   "propertyIcons": {
-    "alias": {
-      "icon": "lucide-at-sign"
-    },
     "context": {
       "icon": "lucide-network"
     },

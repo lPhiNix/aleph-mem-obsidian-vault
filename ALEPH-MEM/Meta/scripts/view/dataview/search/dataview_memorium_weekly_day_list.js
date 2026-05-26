@@ -15,5 +15,5 @@ const pages = dv.pages('"02 - Ψ - Memorium/01 - Daily"')
 
 dv.table(
   ["File", "Alias", "Rating"],
-  pages.map(p => [p.file.link, p.alias, p["memorium-day-rating"]])
+  pages.map(p => [p.file.link, p.aliases, p["memorium-day-rating"]])
 );
