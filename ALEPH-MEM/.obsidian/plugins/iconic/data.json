@@ -473,25 +473,11 @@
         {
           "source": "path",
           "operator": "startsWith",
-          "value": "07 - Π - Ordus/02 - Tasks/"
+          "value": "07 - Π - Ordus/"
         }
       ],
       "enabled": true,
       "icon": "lucide-tag"
-    },
-    {
-      "id": "zuPG4",
-      "name": "Subtasks",
-      "match": "all",
-      "conditions": [
-        {
-          "source": "path",
-          "operator": "startsWith",
-          "value": "07 - Π - Ordus/03 - Subtasks/"
-        }
-      ],
-      "enabled": true,
-      "icon": "lucide-ticket"
     }
   ],
   "folderRules": [
