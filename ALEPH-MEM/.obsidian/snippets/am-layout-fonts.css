@@ -8,5 +8,5 @@
 .markdown-preview-view :is(h1, h2, h3, h4, h5, h6),
 .markdown-source-view.mod-cm6 .cm-header
 {
-  font-family: var(--font-default) !important;
+  font-family: "Inter", sans-serif !important;
 }
