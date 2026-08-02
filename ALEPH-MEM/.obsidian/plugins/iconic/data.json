@@ -258,18 +258,46 @@
       "icon": "lucide-sparkles"
     },
     {
-      "id": "4NqcO",
-      "name": "Base",
+      "id": "5Qavz",
+      "name": "Journal",
       "match": "all",
       "conditions": [
         {
-          "source": "filename",
-          "operator": "endsWith",
-          "value": ".base"
+          "source": "path",
+          "operator": "startsWith",
+          "value": "02 - Ψ - Memorium/"
         }
       ],
       "enabled": true,
-      "icon": "lucide-layout-list"
+      "icon": "lucide-calendar"
+    },
+    {
+      "id": "xRutp",
+      "name": "Kanban",
+      "match": "all",
+      "conditions": [
+        {
+          "source": "property:kanban-plugin",
+          "operator": "is",
+          "value": "board"
+        }
+      ],
+      "enabled": true,
+      "icon": "lucide-kanban-square"
+    },
+    {
+      "id": "hKQiX",
+      "name": "Tasks",
+      "match": "all",
+      "conditions": [
+        {
+          "source": "path",
+          "operator": "startsWith",
+          "value": "07 - Π - Ordus/"
+        }
+      ],
+      "enabled": true,
+      "icon": "lucide-tag"
     },
     {
       "id": "eeleM",
@@ -366,118 +394,6 @@
       ],
       "enabled": true,
       "icon": "lucide-file-pen"
-    },
-    {
-      "id": "q8CjE",
-      "name": "Kanban",
-      "match": "all",
-      "conditions": [
-        {
-          "source": "property:kanban-plugin",
-          "operator": "is",
-          "value": "board"
-        }
-      ],
-      "enabled": true,
-      "icon": "lucide-trello"
-    },
-    {
-      "id": "HhBd7",
-      "name": "Games",
-      "match": "all",
-      "conditions": [
-        {
-          "source": "path",
-          "operator": "contains",
-          "value": "/Videogames/"
-        }
-      ],
-      "enabled": true,
-      "icon": "lucide-disc-3"
-    },
-    {
-      "id": "AvkRm",
-      "name": "Books",
-      "match": "all",
-      "conditions": [
-        {
-          "source": "path",
-          "operator": "contains",
-          "value": "/Books/"
-        }
-      ],
-      "enabled": true,
-      "icon": "lucide-book"
-    },
-    {
-      "id": "xLWTX",
-      "name": "Movies",
-      "match": "all",
-      "conditions": [
-        {
-          "source": "path",
-          "operator": "contains",
-          "value": "/Movies/"
-        }
-      ],
-      "enabled": true,
-      "icon": "lucide-film"
-    },
-    {
-      "id": "fFOAd",
-      "name": "Series",
-      "match": "all",
-      "conditions": [
-        {
-          "source": "path",
-          "operator": "contains",
-          "value": "/Series/"
-        }
-      ],
-      "enabled": true,
-      "icon": "lucide-tv-minimal-play"
-    },
-    {
-      "id": "lrfXm",
-      "name": "Config",
-      "match": "all",
-      "conditions": [
-        {
-          "source": "path",
-          "operator": "startsWith",
-          "value": "Meta/config"
-        }
-      ],
-      "enabled": true,
-      "icon": "lucide-file-json-2"
-    },
-    {
-      "id": "5Qavz",
-      "name": "Journal",
-      "match": "all",
-      "conditions": [
-        {
-          "source": "path",
-          "operator": "startsWith",
-          "value": "02 - Ψ - Memorium/"
-        }
-      ],
-      "enabled": true,
-      "icon": "lucide-calendar"
-    },
-    {
-      "id": "hKQiX",
-      "name": "Tasks",
-      "match": "all",
-      "conditions": [
-        {
-          "source": "path",
-          "operator": "startsWith",
-          "value": "07 - Π - Ordus/"
-        }
-      ],
-      "enabled": true,
-      "icon": "lucide-tag"
     }
   ],
   "folderRules": [
