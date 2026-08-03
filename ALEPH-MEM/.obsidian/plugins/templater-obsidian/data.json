@@ -55,6 +55,22 @@
       "template": "Meta/templates/dashboards/t_devs.md"
     },
     {
+      "folder": "04 - Λ - Devs/01 - Projects",
+      "template": "Meta/templates/devs/t_project.md"
+    },
+    {
+      "folder": "04 - Λ - Devs/02 - Binnacles",
+      "template": "Meta/templates/devs/t_binnacle.md"
+    },
+    {
+      "folder": "04 - Λ - Devs/03 - Decisions",
+      "template": "Meta/templates/devs/t_decision.md"
+    },
+    {
+      "folder": "04 - Λ - Devs/04 - Postmortems",
+      "template": "Meta/templates/devs/t_postmortem.md"
+    },
+    {
       "folder": "05 - Ζ - Viventia",
       "template": "Meta/templates/dashboards/t_viventia.md"
     },

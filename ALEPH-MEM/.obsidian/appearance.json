@@ -139,7 +139,12 @@
     "am-layout-business-bar",
     "am-layout-nav-buttons",
     "am-layout-buttons",
-    "am-layout-header-tags-attribute"
+    "am-layout-header-tags-attribute",
+    "am-layout-devs-binnacle-bar",
+    "am-layout-devs-impact-bar",
+    "am-layout-devs-outcome-bar",
+    "am-layout-devs-progress-bar",
+    "am-layout-devs-status-bar"
   ],
   "interfaceFontFamily": "",
   "textFontFamily": "",

@@ -7,14 +7,15 @@
  * @param {object} config
  * @param {string} config.parentFolder - Fragmento de ruta que debe contener el padre
  * @param {string} config.childFolder  - Carpeta raíz donde se crean las hijas (sin trailing slash)
- * @param {string} [config.separator]  - Separador entre el nombre del padre y el índice (por defecto "-")
+ * @param {string} [config.separator]    - Separador entre el nombre del padre y el índice (por defecto "-")
+ * @param {boolean} [config.includeBoard] - Si es true, detecta BOARD-NUMBER e incluye el board como ancestro (default true)
  *
  * @returns {{ title: string, context: string }}
  *   title   — nombre calculado para la nota hija (ej. "MAIN-10-1")
  *   context — string listo para añadir a tR con el atributo context del frontmatter
  */
 module.exports = async (tp, config) => {
-  const { parentFolder, childFolder, separator = "-" } = config;
+  const { parentFolder, childFolder, separator = "-", includeBoard = true } = config;
 
   const parentFile = tp.config.active_file;
   const parent = (parentFile && parentFile.path.includes(parentFolder))
@@ -30,7 +31,12 @@ module.exports = async (tp, config) => {
   const existing = app.vault.getFiles().filter(f =>
     f.path.startsWith(childFolder + "/") && f.basename.startsWith(prefix)
   );
-  const title = `${prefix}${existing.length + 1}`;
+  let maxN = 0;
+  existing.forEach(f => {
+    const num = parseInt(f.basename.replace(prefix, ""));
+    if (!isNaN(num) && num > maxN) maxN = num;
+  });
+  const title = `${prefix}${maxN + 1}`;
   await tp.file.rename(title);
 
   // Switch to preview when Meta Bind opens the new note
@@ -55,8 +61,10 @@ module.exports = async (tp, config) => {
 
   // Build context links — detect BOARD-NUMBER pattern to include ancestor
   const links = [];
-  const boardMatch = parent.match(/^(.+)-\d+$/);
-  if (boardMatch) links.push(boardMatch[1]);
+  if (includeBoard) {
+    const boardMatch = parent.match(/^(.+)-\d+$/);
+    if (boardMatch) links.push(boardMatch[1]);
+  }
   links.push(parent);
 
   const contextAttr = await tp.file.include("[[c_templater_native_context_attribute]]");

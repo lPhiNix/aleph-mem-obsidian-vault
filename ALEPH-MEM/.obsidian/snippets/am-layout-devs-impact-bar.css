@@ -1,0 +1,59 @@
+/* Devs impact bar — devs-decision-impact (1=Low, 2=Medium, 3=High) */
+
+.devs-impact-bar .mb-progress-bar-input {
+  display: flex !important;
+  align-items: center !important;
+  padding-right: 2rem !important;
+  overflow: hidden !important;
+}
+.devs-impact-bar .mb-progress-bar-progress {
+  min-width: 10%;
+  max-width: calc(100% - 5rem) !important;
+}
+.devs-impact-bar .mb-progress-bar-value {
+  display: block !important;
+  width: 100% !important;
+  text-align: right !important;
+  padding-right: 0.5rem !important;
+  font-size: 0 !important;
+}
+.devs-impact-bar .mb-progress-bar-label-left,
+.devs-impact-bar .mb-progress-bar-label-right {
+  display: none !important;
+}
+
+/* 1 — Low */
+.devs-impact-bar[data-internal-value="1"] .mb-progress-bar-progress {
+  background-color: #10b981 !important;
+}
+.devs-impact-bar[data-internal-value="1"] .mb-progress-bar-value {
+  color: #10b981 !important;
+}
+.devs-impact-bar[data-internal-value="1"] .mb-progress-bar-value::before {
+  content: "Low";
+  font-size: var(--font-text-size, 1rem);
+}
+
+/* 2 — Medium */
+.devs-impact-bar[data-internal-value="2"] .mb-progress-bar-progress {
+  background-color: #f59e0b !important;
+}
+.devs-impact-bar[data-internal-value="2"] .mb-progress-bar-value {
+  color: #f59e0b !important;
+}
+.devs-impact-bar[data-internal-value="2"] .mb-progress-bar-value::before {
+  content: "Medium";
+  font-size: var(--font-text-size, 1rem);
+}
+
+/* 3 — High */
+.devs-impact-bar[data-internal-value="3"] .mb-progress-bar-progress {
+  background-color: #ef4444 !important;
+}
+.devs-impact-bar[data-internal-value="3"] .mb-progress-bar-value {
+  color: #ef4444 !important;
+}
+.devs-impact-bar[data-internal-value="3"] .mb-progress-bar-value::before {
+  content: "High";
+  font-size: var(--font-text-size, 1rem);
+}
