@@ -27,6 +27,8 @@ style: primary
 label: + New Postmortem
 hidden: true
 actions:
-  - type: js
-    file: Meta/scripts/jsengine/devs/create_or_open_postmortem.js
+  - type: templaterCreateNote
+    templateFile: "Meta/templates/devs/t_postmortem.md"
+    folderPath: "04 - Λ - Devs/04 - Postmortems"
+    openNote: true
 ```

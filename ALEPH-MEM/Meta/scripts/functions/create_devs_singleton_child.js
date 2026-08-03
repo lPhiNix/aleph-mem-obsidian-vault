@@ -9,7 +9,7 @@
  * @param {string} config.parentFolder - Fragment of path that the parent must contain
  * @param {string} config.suffix       - Suffix to append (e.g., "-PM")
  *
- * @returns {{ title: string, context: string }}
+ * @returns {{ title: string, context: string, renamed: boolean }}
  */
 module.exports = async (tp, config) => {
   const { parentFolder, suffix } = config;
@@ -20,7 +20,7 @@ module.exports = async (tp, config) => {
     : "";
 
   if (!parent) {
-    return { title: tp.file.title, context: "" };
+    return { title: tp.file.title, context: "", renamed: false };
   }
 
   const title = `${parent}${suffix}`;
@@ -36,5 +36,5 @@ module.exports = async (tp, config) => {
   const contextAttr = await tp.file.include("[[c_templater_native_context_attribute]]");
   const context = contextAttr + `\n- "[[${parent}]]"`;
 
-  return { title, context };
+  return { title, context, renamed: !alreadyExists };
 };
