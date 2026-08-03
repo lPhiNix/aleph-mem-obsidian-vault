@@ -1,0 +1,28 @@
+/* Devs progress bar — devs-project-progress (0–100%) */
+/* Uses the module highlight color for the fill, with percentage label */
+
+.devs-progress-bar .mb-progress-bar-input {
+  display: flex !important;
+  align-items: center !important;
+  padding-right: 2rem !important;
+  overflow: hidden !important;
+}
+.devs-progress-bar .mb-progress-bar-progress {
+  min-width: 1%;
+  max-width: calc(100% - 2rem) !important;
+  background-color: var(--highlight, #10b981) !important;
+}
+.devs-progress-bar .mb-progress-bar-value {
+  display: block !important;
+  width: 100% !important;
+  text-align: right !important;
+  padding-right: 0.5rem !important;
+  color: var(--highlight, #10b981) !important;
+}
+.devs-progress-bar .mb-progress-bar-value::after {
+  content: "%";
+}
+.devs-progress-bar .mb-progress-bar-label-left,
+.devs-progress-bar .mb-progress-bar-label-right {
+  display: none !important;
+}
