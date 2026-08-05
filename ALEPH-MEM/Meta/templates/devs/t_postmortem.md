@@ -19,7 +19,7 @@ let tags = [
 tR += (await tp.file.include("[[c_templater_native_tags_attribute]]")) + tags.map(t => "\n- "+t).join("");
 %>
 <%*
-const child = await tp.user.create_devs_singleton_child(tp, {
+const child = await tp.user.create_singleton_child_note(tp, {
   parentFolder: "04 - Λ - Devs/01 - Projects/",
   suffix: "-PM"
 });
