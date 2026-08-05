@@ -239,7 +239,7 @@ sequenceDiagram
 
 ## Tags
 
-#benchmark #noetheris #test
+#benchmark
 
 ---
 
