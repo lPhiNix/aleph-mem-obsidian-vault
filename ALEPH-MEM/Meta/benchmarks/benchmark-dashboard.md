@@ -120,7 +120,7 @@ const dashboard = {
 
 ## Tags
 
-#benchmark #dashboard #main
+#benchmark
 
 ---
 

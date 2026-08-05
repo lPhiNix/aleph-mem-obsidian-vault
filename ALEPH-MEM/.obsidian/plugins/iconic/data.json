@@ -139,7 +139,7 @@
       "icon": "lucide-sticky-note"
     },
     "MEMORIUM": {
-      "icon": "lucide-codesandbox"
+      "icon": "lucide-sparkles"
     },
     "daily": {
       "icon": "lucide-calendar"
@@ -157,16 +157,37 @@
       "icon": "lucide-calendar"
     },
     "ORDUS": {
-      "icon": "lucide-codesandbox"
+      "icon": "lucide-sparkles"
     },
     "task": {
-      "icon": "lucide-tag"
+      "icon": "lucide-tickets"
     },
     "AM": {
       "icon": "lucide-codesandbox"
     },
     "board": {
-      "icon": "lucide-trello"
+      "icon": "lucide-kanban-square"
+    },
+    "benchmark": {
+      "icon": "lucide-activity-square"
+    },
+    "DEVS": {
+      "icon": "lucide-sparkles"
+    },
+    "subtask": {
+      "icon": "lucide-tag"
+    },
+    "project": {
+      "icon": "lucide-drafting-compass"
+    },
+    "binnacle": {
+      "icon": "lucide-notebook-pen"
+    },
+    "decision": {
+      "icon": "lucide-git-branch"
+    },
+    "postmortem": {
+      "icon": "lucide-microscope"
     }
   },
   "propertyIcons": {
@@ -259,7 +280,7 @@
     },
     {
       "id": "5Qavz",
-      "name": "Journal",
+      "name": "Memorium/Journal",
       "match": "all",
       "conditions": [
         {
@@ -272,8 +293,64 @@
       "icon": "lucide-calendar"
     },
     {
+      "id": "VkUKa",
+      "name": "Devs/Projects",
+      "match": "all",
+      "conditions": [
+        {
+          "source": "path",
+          "operator": "startsWith",
+          "value": "04 - Λ - Devs/01 - Projects/"
+        }
+      ],
+      "enabled": true,
+      "icon": "lucide-drafting-compass"
+    },
+    {
+      "id": "YPvcI",
+      "name": "Devs/Binnacles",
+      "match": "all",
+      "conditions": [
+        {
+          "source": "path",
+          "operator": "startsWith",
+          "value": "04 - Λ - Devs/02 - Binnacles/"
+        }
+      ],
+      "enabled": true,
+      "icon": "lucide-notebook-pen"
+    },
+    {
+      "id": "7SpYR",
+      "name": "Devs/Decisions",
+      "match": "all",
+      "conditions": [
+        {
+          "source": "path",
+          "operator": "startsWith",
+          "value": "04 - Λ - Devs/03 - Decisions/"
+        }
+      ],
+      "enabled": true,
+      "icon": "lucide-git-branch"
+    },
+    {
+      "id": "XjFQ9",
+      "name": "Devs/Postmortem",
+      "match": "all",
+      "conditions": [
+        {
+          "source": "path",
+          "operator": "startsWith",
+          "value": "04 - Λ - Devs/04 - Postmortems/"
+        }
+      ],
+      "enabled": true,
+      "icon": "lucide-microscope"
+    },
+    {
       "id": "xRutp",
-      "name": "Kanban",
+      "name": "Ordus/Boards",
       "match": "all",
       "conditions": [
         {
@@ -287,13 +364,27 @@
     },
     {
       "id": "hKQiX",
-      "name": "Tasks",
+      "name": "Ordus/Tasks",
       "match": "all",
       "conditions": [
         {
           "source": "path",
           "operator": "startsWith",
-          "value": "07 - Π - Ordus/"
+          "value": "07 - Π - Ordus/02 - Tasks/"
+        }
+      ],
+      "enabled": true,
+      "icon": "lucide-tickets"
+    },
+    {
+      "id": "YEDCM",
+      "name": "Ordus/Subtasks",
+      "match": "all",
+      "conditions": [
+        {
+          "source": "path",
+          "operator": "startsWith",
+          "value": "07 - Π - Ordus/03 - Subtasks/"
         }
       ],
       "enabled": true,
@@ -301,7 +392,7 @@
     },
     {
       "id": "eeleM",
-      "name": "Benchmarks",
+      "name": "Meta/Benchmarks",
       "match": "all",
       "conditions": [
         {
@@ -315,7 +406,7 @@
     },
     {
       "id": "UqeZY",
-      "name": "Components",
+      "name": "Meta/Components",
       "match": "any",
       "conditions": [
         {
@@ -339,7 +430,7 @@
     },
     {
       "id": "kym5J",
-      "name": "Scripts",
+      "name": "Meta/Scripts",
       "match": "any",
       "conditions": [
         {
@@ -373,7 +464,7 @@
     },
     {
       "id": "OEu0E",
-      "name": "Templates",
+      "name": "Meta/Templates",
       "match": "any",
       "conditions": [
         {

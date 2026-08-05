@@ -258,7 +258,7 @@ sequenceDiagram
 
 ## Tags
 
-#benchmark #utilities #test
+#benchmark
 
 ---
 

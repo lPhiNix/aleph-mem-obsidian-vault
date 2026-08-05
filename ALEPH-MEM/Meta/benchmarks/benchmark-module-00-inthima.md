@@ -239,7 +239,7 @@ sequenceDiagram
 
 ## Tags
 
-#benchmark #inthima #test
+#benchmark
 
 ---
 
