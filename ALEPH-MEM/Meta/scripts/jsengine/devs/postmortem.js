@@ -21,5 +21,6 @@ for (const k of Object.keys(plugin)) {
 }
 
 const template = app.vault.getAbstractFileByPath(templatePath);
-const folder = app.vault.getAbstractFileByPath(childFolder);
+let folder = app.vault.getAbstractFileByPath(childFolder);
+if (!folder) folder = await app.vault.createFolder(childFolder);
 await api.create_new_note_from_template(template, folder, pmName, true);
