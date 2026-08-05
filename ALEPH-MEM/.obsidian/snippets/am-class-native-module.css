@@ -152,6 +152,9 @@
 .module .metadata-property-value .multi-select-container {
   color: var(--highlight) !important;
 }
+.module .multi-select-input:empty::before {
+  color: var(--dark) !important;
+}
 .module input[type="datetime-local"]::-webkit-datetime-edit-text {
   color: var(--highlight) !important;
 }
