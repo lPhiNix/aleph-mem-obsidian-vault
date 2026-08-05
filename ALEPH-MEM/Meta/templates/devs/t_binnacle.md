@@ -14,7 +14,7 @@ tR += await tp.file.include("[[c_templater_native_creation_attribute]]");
 %>
 <%*
 let tags = [
-	"NOTE", "DEVS", "project", "binnacle",
+	"NOTE", "DEVS", "binnacle",
 ];
 tR += (await tp.file.include("[[c_templater_native_tags_attribute]]")) + tags.map(t => "\n- "+t).join("");
 %>
