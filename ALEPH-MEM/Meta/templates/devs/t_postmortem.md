@@ -55,6 +55,4 @@ tR += await tp.file.include("[[c_metabind_devs_postmortem_outcome_slider]]");
 ---
 ## ✧ Analysis
 
-<%*
-tR += await tp.file.include("[[c_metabind_devs_postmortem_content_editor]]");
-%>
+> [!editor]

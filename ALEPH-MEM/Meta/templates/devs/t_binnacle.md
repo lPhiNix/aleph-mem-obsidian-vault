@@ -64,6 +64,4 @@ tR += await tp.file.include("[[c_metabind_devs_binnacle_status_slider]]");
 ---
 ## ✧ Summary
 
-<%*
-tR += await tp.file.include("[[c_metabind_devs_binnacle_summary_editor]]");
-%>
+> [!editor]

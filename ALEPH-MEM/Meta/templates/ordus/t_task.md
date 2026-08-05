@@ -81,9 +81,7 @@ tR += await tp.file.include("[[c_metabind_ordus_business_slider]]");
 ---
 ## ✧ Summary
 
-<%*
-tR += await tp.file.include("[[c_matabind_ordus_task_description_editor]]");
-%>
+> [!editor]
 
 ---
 ## ✧ Checklist
