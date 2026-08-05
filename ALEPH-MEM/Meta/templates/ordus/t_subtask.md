@@ -19,7 +19,7 @@ let tags = [
 tR += (await tp.file.include("[[c_templater_native_tags_attribute]]")) + tags.map(t => "\n- "+t).join("");
 %>
 <%*
-const child = await tp.user.create_child_note(tp, {
+const child = await tp.user.generate_child_note(tp, {
   parentFolder: "07 - Π - Ordus/02 - Tasks/",
   childFolder: "07 - Π - Ordus/03 - Subtasks"
 });

@@ -1,47 +1,38 @@
 /**
- * child_note_factory
- * Shared utilities and strategies for creating child notes in any module.
+ * generate_child_note
+ * Creates a child note from the active parent. Detects mode from config:
+ *   - numbered: config.childFolder → auto-numbered (e.g. PROJECT-1-B1)
+ *   - singleton: config.suffix → fixed name (e.g. PROJECT-1-PM)
  *
- * Strategies:
- *   numberedChild  — 1-n relationships, auto-numbered (Binnacle, Decision, Subtask)
- *   singletonChild — 1-1 relationships, fixed name (Postmortem)
+ * @param {object} tp     — Templater object
+ * @param {object} config
+ * @param {string} config.parentFolder  — fragment that the parent's path must contain
+ * @param {string} [config.childFolder]  — numbered mode: folder where child is created
+ * @param {string} [config.separator]    — numbered mode: separator (default "-")
+ * @param {boolean} [config.includeBoard] — numbered mode: include ancestor board (default true)
+ * @param {string} [config.suffix]       — singleton mode: suffix to append (e.g. "-PM")
  *
- * Use from templates via thin wrappers (create_child_note.js, create_singleton_child.js).
+ * @returns {object}
+ *   numbered:  { title: string, context: string }
+ *   singleton: { title: string, context: string, renamed: boolean }
  */
 
 // ---------------------------------------------------------------------------
 // Utilities
 // ---------------------------------------------------------------------------
 
-/**
- * Extracts the parent basename from Templater's active file, validated against a folder.
- * @param {object} tp
- * @param {string} parentFolder — fragment that the parent's path must contain
- * @returns {string} parent basename, or "" if not found
- */
 function getParentName(tp, parentFolder) {
   const parentFile = tp.config.active_file;
   if (!parentFile || !parentFile.path.includes(parentFolder)) return "";
   return parentFile.basename;
 }
 
-/**
- * Builds the `context` frontmatter attribute string from a list of parent link names.
- * @param {string} contextAttr — result of tp.file.include("[[c_templater_native_context_attribute]]")
- * @returns {string} full context attribute ready for tR
- */
 async function buildContext(tp, parentLinks) {
   const attr = await tp.file.include("[[c_templater_native_context_attribute]]");
   if (!parentLinks || parentLinks.length === 0) return attr;
   return attr + parentLinks.map(link => `\n- "[[${link}]]"`).join("");
 }
 
-/**
- * Scans a folder for files matching a prefix and returns max index + 1.
- * @param {string} childFolder — folder to scan (e.g. "04 - Λ - Devs/02 - Binnacles")
- * @param {string} prefix      — basename prefix to match (e.g. "PROJECT-1-B")
- * @returns {number} next available index
- */
 function getNextIndex(childFolder, prefix) {
   const existing = app.vault.getFiles().filter(f =>
     f.path.startsWith(childFolder + "/") && f.basename.startsWith(prefix)
@@ -54,10 +45,6 @@ function getNextIndex(childFolder, prefix) {
   return maxN + 1;
 }
 
-/**
- * Forces preview mode when the child note is opened. Duplicates what the
- * native preview_mode_forcer component does — kept here as a safeguard.
- */
 function forcePreview(tp) {
   const _newFile = tp.config.target_file;
   let _handled = false;
@@ -83,18 +70,7 @@ function forcePreview(tp) {
 // Strategies
 // ---------------------------------------------------------------------------
 
-/**
- * Creates an auto-numbered child note (1-n relationship).
- * Renames to {parent}{separator}{N} (e.g. PROJECT-1-B1).
- *
- * Config shape:
- *   { parentFolder, childFolder, separator?, includeBoard? }
- *
- * @param {object} tp     — Templater object
- * @param {object} config
- * @returns {{ title: string, context: string }}
- */
-async function numberedChild(tp, config) {
+async function numbered(tp, config) {
   const { parentFolder, childFolder, separator = "-", includeBoard = true } = config;
 
   const parent = getParentName(tp, parentFolder);
@@ -121,19 +97,7 @@ async function numberedChild(tp, config) {
   return { title, context };
 }
 
-/**
- * Creates a 1-1 singleton child note with a fixed suffix.
- * Renames to {parent}{suffix} (e.g. PROJECT-1-PM).
- * If the target already exists, rename is skipped.
- *
- * Config shape:
- *   { parentFolder, suffix }
- *
- * @param {object} tp     — Templater object
- * @param {object} config
- * @returns {{ title: string, context: string, renamed: boolean }}
- */
-async function singletonChild(tp, config) {
+async function singleton(tp, config) {
   const { parentFolder, suffix } = config;
 
   const parent = getParentName(tp, parentFolder);
@@ -157,11 +121,12 @@ async function singletonChild(tp, config) {
 }
 
 // ---------------------------------------------------------------------------
-// Exports (for require()) and global fallback
+// Auto-detect mode
 // ---------------------------------------------------------------------------
 
-module.exports = { getParentName, getNextIndex, buildContext, numberedChild, singletonChild };
-
-// Global fallback — some Templater setups may not support require().
-// Thin wrappers check this first.
-globalThis.__childNoteFactory = module.exports;
+module.exports = async (tp, config) => {
+  if (config.suffix) {
+    return await singleton(tp, config);
+  }
+  return await numbered(tp, config);
+};
