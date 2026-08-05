@@ -83,9 +83,7 @@ tR += await tp.file.include("[[c_metabind_devs_project_progress_slider]]");
 ---
 ## ✧ Description
 
-<%*
-tR += await tp.file.include("[[c_metabind_devs_project_description_editor]]");
-%>
+> [!editor]
 
 ---
 ## ✧ Actions

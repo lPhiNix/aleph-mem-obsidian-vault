@@ -144,7 +144,9 @@
     "am-layout-devs-impact-bar",
     "am-layout-devs-outcome-bar",
     "am-layout-devs-progress-bar",
-    "am-layout-devs-status-bar"
+    "am-layout-devs-status-bar",
+    "am-layout-editor-callout",
+    "am-layout-devs-editor-callout"
   ],
   "interfaceFontFamily": "",
   "textFontFamily": "",

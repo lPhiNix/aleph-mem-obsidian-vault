@@ -64,6 +64,4 @@ tR += await tp.file.include("[[c_metabind_devs_decision_impact_slider]]");
 ---
 ## ✧ Decision
 
-<%*
-tR += await tp.file.include("[[c_metabind_devs_decision_content_editor]]");
-%>
+> [!editor]

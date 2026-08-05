@@ -60,9 +60,7 @@ tR += await tp.file.include("[[c_metabind_memorium_weekly_alias_text]]");
 ---
 ## ✧ Summary
 
-<%*
-tR += await tp.file.include("[[c_metabind_memorium_weekly_summary_editor]]");
-%>
+> [!editor]
 
 ## ✧ Ratings
 ---
