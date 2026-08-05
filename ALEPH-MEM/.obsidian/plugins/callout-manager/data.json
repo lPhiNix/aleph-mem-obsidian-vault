@@ -2,28 +2,14 @@
   "callouts": {
     "custom": [
       "memorium",
-      "ordus"
+      "ordus",
+      "devs"
     ],
     "settings": {
       "memorium": [
         {
           "changes": {
-            "icon": "lucide-calendar-search"
-          }
-        },
-        {
-          "condition": {
-            "colorScheme": "light"
-          },
-          "changes": {
-            "color": "255, 247, 0"
-          }
-        },
-        {
-          "condition": {
-            "colorScheme": "dark"
-          },
-          "changes": {
+            "icon": "lucide-calendar-search",
             "color": "255, 247, 0"
           }
         }
@@ -33,6 +19,14 @@
           "changes": {
             "icon": "lucide-tags",
             "color": "218, 119, 242"
+          }
+        }
+      ],
+      "devs": [
+        {
+          "changes": {
+            "icon": "lucide-drafting-compass",
+            "color": "99, 230, 190"
           }
         }
       ]
