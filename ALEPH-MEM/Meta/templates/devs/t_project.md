@@ -93,3 +93,14 @@ tR += await tp.file.include("[[c_metabind_devs_project_description_editor]]");
 <%*
 tR += await tp.file.include("[[c_metabind_devs_project_buttons]]");
 %>
+
+---
+## ✧ Activity
+
+<%*
+tR += await tp.file.include("[[c_dataview_devs_project_binnacles_list]]");
+%>
+
+<%*
+tR += await tp.file.include("[[c_dataview_devs_project_decisions_list]]");
+%>
