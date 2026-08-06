@@ -125,9 +125,3 @@
 .kanban .kanban-plugin__meta-row:has([data-key="ordus-business"]):has([data-value="5"]) {
   color: rgb(221, 0, 255);
 }
-
-/* --- ordus-description (sin key, colspan=2) --- */
-.kanban .kanban-plugin__meta-row:not(:has([data-key])) {
-
-
-}
