@@ -17,9 +17,6 @@ placeholder.*
 Data/*
 !placeholder.png
 
-# AI
-AGENTS.md
-
 # Test
 Test/*
 
