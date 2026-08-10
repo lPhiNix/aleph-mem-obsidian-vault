@@ -43,9 +43,6 @@ tR += await tp.file.include("[[c_templater_native_alias_attribute]]");
 <%*
 tR += await tp.file.include("[[c_templater_devs_binnacle_status]]");
 %>
-<%*
-tR += await tp.file.include("[[c_templater_devs_binnacle_summary]]");
-%>
 
 <%"---"%>
 # ✦ Binnacle #<% child.title.replace(/^.*-B/, '') %>
