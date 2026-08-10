@@ -1,3 +1,3 @@
 ```dataviewjs
-await dv.view("Meta/scripts/view/dataview/interactive/dataview_ordus_task_checklist");
+await dv.view("Meta/scripts/views/interactive/dataview_ordus_task_checklist");
 ```
