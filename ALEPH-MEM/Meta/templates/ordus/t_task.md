@@ -48,7 +48,7 @@ tR += await tp.file.include("[[c_templater_ordus_task_business]]");
 # ✦ Task #<% tp.file.title.replace(/^.*-/, '') %>
 
 <%*
-tR += await tp.file.include("[[c_metabind_ordus_task_alias_text]]");
+tR += await tp.file.include("[[c_dataview_ordus_task_alias_text]]");
 %>
 
 ---

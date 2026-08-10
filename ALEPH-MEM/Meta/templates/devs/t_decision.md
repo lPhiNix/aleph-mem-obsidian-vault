@@ -48,7 +48,7 @@ tR += await tp.file.include("[[c_templater_devs_decision_impact]]");
 # ✦ Decision #<% child.title.replace(/^.*-D/, '') %>
 
 <%*
-tR += await tp.file.include("[[c_metabind_devs_decision_alias_text]]");
+tR += await tp.file.include("[[c_dataview_devs_decision_alias_text]]");
 %>
 
 ---

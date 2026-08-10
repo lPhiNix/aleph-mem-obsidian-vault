@@ -63,7 +63,7 @@ tR += await tp.file.include("[[c_templater_devs_project_progress]]");
 # ✦ Project #<% projNum %>
 
 <%*
-tR += await tp.file.include("[[c_metabind_devs_project_alias_text]]");
+tR += await tp.file.include("[[c_dataview_devs_project_alias_text]]");
 %>
 
 ---

@@ -54,7 +54,7 @@ tR += await tp.file.include("[[c_metabind_memorium_daily_nav_buttons]]");
 %>
 
 <%*
-tR += await tp.file.include("[[c_metabind_memorium_daily_alias_text]]");
+tR += await tp.file.include("[[c_dataview_memorium_daily_alias_text]]");
 %>
 ---
 ## ✧ Rating
