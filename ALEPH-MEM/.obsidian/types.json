@@ -5,7 +5,6 @@
     "tags": "tags",
     "version": "text",
     "creation": "datetime",
-    "favorite": "checkbox",
     "key": "text",
     "context": "multitext",
     "related": "multitext"
