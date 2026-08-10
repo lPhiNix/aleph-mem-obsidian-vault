@@ -9,7 +9,7 @@
  * @param {string} config.parentFolder  — fragment that the parent's path must contain
  * @param {string} [config.childFolder]  — numbered mode: folder where child is created
  * @param {string} [config.separator]    — numbered mode: separator (default "-")
- * @param {boolean} [config.includeBoard] — numbered mode: include ancestor board (default true)
+ * @param {boolean} [config.includeAncestor] — numbered mode: include ancestor node as context (default true)
  * @param {string} [config.suffix]       — singleton mode: suffix to append (e.g. "-PM")
  *
  * @returns {object}
@@ -71,7 +71,7 @@ function forcePreview(tp) {
 // ---------------------------------------------------------------------------
 
 async function numbered(tp, config) {
-  const { parentFolder, childFolder, separator = "-", includeBoard = true } = config;
+  const { parentFolder, childFolder, separator = "-", includeAncestor = true } = config;
 
   const parent = getParentName(tp, parentFolder);
   if (!parent) {
@@ -86,7 +86,7 @@ async function numbered(tp, config) {
   forcePreview(tp);
 
   const links = [];
-  if (includeBoard) {
+  if (includeAncestor) {
     const boardMatch = parent.match(/^(.+)-\d+$/);
     if (boardMatch) links.push(boardMatch[1]);
   }
