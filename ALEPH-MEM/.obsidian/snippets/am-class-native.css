@@ -57,7 +57,9 @@
 }
 
 .native .callout {
-  border-radius: 0;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 0px;
   background-color: transparent;
   box-shadow: none;
   transition: all 0.2s ease;
