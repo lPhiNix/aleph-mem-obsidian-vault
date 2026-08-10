@@ -23,7 +23,7 @@ const child = await tp.user.generate_child_note(tp, {
   parentFolder: "04 - Λ - Devs/01 - Projects/",
   childFolder: "04 - Λ - Devs/03 - Decisions",
   separator: "-D",
-  includeBoard: false
+  includeAncestor: false
 });
 tR += child.context;
 %>

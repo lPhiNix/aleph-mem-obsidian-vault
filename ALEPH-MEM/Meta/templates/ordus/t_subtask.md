@@ -20,8 +20,9 @@ tR += (await tp.file.include("[[c_templater_native_tags_attribute]]")) + tags.ma
 %>
 <%*
 const child = await tp.user.generate_child_note(tp, {
-  parentFolder: "07 - Π - Ordus/02 - Tasks/",
-  childFolder: "07 - Π - Ordus/03 - Subtasks"
+    parentFolder: "07 - Π - Ordus/02 - Tasks/",
+    childFolder: "07 - Π - Ordus/03 - Subtasks",
+    includeAncestor: false
 });
 tR += child.context;
 %>
