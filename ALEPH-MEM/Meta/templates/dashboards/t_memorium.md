@@ -5,7 +5,7 @@ tR += await tp.file.include("[[c_templater_native_version_attribute]]");
 %>
 <%*
 let links = [
-	
+	"AM"
 ];
 tR += (await tp.file.include("[[c_templater_native_context_attribute]]")) + links.map(t => "\n- \"[[" + t + "]]\"").join("");
 %>
