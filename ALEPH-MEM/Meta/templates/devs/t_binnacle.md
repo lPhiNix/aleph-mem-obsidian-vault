@@ -58,7 +58,7 @@ tR += await tp.file.include("[[c_metabind_devs_binnacle_alias_text]]");
 ## ✧ Status
 
 <%*
-tR += await tp.file.include("[[c_metabind_devs_binnacle_status_slider]]");
+tR += await tp.file.include("[[c_dataview_devs_binnacle_status_slider]]");
 %>
 
 ---

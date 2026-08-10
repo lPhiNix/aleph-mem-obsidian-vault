@@ -58,7 +58,7 @@ tR += await tp.file.include("[[c_metabind_devs_decision_alias_text]]");
 ## ✧ Impact
 
 <%*
-tR += await tp.file.include("[[c_metabind_devs_decision_impact_slider]]");
+tR += await tp.file.include("[[c_dataview_devs_decision_impact_slider]]");
 %>
 
 ---

@@ -68,14 +68,14 @@ tR += await tp.file.include("[[c_metabind_ordus_task_alias_text]]");
 ## ✧ Priority
 
 <%*
-tR += await tp.file.include("[[c_metabind_ordus_priority_slider]]");
+tR += await tp.file.include("[[c_dataview_ordus_priority_slider]]");
 %>
 
 ---
 ## ✧ Business
 
 <%*
-tR += await tp.file.include("[[c_metabind_ordus_business_slider]]");
+tR += await tp.file.include("[[c_dataview_ordus_business_slider]]");
 %>
 
 ---

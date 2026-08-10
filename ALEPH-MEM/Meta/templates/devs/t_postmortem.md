@@ -49,7 +49,7 @@ tR += await tp.file.include("[[c_templater_devs_postmortem_content]]");
 # ✦ Postmortem
 
 <%*
-tR += await tp.file.include("[[c_metabind_devs_postmortem_outcome_slider]]");
+tR += await tp.file.include("[[c_dataview_devs_postmortem_outcome_slider]]");
 %>
 
 ---
