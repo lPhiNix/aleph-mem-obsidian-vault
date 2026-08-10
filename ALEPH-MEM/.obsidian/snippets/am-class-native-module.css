@@ -179,12 +179,15 @@
   color: var(--highlight) !important;
 }
 
-.module .mb-input input::placeholder {
-  color: var(--dark) !important;
-}
-.module .mb-input input {
+.module .input-alias {
   color: var(--highlight) !important;
   border-color: var(--secondary) !important;
+}
+.module .input-alias::placeholder {
+  color: var(--dark) !important;
+}
+.module .input-alias:focus-visible {
+  border-color: var(--highlight) !important;
 }
 
 .module .mb-button-inner {
