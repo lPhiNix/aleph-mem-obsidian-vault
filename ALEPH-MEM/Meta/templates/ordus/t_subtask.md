@@ -41,15 +41,6 @@ tR += await tp.file.include("[[c_templater_native_alias_attribute]]");
 <%*
 tR += await tp.file.include("[[c_templater_ordus_task_description]]");
 %>
-<%*
-tR += await tp.file.include("[[c_templater_ordus_task_checklist]]");
-%>
-<%*
-tR += await tp.file.include("[[c_templater_ordus_task_checklist_done]]");
-%>
-<%*
-tR += await tp.file.include("[[c_templater_ordus_task_checklist_input]]");
-%>
 
 <%"---"%>
 # ✦ Subtask #<% child.title.replace(/^.*-/, '') %>
@@ -62,16 +53,3 @@ tR += await tp.file.include("[[c_metabind_ordus_task_alias_text]]");
 ## ✧ Summary
 
 > [!editor]
-
----
-## ✧ Checklist
-
-<%*
-tR += await tp.file.include("[[c_dataview_ordus_task_checklist]]");
-%>
-<%*
-tR += await tp.file.include("[[c_metabind_ordus_task_checklist_input]]");
-%>
-<%*
-tR += await tp.file.include("[[c_metabind_ordus_task_checklist_buttons]]");
-%>
