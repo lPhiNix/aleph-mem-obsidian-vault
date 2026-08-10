@@ -1,6 +1,7 @@
 ---
 version: "#bae9b1b1007a"
 context:
+  - "[[AM]]"
 cssclasses:
   - native
   - hide-all-frontmatter
