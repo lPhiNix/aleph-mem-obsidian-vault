@@ -46,15 +46,6 @@ tR += await tp.file.include("[[c_templater_ordus_task_business]]");
 <%*
 tR += await tp.file.include("[[c_templater_ordus_task_description]]");
 %>
-<%*
-tR += await tp.file.include("[[c_templater_ordus_task_checklist]]");
-%>
-<%*
-tR += await tp.file.include("[[c_templater_ordus_task_checklist_done]]");
-%>
-<%*
-tR += await tp.file.include("[[c_templater_ordus_task_checklist_input]]");
-%>
 
 
 <%"---"%>
@@ -82,19 +73,6 @@ tR += await tp.file.include("[[c_dataview_ordus_business_slider]]");
 ## ✧ Summary
 
 > [!editor]
-
----
-## ✧ Checklist
-
-<%*
-tR += await tp.file.include("[[c_dataview_ordus_task_checklist]]");
-%>
-<%*
-tR += await tp.file.include("[[c_metabind_ordus_task_checklist_input]]");
-%>
-<%*
-tR += await tp.file.include("[[c_metabind_ordus_task_checklist_buttons]]");
-%>
 
 ---
 ## ✧ Subtasks
