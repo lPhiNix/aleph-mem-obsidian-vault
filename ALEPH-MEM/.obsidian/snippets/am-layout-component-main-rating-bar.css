@@ -1,87 +1,87 @@
-.rating-bar .mb-progress-bar-input {
+.rating-bar .progress-bar-input {
   display: flex !important;
   align-items: center !important;
   padding-right: 2rem !important;
   overflow: hidden !important;
 }
-.rating-bar .mb-progress-bar-progress {
+.rating-bar .progress-bar-progress {
   min-width: 5%;
-  max-width: calc(100% - 1rem) !important;
+  max-width: calc(100% - 3.25rem) !important;
 }
 
-.rating-bar .mb-progress-bar-value {
+.rating-bar .progress-bar-value {
   display: block !important;
   width: 100% !important;
   text-align: right !important;
   padding-right: 0.5rem !important;
 }
-.rating-bar .mb-progress-bar-value::before {
+.rating-bar .progress-bar-value::before {
   content: "☆";
 }
-.rating-bar .mb-progress-bar-label-left {
+.rating-bar .progress-bar-label-left {
   display: none !important;
 }
-.rating-bar .mb-progress-bar-label-right {
+.rating-bar .progress-bar-label-right {
   display: none !important;
 }
 
-.rating-bar[data-internal-value="1"] .mb-progress-bar-progress {
+.rating-bar[data-internal-value="1"] .progress-bar-progress {
   background-color: #4a4a4a !important;
 }
-.rating-bar[data-internal-value="1"] .mb-progress-bar-value {
+.rating-bar[data-internal-value="1"] .progress-bar-value {
   color: #4a4a4a !important;
 }
-.rating-bar[data-internal-value="2"] .mb-progress-bar-progress {
+.rating-bar[data-internal-value="2"] .progress-bar-progress {
   background-color: #ef4444 !important;
 }
-.rating-bar[data-internal-value="2"] .mb-progress-bar-value {
+.rating-bar[data-internal-value="2"] .progress-bar-value {
   color: #ef4444 !important;
 }
-.rating-bar[data-internal-value="3"] .mb-progress-bar-progress {
+.rating-bar[data-internal-value="3"] .progress-bar-progress {
   background-color: #f59e0b !important;
 }
-.rating-bar[data-internal-value="3"] .mb-progress-bar-value {
+.rating-bar[data-internal-value="3"] .progress-bar-value {
   color: #f59e0b !important;
 }
-.rating-bar[data-internal-value="4"] .mb-progress-bar-progress {
+.rating-bar[data-internal-value="4"] .progress-bar-progress {
   background-color: #fbbf24 !important;
 }
-.rating-bar[data-internal-value="4"] .mb-progress-bar-value {
+.rating-bar[data-internal-value="4"] .progress-bar-value {
   color: #fbbf24 !important;
 }
-.rating-bar[data-internal-value="5"] .mb-progress-bar-progress {
+.rating-bar[data-internal-value="5"] .progress-bar-progress {
   background-color: #10b981 !important;
 }
-.rating-bar[data-internal-value="5"] .mb-progress-bar-value {
+.rating-bar[data-internal-value="5"] .progress-bar-value {
   color: #10b981 !important;
 }
-.rating-bar[data-internal-value="6"] .mb-progress-bar-progress {
+.rating-bar[data-internal-value="6"] .progress-bar-progress {
   background-color: #3b82f6 !important;
 }
-.rating-bar[data-internal-value="6"] .mb-progress-bar-value {
+.rating-bar[data-internal-value="6"] .progress-bar-value {
   color: #3b82f6 !important;
 }
-.rating-bar[data-internal-value="7"] .mb-progress-bar-progress {
+.rating-bar[data-internal-value="7"] .progress-bar-progress {
   background-color: #a855f7 !important;
 }
-.rating-bar[data-internal-value="7"] .mb-progress-bar-value {
+.rating-bar[data-internal-value="7"] .progress-bar-value {
   color: #a855f7 !important;
 }
-.rating-bar[data-internal-value="8"] .mb-progress-bar-progress {
+.rating-bar[data-internal-value="8"] .progress-bar-progress {
   background-color: #c026d3 !important;
 }
-.rating-bar[data-internal-value="8"] .mb-progress-bar-value {
+.rating-bar[data-internal-value="8"] .progress-bar-value {
   color: #c026d3 !important;
 }
-.rating-bar[data-internal-value="9"] .mb-progress-bar-progress {
+.rating-bar[data-internal-value="9"] .progress-bar-progress {
   background-color: #ec4899 !important;
 }
-.rating-bar[data-internal-value="9"] .mb-progress-bar-value {
+.rating-bar[data-internal-value="9"] .progress-bar-value {
   color: #ec4899 !important;
 }
-.rating-bar[data-internal-value="10"] .mb-progress-bar-progress {
+.rating-bar[data-internal-value="10"] .progress-bar-progress {
   background-color: #f472b6 !important;
 }
-.rating-bar[data-internal-value="10"] .mb-progress-bar-value {
+.rating-bar[data-internal-value="10"] .progress-bar-value {
   color: #f472b6 !important;
 }

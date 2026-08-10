@@ -1,72 +1,72 @@
 /* Priority bar — ordus-priority (1=Low, 2=Medium, 3=High, 4=Critical) */
 /* Colors match am-class-kanban.css ordus-priority palette              */
 
-.priority-bar .mb-progress-bar-input {
+.priority-bar .progress-bar-input {
   display: flex !important;
   align-items: center !important;
   padding-right: 2rem !important;
   overflow: hidden !important;
 }
-.priority-bar .mb-progress-bar-progress {
+.priority-bar .progress-bar-progress {
   min-width: 10%;
-  max-width: calc(100% - 3.75rem) !important;
+  max-width: calc(100% - 6rem) !important;
 }
-.priority-bar .mb-progress-bar-value {
+.priority-bar .progress-bar-value {
   display: block !important;
   width: 100% !important;
   text-align: right !important;
   padding-right: 0.5rem !important;
   font-size: 0 !important;
 }
-.priority-bar .mb-progress-bar-label-left,
-.priority-bar .mb-progress-bar-label-right {
+.priority-bar .progress-bar-label-left,
+.priority-bar .progress-bar-label-right {
   display: none !important;
 }
 
 /* 1 — Low */
-.priority-bar[data-internal-value="1"] .mb-progress-bar-progress {
+.priority-bar[data-internal-value="1"] .progress-bar-progress {
   background-color: rgb(0, 162, 255) !important;
 }
-.priority-bar[data-internal-value="1"] .mb-progress-bar-value {
+.priority-bar[data-internal-value="1"] .progress-bar-value {
   color: rgb(0, 162, 255) !important;
 }
-.priority-bar[data-internal-value="1"] .mb-progress-bar-value::before {
+.priority-bar[data-internal-value="1"] .progress-bar-value::before {
   content: "Low";
   font-size: var(--font-text-size, 1rem);
 }
 
 /* 2 — Medium */
-.priority-bar[data-internal-value="2"] .mb-progress-bar-progress {
+.priority-bar[data-internal-value="2"] .progress-bar-progress {
   background-color: rgb(255, 179, 0) !important;
 }
-.priority-bar[data-internal-value="2"] .mb-progress-bar-value {
+.priority-bar[data-internal-value="2"] .progress-bar-value {
   color: rgb(255, 179, 0) !important;
 }
-.priority-bar[data-internal-value="2"] .mb-progress-bar-value::before {
+.priority-bar[data-internal-value="2"] .progress-bar-value::before {
   content: "Medium";
   font-size: var(--font-text-size, 1rem);
 }
 
 /* 3 — High */
-.priority-bar[data-internal-value="3"] .mb-progress-bar-progress {
+.priority-bar[data-internal-value="3"] .progress-bar-progress {
   background-color: rgb(255, 55, 0) !important;
 }
-.priority-bar[data-internal-value="3"] .mb-progress-bar-value {
+.priority-bar[data-internal-value="3"] .progress-bar-value {
   color: rgb(255, 55, 0) !important;
 }
-.priority-bar[data-internal-value="3"] .mb-progress-bar-value::before {
+.priority-bar[data-internal-value="3"] .progress-bar-value::before {
   content: "High";
   font-size: var(--font-text-size, 1rem);
 }
 
 /* 4 — Critical */
-.priority-bar[data-internal-value="4"] .mb-progress-bar-progress {
+.priority-bar[data-internal-value="4"] .progress-bar-progress {
   background-color: rgb(255, 0, 0) !important;
 }
-.priority-bar[data-internal-value="4"] .mb-progress-bar-value {
+.priority-bar[data-internal-value="4"] .progress-bar-value {
   color: rgb(255, 0, 0) !important;
 }
-.priority-bar[data-internal-value="4"] .mb-progress-bar-value::before {
+.priority-bar[data-internal-value="4"] .progress-bar-value::before {
   content: "Critical";
   font-size: var(--font-text-size, 1rem);
 }

@@ -1,59 +1,59 @@
 /* Devs outcome bar — devs-postmortem-outcome (1=Completed, 2=Failed, 3=Abandoned) */
 
-.devs-outcome-bar .mb-progress-bar-input {
+.devs-outcome-bar .progress-bar-input {
   display: flex !important;
   align-items: center !important;
   padding-right: 2rem !important;
   overflow: hidden !important;
 }
-.devs-outcome-bar .mb-progress-bar-progress {
+.devs-outcome-bar .progress-bar-progress {
   min-width: 10%;
-  max-width: calc(100% - 5rem) !important;
+  max-width: calc(100% - 6.5rem) !important;
 }
-.devs-outcome-bar .mb-progress-bar-value {
+.devs-outcome-bar .progress-bar-value {
   display: block !important;
   width: 100% !important;
   text-align: right !important;
   padding-right: 0.5rem !important;
   font-size: 0 !important;
 }
-.devs-outcome-bar .mb-progress-bar-label-left,
-.devs-outcome-bar .mb-progress-bar-label-right {
+.devs-outcome-bar .progress-bar-label-left,
+.devs-outcome-bar .progress-bar-label-right {
   display: none !important;
 }
 
 /* 1 — Completed */
-.devs-outcome-bar[data-internal-value="1"] .mb-progress-bar-progress {
+.devs-outcome-bar[data-internal-value="1"] .progress-bar-progress {
   background-color: #10b981 !important;
 }
-.devs-outcome-bar[data-internal-value="1"] .mb-progress-bar-value {
+.devs-outcome-bar[data-internal-value="1"] .progress-bar-value {
   color: #10b981 !important;
 }
-.devs-outcome-bar[data-internal-value="1"] .mb-progress-bar-value::before {
+.devs-outcome-bar[data-internal-value="1"] .progress-bar-value::before {
   content: "Completed";
   font-size: var(--font-text-size, 1rem);
 }
 
 /* 2 — Failed */
-.devs-outcome-bar[data-internal-value="2"] .mb-progress-bar-progress {
+.devs-outcome-bar[data-internal-value="2"] .progress-bar-progress {
   background-color: #ef4444 !important;
 }
-.devs-outcome-bar[data-internal-value="2"] .mb-progress-bar-value {
+.devs-outcome-bar[data-internal-value="2"] .progress-bar-value {
   color: #ef4444 !important;
 }
-.devs-outcome-bar[data-internal-value="2"] .mb-progress-bar-value::before {
+.devs-outcome-bar[data-internal-value="2"] .progress-bar-value::before {
   content: "Failed";
   font-size: var(--font-text-size, 1rem);
 }
 
 /* 3 — Abandoned */
-.devs-outcome-bar[data-internal-value="3"] .mb-progress-bar-progress {
+.devs-outcome-bar[data-internal-value="3"] .progress-bar-progress {
   background-color: #6b7280 !important;
 }
-.devs-outcome-bar[data-internal-value="3"] .mb-progress-bar-value {
+.devs-outcome-bar[data-internal-value="3"] .progress-bar-value {
   color: #6b7280 !important;
 }
-.devs-outcome-bar[data-internal-value="3"] .mb-progress-bar-value::before {
+.devs-outcome-bar[data-internal-value="3"] .progress-bar-value::before {
   content: "Abandoned";
   font-size: var(--font-text-size, 1rem);
 }

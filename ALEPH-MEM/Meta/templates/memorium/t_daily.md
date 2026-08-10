@@ -60,7 +60,7 @@ tR += await tp.file.include("[[c_metabind_memorium_daily_alias_text]]");
 ## ✧ Rating
 
 <%*
-tR += await tp.file.include("[[c_metabind_memorium_day_rating_slider]]");
+tR += await tp.file.include("[[c_dataview_memorium_day_rating_slider]]");
 %>
 ---
 ## ✧ Summary

@@ -70,14 +70,14 @@ tR += await tp.file.include("[[c_metabind_devs_project_alias_text]]");
 ## ✧ Status
 
 <%*
-tR += await tp.file.include("[[c_metabind_devs_project_status_slider]]");
+tR += await tp.file.include("[[c_dataview_devs_project_status_slider]]");
 %>
 
 ---
 ## ✧ Progress
 
 <%*
-tR += await tp.file.include("[[c_metabind_devs_project_progress_slider]]");
+tR += await tp.file.include("[[c_dataview_devs_project_progress_slider]]");
 %>
 
 ---
