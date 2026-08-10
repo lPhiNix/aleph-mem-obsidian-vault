@@ -44,6 +44,22 @@ repo root/
 - **Devs (04)**: fully built — projects, binnacles, decisions, postmortems. Integrates with Ordus for per-project kanban boards.
 - **Dashboard templates exist for all 10 modules** (contribution heatmaps render on each hub). Note-type templates for modules 00, 01, 03, 05, 06, 08, 09 do **not** exist yet.
 
+### Benchmark system
+
+Located at `Meta/benchmarks/`. A set of test notes for validating CSS styling across different states:
+
+| Benchmark | CSS Classes | Purpose |
+|---|---|---|
+| `benchmark-bare.md` | *(none)* | Pure Obsidian default rendering baseline |
+| `benchmark-native.md` | `native` | Foundation `.native` class styling |
+| `benchmark-native-module.md` | `native`, `module` | Module variables without specific color |
+| `benchmark-module-00-inthima.md` through `benchmark-module-09-harkaive.md` (10 files) | `native`, `module`, `[module]` | Per-module color theming |
+| `benchmark-utilities.md` | All utility classes | `hide-*`, `center-header-title`, `huge-header-title` combined |
+| `benchmark-metabind.md` | `native`, `module`, `memorium` | MetaBind interactive widgets (sliders, inputs, buttons) |
+| `benchmark-dataview.md` | `native`, `module`, `memorium` | DataviewJS tables, lists, mock charts |
+| `benchmark-memorium-daily.md` | `native`, `module`, `memorium`, `memorium-daily` | Full daily note simulation |
+| `benchmark-dashboard.md` | `native`, `main`, `module` | Dashboard styling with real heatmap |
+
 ---
 
 ## The 3-tier architecture
@@ -205,14 +221,20 @@ Notes open in preview/reading mode via `c_templater_native_preview_mode_forcer.m
 
 All child notes are created via **JS Engine scripts** that call the **Templater API** directly (`templater.create_new_note_from_template()`). This replaced the old `templaterCreateNote` MetaBind action.
 
-**Flow:**
+**Full data flow:**
 ```
 Button click → JS Engine script (engine/[module]/[name].js)
   ├─ If singleton (Postmortem) → check if exists → open OR create
-  └─ Calls Templater API → creates note → folder template applies
-       └─ Template calls tp.user.generate_child_note()
-            ├─ Numbered mode (childFolder → auto-number: PROJECT-1-B1)
-            └─ Singleton mode (suffix → fixed: PROJECT-1-PM)
+  └─ Calls Templater API (templater.create_new_note_from_template)
+       ├─ Templater creates empty file in target folder
+       ├─ Templater applies template (t_[type].md)
+       │    ├─ Native components: version, key, creation, tags, cssclasses, etc.
+       │    ├─ Module-specific frontmatter (status, progress, impact, etc.)
+       │    ├─ DataviewJS widgets (sliders, tables)
+       │    ├─ MetaBind widgets (text inputs, buttons)
+       │    └─ generate_child_note() → renames + builds context
+       ├─ Templater writes processed content to file
+       └─ Note opens in preview mode
 ```
 
 **Scripts per module:**
@@ -273,7 +295,9 @@ Tier 2: Meta/components/dynamic/progressbar/c_dataview_[module]_[purpose]_slider
 | Decision Impact | Devs | 1–3 | Low/Medium/High |
 | Postmortem Outcome | Devs | 1–3 | Completed/Failed/Abandoned |
 
-Sliders that store text labels (status, impact, outcome) save the human-readable string to frontmatter instead of a number. Reading is backward-compatible with numeric values.
+Sliders that store text labels (status, impact, outcome) save the human-readable string to frontmatter instead of a number. Reading is backward-compatible with numeric values (the slider detects old numeric data and converts it on load).
+
+**Class naming note:** The original MetaBind CSS classes `mb-progress-bar-*` were renamed to `progress-bar-*` when the base styles were extracted to `am-layout-progress-bar-base.css`. The `mb-` prefix is gone — all sliders now use plain `progress-bar-*` classes throughout the DOM and CSS.
 
 ### Editor callout system (`[!editor]`)
 
@@ -365,6 +389,34 @@ Callouts are styled via `am-class-native.css` with explicit border-width, border
 
 ---
 
+## Icon reference (Lucide)
+
+Custom icons assigned via the Iconic plugin and callout-manager:
+
+**Note types:**
+
+| Note Type | Module | Icon |
+|---|---|---|
+| Project | Devs | `lucide-drafting-compass` |
+| Binnacle | Devs | `lucide-notebook-pen` |
+| Decision | Devs | `lucide-git-branch` |
+| Postmortem | Devs | `lucide-microscope` |
+| Task | Ordus | `lucide-ticket` |
+| Subtask | Ordus | `lucide-tag` |
+
+**Custom callouts:**
+
+| Callout | Icon | Color |
+|---|---|---|
+| `[!memorium]` | `lucide-calendar-search` | `255, 247, 0` |
+| `[!ordus]` | `lucide-tags` | `218, 119, 242` |
+| `[!devs]` | `lucide-drafting-compass` | `99, 230, 190` |
+| `[!editor]` | `lucide-pencil` | *(none — icon hidden by CSS)* |
+
+Callout definitions live in `ALEPH-MEM/.obsidian/plugins/callout-manager/data.json`.
+
+---
+
 ## Module reference
 
 ### Devs (04 — Λ) — CREATION
@@ -401,7 +453,8 @@ Callouts are styled via `am-class-native.css` with explicit border-width, border
 ```
 
 **Key behaviors:**
-- Postmortem button opens existing postmortem if already created (singleton check in JS Engine)
+- Postmortem button opens existing postmortem if already created (singleton check in JS Engine). If the postmortem already exists, the JS Engine script at `engine/devs/postmortem.js` opens it directly without creating a new note. No duplicate `Untitled.md` is left behind.
+- When a postmortem is already created and the button is pressed anyway, `generate_child_note` detects the duplicate (`renamed: false`). The `t_postmortem.md` template opens the existing postmortem and outputs minimal content for the duplicate (`tR = "---\n---\n"`), leaving it inert.
 - Project context is `[[DEVS]]` (the module hub)
 - All children link to parent via `context` property
 - `includeAncestor: false` prevents false-positive ancestor extraction in child notes
