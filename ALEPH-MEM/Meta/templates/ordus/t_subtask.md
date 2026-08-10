@@ -38,10 +38,6 @@ tR += await tp.file.include("[[c_templater_native_cssclasses_attribute]]") + cla
 tR += await tp.file.include("[[c_templater_native_alias_attribute]]");
 %>
 
-<%*
-tR += await tp.file.include("[[c_templater_ordus_task_description]]");
-%>
-
 <%"---"%>
 # ✦ Subtask #<% child.title.replace(/^.*-/, '') %>
 

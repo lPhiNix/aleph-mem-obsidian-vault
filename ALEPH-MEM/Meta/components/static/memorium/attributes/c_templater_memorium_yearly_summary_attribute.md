@@ -1,1 +1,0 @@
-memorium-yearly-summary: 

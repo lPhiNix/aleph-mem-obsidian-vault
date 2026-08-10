@@ -1,1 +1,0 @@
-memorium-quarterly-summary: 

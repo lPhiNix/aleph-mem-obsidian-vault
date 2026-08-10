@@ -43,10 +43,6 @@ tR += await tp.file.include("[[c_templater_ordus_task_priority]]");
 <%*
 tR += await tp.file.include("[[c_templater_ordus_task_business]]");
 %>
-<%*
-tR += await tp.file.include("[[c_templater_ordus_task_description]]");
-%>
-
 
 <%"---"%>
 # ✦ Task #<% tp.file.title.replace(/^.*-/, '') %>

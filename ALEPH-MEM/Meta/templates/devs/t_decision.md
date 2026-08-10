@@ -43,9 +43,6 @@ tR += await tp.file.include("[[c_templater_native_alias_attribute]]");
 <%*
 tR += await tp.file.include("[[c_templater_devs_decision_impact]]");
 %>
-<%*
-tR += await tp.file.include("[[c_templater_devs_decision_content]]");
-%>
 
 <%"---"%>
 # ✦ Decision #<% child.title.replace(/^.*-D/, '') %>

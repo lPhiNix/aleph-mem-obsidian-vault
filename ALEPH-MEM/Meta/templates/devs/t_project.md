@@ -55,9 +55,6 @@ tR += await tp.file.include("[[c_templater_devs_project_status]]");
 <%*
 tR += await tp.file.include("[[c_templater_devs_project_progress]]");
 %>
-<%*
-tR += await tp.file.include("[[c_templater_devs_project_description]]");
-%>
 
 <%"---"%>
 # ✦ Project #<% projNum %>

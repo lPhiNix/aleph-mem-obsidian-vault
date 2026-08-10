@@ -41,9 +41,6 @@ tR += await tp.file.include("[[c_templater_native_alias_attribute]]");
 <%*
 tR += await tp.file.include("[[c_templater_devs_postmortem_outcome]]");
 %>
-<%*
-tR += await tp.file.include("[[c_templater_devs_postmortem_content]]");
-%>
 
 <%"---"%>
 # ✦ Postmortem
