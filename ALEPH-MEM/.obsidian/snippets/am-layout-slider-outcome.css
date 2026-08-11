@@ -1,5 +1,3 @@
-/* Devs outcome bar — devs-postmortem-outcome (1=Completed, 2=Failed, 3=Abandoned) */
-
 .devs-outcome-slider .slider-input {
   display: flex !important;
   align-items: center !important;

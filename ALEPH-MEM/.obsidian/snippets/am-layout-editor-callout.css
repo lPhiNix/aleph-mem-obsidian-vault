@@ -1,5 +1,3 @@
-/* Devs editor callout — replaces MetaBind editor with native writing area */
-
 .callout[data-callout="editor"] {
   min-height: 35em !important;
 }

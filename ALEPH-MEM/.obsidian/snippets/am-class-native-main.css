@@ -1,4 +1,3 @@
-
 .main {
   --c-main-h1: /* var(--c-am-native-main-header-h1) */ var(--interactive-accent);
   --c-main-h2: var(--c-am-native-main-header-h2);

@@ -1,5 +1,3 @@
-/* Devs binnacle bar — devs-binnacle-status (1=On Track, 2=Blocked, 3=Stuck) */
-
 .devs-binnacle-slider .slider-input {
   display: flex !important;
   align-items: center !important;

@@ -1,5 +1,3 @@
-/* Devs status bar — devs-project-status (1=Planning, 2=Active, 3=Paused, 4=Completed) */
-
 .devs-status-slider .slider-input {
   display: flex !important;
   align-items: center !important;

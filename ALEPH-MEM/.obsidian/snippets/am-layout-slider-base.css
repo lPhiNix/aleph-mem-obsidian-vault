@@ -1,6 +1,3 @@
-/* Base progress bar styles — replicates MetaBind's own CSS */
-/* Source: obsidian-meta-bind-plugin/styles.css */
-
 .slider-input {
   height: var(--input-height);
   border-radius: var(--mb-border-radius, var(--input-radius));

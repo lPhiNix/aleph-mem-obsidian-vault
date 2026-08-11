@@ -15,7 +15,6 @@
     display: flex;
 }
 
-/* Mostrar context solo cuando tiene contenido (verifica si hay pills/elementos en el multi-select) */
 .hide-source-frontmatter .metadata-property[data-property-key="context"]:has(.multi-select-pill) {
     display: flex;
 }
