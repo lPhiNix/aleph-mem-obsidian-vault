@@ -63,7 +63,7 @@ tR += await tp.file.include("[[c_templater_devs_project_progress]]");
 # ✦ Project #<% projNum %>
 
 <%*
-tR += await tp.file.include("[[c_dataview_devs_project_alias_text]]");
+tR += await tp.file.include("[[c_dataview_devs_project_alias_input]]");
 %>
 
 ---
@@ -96,9 +96,9 @@ tR += await tp.file.include("[[c_dataview_devs_project_buttons]]");
 ## ✧ Activity
 
 <%*
-tR += await tp.file.include("[[c_dataview_devs_project_binnacles_list]]");
+tR += await tp.file.include("[[c_dataview_devs_project_binnacles_query]]");
 %>
 
 <%*
-tR += await tp.file.include("[[c_dataview_devs_project_decisions_list]]");
+tR += await tp.file.include("[[c_dataview_devs_project_decisions_query]]");
 %>

@@ -48,7 +48,7 @@ tR += await tp.file.include("[[c_templater_devs_binnacle_status]]");
 # ✦ Binnacle #<% child.title.replace(/^.*-B/, '') %>
 
 <%*
-tR += await tp.file.include("[[c_dataview_devs_binnacle_alias_text]]");
+tR += await tp.file.include("[[c_dataview_devs_binnacle_alias_input]]");
 %>
 
 ---

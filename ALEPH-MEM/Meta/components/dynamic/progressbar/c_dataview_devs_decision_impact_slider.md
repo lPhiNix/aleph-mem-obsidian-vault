@@ -1,3 +1,0 @@
-```dataviewjs
-await dv.view("Meta/scripts/views/interactive/progressbar/dataview_devs_decision_impact_slider");
-```

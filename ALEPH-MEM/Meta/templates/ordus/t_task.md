@@ -48,7 +48,7 @@ tR += await tp.file.include("[[c_templater_ordus_task_business]]");
 # ✦ Task #<% tp.file.title.replace(/^.*-/, '') %>
 
 <%*
-tR += await tp.file.include("[[c_dataview_ordus_task_alias_text]]");
+tR += await tp.file.include("[[c_dataview_ordus_task_alias_input]]");
 %>
 
 ---
@@ -77,5 +77,5 @@ tR += await tp.file.include("[[c_dataview_ordus_task_subtask_button]]");
 %>
 
 <%*
-tR += await tp.file.include("[[c_dataview_ordus_task_subtask_list]]");
+tR += await tp.file.include("[[c_dataview_ordus_task_subtask_query]]");
 %>
