@@ -1,5 +1,3 @@
-/* Devs impact bar — devs-decision-impact (1=Low, 2=Medium, 3=High) */
-
 .devs-impact-slider .slider-input {
   display: flex !important;
   align-items: center !important;

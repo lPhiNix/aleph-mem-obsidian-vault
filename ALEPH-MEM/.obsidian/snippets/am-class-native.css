@@ -1,7 +1,3 @@
-/* ========================================================= */
-/* BASE STYLES - AM CLASS                                    */
-/* ========================================================= */
-
 .native :is(h1, .HyperMD-header-1) {
   font-size: 40px;
   padding: 0;
@@ -90,11 +86,4 @@
 
 .native .nav-button {
   font-weight: 800;
-}
-
-/* ========================================================= */
-
-.native .meta-bind-label {
-  font-weight: bold;
-  margin-bottom: 4px;
 }
