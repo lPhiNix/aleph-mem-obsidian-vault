@@ -1,8 +1,14 @@
 const KEY = "ordus-priority";
 const MIN = 1, MAX = 4, STEP = 1;
+const LABELS = {"1":"Low","2":"Medium","3":"High","4":"Critical"};
 
 const file = app.vault.getAbstractFileByPath(dv.current().file.path);
-let value = dv.current()[KEY] ?? MIN;
+let raw = dv.current()[KEY];
+let value = MIN;
+if (raw !== undefined && raw !== null) {
+  const entry = Object.entries(LABELS).find(([k, label]) => label === raw || parseInt(k) === raw);
+  if (entry) value = parseInt(entry[0]);
+}
 value = Math.min(MAX, Math.max(MIN, value));
 
 const container = dv.container.createEl("div", { cls: "ordus-priority-slider slider-input" });
@@ -45,5 +51,5 @@ async function set(v) {
   if (v === value) return;
   value = v;
   update(v);
-  await app.fileManager.processFrontMatter(file, fm => { fm[KEY] = v; });
+  await app.fileManager.processFrontMatter(file, fm => { fm[KEY] = LABELS[v]; });
 }

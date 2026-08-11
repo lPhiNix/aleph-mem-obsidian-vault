@@ -39,36 +39,20 @@
   font-weight: bold;
 }
 
-.kanban .kanban-plugin__meta-row:has([data-key="ordus-priority"]) [data-value] .kanban-plugin__markdown-preview-wrapper {
-  display: none;
-}
-
-.kanban .kanban-plugin__meta-row:has([data-key="ordus-priority"]):has([data-value="4"]) {
+.kanban .kanban-plugin__meta-row:has([data-key="ordus-priority"]):has([data-value="Critical"]) {
   color: rgb(255, 0, 0);
 }
-.kanban .kanban-plugin__meta-row:has([data-key="ordus-priority"]) [data-value="4"]::before {
-  content: "Critical";
-}
 
-.kanban .kanban-plugin__meta-row:has([data-key="ordus-priority"]):has([data-value="3"]) {
+.kanban .kanban-plugin__meta-row:has([data-key="ordus-priority"]):has([data-value="High"]) {
   color: rgb(255, 55, 0);
 }
-.kanban .kanban-plugin__meta-row:has([data-key="ordus-priority"]) [data-value="3"]::before {
-  content: "High";
-}
 
-.kanban .kanban-plugin__meta-row:has([data-key="ordus-priority"]):has([data-value="2"]) {
+.kanban .kanban-plugin__meta-row:has([data-key="ordus-priority"]):has([data-value="Medium"]) {
   color: rgb(255, 179, 0);
 }
-.kanban .kanban-plugin__meta-row:has([data-key="ordus-priority"]) [data-value="2"]::before {
-  content: "Medium";
-}
 
-.kanban .kanban-plugin__meta-row:has([data-key="ordus-priority"]):has([data-value="1"]) {
+.kanban .kanban-plugin__meta-row:has([data-key="ordus-priority"]):has([data-value="Low"]) {
   color: rgb(0, 162, 255);
-}
-.kanban .kanban-plugin__meta-row:has([data-key="ordus-priority"]) [data-value="1"]::before {
-  content: "Low";
 }
 
 .kanban [data-key="ordus-business"] {
@@ -79,22 +63,18 @@
   font-weight: bold;
 }
 
-.kanban .kanban-plugin__meta-row:has([data-key="ordus-business"]) [data-value] p::before {
-  content: "P";
-}
-
-.kanban .kanban-plugin__meta-row:has([data-key="ordus-business"]):has([data-value="1"]) {
+.kanban .kanban-plugin__meta-row:has([data-key="ordus-business"]):has([data-value="P1"]) {
   color: rgb(0, 162, 255);
 }
-.kanban .kanban-plugin__meta-row:has([data-key="ordus-business"]):has([data-value="2"]) {
+.kanban .kanban-plugin__meta-row:has([data-key="ordus-business"]):has([data-value="P2"]) {
   color: rgb(24, 255, 109);
 }
-.kanban .kanban-plugin__meta-row:has([data-key="ordus-business"]):has([data-value="3"]) {
+.kanban .kanban-plugin__meta-row:has([data-key="ordus-business"]):has([data-value="P3"]) {
   color: rgb(255, 179, 0);
 }
-.kanban .kanban-plugin__meta-row:has([data-key="ordus-business"]):has([data-value="4"]) {
+.kanban .kanban-plugin__meta-row:has([data-key="ordus-business"]):has([data-value="P4"]) {
   color: rgb(255, 72, 0);
 }
-.kanban .kanban-plugin__meta-row:has([data-key="ordus-business"]):has([data-value="5"]) {
+.kanban .kanban-plugin__meta-row:has([data-key="ordus-business"]):has([data-value="P5"]) {
   color: rgb(221, 0, 255);
 }
