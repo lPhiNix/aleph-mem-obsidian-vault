@@ -50,7 +50,7 @@ tR += await tp.file.include("[[c_templater_memorium_daily_journals_frontmatter]]
 <%"---"%>
 # ✦ <% moment(tp.file.title, 'YYYY-MM-DD-dddd').format("dddd, MMMM DD, YYYY") %>
 <%*
-tR += await tp.file.include("[[c_metabind_memorium_daily_nav_buttons]]");
+tR += await tp.file.include("[[c_dataview_memorium_daily_nav_buttons]]");
 %>
 
 <%*

@@ -40,5 +40,5 @@ tR += await tp.file.include("[[c_dataview_memorium_dashboard_contribution_heatma
 
 ## ✧ Navigation
 <%*
-tR += await tp.file.include("[[c_metabind_memorium_dashboard_nav_buttons]]");
+tR += await tp.file.include("[[c_dataview_memorium_dashboard_nav_buttons]]");
 %>

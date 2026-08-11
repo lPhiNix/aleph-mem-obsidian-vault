@@ -73,7 +73,7 @@ tR += await tp.file.include("[[c_dataview_ordus_business_slider]]");
 ---
 ## ✧ Subtasks
 <%*
-tR += await tp.file.include("[[c_metabind_ordus_task_subtask_button]]");
+tR += await tp.file.include("[[c_dataview_ordus_task_subtask_button]]");
 %>
 
 <%*

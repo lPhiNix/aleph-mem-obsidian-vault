@@ -88,11 +88,12 @@
   outline: none;
 }
 
-/* ========================================================= */
-
-.native .mb-button-inner {
+.native .nav-button {
   font-weight: 800;
 }
+
+/* ========================================================= */
+
 .native .meta-bind-label {
   font-weight: bold;
   margin-bottom: 4px;
