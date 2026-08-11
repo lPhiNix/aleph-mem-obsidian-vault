@@ -19,7 +19,7 @@ tags:
 This DataviewJS block renders the real contribution heatmap for the Memorium module. It loads `dataview_memorium_dashboard_contribution_heatmap.js` via `dv.view()`.
 
 ```dataviewjs
-await dv.view("Meta/scripts/views/graph/dataview_memorium_dashboard_contribution_heatmap");
+await dv.view("Meta/scripts/view/graph/dataview_memorium_dashboard_contribution_heatmap");
 ```
 
 ---
@@ -100,7 +100,7 @@ await dv.view("Meta/scripts/views/graph/dataview_memorium_dashboard_contribution
 const dashboard = {
   module: "memorium",
   status: "complete",
-  heatmap: await dv.view("Meta/scripts/views/graph/dataview_memorium_dashboard_contribution_heatmap")
+  heatmap: await dv.view("Meta/scripts/view/graph/dataview_memorium_dashboard_contribution_heatmap")
 };
 ```
 

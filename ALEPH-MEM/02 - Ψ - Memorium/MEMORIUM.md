@@ -1,5 +1,5 @@
 ---
-version: "#3f1ec58769e0"
+version: "#e15e0c1828b7"
 context:
   - "[[AM]]"
 cssclasses:
@@ -28,64 +28,11 @@ cssclasses:
 ## ✦ Contribution
 ---
 ```dataviewjs
-await dv.view("Meta/scripts/views/graph/dataview_memorium_dashboard_contribution_heatmap");
+await dv.view("Meta/scripts/view/graph/dataview_memorium_dashboard_contribution_heatmap");
 ```
 ---
 
 ## ✧ Navigation
-`BUTTON[today, current-week, current-month, current-quarterly, current-year]`
-```meta-bind-button
-id: today
-class: nav-buttons
-style: primary
-label: Today
-hidden: true
-actions:
-  - type: open
-    link: "[[02 - Ψ - Memorium/01 - Daily/2026/03-March/2026-03-24-Tuesday]]"
-    newTab: false
-```
-```meta-bind-button
-id: current-week 
-style: primary
-class: nav-buttons
-label: This Week
-hidden: true
-actions:
-  - type: open
-    link: "[[02 - Ψ - Memorium/02 - Weekly/2026/2026-W13]]"
-    newTab: false
-```
-```meta-bind-button
-id: current-month
-style: primary
-class: nav-buttons
-label: This Month
-hidden: true
-actions:
-  - type: open
-    link: "[[02 - Ψ - Memorium/03 - Monthly/2026/2026-03-March]]"
-    newTab: false
-```
-```meta-bind-button
-id: current-quarterly
-style: primary
-class: nav-buttons
-label: This Quarterly
-hidden: true
-actions:
-  - type: open
-    link: "[[02 - Ψ - Memorium/04 - Quarterly/2026/2026-Q1]]"
-    newTab: false
-```
-```meta-bind-button
-id: current-year
-style: primary
-class: nav-buttons
-label: This Year
-hidden: true
-actions:
-  - type: open
-    link: "[[02 - Ψ - Memorium/05 - Yearly/2026]]"
-    newTab: false
+```dataviewjs
+await dv.view("Meta/scripts/view/interactive/buttons/dataview_memorium_dashboard_nav_buttons");
 ```

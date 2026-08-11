@@ -54,7 +54,7 @@ tR += await tp.file.include("[[c_dataview_memorium_quarterly_nav_buttons]]");
 %>
 
 <%*
-tR += await tp.file.include("[[c_dataview_memorium_quarterly_alias_text]]");
+tR += await tp.file.include("[[c_dataview_memorium_quarterly_alias_input]]");
 %>
 
 ---
@@ -72,9 +72,9 @@ tR += await tp.file.include("[[c_dataview_memorium_quarterly_day_rating_graph]]"
 ## ✧ General Overview
 ---
 <%*
-tR += await tp.file.include("[[c_dataview_memorium_quarterly_month_list]]");
+tR += await tp.file.include("[[c_dataview_memorium_quarterly_month_query]]");
 %>
 
 <%*
-tR += await tp.file.include("[[c_dataview_memorium_quarterly_throwback]]");
+tR += await tp.file.include("[[c_dataview_memorium_quarterly_throwback_query]]");
 %>

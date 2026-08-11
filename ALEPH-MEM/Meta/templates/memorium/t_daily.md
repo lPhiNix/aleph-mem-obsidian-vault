@@ -54,7 +54,7 @@ tR += await tp.file.include("[[c_dataview_memorium_daily_nav_buttons]]");
 %>
 
 <%*
-tR += await tp.file.include("[[c_dataview_memorium_daily_alias_text]]");
+tR += await tp.file.include("[[c_dataview_memorium_daily_alias_input]]");
 %>
 ---
 ## ✧ Rating
@@ -70,5 +70,5 @@ tR += await tp.file.include("[[c_dataview_memorium_day_rating_slider]]");
 ## ✧ General Overview
 ---
 <%*
-tR += await tp.file.include("[[c_dataview_memorium_daily_throwback]]");
+tR += await tp.file.include("[[c_dataview_memorium_daily_throwback_query]]");
 %>

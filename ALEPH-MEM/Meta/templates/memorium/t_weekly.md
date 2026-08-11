@@ -54,7 +54,7 @@ tR += await tp.file.include("[[c_dataview_memorium_weekly_nav_buttons]]");
 %>
 
 <%*
-tR += await tp.file.include("[[c_dataview_memorium_weekly_alias_text]]");
+tR += await tp.file.include("[[c_dataview_memorium_weekly_alias_input]]");
 %>
 
 ---
@@ -72,9 +72,9 @@ tR += await tp.file.include("[[c_dataview_memorium_weekly_day_rating_graph]]");
 ## ✧ General Overview
 ---
 <%*
-tR += await tp.file.include("[[c_dataview_memorium_weekly_day_list]]");
+tR += await tp.file.include("[[c_dataview_memorium_weekly_day_query]]");
 %>
 
 <%*
-tR += await tp.file.include("[[c_dataview_memorium_weekly_throwback]]");
+tR += await tp.file.include("[[c_dataview_memorium_weekly_throwback_query]]");
 %>

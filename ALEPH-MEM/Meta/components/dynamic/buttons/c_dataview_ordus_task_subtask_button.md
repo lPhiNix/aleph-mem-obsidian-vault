@@ -1,3 +1,3 @@
 ```dataviewjs
-await dv.view("Meta/scripts/views/interactive/buttons/dataview_ordus_task_subtask_buttons");
+await dv.view("Meta/scripts/view/interactive/buttons/dataview_ordus_task_subtask_buttons");
 ```
