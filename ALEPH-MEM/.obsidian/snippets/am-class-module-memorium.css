@@ -1,0 +1,6 @@
+.memorium {
+  --highlight: var(--c-am-memorium-highlight) !important;
+  --primary: var(--c-am-memorium-primary) !important;
+  --secondary: var(--c-am-memorium-secondary) !important;
+  --dark: var(--c-am-memorium-dark) !important;
+}

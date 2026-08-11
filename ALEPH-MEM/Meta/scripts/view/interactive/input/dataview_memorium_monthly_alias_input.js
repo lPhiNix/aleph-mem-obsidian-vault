@@ -5,7 +5,7 @@ const val = fm?.aliases?.[0] ?? "";
 const input = dv.container.createEl("input", {
   type: "text",
   placeholder: "Name this Month!",
-  cls: "input-alias"
+  cls: "alias-input"
 });
 input.value = val;
 

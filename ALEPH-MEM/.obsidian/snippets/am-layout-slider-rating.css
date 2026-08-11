@@ -1,0 +1,87 @@
+.memorium-rating-slider .slider-input {
+  display: flex !important;
+  align-items: center !important;
+  padding-right: 2rem !important;
+  overflow: hidden !important;
+}
+.memorium-rating-slider .slider-progress {
+  min-width: 5%;
+  max-width: calc(100% - 3.25rem) !important;
+}
+
+.memorium-rating-slider .slider-value {
+  display: block !important;
+  width: 100% !important;
+  text-align: right !important;
+  padding-right: 0.5rem !important;
+}
+.memorium-rating-slider .slider-value::before {
+  content: "☆";
+}
+.memorium-rating-slider .slider-label-left {
+  display: none !important;
+}
+.memorium-rating-slider .slider-label-right {
+  display: none !important;
+}
+
+.memorium-rating-slider[data-internal-value="1"] .slider-progress {
+  background-color: #4a4a4a !important;
+}
+.memorium-rating-slider[data-internal-value="1"] .slider-value {
+  color: #4a4a4a !important;
+}
+.memorium-rating-slider[data-internal-value="2"] .slider-progress {
+  background-color: #ef4444 !important;
+}
+.memorium-rating-slider[data-internal-value="2"] .slider-value {
+  color: #ef4444 !important;
+}
+.memorium-rating-slider[data-internal-value="3"] .slider-progress {
+  background-color: #f59e0b !important;
+}
+.memorium-rating-slider[data-internal-value="3"] .slider-value {
+  color: #f59e0b !important;
+}
+.memorium-rating-slider[data-internal-value="4"] .slider-progress {
+  background-color: #fbbf24 !important;
+}
+.memorium-rating-slider[data-internal-value="4"] .slider-value {
+  color: #fbbf24 !important;
+}
+.memorium-rating-slider[data-internal-value="5"] .slider-progress {
+  background-color: #10b981 !important;
+}
+.memorium-rating-slider[data-internal-value="5"] .slider-value {
+  color: #10b981 !important;
+}
+.memorium-rating-slider[data-internal-value="6"] .slider-progress {
+  background-color: #3b82f6 !important;
+}
+.memorium-rating-slider[data-internal-value="6"] .slider-value {
+  color: #3b82f6 !important;
+}
+.memorium-rating-slider[data-internal-value="7"] .slider-progress {
+  background-color: #a855f7 !important;
+}
+.memorium-rating-slider[data-internal-value="7"] .slider-value {
+  color: #a855f7 !important;
+}
+.memorium-rating-slider[data-internal-value="8"] .slider-progress {
+  background-color: #c026d3 !important;
+}
+.memorium-rating-slider[data-internal-value="8"] .slider-value {
+  color: #c026d3 !important;
+}
+.memorium-rating-slider[data-internal-value="9"] .slider-progress {
+  background-color: #ec4899 !important;
+}
+.memorium-rating-slider[data-internal-value="9"] .slider-value {
+  color: #ec4899 !important;
+}
+.memorium-rating-slider[data-internal-value="10"] .slider-progress {
+  background-color: #f472b6 !important;
+}
+.memorium-rating-slider[data-internal-value="10"] .slider-value {
+  color: #f472b6 !important;
+}

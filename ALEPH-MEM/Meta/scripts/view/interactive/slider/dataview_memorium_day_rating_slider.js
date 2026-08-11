@@ -5,16 +5,16 @@ const file = app.vault.getAbstractFileByPath(dv.current().file.path);
 let value = dv.current()[KEY] ?? MIN;
 value = Math.min(MAX, Math.max(MIN, value));
 
-const container = dv.container.createEl("div", { cls: "rating-bar progress-bar-input" });
+const container = dv.container.createEl("div", { cls: "memorium-rating-slider slider-input" });
 container.setAttribute("tabindex", "0");
 
-const fill = container.createEl("div", { cls: "progress-bar-progress" });
-const valSpan = container.createEl("span", { cls: "progress-bar-value" });
+const fill = container.createEl("div", { cls: "slider-progress" });
+const valSpan = container.createEl("span", { cls: "slider-value" });
 valSpan.textContent = value;
 container.setAttribute("data-internal-value", value);
-const leftSpan = container.createEl("span", { cls: "progress-bar-label-left" });
+const leftSpan = container.createEl("span", { cls: "slider-label-left" });
 leftSpan.textContent = MIN;
-const rightSpan = container.createEl("span", { cls: "progress-bar-label-right" });
+const rightSpan = container.createEl("span", { cls: "slider-label-right" });
 rightSpan.textContent = MAX;
 
 function pct(v) { return ((v - MIN) / (MAX - MIN)) * 100; }

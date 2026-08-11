@@ -1,0 +1,6 @@
+.ordus {
+  --highlight: var(--c-am-ordus-highlight) !important;
+  --primary: var(--c-am-ordus-primary) !important;
+  --secondary: var(--c-am-ordus-secondary) !important;
+  --dark: var(--c-am-ordus-dark) !important;
+}

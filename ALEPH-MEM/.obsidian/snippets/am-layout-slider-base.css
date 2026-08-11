@@ -1,7 +1,7 @@
 /* Base progress bar styles — replicates MetaBind's own CSS */
 /* Source: obsidian-meta-bind-plugin/styles.css */
 
-.progress-bar-input {
+.slider-input {
   height: var(--input-height);
   border-radius: var(--mb-border-radius, var(--input-radius));
   border: var(--mb-border-width, var(--border-width)) solid var(--background-modifier-border);
@@ -9,27 +9,27 @@
   width: 100%;
   position: relative;
 }
-.progress-bar-input:focus-visible {
+.slider-input:focus-visible {
   box-shadow: 0 0 0 3px var(--background-modifier-border-focus);
 }
-.progress-bar-progress {
+.slider-progress {
   background: var(--color-accent);
   border-radius: var(--mb-border-radius, var(--input-radius));
   height: 100%;
 }
-.progress-bar-value {
+.slider-value {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.progress-bar-label-left {
+.slider-label-left {
   top: 50%;
   left: var(--size-4-2);
   position: absolute;
   transform: translateY(-50%);
 }
-.progress-bar-label-right {
+.slider-label-right {
   top: 50%;
   right: var(--size-4-2);
   position: absolute;

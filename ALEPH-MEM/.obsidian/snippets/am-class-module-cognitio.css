@@ -1,0 +1,6 @@
+.cognitio {
+  --highlight: var(--c-am-cognitio-highlight) !important;
+  --primary: var(--c-am-cognitio-primary) !important;
+  --secondary: var(--c-am-cognitio-secondary) !important;
+  --dark: var(--c-am-cognitio-dark) !important;
+}

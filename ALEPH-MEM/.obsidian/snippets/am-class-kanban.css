@@ -1,8 +1,3 @@
-/* ================================== */
-/* Kanban – Colores por columna (REAL) */
-/*          Requires: am-color-palette.css */
-/* ================================== */
-
 .kanban .kanban-plugin__lane-wrapper:nth-child(1) .kanban-plugin__lane {background-color: var(--c-am-ordus-kanban-wishes-secondary); } /* DESEOS */
 .kanban .kanban-plugin__lane-wrapper:nth-child(2) .kanban-plugin__lane {background-color: var(--c-am-ordus-kanban-to-do-secondary)} /* LARGO PLAZO */
 .kanban .kanban-plugin__lane-wrapper:nth-child(3) .kanban-plugin__lane {background-color: var(--c-am-ordus-kanban-in-progress-secondary)} /* EN PROGRESO */
@@ -14,10 +9,6 @@
 	border: none !important;
 }
 
-/* ================================== */
-/* Kanban – Colores del título */
-/* ================================== */
-
 .kanban .kanban-plugin__lane-wrapper:nth-child(1) .kanban-plugin__lane-header-wrapper {color: var(--c-am-ordus-kanban-wishes-primary);}
 .kanban .kanban-plugin__lane-wrapper:nth-child(2) .kanban-plugin__lane-header-wrapper {color: var(--c-am-ordus-kanban-to-do-primary);}
 .kanban .kanban-plugin__lane-wrapper:nth-child(3) .kanban-plugin__lane-header-wrapper {color: var(--c-am-ordus-kanban-in-progress-primary)}
@@ -25,34 +16,20 @@
 .kanban .kanban-plugin__lane-wrapper:nth-child(5) .kanban-plugin__lane-header-wrapper {color: var(--c-am-ordus-kanban-locked-primary)}
 .kanban .kanban-plugin__lane-wrapper:nth-child(6) .kanban-plugin__lane-header-wrapper {color: var(--c-am-ordus-kanban-close-primary)}
 
-/* ================================== */
-/* Kanban – Tarjetas con color de columna */
-/* ================================== */
-
-/* Borde base de las tarjetas */
 .kanban .kanban-plugin__item {
   border: 1px solid color-mix(in srgb, var(--interactive-accent) 30%, transparent) !important;
   border-left-width: 4px !important;
 }
 
-/* Hover más marcado */
 .kanban .kanban-plugin__item:hover {
   border-color: color-mix(in srgb, var(--interactive-accent) 50%, transparent) !important;
 }
 
-/* Tarjeta seleccionada / foco */
 .kanban .kanban-plugin__item.is-selected,
 .kanban .kanban-plugin__item:focus-within {
   border-color: var(--interactive-accent) !important;
   box-shadow: 0 0 0 1px color-mix(in srgb, var(--interactive-accent) 50%, transparent);
 }
-
-
-/* ================================== */
-/* Kanban – Estilos por tipo de atributo */
-/* ================================== */
-
-/* --- ordus-priority --- */
 
 .kanban [data-key="ordus-priority"] {
   font-weight: bold;
@@ -62,7 +39,6 @@
   font-weight: bold;
 }
 
-/* Hide raw number */
 .kanban .kanban-plugin__meta-row:has([data-key="ordus-priority"]) [data-value] .kanban-plugin__markdown-preview-wrapper {
   display: none;
 }
@@ -95,8 +71,6 @@
   content: "Low";
 }
 
-/* --- ordus-business --- */
-
 .kanban [data-key="ordus-business"] {
   font-weight: bold;
 }
@@ -105,7 +79,6 @@
   font-weight: bold;
 }
 
-/* Prefix "P" before the number */
 .kanban .kanban-plugin__meta-row:has([data-key="ordus-business"]) [data-value] p::before {
   content: "P";
 }

@@ -1,0 +1,6 @@
+.kaelithra {
+  --highlight: var(--c-am-kaelithra-highlight) !important;
+  --primary: var(--c-am-kaelithra-primary) !important;
+  --secondary: var(--c-am-kaelithra-secondary) !important;
+  --dark: var(--c-am-kaelithra-dark) !important;
+}
