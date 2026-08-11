@@ -1,0 +1,6 @@
+.viventia {
+  --highlight: var(--c-am-viventia-highlight) !important;
+  --primary: var(--c-am-viventia-primary) !important;
+  --secondary: var(--c-am-viventia-secondary) !important;
+  --dark: var(--c-am-viventia-dark) !important;
+}

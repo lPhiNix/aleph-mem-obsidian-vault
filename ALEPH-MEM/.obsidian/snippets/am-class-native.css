@@ -69,7 +69,7 @@
   background-color: transparent;
 }
 
-.native .input-alias {
+.native .alias-input {
   border-radius: 0;
   background-color: var(--background-primary);
   width: 100%;
@@ -79,11 +79,11 @@
   border-style: solid;
   font-size: 1.25em;
 }
-.native .input-alias:hover {
+.native .alias-input:hover {
   background-color: var(--background-primary);
   outline: none;
 }
-.native .input-alias:focus-visible {
+.native .alias-input:focus-visible {
   border-color: var(--interactive-accent);
   outline: none;
 }

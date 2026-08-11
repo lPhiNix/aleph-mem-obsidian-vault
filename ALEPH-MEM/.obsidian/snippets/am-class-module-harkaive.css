@@ -1,0 +1,6 @@
+.harkaive {
+  --highlight: var(--c-am-harkaive-highlight) !important;
+  --primary: var(--c-am-harkaive-primary) !important;
+  --secondary: var(--c-am-harkaive-secondary) !important;
+  --dark: var(--c-am-harkaive-dark) !important;
+}

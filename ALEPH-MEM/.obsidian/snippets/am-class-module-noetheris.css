@@ -1,0 +1,6 @@
+.noetheris {
+  --highlight: var(--c-am-noetheris-highlight) !important;
+  --primary: var(--c-am-noetheris-primary) !important;
+  --secondary: var(--c-am-noetheris-secondary) !important;
+  --dark: var(--c-am-noetheris-dark) !important;
+}

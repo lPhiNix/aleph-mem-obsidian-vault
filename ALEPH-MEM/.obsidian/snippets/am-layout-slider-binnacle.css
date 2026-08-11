@@ -1,59 +1,59 @@
 /* Devs binnacle bar — devs-binnacle-status (1=On Track, 2=Blocked, 3=Stuck) */
 
-.devs-binnacle-bar .progress-bar-input {
+.devs-binnacle-slider .slider-input {
   display: flex !important;
   align-items: center !important;
   padding-right: 2rem !important;
   overflow: hidden !important;
 }
-.devs-binnacle-bar .progress-bar-progress {
+.devs-binnacle-slider .slider-progress {
   min-width: 10%;
   max-width: calc(100% - 4rem) !important;
 }
-.devs-binnacle-bar .progress-bar-value {
+.devs-binnacle-slider .slider-value {
   display: block !important;
   width: 100% !important;
   text-align: right !important;
   padding-right: 0.5rem !important;
   font-size: 0 !important;
 }
-.devs-binnacle-bar .progress-bar-label-left,
-.devs-binnacle-bar .progress-bar-label-right {
+.devs-binnacle-slider .slider-label-left,
+.devs-binnacle-slider .slider-label-right {
   display: none !important;
 }
 
 /* 1 — On Track */
-.devs-binnacle-bar[data-internal-value="1"] .progress-bar-progress {
+.devs-binnacle-slider[data-internal-value="1"] .slider-progress {
   background-color: #10b981 !important;
 }
-.devs-binnacle-bar[data-internal-value="1"] .progress-bar-value {
+.devs-binnacle-slider[data-internal-value="1"] .slider-value {
   color: #10b981 !important;
 }
-.devs-binnacle-bar[data-internal-value="1"] .progress-bar-value::before {
+.devs-binnacle-slider[data-internal-value="1"] .slider-value::before {
   content: "On Track";
   font-size: var(--font-text-size, 1rem);
 }
 
 /* 2 — Blocked */
-.devs-binnacle-bar[data-internal-value="2"] .progress-bar-progress {
+.devs-binnacle-slider[data-internal-value="2"] .slider-progress {
   background-color: #ef4444 !important;
 }
-.devs-binnacle-bar[data-internal-value="2"] .progress-bar-value {
+.devs-binnacle-slider[data-internal-value="2"] .slider-value {
   color: #ef4444 !important;
 }
-.devs-binnacle-bar[data-internal-value="2"] .progress-bar-value::before {
+.devs-binnacle-slider[data-internal-value="2"] .slider-value::before {
   content: "Blocked";
   font-size: var(--font-text-size, 1rem);
 }
 
 /* 3 — Stuck */
-.devs-binnacle-bar[data-internal-value="3"] .progress-bar-progress {
+.devs-binnacle-slider[data-internal-value="3"] .slider-progress {
   background-color: #f97316 !important;
 }
-.devs-binnacle-bar[data-internal-value="3"] .progress-bar-value {
+.devs-binnacle-slider[data-internal-value="3"] .slider-value {
   color: #f97316 !important;
 }
-.devs-binnacle-bar[data-internal-value="3"] .progress-bar-value::before {
+.devs-binnacle-slider[data-internal-value="3"] .slider-value::before {
   content: "Stuck";
   font-size: var(--font-text-size, 1rem);
 }

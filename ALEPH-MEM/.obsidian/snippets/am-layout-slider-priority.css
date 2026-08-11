@@ -1,72 +1,72 @@
 /* Priority bar — ordus-priority (1=Low, 2=Medium, 3=High, 4=Critical) */
 /* Colors match am-class-kanban.css ordus-priority palette              */
 
-.priority-bar .progress-bar-input {
+.ordus-priority-slider .slider-input {
   display: flex !important;
   align-items: center !important;
   padding-right: 2rem !important;
   overflow: hidden !important;
 }
-.priority-bar .progress-bar-progress {
+.ordus-priority-slider .slider-progress {
   min-width: 10%;
   max-width: calc(100% - 6rem) !important;
 }
-.priority-bar .progress-bar-value {
+.ordus-priority-slider .slider-value {
   display: block !important;
   width: 100% !important;
   text-align: right !important;
   padding-right: 0.5rem !important;
   font-size: 0 !important;
 }
-.priority-bar .progress-bar-label-left,
-.priority-bar .progress-bar-label-right {
+.ordus-priority-slider .slider-label-left,
+.ordus-priority-slider .slider-label-right {
   display: none !important;
 }
 
 /* 1 — Low */
-.priority-bar[data-internal-value="1"] .progress-bar-progress {
+.ordus-priority-slider[data-internal-value="1"] .slider-progress {
   background-color: rgb(0, 162, 255) !important;
 }
-.priority-bar[data-internal-value="1"] .progress-bar-value {
+.ordus-priority-slider[data-internal-value="1"] .slider-value {
   color: rgb(0, 162, 255) !important;
 }
-.priority-bar[data-internal-value="1"] .progress-bar-value::before {
+.ordus-priority-slider[data-internal-value="1"] .slider-value::before {
   content: "Low";
   font-size: var(--font-text-size, 1rem);
 }
 
 /* 2 — Medium */
-.priority-bar[data-internal-value="2"] .progress-bar-progress {
+.ordus-priority-slider[data-internal-value="2"] .slider-progress {
   background-color: rgb(255, 179, 0) !important;
 }
-.priority-bar[data-internal-value="2"] .progress-bar-value {
+.ordus-priority-slider[data-internal-value="2"] .slider-value {
   color: rgb(255, 179, 0) !important;
 }
-.priority-bar[data-internal-value="2"] .progress-bar-value::before {
+.ordus-priority-slider[data-internal-value="2"] .slider-value::before {
   content: "Medium";
   font-size: var(--font-text-size, 1rem);
 }
 
 /* 3 — High */
-.priority-bar[data-internal-value="3"] .progress-bar-progress {
+.ordus-priority-slider[data-internal-value="3"] .slider-progress {
   background-color: rgb(255, 55, 0) !important;
 }
-.priority-bar[data-internal-value="3"] .progress-bar-value {
+.ordus-priority-slider[data-internal-value="3"] .slider-value {
   color: rgb(255, 55, 0) !important;
 }
-.priority-bar[data-internal-value="3"] .progress-bar-value::before {
+.ordus-priority-slider[data-internal-value="3"] .slider-value::before {
   content: "High";
   font-size: var(--font-text-size, 1rem);
 }
 
 /* 4 — Critical */
-.priority-bar[data-internal-value="4"] .progress-bar-progress {
+.ordus-priority-slider[data-internal-value="4"] .slider-progress {
   background-color: rgb(255, 0, 0) !important;
 }
-.priority-bar[data-internal-value="4"] .progress-bar-value {
+.ordus-priority-slider[data-internal-value="4"] .slider-value {
   color: rgb(255, 0, 0) !important;
 }
-.priority-bar[data-internal-value="4"] .progress-bar-value::before {
+.ordus-priority-slider[data-internal-value="4"] .slider-value::before {
   content: "Critical";
   font-size: var(--font-text-size, 1rem);
 }

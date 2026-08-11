@@ -179,14 +179,14 @@
   color: var(--highlight) !important;
 }
 
-.module .input-alias {
+.module .alias-input {
   color: var(--highlight) !important;
   border-color: var(--secondary) !important;
 }
-.module .input-alias::placeholder {
+.module .alias-input::placeholder {
   color: var(--dark) !important;
 }
-.module .input-alias:focus-visible {
+.module .alias-input:focus-visible {
   border-color: var(--highlight) !important;
 }
 
@@ -194,6 +194,6 @@
   color: var(--dark) !important;
 }
 
-.module .progress-bar-input {
+.module .slider-input {
   border-color: var(--secondary) !important;
 }

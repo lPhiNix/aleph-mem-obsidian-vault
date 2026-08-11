@@ -11,16 +11,16 @@ if (raw !== undefined && raw !== null) {
 }
 value = Math.min(MAX, Math.max(MIN, value));
 
-const container = dv.container.createEl("div", { cls: "devs-outcome-bar progress-bar-input" });
+const container = dv.container.createEl("div", { cls: "devs-outcome-slider slider-input" });
 container.setAttribute("tabindex", "0");
 
-const fill = container.createEl("div", { cls: "progress-bar-progress" });
-const valSpan = container.createEl("span", { cls: "progress-bar-value" });
+const fill = container.createEl("div", { cls: "slider-progress" });
+const valSpan = container.createEl("span", { cls: "slider-value" });
 valSpan.textContent = value;
 container.setAttribute("data-internal-value", value);
-const leftSpan = container.createEl("span", { cls: "progress-bar-label-left" });
+const leftSpan = container.createEl("span", { cls: "slider-label-left" });
 leftSpan.textContent = MIN;
-const rightSpan = container.createEl("span", { cls: "progress-bar-label-right" });
+const rightSpan = container.createEl("span", { cls: "slider-label-right" });
 rightSpan.textContent = MAX;
 
 function pct(v) { return ((v - MIN) / (MAX - MIN)) * 100; }
