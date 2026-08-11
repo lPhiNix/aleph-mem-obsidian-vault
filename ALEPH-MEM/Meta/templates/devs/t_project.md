@@ -89,7 +89,7 @@ tR += await tp.file.include("[[c_dataview_devs_project_progress_slider]]");
 ## ✧ Actions
 
 <%*
-tR += await tp.file.include("[[c_metabind_devs_project_buttons]]");
+tR += await tp.file.include("[[c_dataview_devs_project_buttons]]");
 %>
 
 ---

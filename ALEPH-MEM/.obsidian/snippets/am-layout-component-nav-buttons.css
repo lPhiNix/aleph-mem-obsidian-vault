@@ -1,0 +1,52 @@
+/* Native navigation and action buttons — replaces MetaBind button components */
+
+.nav-button-group {
+  display: flex !important;
+  gap: 0 !important;
+  width: 100% !important;
+  margin: 0.5rem 0;
+}
+.nav-button-group .nav-button,
+.nav-button-single {
+  font-family: var(--font-text);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-font-smoothing: antialiased;
+  padding: 0.25rem 0.5rem !important;
+  font-size: clamp(0.6rem, 2.5vw, 0.875rem) !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  font-weight: 600;
+  border: 1px solid var(--background-modifier-border);
+  background-color: var(--primary) !important;
+  color: var(--text-on-accent, var(--text-normal));
+  cursor: pointer;
+  height: var(--input-height);
+}
+.nav-button-group .nav-button {
+  flex: 1 1 0 !important;
+  min-width: 0 !important;
+  border-radius: 0;
+}
+.nav-button-group .nav-button:first-child {
+  border-radius: var(--input-radius) 0 0 var(--input-radius);
+}
+.nav-button-group .nav-button:last-child {
+  border-radius: 0 var(--input-radius) var(--input-radius) 0;
+}
+.nav-button-single {
+  width: 100%;
+  border-radius: var(--input-radius);
+  color: var(--dark) !important;
+  margin: 0.5rem 0;
+}
+.nav-button-group .nav-button:hover,
+.nav-button-single:hover {
+  background-color: var(--highlight) !important;
+}
+.nav-button-group .nav-button:active,
+.nav-button-single:active {
+  background-color: var(--highlight) !important;
+}

@@ -50,7 +50,7 @@ tR += await tp.file.include("[[c_templater_memorium_weekly_journals_frontmatter]
 <%"---"%>
 # ✦ <% moment(tp.file.title, 'YYYY-[W]WW').format("[Week ]WW, YYYY") %>
 <%*
-tR += await tp.file.include("[[c_metabind_memorium_weekly_nav_buttons]]");
+tR += await tp.file.include("[[c_dataview_memorium_weekly_nav_buttons]]");
 %>
 
 <%*

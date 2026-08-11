@@ -190,10 +190,10 @@
   border-color: var(--highlight) !important;
 }
 
-.module .mb-button-inner {
+.module .nav-button {
   color: var(--dark) !important;
 }
 
-.module .mb-progress-bar-input {
+.module .progress-bar-input {
   border-color: var(--secondary) !important;
 }

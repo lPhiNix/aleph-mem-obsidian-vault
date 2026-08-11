@@ -173,7 +173,8 @@
     "am-layout-component-devs-outcome-bar",
     "am-layout-component-devs-impact-bar",
     "am-layout-component-devs-binnacle-bar",
-    "am-layout-progress-bar-base"
+    "am-layout-progress-bar-base",
+    "am-layout-component-nav-buttons"
   ],
   "interfaceFontFamily": "",
   "textFontFamily": "",
