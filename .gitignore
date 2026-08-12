@@ -5,6 +5,8 @@
 .trash/
 
 # Vault
+ALEPH-MEM/00 - Φ - Inthima/*
+!ALEPH-MEM/00 - Φ - Inthima/INTHIMA.md
 ALEPH-MEM/02 - Ψ - Memorium/*
 !ALEPH-MEM/02 - Ψ - Memorium/MEMORIUM.md
 ALEPH-MEM/04 - Λ - Devs/*
