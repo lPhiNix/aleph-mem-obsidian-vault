@@ -27,5 +27,5 @@ cssclasses:
 ## ✦ Contribution
 ---
 ```dataviewjs
-await dv.view("Meta/scripts/view/graph/dataview_noetheris_dashboard_contribution_heatmap");
+await dv.view("Meta/scripts/view/graph/dataview_dashboard_contribution_heatmap");
 ```

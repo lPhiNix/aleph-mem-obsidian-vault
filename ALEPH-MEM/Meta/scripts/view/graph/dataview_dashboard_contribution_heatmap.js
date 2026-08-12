@@ -1,8 +1,29 @@
 ﻿/**********************
- * ORDUS CONTRIBUTION HEATMAP
- * Heatmap de contribuciones del módulo Ordus
- * Trackea notas por fecha de creación (file.ctime)
+ * DASHBOARD CONTRIBUTION HEATMAP
+ * Auto-detects module from note path.
+ * Replaces 10 per-module heatmap scripts.
  **********************/
+
+const MODULES = {
+  "00 - Φ - Inthima":   { label: "Inthima",  colors: ["#2a2a2a", "#93263a", "#fb4466", "#ff8fa3", "#ecb3be"], accent: "#ff8fa3" },
+  "01 - Θ - Cognitio":  { label: "Cognitio", colors: ["#2a2a2a", "#7a4a1f", "#e68a2e", "#ffb36b", "#ffd4a8"], accent: "#ffb36b" },
+  "02 - Ψ - Memorium":  { label: "Memorium", colors: ["#2a2a2a", "#7a6420", "#d4aa2e", "#ffe066", "#fff0b3"], accent: "#ffe066" },
+  "03 - Σ - Noetheris": { label: "Noetheris",colors: ["#2a2a2a", "#2a5c34", "#4fb862", "#8ce99a", "#b8f0c2"], accent: "#8ce99a" },
+  "04 - Λ - Devs":      { label: "Devs",     colors: ["#2a2a2a", "#1a5c4a", "#2eb894", "#63e6be", "#a3f0d8"], accent: "#63e6be" },
+  "05 - Ζ - Viventia":  { label: "Viventia", colors: ["#2a2a2a", "#1f4d73", "#3d9ae6", "#74c0fc", "#b3dbfd"], accent: "#74c0fc" },
+  "06 - Ξ - Kaelithra": { label: "Kaelithra",colors: ["#2a2a2a", "#452f73", "#8a5fe6", "#b197fc", "#d4c5fd"], accent: "#b197fc" },
+  "07 - Π - Ordus":     { label: "Ordus",    colors: ["#2a2a2a", "#612f6c", "#c23dd9", "#da77f2", "#ecb3f6"], accent: "#da77f2" },
+  "08 - Δ - Aethernum": { label: "Aethernum",colors: ["#2a2a2a", "#495057", "#868e96", "#ced4da", "#e8ebed"], accent: "#ced4da" },
+  "09 - Ω - Harkaive":  { label: "Harkaive", colors: ["#2a2a2a", "#343a40", "#6c757d", "#868e96", "#adb5bd"], accent: "#868e96" },
+};
+
+const moduleName = dv.current().file.path.split("/").shift();
+const MOD = MODULES[moduleName];
+
+if (!MOD) {
+  dv.paragraph(`_No contribution data for module: ${moduleName}_`);
+  throw new Error(`Unknown module path: ${moduleName}`);
+}
 
 /**********************
  * CONFIGURACIÓN
@@ -13,17 +34,17 @@ const CCONFIG = {
 
   EMPTY_COLOR: "#2a2a2a",
 
-  // Ordus purple palette: 0=empty, 1=dark, 2=secondary, 3=primary, 4=highlight
-  LEVEL_COLORS: ["#2a2a2a", "#612f6c", "#c23dd9", "#da77f2", "#ecb3f6"],
+  LEVEL_COLORS: MOD.colors,
 
-  // Min daily count to reach each level: L1≥1, L2≥3, L3≥6, L4≥10
   THRESHOLDS: [1, 3, 6, 10],
 
-  ACCENT: "#da77f2",
+  ACCENT: MOD.accent,
 
   WEEKDAYS: ["MON", "TUE", "WED", "THU", "FRI", "SAT", "SUN"],
 
-  PATH: '"07 - Π - Ordus"',
+  PATH: JSON.stringify(moduleName),
+
+  LABEL: MOD.label,
 
   get MONTH_FONT_SIZE() { return Math.max(8, this.CELL_SIZE * 0.9); },
   get WEEKDAY_FONT_SIZE() { return Math.max(8, this.CELL_SIZE * 0.9); }
