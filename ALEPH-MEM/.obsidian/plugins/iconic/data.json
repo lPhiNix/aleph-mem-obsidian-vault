@@ -188,6 +188,12 @@
     },
     "postmortem": {
       "icon": "lucide-microscope"
+    },
+    "axiom": {
+      "icon": "lucide-atom"
+    },
+    "INTHIMA": {
+      "icon": "lucide-sparkles"
     }
   },
   "propertyIcons": {
@@ -277,6 +283,20 @@
       ],
       "enabled": true,
       "icon": "lucide-sparkles"
+    },
+    {
+      "id": "4Ft73",
+      "name": "Inthima/Axioms",
+      "match": "all",
+      "conditions": [
+        {
+          "source": "path",
+          "operator": "startsWith",
+          "value": "00 - Φ - Inthima/01 - Axioms/"
+        }
+      ],
+      "enabled": true,
+      "icon": "lucide-atom"
     },
     {
       "id": "5Qavz",
