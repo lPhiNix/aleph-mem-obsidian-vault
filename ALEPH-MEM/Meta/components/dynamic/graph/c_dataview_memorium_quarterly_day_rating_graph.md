@@ -1,3 +1,4 @@
 ```dataviewjs
-await dv.view("Meta/scripts/view/graph/dataview_memorium_quarterly_day_rating_graph");
+globalThis.__memoriumChartPeriod = "quarterly";
+await dv.view("Meta/scripts/view/graph/dataview_memorium_day_rating_graph");
 ```
