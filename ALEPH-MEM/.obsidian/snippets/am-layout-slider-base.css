@@ -1,10 +1,11 @@
 .slider-input {
   height: var(--input-height);
   border-radius: var(--mb-border-radius, var(--input-radius));
-  border: var(--mb-border-width, var(--border-width)) solid var(--background-modifier-border);
+  border: 2px solid var(--background-modifier-border);
   cursor: col-resize;
   width: 100%;
   position: relative;
+  overflow: hidden;
 }
 .slider-input:focus-visible {
   box-shadow: 0 0 0 3px var(--background-modifier-border-focus);
