@@ -19,6 +19,10 @@
       "template": "Meta/templates/dashboards/t_inthima.md"
     },
     {
+      "folder": "00 - Φ - Inthima/01 - Axioms",
+      "template": "Meta/templates/inthima/t_axiom.md"
+    },
+    {
       "folder": "01 - Θ - Cognitio",
       "template": "Meta/templates/dashboards/t_cognitio.md"
     },
