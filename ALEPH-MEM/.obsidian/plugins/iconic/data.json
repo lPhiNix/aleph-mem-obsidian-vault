@@ -194,6 +194,21 @@
     },
     "INTHIMA": {
       "icon": "lucide-sparkles"
+    },
+    "exploration": {
+      "icon": "lucide-compass"
+    },
+    "VIVENTIA": {
+      "icon": "lucide-sparkles"
+    },
+    "analysis": {
+      "icon": "lucide-telescope"
+    },
+    "activity": {
+      "icon": "lucide-heart-pulse"
+    },
+    "session": {
+      "icon": "lucide-flame"
     }
   },
   "propertyIcons": {
@@ -394,7 +409,7 @@
         }
       ],
       "enabled": true,
-      "icon": "lucide-zap"
+      "icon": "lucide-heart-pulse"
     },
     {
       "id": "s6dXP",
@@ -404,7 +419,7 @@
         {
           "source": "path",
           "operator": "startsWith",
-          "value": "05 - Ζ - Viventia/03 - Sessions/202608151810-ACTIVITY-1.md"
+          "value": "05 - Ζ - Viventia/03 - Sessions/"
         }
       ],
       "enabled": true,
@@ -422,7 +437,7 @@
         }
       ],
       "enabled": true,
-      "icon": "lucide-radar"
+      "icon": "lucide-telescope"
     },
     {
       "id": "xRutp",
