@@ -96,6 +96,13 @@ tR += await tp.file.include("[[c_dataview_viventia_level_slider]]");
 > [!editor]
 
 ---
+## ✧ Tracker
+
+<%*
+tR += await tp.file.include("[[c_dataview_viventia_activity_heatmap]]");
+%>
+
+---
 ## ✧ Actions
 
 <%*
