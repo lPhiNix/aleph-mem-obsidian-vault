@@ -66,7 +66,7 @@ tR += await tp.file.include("[[c_templater_native_alias_attribute]]");
 tR += await tp.file.include("[[c_templater_viventia_state]]");
 %>
 <%*
-tR += await tp.file.include("[[c_templater_viventia_level]]");
+tR += await tp.file.include("[[c_templater_viventia_polarity]]");
 %>
 
 <%"---"%>
@@ -84,10 +84,10 @@ tR += await tp.file.include("[[c_dataview_viventia_state_slider]]");
 %>
 
 ---
-## ✧ Level
+## ✧ Polarity
 
 <%*
-tR += await tp.file.include("[[c_dataview_viventia_level_slider]]");
+tR += await tp.file.include("[[c_dataview_viventia_polarity_slider]]");
 %>
 
 ---
@@ -95,8 +95,8 @@ tR += await tp.file.include("[[c_dataview_viventia_level_slider]]");
 
 > [!editor]
 
----
 ## ✧ Tracker
+---
 
 <%*
 tR += await tp.file.include("[[c_dataview_viventia_activity_heatmap]]");

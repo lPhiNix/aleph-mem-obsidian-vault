@@ -6,21 +6,33 @@
 /**********************
  * CONFIGURACIÓN
   **********************/
+const PALETTES = {
+  positive: { colors: ["#2a2a2a", "#1f4d73", "#3d9ae6", "#74c0fc", "#b3dbfd"], accent: "#74c0fc" },
+  neutral:  { colors: ["#2a2a2a", "#1f4d73", "#3d9ae6", "#74c0fc", "#b3dbfd"], accent: "#74c0fc" },
+  negative: { colors: ["#2a2a2a", "#5c2e2e", "#a64b4b", "#e07373", "#f5a3a3"], accent: "#ef4444" },
+};
+
+const polarity = dv.current()["viventia-polarity"];
+const isNegative = polarity === "Negative";
+const palette = isNegative ? PALETTES.negative : PALETTES.positive;
+
 const CONFIG = {
   CELL_SIZE: 18,
   GAP: 4,
 
   EMPTY_COLOR: "#2a2a2a",
 
-  LEVEL_COLORS: ["#2a2a2a", "#1f4d73", "#3d9ae6", "#74c0fc", "#b3dbfd"],
+  LEVEL_COLORS: palette.colors,
 
   THRESHOLDS: [1, 2, 3, 4],
 
-  ACCENT: "#74c0fc",
+  ACCENT: palette.accent,
 
   WEEKDAYS: ["MON", "TUE", "WED", "THU", "FRI", "SAT", "SUN"],
 
   SESSIONS_PATH: '"05 - Ζ - Viventia/03 - Sessions"',
+
+  IS_NEGATIVE: isNegative,
 
   get MONTH_FONT_SIZE() { return Math.max(8, this.CELL_SIZE * 0.9); },
   get WEEKDAY_FONT_SIZE() { return Math.max(8, this.CELL_SIZE * 0.9); }
@@ -266,17 +278,22 @@ class ActivityStats {
 
     const avgPerDay = activeDays > 0 ? totalSessions / activeDays : 0;
 
+    const hasActivity = d => {
+      const found = map.has(fmtKey(d));
+      return CONFIG.IS_NEGATIVE ? !found : found;
+    };
+
     let streak = 0;
     const checking = effectiveEnd.clone();
     while (checking.isSameOrAfter(start, "day")) {
-      if (map.has(fmtKey(checking))) { streak++; checking.subtract(1, "day"); }
+      if (hasActivity(checking)) { streak++; checking.subtract(1, "day"); }
       else break;
     }
 
     let maxStreak = 0, tmp = 0;
     const cur = start.clone();
     while (cur.isSameOrBefore(effectiveEnd, "day")) {
-      if (map.has(fmtKey(cur))) { tmp++; if (tmp > maxStreak) maxStreak = tmp; }
+      if (hasActivity(cur)) { tmp++; if (tmp > maxStreak) maxStreak = tmp; }
       else tmp = 0;
       cur.add(1, "day");
     }
@@ -356,6 +373,8 @@ class ActivityRenderer {
   _renderStats(stats) {
     const { totalSessions, activeDays, totalDays, avgPerDay, bestDay, streak, maxStreak } = stats;
     const pct = totalDays > 0 ? Math.round((activeDays / totalDays) * 100) : 0;
+    const streakLabel = CONFIG.IS_NEGATIVE ? "CLEAN STREAK" : "STREAK";
+    const maxStreakLabel = CONFIG.IS_NEGATIVE ? "BEST CLEAN" : "MAX STREAK";
 
     const row = document.createElement("div");
     row.style.cssText = `display:flex;gap:4px;flex-wrap:wrap;justify-content:center;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.05);margin-bottom:4px`;
@@ -366,8 +385,8 @@ class ActivityRenderer {
       { label: "COVERAGE",    value: `${pct}%`                                              },
       { label: "AVG / DAY",   value: avgPerDay > 0 ? avgPerDay.toFixed(1) : "—"            },
       { label: "BEST DAY",    value: bestDay > 0 ? `${bestDay}` : "—"                      },
-      { label: "STREAK",      value: `${streak}d`                                           },
-      { label: "MAX STREAK",  value: `${maxStreak}d`                                        },
+      { label: streakLabel,     value: `${streak}d`                                           },
+      { label: maxStreakLabel,  value: `${maxStreak}d`                                        },
     ];
 
     items.forEach(({ label, value, highlight }) => {
