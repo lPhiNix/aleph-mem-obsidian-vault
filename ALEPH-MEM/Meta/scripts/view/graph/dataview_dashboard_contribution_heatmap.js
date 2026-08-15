@@ -67,6 +67,15 @@ function cColorForCount(count) {
   return c[4];                   // 10+
 }
 
+function cLevelForCount(count) {
+  const [t1, t2, t3, t4] = CCONFIG.THRESHOLDS;
+  if (!count || count <= 0) return 0;
+  if (count < t2) return 1;
+  if (count < t3) return 2;
+  if (count < t4) return 3;
+  return 4;
+}
+
 /**********************
  * GRID BUILDER
  **********************/
@@ -312,9 +321,15 @@ class ContribStats {
 class ContribRenderer {
   constructor() {
     this.tooltip = null;
+    this.activeFilter = null;
+    this.allCells = [];
+    this._legendItems = [];
   }
 
   render(columns, map, start, end, container, year, onYearChange) {
+    this.allCells = [];
+    this._legendItems = [];
+    this.activeFilter = null;
     if (this.tooltip) this.tooltip.destroy();
     this.tooltip = new ContribTooltip();
 
@@ -531,6 +546,8 @@ class ContribRenderer {
       cell.onclick = () => app.workspace.openLinkText(notes[0].path, "", true);
     }
 
+    this.allCells.push({ cell, count });
+
     return cell;
   }
 
@@ -578,7 +595,7 @@ class ContribRenderer {
     wrapper.style.cssText = `display:flex;flex-direction:column;align-items:center;gap:6px;margin-top:4px;padding-top:8px;border-top:1px solid rgba(255,255,255,0.05)`;
 
     const title = document.createElement("div");
-    title.textContent = "CONTRIBUTION LEVELS";
+    title.textContent = "CONTRIBUTION LEVELS — CLICK TO FILTER";
     title.style.cssText = `font-size:9px;opacity:0.35;letter-spacing:0.8px;font-weight:600`;
     wrapper.appendChild(title);
 
@@ -586,19 +603,19 @@ class ContribRenderer {
     row.style.cssText = `display:flex;gap:8px;align-items:center;justify-content:center`;
 
     const levels = [
-      { label: "0",    color: CCONFIG.LEVEL_COLORS[0] },
-      { label: "1–2",  color: CCONFIG.LEVEL_COLORS[1] },
-      { label: "3–5",  color: CCONFIG.LEVEL_COLORS[2] },
-      { label: "6–9",  color: CCONFIG.LEVEL_COLORS[3] },
-      { label: "10+",  color: CCONFIG.LEVEL_COLORS[4] },
+      { label: "0",   value: 0, color: CCONFIG.LEVEL_COLORS[0] },
+      { label: "1–2", value: 1, color: CCONFIG.LEVEL_COLORS[1] },
+      { label: "3–5", value: 2, color: CCONFIG.LEVEL_COLORS[2] },
+      { label: "6–9", value: 3, color: CCONFIG.LEVEL_COLORS[3] },
+      { label: "10+", value: 4, color: CCONFIG.LEVEL_COLORS[4] },
     ];
 
-    levels.forEach(({ label, color }) => {
+    levels.forEach(({ label, value, color }) => {
       const item = document.createElement("div");
-      item.style.cssText = `display:flex;flex-direction:column;align-items:center;gap:3px`;
+      item.style.cssText = `display:flex;flex-direction:column;align-items:center;gap:3px;cursor:pointer;user-select:none`;
 
       const swatch = document.createElement("div");
-      swatch.style.cssText = `width:${CCONFIG.CELL_SIZE}px;height:${CCONFIG.CELL_SIZE}px;border-radius:2px;background:${color}`;
+      swatch.style.cssText = `width:${CCONFIG.CELL_SIZE}px;height:${CCONFIG.CELL_SIZE}px;border-radius:2px;background:${color};transition:all 0.15s`;
 
       const lbl = document.createElement("div");
       lbl.textContent = label;
@@ -607,10 +624,41 @@ class ContribRenderer {
       item.appendChild(swatch);
       item.appendChild(lbl);
       row.appendChild(item);
+
+      item._swatch = swatch;
+      item._levelValue = value;
+      this._legendItems.push(item);
+
+      item.onclick = () => this._toggleFilter(value);
+      item.onmouseenter = () => { if (this.activeFilter !== value) swatch.style.transform = "scale(1.15)"; };
+      item.onmouseleave = () => { if (this.activeFilter !== value) swatch.style.transform = "scale(1)"; };
     });
 
     wrapper.appendChild(row);
     return wrapper;
+  }
+
+  _toggleFilter(level) {
+    this.activeFilter = this.activeFilter === level ? null : level;
+    this._applyFilter();
+  }
+
+  _applyFilter() {
+    const active = this.activeFilter;
+    this.allCells.forEach(({ cell, count }) => {
+      if (active === null) {
+        cell.style.opacity = count === 0 ? "0.3" : "1";
+      } else {
+        cell.style.opacity = (cLevelForCount(count) === active) ? "1" : "0.07";
+      }
+    });
+
+    this._legendItems.forEach(item => {
+      const isActive = active === item._levelValue;
+      item._swatch.style.outline = isActive ? "2px solid rgba(255,255,255,0.8)" : "none";
+      item._swatch.style.outlineOffset = "1px";
+      item._swatch.style.transform = isActive ? "scale(1.15)" : "scale(1)";
+    });
   }
 }
 
