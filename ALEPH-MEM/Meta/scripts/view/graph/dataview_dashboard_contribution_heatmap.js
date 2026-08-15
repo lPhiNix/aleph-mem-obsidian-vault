@@ -314,7 +314,7 @@ class ContribRenderer {
     this.tooltip = null;
   }
 
-  render(columns, map, start, end, container) {
+  render(columns, map, start, end, container, year, onYearChange) {
     if (this.tooltip) this.tooltip.destroy();
     this.tooltip = new ContribTooltip();
 
@@ -331,6 +331,7 @@ class ContribRenderer {
       border-radius: 8px;
     `;
 
+    wrapper.appendChild(this._renderYearSelector(year, onYearChange));
     wrapper.appendChild(this._renderStats(stats));
 
     const gridRow = document.createElement("div");
@@ -396,6 +397,46 @@ class ContribRenderer {
     });
 
     return row;
+  }
+
+  _renderYearSelector(year, onYearChange) {
+    const el = document.createElement("div");
+    el.style.cssText = `display:flex;flex-direction:column;align-items:center;gap:2px;padding:4px 16px;align-self:center`;
+
+    const lbl = document.createElement("div");
+    lbl.textContent = "YEAR";
+    lbl.style.cssText = `font-size:9px;opacity:0.35;letter-spacing:0.8px;font-weight:600`;
+
+    const val = document.createElement("div");
+    val.style.cssText = `display:flex;align-items:center;gap:8px`;
+
+    const btnStyle = `cursor:pointer;background:transparent;border:none;color:var(--text-muted);font-size:14px;font-weight:600;opacity:0.5;padding:0;transition:opacity 0.15s`;
+
+    const prevBtn = document.createElement("button");
+    prevBtn.textContent = "‹";
+    prevBtn.style.cssText = btnStyle;
+    prevBtn.onmouseenter = () => { prevBtn.style.opacity = "1"; prevBtn.style.color = CCONFIG.ACCENT; };
+    prevBtn.onmouseleave = () => { prevBtn.style.opacity = "0.5"; prevBtn.style.color = "var(--text-muted)"; };
+    prevBtn.addEventListener("click", () => onYearChange(year - 1));
+
+    const yearText = document.createElement("span");
+    yearText.textContent = year;
+    yearText.style.cssText = `font-size:15px;font-weight:700;opacity:0.85`;
+
+    const nextBtn = document.createElement("button");
+    nextBtn.textContent = "›";
+    nextBtn.style.cssText = btnStyle;
+    nextBtn.onmouseenter = () => { nextBtn.style.opacity = "1"; nextBtn.style.color = CCONFIG.ACCENT; };
+    nextBtn.onmouseleave = () => { nextBtn.style.opacity = "0.5"; nextBtn.style.color = "var(--text-muted)"; };
+    nextBtn.addEventListener("click", () => onYearChange(year + 1));
+
+    val.appendChild(prevBtn);
+    val.appendChild(yearText);
+    val.appendChild(nextBtn);
+
+    el.appendChild(lbl);
+    el.appendChild(val);
+    return el;
   }
 
   _renderWeekdays() {
@@ -575,21 +616,31 @@ class ContribRenderer {
 
 /**********************
  * EJECUCIÓN
- **********************/
-(async function () {
-  try {
-    const year  = moment().year();
-    const start = moment(`${year}-01-01`);
-    const end   = moment(`${year}-12-31`);
+  **********************/
+let currentRenderer = null;
 
-    const dataManager = new ContribDataManager(dv);
-    const map         = dataManager.load(start, end);
-    const columns     = ContribGridBuilder.build(start, end);
-    const renderer    = new ContribRenderer();
-
-    renderer.render(columns, map, start, end, dv.container);
-  } catch (err) {
-    dv.span(`Error: ${err.message}`);
-    console.error("Contribution Heatmap Error:", err);
+function renderYear(year) {
+  if (currentRenderer && currentRenderer.tooltip) {
+    currentRenderer.tooltip.destroy();
   }
-})();
+
+  const start = moment(`${year}-01-01`);
+  const end   = moment(`${year}-12-31`);
+
+  dv.container.innerHTML = "";
+
+  const dataManager = new ContribDataManager(dv);
+  const map         = dataManager.load(start, end);
+  const columns     = ContribGridBuilder.build(start, end);
+  const renderer    = new ContribRenderer();
+
+  renderer.render(columns, map, start, end, dv.container, year, (newYear) => renderYear(newYear));
+  currentRenderer = renderer;
+}
+
+try {
+  renderYear(moment().year());
+} catch (err) {
+  dv.span(`Error: ${err.message}`);
+  console.error("Contribution Heatmap Error:", err);
+}
