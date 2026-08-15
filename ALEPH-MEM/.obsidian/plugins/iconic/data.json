@@ -369,6 +369,62 @@
       "icon": "lucide-microscope"
     },
     {
+      "id": "bm5OD",
+      "name": "Viventia/Explorations",
+      "match": "all",
+      "conditions": [
+        {
+          "source": "path",
+          "operator": "startsWith",
+          "value": "05 - Ζ - Viventia/01 - Explorations/"
+        }
+      ],
+      "enabled": true,
+      "icon": "lucide-compass"
+    },
+    {
+      "id": "7xJ19",
+      "name": "Viventia/Activities",
+      "match": "all",
+      "conditions": [
+        {
+          "source": "path",
+          "operator": "startsWith",
+          "value": "05 - Ζ - Viventia/02 - Activities/"
+        }
+      ],
+      "enabled": true,
+      "icon": "lucide-zap"
+    },
+    {
+      "id": "s6dXP",
+      "name": "Viventia/Sessions",
+      "match": "all",
+      "conditions": [
+        {
+          "source": "path",
+          "operator": "startsWith",
+          "value": "05 - Ζ - Viventia/03 - Sessions/202608151810-ACTIVITY-1.md"
+        }
+      ],
+      "enabled": true,
+      "icon": "lucide-flame"
+    },
+    {
+      "id": "hT6tT",
+      "name": "Viventia/Analysis",
+      "match": "all",
+      "conditions": [
+        {
+          "source": "path",
+          "operator": "startsWith",
+          "value": "05 - Ζ - Viventia/04 - Analysis/"
+        }
+      ],
+      "enabled": true,
+      "icon": "lucide-radar"
+    },
+    {
       "id": "xRutp",
       "name": "Ordus/Boards",
       "match": "all",

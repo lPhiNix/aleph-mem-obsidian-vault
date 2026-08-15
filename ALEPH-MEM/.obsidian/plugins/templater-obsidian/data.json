@@ -79,6 +79,22 @@
       "template": "Meta/templates/dashboards/t_viventia.md"
     },
     {
+      "folder": "05 - Ζ - Viventia/01 - Explorations",
+      "template": "Meta/templates/viventia/t_exploration.md"
+    },
+    {
+      "folder": "05 - Ζ - Viventia/02 - Activities",
+      "template": "Meta/templates/viventia/t_activity.md"
+    },
+    {
+      "folder": "05 - Ζ - Viventia/03 - Sessions",
+      "template": "Meta/templates/viventia/t_session.md"
+    },
+    {
+      "folder": "05 - Ζ - Viventia/04 - Analysis",
+      "template": "Meta/templates/viventia/t_analysis.md"
+    },
+    {
       "folder": "06 - Ξ - Kaelithra",
       "template": "Meta/templates/dashboards/t_kaelithra.md"
     },

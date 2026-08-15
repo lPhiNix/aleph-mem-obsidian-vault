@@ -1,0 +1,71 @@
+/* Viventia level slider — viventia-level (1=Beginner, 2=Intermediate, 3=Advanced, 4=Expert) */
+
+.viventia-level-slider .slider-input {
+  display: flex !important;
+  align-items: center !important;
+  padding-right: 2rem !important;
+  overflow: hidden !important;
+}
+.viventia-level-slider .slider-progress {
+  min-width: 10%;
+  max-width: calc(100% - 7rem) !important;
+}
+.viventia-level-slider .slider-value {
+  display: block !important;
+  width: 100% !important;
+  text-align: right !important;
+  padding-right: 0.5rem !important;
+  font-size: 0 !important;
+}
+.viventia-level-slider .slider-label-left,
+.viventia-level-slider .slider-label-right {
+  display: none !important;
+}
+
+/* 1 — Beginner */
+.viventia-level-slider[data-internal-value="1"] .slider-progress {
+  background-color: #10b981 !important;
+}
+.viventia-level-slider[data-internal-value="1"] .slider-value {
+  color: #10b981 !important;
+}
+.viventia-level-slider[data-internal-value="1"] .slider-value::before {
+  content: "Beginner";
+  font-size: var(--font-text-size, 1rem);
+}
+
+/* 2 — Intermediate */
+.viventia-level-slider[data-internal-value="2"] .slider-progress {
+  background-color: #f59e0b !important;
+}
+.viventia-level-slider[data-internal-value="2"] .slider-value {
+  color: #f59e0b !important;
+}
+.viventia-level-slider[data-internal-value="2"] .slider-value::before {
+  content: "Intermediate";
+  font-size: var(--font-text-size, 1rem);
+}
+
+/* 3 — Advanced */
+.viventia-level-slider[data-internal-value="3"] .slider-progress {
+  background-color: #ef4444 !important;
+}
+.viventia-level-slider[data-internal-value="3"] .slider-value {
+  color: #ef4444 !important;
+}
+.viventia-level-slider[data-internal-value="3"] .slider-value::before {
+  content: "Advanced";
+  font-size: var(--font-text-size, 1rem);
+}
+
+/* 4 — Expert */
+.viventia-level-slider[data-internal-value="4"] .slider-progress {
+  background-color: #a855f7 !important;
+}
+.viventia-level-slider[data-internal-value="4"] .slider-value {
+  color: #a855f7 !important;
+}
+.viventia-level-slider[data-internal-value="4"] .slider-value::before {
+  content: "Expert";
+  font-size: var(--font-text-size, 1rem);
+}
