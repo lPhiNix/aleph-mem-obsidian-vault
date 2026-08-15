@@ -6,7 +6,7 @@ const file = app.vault.getAbstractFileByPath(dv.current().file.path);
 let raw = dv.current()[KEY];
 let value = MIN;
 if (raw !== undefined && raw !== null) {
-  const entry = Object.entries(LABELS).find(([k, label]) => label === raw || parseInt(k) === raw);
+  const entry = Object.entries(LABELS).find(([k, label]) => label === raw);
   if (entry) value = parseInt(entry[0]);
 }
 value = Math.min(MAX, Math.max(MIN, value));
