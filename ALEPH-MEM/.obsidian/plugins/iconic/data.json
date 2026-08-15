@@ -5,7 +5,7 @@
   "showAllFolderIcons": true,
   "minimalFolderIcons": true,
   "showMarkdownTabIcons": true,
-  "showTitleIcons": true,
+  "showTitleIcons": false,
   "showTagPillIcons": true,
   "showMenuActions": true,
   "showSuggestionIcons": true,
