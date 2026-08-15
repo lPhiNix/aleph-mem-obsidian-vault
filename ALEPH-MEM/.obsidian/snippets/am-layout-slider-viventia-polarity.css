@@ -1,0 +1,59 @@
+/* Viventia polarity slider — viventia-polarity (1=Positive, 2=Neutral, 3=Negative) */
+
+.viventia-polarity-slider .slider-input {
+  display: flex !important;
+  align-items: center !important;
+  padding-right: 2rem !important;
+  overflow: hidden !important;
+}
+.viventia-polarity-slider .slider-progress {
+  min-width: 10%;
+  max-width: calc(100% - 6rem) !important;
+}
+.viventia-polarity-slider .slider-value {
+  display: block !important;
+  width: 100% !important;
+  text-align: right !important;
+  padding-right: 0.5rem !important;
+  font-size: 0 !important;
+}
+.viventia-polarity-slider .slider-label-left,
+.viventia-polarity-slider .slider-label-right {
+  display: none !important;
+}
+
+/* 1 — Positive */
+.viventia-polarity-slider[data-internal-value="1"] .slider-progress {
+  background-color: #10b981 !important;
+}
+.viventia-polarity-slider[data-internal-value="1"] .slider-value {
+  color: #10b981 !important;
+}
+.viventia-polarity-slider[data-internal-value="1"] .slider-value::before {
+  content: "Positive";
+  font-size: var(--font-text-size, 1rem);
+}
+
+/* 2 — Neutral */
+.viventia-polarity-slider[data-internal-value="2"] .slider-progress {
+  background-color: #6b7280 !important;
+}
+.viventia-polarity-slider[data-internal-value="2"] .slider-value {
+  color: #6b7280 !important;
+}
+.viventia-polarity-slider[data-internal-value="2"] .slider-value::before {
+  content: "Neutral";
+  font-size: var(--font-text-size, 1rem);
+}
+
+/* 3 — Negative */
+.viventia-polarity-slider[data-internal-value="3"] .slider-progress {
+  background-color: #ef4444 !important;
+}
+.viventia-polarity-slider[data-internal-value="3"] .slider-value {
+  color: #ef4444 !important;
+}
+.viventia-polarity-slider[data-internal-value="3"] .slider-value::before {
+  content: "Negative";
+  font-size: var(--font-text-size, 1rem);
+}

@@ -1,6 +1,6 @@
 const KEY = "viventia-state";
-const MIN = 1, MAX = 4, STEP = 1;
-const LABELS = {"1":"Active","2":"Paused","3":"Abandoned","4":"Mastered"};
+const MIN = 1, MAX = 3, STEP = 1;
+const LABELS = {"1":"Active","2":"On hold","3":"Conquered"};
 
 const file = app.vault.getAbstractFileByPath(dv.current().file.path);
 let raw = dv.current()[KEY];

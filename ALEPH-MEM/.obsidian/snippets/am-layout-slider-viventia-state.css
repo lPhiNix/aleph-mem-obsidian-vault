@@ -1,4 +1,4 @@
-/* Viventia state slider — viventia-state (1=Active, 2=Paused, 3=Abandoned, 4=Mastered) */
+/* Viventia state slider — viventia-state (1=Active, 2=On hold, 3=Conquered) */
 
 .viventia-state-slider .slider-input {
   display: flex !important;
@@ -34,7 +34,7 @@
   font-size: var(--font-text-size, 1rem);
 }
 
-/* 2 — Paused */
+/* 2 — On hold */
 .viventia-state-slider[data-internal-value="2"] .slider-progress {
   background-color: #f59e0b !important;
 }
@@ -42,30 +42,18 @@
   color: #f59e0b !important;
 }
 .viventia-state-slider[data-internal-value="2"] .slider-value::before {
-  content: "Paused";
+  content: "On hold";
   font-size: var(--font-text-size, 1rem);
 }
 
-/* 3 — Abandoned */
+/* 3 — Conquered */
 .viventia-state-slider[data-internal-value="3"] .slider-progress {
-  background-color: #555a64 !important;
-}
-.viventia-state-slider[data-internal-value="3"] .slider-value {
-  color: #555a64 !important;
-}
-.viventia-state-slider[data-internal-value="3"] .slider-value::before {
-  content: "Abandoned";
-  font-size: var(--font-text-size, 1rem);
-}
-
-/* 4 — Mastered */
-.viventia-state-slider[data-internal-value="4"] .slider-progress {
   background-color: #3b82f6 !important;
 }
-.viventia-state-slider[data-internal-value="4"] .slider-value {
+.viventia-state-slider[data-internal-value="3"] .slider-value {
   color: #3b82f6 !important;
 }
-.viventia-state-slider[data-internal-value="4"] .slider-value::before {
-  content: "Mastered";
+.viventia-state-slider[data-internal-value="3"] .slider-value::before {
+  content: "Conquered";
   font-size: var(--font-text-size, 1rem);
 }

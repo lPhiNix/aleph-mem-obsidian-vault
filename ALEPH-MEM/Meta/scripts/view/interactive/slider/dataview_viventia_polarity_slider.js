@@ -1,6 +1,6 @@
-const KEY = "viventia-level";
-const MIN = 1, MAX = 4, STEP = 1;
-const LABELS = {"1":"Beginner","2":"Intermediate","3":"Advanced","4":"Expert"};
+const KEY = "viventia-polarity";
+const MIN = 1, MAX = 3, STEP = 1;
+const LABELS = {"1":"Positive","2":"Neutral","3":"Negative"};
 
 const file = app.vault.getAbstractFileByPath(dv.current().file.path);
 let raw = dv.current()[KEY];
@@ -11,7 +11,7 @@ if (raw !== undefined && raw !== null) {
 }
 value = Math.min(MAX, Math.max(MIN, value));
 
-const container = dv.container.createEl("div", { cls: "viventia-level-slider slider-input" });
+const container = dv.container.createEl("div", { cls: "viventia-polarity-slider slider-input" });
 container.setAttribute("tabindex", "0");
 
 const fill = container.createEl("div", { cls: "slider-progress" });
