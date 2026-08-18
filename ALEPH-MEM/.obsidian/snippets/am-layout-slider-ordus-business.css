@@ -4,9 +4,9 @@
   padding-right: 2rem !important;
   overflow: hidden !important;
 }
-.ordus-business-slider .slider-progress {
-  min-width: 5%;
-  max-width: calc(100% - 2.25rem) !important;
+.ordus-business-slider.slider-input {
+  --slider-min: 5%;
+  --slider-max: calc(100% - 2.25rem);
 }
 .ordus-business-slider .slider-value {
   display: block !important;

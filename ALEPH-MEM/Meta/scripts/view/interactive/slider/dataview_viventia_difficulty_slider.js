@@ -25,7 +25,7 @@ rightSpan.textContent = MAX;
 
 function pct(v) { return ((v - MIN) / (MAX - MIN)) * 100; }
 function update(v) {
-  fill.style.width = `${pct(v)}%`;
+  fill.style.setProperty('--slider-fill', String(pct(v) / 100));
   valSpan.textContent = v;
   container.setAttribute("data-internal-value", v);
 }

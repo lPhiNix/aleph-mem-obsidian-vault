@@ -4,9 +4,9 @@
   padding-right: 2rem !important;
   overflow: hidden !important;
 }
-.viventia-rating-slider .slider-progress {
-  min-width: 5%;
-  max-width: calc(100% - 3.25rem) !important;
+.viventia-rating-slider.slider-input {
+  --slider-min: 5%;
+  --slider-max: calc(100% - 3.25rem);
 }
 
 .viventia-rating-slider .slider-value {

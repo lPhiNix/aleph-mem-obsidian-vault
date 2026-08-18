@@ -4,9 +4,9 @@
   padding-right: 2rem !important;
   overflow: hidden !important;
 }
-.devs-impact-slider .slider-progress {
-  min-width: 10%;
-  max-width: calc(100% - 3.5rem) !important;
+.devs-impact-slider.slider-input {
+  --slider-min: 10%;
+  --slider-max: calc(100% - 3.5rem);
 }
 .devs-impact-slider .slider-value {
   display: block !important;

@@ -6,9 +6,9 @@
   padding-right: 2rem !important;
   overflow: hidden !important;
 }
-.viventia-difficulty-slider .slider-progress {
-  min-width: 10%;
-  max-width: calc(100% - 7rem) !important;
+.viventia-difficulty-slider.slider-input {
+  --slider-min: 10%;
+  --slider-max: calc(100% - 7rem);
 }
 .viventia-difficulty-slider .slider-value {
   display: block !important;

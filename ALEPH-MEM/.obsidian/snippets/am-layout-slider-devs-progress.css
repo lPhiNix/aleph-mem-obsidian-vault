@@ -4,9 +4,11 @@
   padding-right: 2rem !important;
   overflow: hidden !important;
 }
+.devs-progress-slider.slider-input {
+  --slider-min: 1%;
+  --slider-max: calc(100% - 3.5rem);
+}
 .devs-progress-slider .slider-progress {
-  min-width: 1%;
-  max-width: calc(100% - 3.5rem) !important;
   background-color: var(--highlight, #10b981) !important;
 }
 .devs-progress-slider .slider-value {
