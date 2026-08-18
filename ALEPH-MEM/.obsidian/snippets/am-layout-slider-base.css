@@ -1,4 +1,7 @@
 .slider-input {
+  --slider-fill: 0;
+  --slider-min: 0%;
+  --slider-max: 100%;
   height: var(--input-height);
   border-radius: var(--mb-border-radius, var(--input-radius));
   border: 2px solid var(--background-modifier-border);
@@ -14,6 +17,7 @@
   background: var(--color-accent);
   border-radius: var(--mb-border-radius, var(--input-radius));
   height: 100%;
+  width: calc(var(--slider-min) + (var(--slider-max) - var(--slider-min)) * var(--slider-fill));
 }
 .slider-value {
   position: absolute;

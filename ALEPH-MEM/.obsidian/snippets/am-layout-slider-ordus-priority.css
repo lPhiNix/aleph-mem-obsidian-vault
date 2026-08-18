@@ -4,9 +4,9 @@
   padding-right: 2rem !important;
   overflow: hidden !important;
 }
-.ordus-priority-slider .slider-progress {
-  min-width: 10%;
-  max-width: calc(100% - 6rem) !important;
+.ordus-priority-slider.slider-input {
+  --slider-min: 10%;
+  --slider-max: calc(100% - 6rem);
 }
 .ordus-priority-slider .slider-value {
   display: block !important;
