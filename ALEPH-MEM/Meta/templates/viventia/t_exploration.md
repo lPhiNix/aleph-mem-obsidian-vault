@@ -74,7 +74,7 @@ tR += await tp.file.include("[[c_dataview_viventia_exploration_alias_input]]");
 ## ✧ State
 
 <%*
-tR += await tp.file.include("[[c_dataview_viventia_exploration_state_slider]]");
+tR += await tp.file.include("[[c_dataview_viventia_exploration_state_segmented]]");
 %>
 
 ---

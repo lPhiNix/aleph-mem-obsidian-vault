@@ -53,7 +53,7 @@ tR += await tp.file.include("[[c_dataview_devs_postmortem_alias_input]]");
 ## ✧ Outcome
 
 <%*
-tR += await tp.file.include("[[c_dataview_devs_postmortem_outcome_slider]]");
+tR += await tp.file.include("[[c_dataview_devs_postmortem_outcome_segmented]]");
 %>
 
 ---

@@ -51,7 +51,13 @@
     "am-layout-slider-memorium-rating",
     "am-layout-slider-ordus-binnacle",
     "am-layout-slider-ordus-business",
-    "am-layout-slider-ordus-priority"
+    "am-layout-slider-ordus-priority",
+    "am-layout-segmented-base",
+    "am-layout-segmented-devs-binnacle",
+    "am-layout-segmented-devs-outcome",
+    "am-layout-segmented-devs-status",
+    "am-layout-segmented-viventia-exploration-state",
+    "am-layout-segmented-viventia-state"
   ],
   "interfaceFontFamily": "",
   "textFontFamily": "",
