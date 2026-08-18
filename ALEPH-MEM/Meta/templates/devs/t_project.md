@@ -70,7 +70,7 @@ tR += await tp.file.include("[[c_dataview_devs_project_alias_input]]");
 ## ✧ Status
 
 <%*
-tR += await tp.file.include("[[c_dataview_devs_project_status_slider]]");
+tR += await tp.file.include("[[c_dataview_devs_project_status_segmented]]");
 %>
 
 ---

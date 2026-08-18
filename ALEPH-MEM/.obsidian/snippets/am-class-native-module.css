@@ -193,3 +193,7 @@
 .module .slider-input {
   border-color: var(--secondary) !important;
 }
+
+.module .segmented-option {
+  border-color: var(--secondary) !important;
+}

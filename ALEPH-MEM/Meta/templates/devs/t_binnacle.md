@@ -55,7 +55,7 @@ tR += await tp.file.include("[[c_dataview_devs_binnacle_alias_input]]");
 ## ✧ Status
 
 <%*
-tR += await tp.file.include("[[c_dataview_devs_binnacle_status_slider]]");
+tR += await tp.file.include("[[c_dataview_devs_binnacle_status_segmented]]");
 %>
 
 ---
