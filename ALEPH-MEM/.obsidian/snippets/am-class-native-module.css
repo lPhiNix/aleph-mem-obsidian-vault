@@ -179,6 +179,9 @@
 .module .alias-input::placeholder {
   color: var(--dark) !important;
 }
+.module .alias-input:hover {
+  background-color: transparent !important;
+}
 .module .alias-input:focus-visible {
   border-color: var(--highlight) !important;
 }
