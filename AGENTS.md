@@ -174,10 +174,19 @@ Without these the vault does not function:
 ## Frontmatter properties (mandatory)
 
 Every note gets these from native components:
-- `version` — FNV-1a hash of template + components (format: `#XXXXXXXXXXXX`)
+- `version` — FNV-1a fingerprint of the static template (template + all inlined components, recursively). See below.
 - `key` — 16-digit random ID from `crypto.getRandomValues()`
 - `creation` — ISO 8601 timestamp
 - `tags`, `cssclasses`, `aliases`, `context`, `related`
+
+### `version` — static template fingerprint
+
+- FNV-1a hash of the template **and all inlined components, recursively** (format: `#XXXXXXXXXXXX`).
+- Written once at creation. It is a fingerprint, not a semantic version, so it cannot be ordered.
+- Covers: body structure, frontmatter components and `dv.view` paths.
+- Does not cover: scripts, CSS, plugins or manual edits.
+- Changing a nested component changes the hash. When the recursive walk was introduced, only templates with nested includes (Memorium daily/weekly/monthly/quarterly/yearly) changed their hash.
+- To compare generations, use git history or a changelog; the hash alone does not tell which is newer.
 
 Notes open in preview/reading mode via `c_templater_native_preview_mode_forcer.md`.
 
@@ -371,7 +380,7 @@ Callouts are styled via `am-class-native.css` with explicit border-width, border
 |------|---------|
 | `Meta/scripts/user/generate_child_note.js` | Unified child note creation (numbered + singleton) |
 | `Meta/scripts/user/generate_key.js` | Random 16-digit note key |
-| `Meta/scripts/user/generate_template_hash_version.js` | FNV-1a hash of template + its components |
+| `Meta/scripts/user/generate_template_hash_version.js` | Recursive FNV-1a fingerprint of the static template |
 | `Meta/scripts/view/interactive/slider/dataview_*.js` | Native slider implementations (13 files) |
 | `Meta/scripts/view/interactive/buttons/dataview_*.js` | Button actions (delegate to Templater API) |
 | `Meta/scripts/view/graph/dataview_memorium_day_rating_graph.js` | Chart.js rating graph (largest script class) |
