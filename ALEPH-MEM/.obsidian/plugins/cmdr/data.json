@@ -1,0 +1,71 @@
+{
+  "confirmDeletion": true,
+  "showAddCommand": false,
+  "debug": false,
+  "editorMenu": [],
+  "fileMenu": [],
+  "leftRibbon": [
+    {
+      "id": "quickadd:choice:38b10a35-197c-43cb-a8e1-d5ac50df1c98",
+      "icon": "file-text",
+      "name": "ALEPH-MEM",
+      "mode": "any"
+    },
+    {
+      "id": "quickadd:choice:b375f734-459b-439f-8219-f122c5829d05",
+      "icon": "atom",
+      "name": "Open new axiom",
+      "mode": "any"
+    },
+    {
+      "id": "journals::open-daily-note",
+      "icon": "",
+      "name": "Open daily note",
+      "mode": "any"
+    },
+    {
+      "id": "quickadd:choice:f696b6db-1d54-4c48-a3ca-a81991990f88",
+      "icon": "drafting-compass",
+      "name": "Open new project",
+      "mode": "any"
+    },
+    {
+      "id": "quickadd:choice:d00c0208-39f8-499a-814d-49efbb32c5a7",
+      "icon": "compass",
+      "name": "Open new exploration",
+      "mode": "any"
+    },
+    {
+      "id": "quickadd:choice:bec9e545-9014-4367-807b-ac7d9c71a3d0",
+      "icon": "kanban-square",
+      "name": "Open new board",
+      "mode": "any"
+    }
+  ],
+  "rightRibbon": [],
+  "titleBar": [],
+  "statusBar": [],
+  "pageHeader": [],
+  "macros": [],
+  "explorer": [],
+  "emptyState": [],
+  "textToolbarCommands": [],
+  "hide": {
+    "statusbar": [],
+    "leftRibbon": [],
+    "editorMenuItems": [],
+    "fileMenuItems": []
+  },
+  "spacing": 0,
+  "advancedToolbar": {
+    "rowHeight": 48,
+    "rowCount": 1,
+    "spacing": 0,
+    "buttonWidth": 48,
+    "columnLayout": false,
+    "mappedIcons": [],
+    "tooltips": false,
+    "heightOffset": 0
+  },
+  "spacingReset": true
+}

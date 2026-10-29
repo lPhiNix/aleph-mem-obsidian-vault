@@ -109,9 +109,6 @@
         "c7833a1663262e85"
       ]
     },
-    "AM.md": {
-      "icon": "lucide-sparkles"
-    },
     "Data": {
       "icon": "lucide-database",
       "unsynced": [
@@ -235,11 +232,31 @@
     }
   },
   "ribbonIcons": {
+    "cmdr:ALEPH-MEM": {
+      "icon": "lucide-sparkles"
+    },
+    "cmdr:Open daily note": {
+      "icon": "lucide-calendar"
+    },
     "homepage:Open homepage": {
       "icon": "lucide-codesandbox"
     }
   },
   "fileRules": [
+    {
+      "id": "NXrFU",
+      "name": "AM",
+      "match": "all",
+      "conditions": [
+        {
+          "source": "name",
+          "operator": "is",
+          "value": "AM"
+        }
+      ],
+      "enabled": true,
+      "icon": "lucide-sparkles"
+    },
     {
       "id": "HhZnf",
       "name": "Modules",
