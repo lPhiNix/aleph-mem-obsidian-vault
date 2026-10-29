@@ -1,1 +1,1 @@
-memorium-date: <% moment(tp.file.title, 'YYYY-MM-MMMM').startOf('month').format("YYYY-MM-DD") %>
+memorium-date: <% moment(tp.file.title, 'YYYY-MM').startOf('month').format("YYYY-MM-DD") %>

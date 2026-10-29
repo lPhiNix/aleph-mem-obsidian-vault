@@ -142,7 +142,7 @@ class DateUtils {
       return { start: m.clone().startOf("isoWeek"), end: m.clone().endOf("isoWeek") };
     }
     if (PERIOD === "monthly") {
-      const m = moment(fileName, "YYYY-MM-MMMM");
+      const m = moment(fileName, "YYYY-MM");
       return { start: m.clone().startOf("month"), end: m.clone().endOf("month") };
     }
     // quarterly

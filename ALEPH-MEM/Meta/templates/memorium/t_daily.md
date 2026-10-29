@@ -21,8 +21,8 @@ tR += (await tp.file.include("[[c_templater_native_tags_attribute]]")) + tags.ma
 %>
 <%*
 let links = [
-	moment(tp.file.title, 'YYYY-MM-DD-dddd').format('GGGG-[W]WW'),
-	moment(tp.file.title, 'YYYY-MM-DD-dddd').format('YYYY-MM-MMMM')
+	moment(tp.file.title, 'YYYY-MM-DD').format('GGGG-[W]WW'),
+	moment(tp.file.title, 'YYYY-MM-DD').format('YYYY-MM')
 ];
 tR += (await tp.file.include("[[c_templater_native_context_attribute]]")) + links.map(t => "\n- \"[[" + t + "]]\"").join("");
 %>
@@ -48,7 +48,7 @@ tR += await tp.file.include("[[c_templater_memorium_daily_journals_frontmatter]]
 %>
 
 <%"---"%>
-# ✦ <% moment(tp.file.title, 'YYYY-MM-DD-dddd').format("dddd, MMMM DD, YYYY") %>
+# ✦ <% moment(tp.file.title, 'YYYY-MM-DD').format("dddd, MMMM DD, YYYY") %>
 <%*
 tR += await tp.file.include("[[c_dataview_memorium_daily_nav_buttons]]");
 %>
