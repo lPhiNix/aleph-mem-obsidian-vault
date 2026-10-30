@@ -15,7 +15,7 @@ tR += await tp.file.include("[[c_templater_native_creation_attribute]]");
 <%*
 let tags = [
 	"NOTE", "MEMORIUM", "weekly",
-	"week" + moment(tp.file.title, "YYYY-[W]WW").format("W")
+	"week" + moment(tp.file.title, "GGGG-[W]WW").format("W")
 ];
 tR += (await tp.file.include("[[c_templater_native_tags_attribute]]")) + tags.map(t => "\n- "+t).join("");
 %>
@@ -32,7 +32,7 @@ tR += await tp.file.include("[[c_templater_native_related_attribute]]");
 let classes = [
 	"hide-source-frontmatter", "italic-header-title",
 	"weekly", "module", "memorium",
-	"week-" + moment(tp.file.title, "YYYY-[W]WW").format("W")
+	"week-" + moment(tp.file.title, "GGGG-[W]WW").format("W")
 ];
 tR += await tp.file.include("[[c_templater_native_cssclasses_attribute]]") + classes.map(t => "\n- "+t).join("");
 %>
@@ -48,7 +48,7 @@ tR += await tp.file.include("[[c_templater_memorium_weekly_journals_frontmatter]
 %>
 
 <%"---"%>
-# ✦ <% moment(tp.file.title, 'YYYY-[W]WW').format("[Week ]WW, YYYY") %>
+# ✦ <% moment(tp.file.title, 'GGGG-[W]WW').format("[Week ]WW, GGGG") %>
 <%*
 tR += await tp.file.include("[[c_dataview_memorium_weekly_nav_buttons]]");
 %>
