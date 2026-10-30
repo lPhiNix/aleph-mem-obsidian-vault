@@ -4,13 +4,15 @@
  **********************/
 
 const current = dv.current();
-const currentMM = current["memorium-date"].toFormat("MM");
+const currentDate = current["memorium-date"];
+const currentMM = currentDate && typeof currentDate.toFormat === "function" ? currentDate.toFormat("MM") : null;
 
 const pages = dv.pages('"02 - Ψ - Memorium/03 - Monthly"')
   .where(p => {
+    if (!currentMM) return false;
     if (p.file.name === current.file.name) return false;
     const date = p["memorium-date"];
-    if (!date) return false;
+    if (!date || typeof date.toFormat !== "function") return false;
     return date.toFormat("MM") === currentMM;
   })
   .sort(p => p.file.name, "asc");

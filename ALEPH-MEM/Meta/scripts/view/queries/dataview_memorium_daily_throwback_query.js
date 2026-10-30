@@ -4,13 +4,14 @@
  **********************/
 
 const current = dv.current();
-const currentMMDD = current.file.day.toFormat("MM-dd");
+const currentMMDD = current.file.day ? current.file.day.toFormat("MM-dd") : null;
 
 const pages = dv.pages('"02 - Ψ - Memorium/01 - Daily"')
   .where(p => {
+    if (!currentMMDD) return false;
     if (p.file.name === current.file.name) return false;
     const date = p["memorium-date"];
-    if (!date) return false;
+    if (!date || typeof date.toFormat !== "function") return false;
     return date.toFormat("MM-dd") === currentMMDD;
   })
   .sort(p => p.file.name, "asc");

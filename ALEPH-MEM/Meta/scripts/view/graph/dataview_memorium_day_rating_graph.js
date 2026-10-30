@@ -7,8 +7,8 @@
 const PERIOD = globalThis.__memoriumChartPeriod || (() => {
   const name = dv.current().file.name;
   if (/^\d{4}-W\d{2}$/.test(name)) return "weekly";
-  if (/^\d{4}-\d{2}-(January|February|March|April|May|June|July|August|September|October|November|December)/.test(name)) return "monthly";
   if (/^\d{4}-Q[1-4]/.test(name)) return "quarterly";
+  if (/^\d{4}-\d{2}$/.test(name)) return "monthly";
   return "weekly";
 })();
 
@@ -206,7 +206,7 @@ class RatingDataManager {
   async _loadRatings(path, start, end, data) {
     const { RATING, DATE, ALIAS } = this.config.PROPERTIES;
     this.dv.pages(path)
-      .where(page => page[RATING] != null && page[DATE])
+      .where(page => page[RATING] != null && page[DATE] && typeof page[DATE].toISODate === "function")
       .forEach(page => {
         const date = moment(page[DATE].toISODate(), "YYYY-MM-DD");
         if (!DateUtils.isDateInRange(date, start, end)) return;

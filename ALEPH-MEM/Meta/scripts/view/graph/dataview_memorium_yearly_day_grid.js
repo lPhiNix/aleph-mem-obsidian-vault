@@ -116,7 +116,7 @@ class RatingDataManager {
     const { RATING, DATE, ALIAS } = this.config.PROPERTIES;
 
     this.dv.pages(path)
-      .where(page => page[RATING] != null && page[DATE])
+      .where(page => page[RATING] != null && page[DATE] && typeof page[DATE].toISODate === "function")
       .forEach(page => {
         const date = moment(page[DATE].toISODate());
 
