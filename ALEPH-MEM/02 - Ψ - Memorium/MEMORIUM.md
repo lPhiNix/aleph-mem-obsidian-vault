@@ -8,7 +8,6 @@ cssclasses:
   - huge-header-title
   - center-header-title
   - hide-inline-title
-  - native
   - module
   - memorium
 ---

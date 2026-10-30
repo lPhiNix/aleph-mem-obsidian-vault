@@ -12,7 +12,7 @@ tR += (await tp.file.include("[[c_templater_native_context_attribute]]")) + link
 <%*
 let classes = [
 	"hide-all-frontmatter", "huge-header-title", "center-header-title",
-	"hide-inline-title", "native", "module", "memorium"
+	"hide-inline-title", "module", "memorium"
 ];
 tR += await tp.file.include("[[c_templater_native_cssclasses_attribute]]") + classes.map(t => "\n- "+t).join("");
 %>
